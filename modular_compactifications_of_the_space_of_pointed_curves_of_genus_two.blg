@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
+The style file: alpha.bst
+Database file #1: genus_two.bib
+You've used 2 entries,
+            2543 wiz_defined-function locations,
+            573 strings with 4865 characters,
+and the built_in function-call counts, 1092 in all, are:
+= -- 122
+> -- 33
+< -- 2
++ -- 11
+- -- 11
+* -- 59
+:= -- 155
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 62
+empty$ -- 70
+format.name$ -- 14
+if$ -- 247
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 0
+skip$ -- 70
+stack$ -- 0
+substring$ -- 71
+swap$ -- 35
+text.length$ -- 2
+text.prefix$ -- 1
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 8
+width$ -- 4
+write$ -- 28
