@@ -3,10 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
+Warning--I didn't find a database entry for "DM"
 Warning--empty journal in Demazure
 You've used 4 entries,
             2543 wiz_defined-function locations,
-            589 strings with 5355 characters,
+            591 strings with 5359 characters,
 and the built_in function-call counts, 2173 in all, are:
 = -- 240
 > -- 49
@@ -45,4 +46,4 @@ warning$ -- 1
 while$ -- 17
 width$ -- 6
 write$ -- 53
-(There was 1 warning)
+(There were 2 warnings)

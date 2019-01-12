@@ -485,6 +485,55 @@ Denoting by $l_i$ the length of a rational chain and by $t_i$ the trend along it
  Finally, suppose that $C_{\bar\eta}$ has a genus two singularity, then so does $C_0$. The (union of the) distinguished branch(es) $E_{\bar\eta}$ of $C_{\bar\eta}$ is a genus one singularity, and so is its limit $E_0$ in $C_0$. It has to contain the distinguished branch(es) of $C_0$, because any subcurve contained in the union of the axes of $C_0$ has genus zero; therefore, by assumption, $E_0$ contains $p_{1,0}$. Then also $E_{\bar\eta}$ contains $p_{1,\bar\eta}$.
 \end{proof}
 
+Recall the following result of Smyth \cite[Lemma 3.3]{SMY1}.
+\begin{lem}\label{lem:min1}
+ A Gorenstein curve of arithmetic genus one with no disconnecting nodes $Z$ is either: a smooth elliptic curve; a ring of $r\geq 1$ $\PP^1$; or an elliptic $m$-fold point whose normalisation is the disjoint union of $m$ copies of $\PP^1$. In all these cases $\omega_Z\simeq\OO_Z$.
+\end{lem}
+
+We may provide an analogous description of minimal subcurves of genus two.
+\begin{lem}\label{lem:min2}
+ A Gorenstein curve of genus two with no disconnecting nodes $Z$ is either:
+ \begin{enumerate}
+  \item a smooth curve of genus two;
+  \item the union of $E$, a Gorenstein curve of genus one with no disconnecting nodes, and $R$, a (possibly empty) rational chain, along two distinct nodes;
+  \item the union of two copies of $(\PP^1,0,1,\infty)$ with three (possibly empty) rational chains $R_0, R_1, R_\infty$ joining the homonymous points;
+  \item\label{case:twice1} an elliptic $m$-fold point whose normalisation is the disjoint union of either $m-1$ $\PP^1$ (two branches coincide), or $m-1$ $\PP^1$ and a Gorenstein curve of genus one with no disconnecting node (i.e. there are two genus one subcurves sharing one branch);
+  \item\label{case:2} or a singularity of genus two with $m$-branches, whose normalisation is the disjoint union of $m$ copies of $\PP^1$.
+ \end{enumerate}
+In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice1} and \eqref{case:2}, given a smooth point $p$ lying on a special branch, there exists a unique point $\bar p$ (possibly equal to $p$), such that $\omega_Z\simeq\OO(p+\bar p)$.
+\end{lem}
+
+
+\begin{prop}[Valuative criterion of properness]
+ 
+\end{prop}
+\begin{proof}
+ \emph{Existence of limits.} We start with a smooth $n$-pointed curve ov genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
+ 
+ We may construct a zigzag diagram of birational morphisms of curves over $\dvr$, never altering the generic fiber:
+ \bcd
+ & \mathcal B_1\ar[dl,"p_1"]\ar[dr,"q_1"] & & \mathcal B_2\ar[dl,"p_2"] & \ldots & \mathcal B_{t-1}\ar[dr,"q_{t-1}"] & & \mathcal B_{t}\ar[dl,"p_{t}"]\ar[dr,"q_{t}"] & \\
+ \mathcal C_0:=\mathcal C\ar[rr,dashed] & & \mathcal C_1\ar[r,dashed] & {} & \ldots & {}\ar[r,dashed] & \mathcal C_{t-1}\ar[rr,dashed] & & \mathcal C_t
+ \ecd
+ such that:
+ \begin{enumerate}[label=(\roman*)]
+  \item $\mathcal C_i\to\dvr$ is a Gorenstein curve of genus two, with $n$ smooth sections $\sigma_{1,i},\ldots,\sigma_{n,i}$;
+  \item\label{cond:regnodes} the total space of $\mathcal C_i$ is regular at the nodes of $\mathcal C_{i,0}$;
+  \item every nodally attached rational component of $\mathcal C_i$ has at least two special points;
+  \item if $\mathcal C_i$ contains two subcurves of genus one, then so do all $\mathcal C_j, j\leq i$ and their minimal level sequence is non-decreasing; on the other hand, if $\mathcal C_i$ contains only subcurve of genus one, then so do all $\mathcal C_j, j\leq i$, and their minimal level sequence is non-decreasing;
+  \item the level of a minimal subcurve of genus two is nono-decreasing;
+  \item $\mathcal C_t$ contains a genus two singularity and no disconnecting nodes.
+ \end{enumerate}
+ Here is the procedure:
+ \begin{itemize}
+  \item If the special fiber $\mathcal C_{i,0}$ contains two \emph{disjoint} subcurves of genus one, let $E_1$ and $E_2$ be the minimal such. They are nodally attached, hence Cartier by assumption \eqref{cond:regnodes}. Let $\mathcal B_{i+1}$ be the blow-up of $\mathcal C_i$ in the regular points $\{\sigma_{1,i},\ldots,\sigma_{n,i}\}\cap(E_1\cup E_2)$. Denote the strict transform by $\tilde{\cdot}$. The line bundle
+  \[\mathcal L_i=\omega_{\mathcal B_i/\dvr}(\tilde E_1+\tilde E_2+\tilde \sigma_{1,i}+\ldots+\tilde\sigma_{n,i})\]
+  is: trivial along $E_1$ and $E_2$
+ \end{itemize}
+
+\end{proof}
+
+
 
 
 \bibliographystyle{alpha}
