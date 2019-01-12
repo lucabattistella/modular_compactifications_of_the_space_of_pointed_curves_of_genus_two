@@ -1,5 +1,17 @@
 \begin{thebibliography}{RSW17}
 
+\bibitem[Arn72]{Arnold}
+V.~I. Arnol'd.
+\newblock Normal forms of functions near degenerate critical points, the {W}eyl
+  groups {$A_{k},D_{k},E_{k}$} and {L}agrangian singularities.
+\newblock {\em Funkcional. Anal. i Prilo\v{z}en.}, 6(4):3--25, 1972.
+
+\bibitem[Dem75]{Demazure}
+Michel Demazure.
+\newblock Classification des germes \`a point critique isol\'{e} et \`a nombres
+  de modules 0 ou 1 (d'apr\`es {V}. {I}. {A}rnol'd).
+\newblock pages 124--142. Lecture Notes in Math., Vol. 431, 1975.
+
 \bibitem[RSW17]{RSPW1}
 Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
 \newblock {Moduli of stable maps in genus one and logarithmic geometry I}.
