@@ -3,47 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
-Warning--I didn't find a database entry for "DM"
 Warning--empty journal in Demazure
-You've used 4 entries,
+Warning--there's a number but no volume in DM
+You've used 5 entries,
             2543 wiz_defined-function locations,
-            591 strings with 5359 characters,
-and the built_in function-call counts, 2173 in all, are:
-= -- 240
-> -- 49
+            597 strings with 5495 characters,
+and the built_in function-call counts, 2582 in all, are:
+= -- 283
+> -- 68
 < -- 5
-+ -- 15
-- -- 15
-* -- 141
-:= -- 303
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 22
-chr.to.int$ -- 4
-cite$ -- 5
-duplicate$ -- 101
-empty$ -- 166
-format.name$ -- 22
-if$ -- 481
++ -- 22
+- -- 21
+* -- 174
+:= -- 370
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 28
+chr.to.int$ -- 5
+cite$ -- 7
+duplicate$ -- 115
+empty$ -- 195
+format.name$ -- 29
+if$ -- 562
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 23
-num.names$ -- 12
-pop$ -- 20
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 33
 quote$ -- 0
-skip$ -- 104
+skip$ -- 115
 stack$ -- 0
-substring$ -- 235
-swap$ -- 45
+substring$ -- 265
+swap$ -- 46
 text.length$ -- 5
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 32
-warning$ -- 1
-while$ -- 17
-width$ -- 6
-write$ -- 53
+type$ -- 40
+warning$ -- 2
+while$ -- 22
+width$ -- 7
+write$ -- 66
 (There were 2 warnings)

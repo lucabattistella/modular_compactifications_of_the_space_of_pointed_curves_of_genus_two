@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  12 JAN 2019 18:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  6 FEB 2019 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,7 +1012,23 @@ Package: ulem 2012/05/18
 \c@claim=\count178
 \c@num=\count179
 
-(./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux)
+(./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
+
+LaTeX Warning: Label `cond:sing' multiply defined.
+
+
+LaTeX Warning: Label `cond:lev2' multiply defined.
+
+
+LaTeX Warning: Label `cond:lev1' multiply defined.
+
+
+LaTeX Warning: Label `cond:aut' multiply defined.
+
+
+LaTeX Warning: Label `cond:p1' multiply defined.
+
+)
 \openout1 = `modular_compactifications_of_the_space_of_pointed_curves_of_genus_
 two.aux'.
 
@@ -1035,8 +1051,7 @@ LaTeX Font Info:    ... okay on input line 124.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 124.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 124.
@@ -1163,50 +1178,47 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 Underfull \vbox (badness 1701) has occurred while \output is active []
 
  [5]
-[6] [7] [8] [9] [10] [11] [12] [13] [14]
-
-LaTeX Warning: Citation `DM' on page 15 undefined on input line 511.
-
-[15]
-Overfull \hbox (74.35002pt too wide) in paragraph at lines 517--517
+[6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Overfull \hbox (74.35002pt too wide) in paragraph at lines 531--531
  [] 
  []
 
+[16] [17] [18]
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.bbl
-[16]) [17]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 545.
+[19])
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 605.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 543--546
+Underfull \hbox (badness 10000) in paragraph at lines 603--606
 
  []
 
-[18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 608.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 608.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 548.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 608.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 608.
 Package rerunfilecheck Info: File `modular_compactifications_of_the_space_of_po
 inted_curves_of_genus_two.out' has not changed.
 (rerunfilecheck)             Checksum: 4BCBFB846B22EF77E2F4B2BA797463A9;337.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 548.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 608.
  ) 
 Here is how much of TeX's memory you used:
- 29752 strings out of 494901
- 555620 string characters out of 6179485
- 648213 words of memory out of 5000000
- 32291 multiletter control sequences out of 15000+600000
- 26342 words of font info for 87 fonts, out of 8000000 for 9000
+ 29829 strings out of 494901
+ 557068 string characters out of 6179486
+ 648432 words of memory out of 5000000
+ 32348 multiletter control sequences out of 15000+600000
+ 27715 words of font info for 89 fonts, out of 8000000 for 9000
  197 hyphenation exceptions out of 8191
- 56i,14n,82p,10445b,977s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,14n,82p,10445b,1002s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/luca/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/lu
 ca/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/luca/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/luca/.texmf-var/fonts/pk/l
@@ -1235,10 +1247,10 @@ s/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs
 10.pfb>
 Output written on modular_compactifications_of_the_space_of_pointed_curves_of_g
-enus_two.pdf (18 pages, 341270 bytes).
+enus_two.pdf (20 pages, 362915 bytes).
 PDF statistics:
- 689 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 111 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
