@@ -116,7 +116,7 @@
 \newcommand{\thismonthyear}{{\thismonth} {\number\year}}
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
-\title{Modular compactifications of $\pazocal{M}_{2,n}$}
+\title{Modular compactifications of $\pazocal{M}_{2,n}$ I}
 \author{Luca Battistella}
 \date{\today}
 
@@ -131,39 +131,102 @@
 \maketitle
 \tableofcontents
 
-\section{Gorenstein curve singularities of genus two}
-In this and the next sections we work over an algebraically closed field of characteristic different from $2,3,5$.
+\section{Introduction}
+One of the most beautiful and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne and D. Mumford \cite{DM}, through the introduction of \emph{stable} pointed curves.
 
-We follow Smyth's procedure; let $(R,\m)$ denote the completion of the local ring of the curve at the singularity, with normalisation:
+\begin{dfn}
+ Assume $2g-2+n>0$. A connected, reduced, complete curve $C$ with distinct markings $(p_1,\ldots,p_n)$ is \emph{stable} if:
+ \begin{enumerate}
+  \item $C$ has only nodes as singularities, and $p_i$ are smooth points of $C$;
+  \item every rational component of $C$ has at least three special points (markings or nodes).
+ \end{enumerate}
+\end{dfn}
+
+\begin{thm}
+ Assume $2g-2+n>0$. The moduli stack of stable pointed curves $\oM_{g,n}$ is a smooth and proper connected DM stack over $\operatorname{Spec}(\mathbb Z)$, with projective coarse moduli space $\overline{\mathbf M}_{g,n}$. The boundary $\oM_{g,n}\setminus\pazocal M_{g,n}$, representing nodal curves, is a normal crossing divisor.
+\end{thm}
+On one hand, the Deligne-Mumford compactification has every desirable property one can hope for; on the other, it is not unique, and it is an interesting deep question to classify all possible modular compactifications of $\pazocal M_{g,n}$ - a natural partial answer has been given by D.I. Smyth \cite{SMY-towards}.
+
+Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard general theory on stacks \cite{KM}, this space was first constructed by means of GIT \cite{Gieseker,GIT,BalSwi}. The study of alternative compactifications of $\pazocal M_{g,n}$ is motivated as well by an interest in the birational geometry of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition, and realising that the resulting quotient still enjoys a modular interpretation \cite{Schubert,Hassettg2}. The consequent program that goes under the name of B. Hassett and S. Keel aims to describe all the different possible quotients, and to understand whether every step of a minimal model program for $\overline{\mathbf M}_{g,n}$ can be given a modular interpretation in terms of curves with worse than nodal singularities. Since the early stages of this study, it has developed into a fascinating playground for testing implementations of ideas originating from GIT into a general structural theory for Artin stacks \cite{AFS1,AFS2,AFS3,CTV}.
+
+Only few steps of the Hassett-Keel program have been carried out in full generality. On the other hand, the program has been completed to a larger extent in low genus: with the introduction of weighted pointed curves \cite{Hassettweighted} in genus zero, and with Smyth's pioneering work in genus one \cite{SMY1,SMY2,SMY3}.
+
+Smyth extended earlier work of Schubert by following the philosophy that an alternative compactification can be defined by allowing a reasonably larger class of singularities (\emph{local condition}), studying their stable models, and disallowing the latter by imposing a stronger stability condition (\emph{global condition}); this ensures that the resulting moduli problem be again separated and universally closed, by the valuative criterion.
+
+A useful notion in this respect is that of the \emph{genus} of an isolated curve singularity: let $(C,x)$ be (the germ of) a reduced curve over an algebraically closed field $\k$ at its unique singular point $x$, with normalisation $\nu\colon\widetilde{C}\to C$.
+\begin{dfn}\label{def:genus}
+Let $C$ have $m$ branches at $x$, and $\delta$ the $\k$-dimension of $\nu_*\OO_{\widetilde C}/\OO_C$, which is a skyscraper sheaf supported at $x$. The genus of $(C,x)$ is then
+\[g=\delta-m+1.\] 
+\end{dfn}
+It can be thought of as the number of conditions that a function must satisfy in order to descend from the seminormalisation to $C$. It is a notion adapted to work in families, in the sense that a complete, reduced curve $C$ with only one singular point at $x$ and normalisation a disjoint union of $m$ copies of $\PP^1$ will appear in a family of curves of arithmetic genus $g$.
+
+Smyth found that, for every fixed number of branches $m$, there is a unique germ of Gorenstein singularity of genus one up to isomorphism, namely:
+\begin{description}
+ \item[$m=1$] the cusp, $V(y^2-x^3)\subseteq\Aaff^2_{x,y}$;
+ \item[$m=2$] the tacnode, $V(y^2-yx^2)\subseteq\Aaff^2_{x,y}$;
+ \item[$m\geq 3$] the union of $m$ general lines in $\Aaff^{m-1}$.
+\end{description}
+Singularities of this kind, with up to $m$ branches, together with nodes, form a deformation-open class of singularities. Furthermore, the elliptic $m$-fold point can be obtained by contracting a smooth elliptic curve with $m$ rational tails in a one-parameter smoothing, and, roughly speaking, all stable models look like this.
+\begin{dfn}\cite{SMY1}
+ For $m<n$, a connected, reduced, complete curve $C$ of arithmetic genus one with smooth distinct markings $(p_1,\ldots,p_n)$ is $m$-stable if:
+ \begin{enumerate}
+  \item it has only nodes and elliptic $l$-fold points, $l\leq m$, as singularities;
+  \item for every connected subcurve $E\subseteq C$ of arithmetic genus one, its \emph{level} $\lvert E\cap\overline{C\setminus E}\rvert+\lvert\{i\colon p_i\in E\}\rvert$ is strictly bigger than $m$;
+  \item $H^0(C,\Omega_C^\vee(-\sum_i p_i))=0$.
+ \end{enumerate}
+\end{dfn}
+The latter can be thought of as a decency condition on the moduli stack. The second one is instead essential in guaranteeing the uniqueness of $m$-stable limits, seen the discussion above. Smyth's main result is the following.
+\begin{thm}\cite{SMY1,SMY2}
+ The moduli stack of $m$-stable curves $\oM_{1,n}(m)$ is a proper irreducible DM stack over $\operatorname{Spec}\mathbb Z[1/6]$. It is not smooth for $m\geq 6$.
+\end{thm}
+
+\subsection{Outline of results}
+Here are the main novelties of our construction. It is not a semistable compactification (see \cite[Definition 1.2]{SMY-towards}), in that we allow dangling singularities of type $I\!I$ (see ??? below for a definition), whose normalisation has a one-pointed rational component. The necessity to do so was prefigured in \cite{AFSGm} already.
+
+The dualising line bundle of a minimal (with no separating nodes) Gorenstein curve of genus one is trivial \cite[Lemma 3.3]{SMY1}. This plays a fundamental role in the study of semistable tails, as well as in the boundedness of the moduli functor. On the other hand the dualising line bundle of a minimal Gorenstein curve of genus two $Z$ has degree two. For this reason we had to desymmetrise the problem and use the first marking as a reference point, in order to write $\omega_Z=\OO_Z(q_1+\bar q_1)$ whenever needed, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ is conjugate to $q_1$ (it is not always defined uniquely).
+
+\subsection{Future directions}
+\begin{enumerate}
+ \item Resolve the indeterminacy of the rational map $\oM_{2,n}(m_1)\dashrightarrow\oM_{2,n}(m_2)$; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}. It would be interesting to put this work in the context of the Hassett-Keel program, as in \cite{SMY2}. More generally, a question outstanding to our knowledge is whether the whole program fits in the theoretical framework developed in \cite{DHLinstability}.
+ \item Our main motivation to start this project arose from Gromov-Witten theory. In genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain light in \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. If this is the case, they will provide a clear definition of reduced invariants, and hopefully ease the access to comparison (standard vs. reduced) results. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. This might lead to a mathematical definition of all-genera Gopakumar-Vafa invariants, one day.
+\end{enumerate}
+
+\section{Gorenstein curve singularities of genus two}
+In this and the next sections we work over an algebraically closed field of characteristic different from $2,3,5$. We provide an algebraic classification of the completed local rings of Gorenstein curve singularities of genus two.
+
+Let $(C,x)$ be as above, and let $(R,\m)$ denote $\hat\OO_{C,x}$, with normalisation:
 \[(\tR,\tm)\simeq\left(\k[[t_1]]\oplus\ldots\oplus\k[[t_m]],\langle t_1,\ldots,t_m\rangle\right).\]
-Hence $m$ is the number of branches. Recall that:
+Here $m$ is the number of branches. Recall from Definition \ref{def:genus} that the genus is:
 \[g=\delta-m+1,\]
-so $\delta=m+1$ in our case. It is an observation of Smyth that $\tR/R$ is graded by:
+so $\delta=m+1$ in our case. Smyth considers $\tR/R$ as a $\mathbb Z$-graded module with:
 \[ (\tR/R)_i:=\tm^i/(\tm^i\cap R)+\tm^{i+1};\]
-furthermore he notices that:
+furthermore he notices in \cite[Appendix A]{SMY1} that:
 \begin{enumerate}
 \item $m+1=\delta(p)=\sum_{i\geq 0}\dim_\k(\tR/R)_i;$
 \item $2=g=\sum_{i\geq 1}\dim_\k(\tR/R)_i;$
 \item if $(\tR/R)_i=(\tR/R)_j=0$ then $(\tR/R)_{i+j}=0$.
 \end{enumerate}
-The following facts will also turn out to be useful:
+The following observations will also be useful:
 \begin{enumerate}[resume]
  \item $\sum_{i\geq k}(\tR/R)_i$ is a grading of $\tm^k/(\tm^k\cap R)$;
- \item the following exact sequence holds:
- \[ 0\to \frac{\tm^k\cap R}{\tm^{k+1}\cap R}\to \frac{\tm^k}{\tm^{k+1}}\to \left(\tR/R\right)_k\to 0\]
+ \item there is an exact sequence of $R/\m=\k$-modules:
+ \[ 0\to A_k:=\frac{\tm^k\cap R}{\tm^{k+1}\cap R}\to \frac{\tm^k}{\tm^{k+1}}\to \left(\tR/R\right)_k\to 0\]
 \end{enumerate}
-We proceed by increasing number of branches.
-\begin{enumerate}[label={\textbf{Case $m=$}\arabic*:}]
-
- \item Notice that in the unibranch case $\dim_\k(\tR/R)_1\leq 1$, hence equality must hold (by observation (3) above). We are thus left with two cases:
- \begin{itemize}[leftmargin=0pt]
-  \item either $\dim_\k(\tR/R)_2=1$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 3$: in this case $\tm^3\subseteq\m$ by observation (4). In facts by (5) we see that \[\tm^3=\m\], hence $R\simeq\k[[t^3,t^4,t^5]],$ a non-Gorenstein singularity.
+\begin{lem}
+ There are two unibranch curve singularities of genus two; only one of them is Gorenstein, the $A_4$-singularity or \emph{ramphoid cusp}: $V(y^2-x^5)\subseteq\Aaff^2_{x,y}$.
+\end{lem}
+\begin{proof}
+ In the unibranch case $\dim_\k(\tR/R)_1\leq 1$, hence equality must hold (by observation (3) above). We are left with two cases:
+ \begin{itemize}[leftmargin=15pt]
+  \item either $\dim_\k(\tR/R)_2=1$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 3$: in this case $\tm^3\subseteq\m$ by observation (4). In facts by (5) we see that $\tm^3=\m$, hence $R\simeq\k[[t^3,t^4,t^5]],$ a spatial non-Gorenstein singularity.
   
-  \item or $\dim_\k(\tR/R)_3=1$ and $\dim_\k(\tR/R)_i=0$ for $i=2$ and for all $i\geq 4$: in this case $\tm^4\subseteq\m$ by observation (4). On the other hand from $\dim_\k(\tm^2\cap R/\tm^3\cap R)=1$ we deduce that there is a generator of degree $2$, and from $\dim_\k(\tm^3\cap R/\tm^4\cap R)=0$ there is none of degree $3$; so we see that \[\m/\m^2=\langle t^2,t^5\rangle,\] i.e. $R\simeq\k[[x,y]]/(x^5-y^2)$.
+  \item Or $\dim_\k(\tR/R)_3=1$ and $\dim_\k(\tR/R)_i=0$ for $i=2$ and for all $i\geq 4$: in this case $\tm^4\subseteq\m$ by observation (4). On the other hand from $\dim_\k(\tm^2\cap R/\tm^3\cap R)=1$ we deduce that there is a generator of degree $2$, and from $\dim_\k(\tm^3\cap R/\tm^4\cap R)=0$ there is none of degree $3$; so we see that \[\m/\m^2=\langle t^2,t^5\rangle,\] i.e. $R\simeq\k[[x,y]]/(x^5-y^2)$, as anticipated.
  \end{itemize}
+\end{proof}
 
- 
- \item This time we have three cases:
+
+ \begin{comment}
+ In case $m=2$ we have three cases:
  \begin{itemize}[leftmargin=0pt]
   \item $\dim_\k(\tR/R)_1=2$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 2$: in this case $\tm^2\subseteq\m$ by observation (4); in facts they are equal. Then \[\m/\m^2=\langle t_1^2,t_1^3,t_2^2,t_2^3\rangle\] is the transversal union of two cusps in $\Aaff^4_\k$.
   \item $\dim_\k(\tR/R)_1=\dim_\k(\tR/R)_2=1$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 3$: in this case $\tm^3\subseteq\m$ by observation (4).
@@ -191,7 +254,7 @@ We proceed by increasing number of branches.
   \item[$n=3, m=3$] The same type of arguments we have been using so far shows that in this case we get again the planar singularity $x(y^2-x^3).$
   \end{description}
  \end{itemize}
-\end{enumerate}
+
 
 \begin{remark}
 It seems that the genus $2$ case is significantly more difficult that the genus $1$ due to the fact that in this case we need to consider non homogeneous generators. It does seem hopeless to perform the classification for an arbitrary number of branches.
@@ -199,20 +262,18 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
  This is clear if we look at the factorisation of the normalisation $R\hookrightarrow \widetilde{R}=k[[t_1]]\oplus k[[t_2]]$ 
  through $R\hookrightarrow R_1\oplus \R_2\hookrightarrow \widetilde{R},$ where 
  the first partial normalisation correspond to separate the branches. Algebraically this can be achieved considering the $k$ subvector space $K^{\rm{br}}$ of $\widetilde{R}/R$ generated by those conditions involving only one branch at the time an then taking the Kernel of $\widetilde{R}\to K^{\rm{br}}.$
-\end{remark}
-
+\end{remark}\end{comment}
+Let $I=(R:\tilde R)=\operatorname{Ann}_R(\tilde R/R)$ be the conductor ideal. Recall (see e.g. \cite[Theorem 6.4]{Hun}) that $(C,x)$ is Gorenstein iff :
+\[\dim_\k(R/I)=\dim_\k(\tR/R)(=\delta).\]
 \begin{prop}\label{prop:classification}
- There is a unique Gorenstein singularity of genus two that is unibranch; for every number of branches $m\geq 2$, there are two.
+ For every fixed integer $m\geq 2$, there are exactly two Gorenstein curve singularities of genus two with $m$ branches.
 \end{prop}
 \begin{proof}
- I discuss the case $m\geq 3$. Recall that $\delta=m+g-1=m+1=\dim_\k(\tR/R)$. The latter is filtered by $(\tR/R)_k:=\frac{\tm^k}{(\tm^k\cap R)+\tm^{k+1}}$, which fit in the exact sequence
- \[0\to A_k:=\frac{\tm^k\cap R}{\tm^{k+1}\cap R}\to \frac{\tm^k}{\tm^{k+1}}\to(\tR/R)_k\to 0.\]
- All of them are $R/\m=\k$-modules. The middle term has dimension $m$ for every $k$, and $A_0=\k$, so $\dim_{\k}(\tR/R)_0=m-1$. On the other hand \[(\tR/R)_i=0,(\tR/R)_j=0\Rightarrow(\tR/R)_{i+j}=0,\]
- so we only have three possibilities as for what the dimension of $(\tR/R)_i,i=1,2,3,$ can be. Let $I_p$ denote the conductor ideal.
+ We wish to find a basis for $\m/\m^2$, because a map of complete local rings that is surjective on cotangent spaces is surjective. We use the filtrations above.
  
- \textbf{Case I}: $(2,0,0)$. In this case $\tm^2\subseteq I_p$, so (by the Gorenstein assumption) $m+1=\delta=\dim_\k(R/I_p)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_k A_1=m-1$, contradiction.
+ \textbf{Case I}: $(2,0,0)$. We see that $\tm^2\subseteq I$, so (by the Gorenstein assumption) $m+1=\delta=\dim_\k(R/I)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_\k A_1=m-1$, contradiction. (In this case the singularity is decomposable, see \cite[Proposition 2.1]{AFSGm}.)
  
- \textbf{Case II}: $(1,1,0)$. In this case $\tm^3\subseteq I_p$. We are going to write down the $m-1$ generators of $A_1$ ($\operatorname{mod} \tm^3$). The first one, call it, $x_1$, has a non-trivial linear term in at least one of the variables, wlog $t_1$. We can therefore change coordinates in $t_1$ and make it into the form:
+ \textbf{Case II}: $(1,1,0)$. We have $\tm^3\subseteq I$. We are going to write down the $m-1$ generators of $A_1$ ($\operatorname{mod} \tm^3$). The first one, call it, $x_1$, has a non-trivial linear term in at least one of the variables, wlog $t_1$. We can therefore change coordinates in $t_1$ and make it into the form:
  $x_1=t_1\oplus p_{1,2}(t_2)\oplus\ldots\oplus p_{1,m}(t_m) \mod\tm^3.$ Now we can use $x_1$ and $x_1^2$ to make the second generator start with a $0$. It will still have a linear term independent of $t_1$, say non-trivial in $t_2$. Now by changing coordinates in the latter, we can write $x_2=0\oplus t_2\oplus\ldots\oplus p_{1,m}(t_m) \mod\tm^3.$ Also notice that, by taking a linear combination with $x_2$ and $x_2^2$, we may assume that $x_1=t_1\oplus0\oplus p_{1,3}(t_3)\oplus\ldots\oplus p_{1,m}(t_m)\mod\tm^3$. Therefore, by Gaussian elimination and coordinate change, we may write
  \begin{align*}
   x_1= & t_1\oplus0\oplus\ldots\oplus\alpha_{1,m}t_m+\beta_{1,m}t_m^2\\
@@ -220,7 +281,7 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
   &\ldots\\
   x_{m-1}= & 0\oplus\ldots\oplus t_{m-1}\oplus\alpha_{m-1,m}t_m+\beta_{m-1,m}t_m^2\\
  \end{align*}
- ($\operatorname{mod}\tm^3$). We must have $R/I_p=\langle 1,x_1,\ldots,x_{m-1},y\rangle$ by the Gorenstein condition (if $x_i\in I_p$, then $t_i\in R$, and it is then easy to see that the singularity is decomposable). Now $x_i^2\in I_p$ for all but at most one $i$, say $i=1$. Then $t_i^2\in R$ for $i=2,\ldots,m-1$. If $\alpha_{i,m}\neq 0$ for some $i$ in this range, then $t_m^2\in R$ as well, so $t_{m-1}^2=x_{m-1}^2-O(t_m^2)\in R$, contradicting $\dim_\k(\tR/R)_2=1$. Therefore $\alpha_{i,m}=0$ for $i\in\{2,\ldots,m-1\}$. If $\alpha_{1,m}=0$, then we need a further generator of $\m/\m^2$, namely $z=0\oplus\ldots\oplus t_m^3$. In this case, though, both $x_{m-1}^2$ and $z$ belong to $I_p$, so $\dim_k(R/I_p)=m$, and the singularity cannot be Gorenstein. Finally, if $\alpha_{1,m}\neq 0$, by changing coordinates in $t_m$ and scaling each generator, we find:
+ ($\operatorname{mod}\tm^3$). We must have $R/I=\langle 1,x_1,\ldots,x_{m-1},y\rangle$ by the Gorenstein condition (if $x_i\in I$, then $t_i\in R$, and it is then easy to see that the singularity is decomposable). Now $x_i^2\in I$ for all but at most one $i$, say $i=1$. Then $t_i^2\in R$ for $i=2,\ldots,m-1$. If $\alpha_{i,m}\neq 0$ for some $i$ in this range, then $t_m^2\in R$ as well, so $t_{m-1}^2=x_{m-1}^2-O(t_m^2)\in R$, contradicting $\dim_\k(\tR/R)_2=1$. Therefore $\alpha_{i,m}=0$ for $i\in\{2,\ldots,m-1\}$. If $\alpha_{1,m}=0$, then we need a further generator of $\m/\m^2$, namely $z=0\oplus\ldots\oplus t_m^3$. In this case, though, both $x_{m-1}^2$ and $z$ belong to $I$, so $\dim_k(R/I)=m$, and the singularity cannot be Gorenstein. Finally, if $\alpha_{1,m}\neq 0$, by changing coordinates in $t_m$ and scaling each generator, we find:
  \begin{align}\label{coordII}
  \begin{split}
   x_1= & t_1\oplus0\oplus\ldots\oplus t_m\\
@@ -229,7 +290,7 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
   x_{m-1}= & 0\oplus\ldots\oplus t_{m-1}\oplus t_m^2.
  \end{split}
  \end{align}
- We may check that $R/I_p=\langle 1,x_1,\ldots,x_{m-1},x_1^2\rangle$ and $\tR/R$ is of type $(1,1,0)$. In the case $m=2$, we need an extra generator $y=t_2^3$. Equations are given by
+ We may check that $R/I=\langle 1,x_1,\ldots,x_{m-1},x_1^2\rangle$ and $\tR/R$ is of type $(1,1,0)$. In the case $m=2$, we need an extra generator $y=t_2^3$. Equations are given by
  \begin{itemize}
   \item $y(y-x_1^3)$ if $m=2$ ($A_5$-singularity);
   \item $x_1x_2(x_2-x_1^2)$ if $m=3$ ($D_6$-singularity);
@@ -237,7 +298,7 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
  \end{itemize}
 
  
- \textbf{Case III}: $(1,0,1)$. We have $\tm^4\subseteq I_p$. By an argument similar to the above, we write generators for $A_1$ as $x_i=\ldots\oplus t_i\oplus\ldots \oplus\alpha_{i,m}t_m+\beta_{i,m}t_m^2+\gamma_{i,m}t_m^3$, for $i=1,\ldots,m-1$. Then $R/I_p=\langle 1,x_1,\ldots,x_{m-1},y\rangle$. For all but at most one $i$, say $i=1$, $x_i^2\in I_p$. On the other hand $t_m^3\notin R$, because otherwise $t_i^3=x_i^3-\alpha_{i,m}^3t_m^3+O(t_m^4)$ belongs to $R$ as well, contradicting $\dim_\k(\tR/R)_3=1$. We deduce that $\alpha_{i,m}=0$ for $i=2,\ldots,m-1$. If $\alpha_{1,m}\neq0$, by changing coordinates in $t_m$, we could write $x_1=t_1\oplus\ldots\oplus t_m$. But $x_1^3\in I_p$ implies $t_m^3\in R$. Therefore $\alpha_{1,m}=0$ and, up to a coordinate change, we may write $x_1=t_1\oplus\ldots\oplus t_m^2$. By $\dim_\k(\tR/R)_2=0$ we find another generator $z=t_m^2+\gamma_zt_m^3$ of $\m/\m^2$. We can use $z$ to remove all the $t_m^2$ pieces from $x_1,\ldots,x_{m-1}$. Finally, we change coordinates in $t_m$ so that $z=t_m^2$, and we scale all the previously found generators so that
+ \textbf{Case III}: $(1,0,1)$. We have $\tm^4\subseteq I$. By an argument similar to the above, we write generators for $A_1$ as $x_i=\ldots\oplus t_i\oplus\ldots \oplus\alpha_{i,m}t_m+\beta_{i,m}t_m^2+\gamma_{i,m}t_m^3$, for $i=1,\ldots,m-1$. Then $R/I=\langle 1,x_1,\ldots,x_{m-1},y\rangle$. For all but at most one $i$, say $i=1$, $x_i^2\in I$. On the other hand $t_m^3\notin R$, because otherwise $t_i^3=x_i^3-\alpha_{i,m}^3t_m^3+O(t_m^4)$ belongs to $R$ as well, contradicting $\dim_\k(\tR/R)_3=1$. We deduce that $\alpha_{i,m}=0$ for $i=2,\ldots,m-1$. If $\alpha_{1,m}\neq0$, by changing coordinates in $t_m$, we could write $x_1=t_1\oplus\ldots\oplus t_m$. But $x_1^3\in I$ implies $t_m^3\in R$. Therefore $\alpha_{1,m}=0$ and, up to a coordinate change, we may write $x_1=t_1\oplus\ldots\oplus t_m^2$. By $\dim_\k(\tR/R)_2=0$ we find another generator $z=t_m^2+\gamma_zt_m^3$ of $\m/\m^2$. We can use $z$ to remove all the $t_m^2$ pieces from $x_1,\ldots,x_{m-1}$. Finally, we change coordinates in $t_m$ so that $z=t_m^2$, and we scale all the previously found generators so that
  \begin{align}\label{coordIII}
  \begin{split}
   x_1= & t_1\oplus0\oplus\ldots\oplus t_m^3\\
@@ -247,7 +308,7 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
   x_m= & 0\oplus\ldots\oplus t_m^2.
   \end{split}
  \end{align}
- We may check that $R/I_p=\langle 1,x_1,\ldots,x_{m-1},x_m\rangle$ and $\tR/R$ is of type $(1,0,1)$. The case $m=1$ is given by the subalgebra $\k[t^2,t^5]\subseteq\k[t]$. Equations are given by
+ We may check that $R/I=\langle 1,x_1,\ldots,x_{m-1},x_m\rangle$ and $\tR/R$ is of type $(1,0,1)$. The case $m=1$ is given by the subalgebra $\k[t^2,t^5]\subseteq\k[t]$. Equations are given by
  \begin{itemize}
   \item $x^5-y^2$ if $m=1$ ($A_4$-singularity or \emph{ramphoid cusp});
   \item $y(y^3-x^2)$ if $m=2$ ($D_5$-singularity);
@@ -257,7 +318,11 @@ It seems that the genus $2$ case is significantly more difficult that the genus 
 \end{proof}
 
 \begin{rem}
- Notice that singularities of type II do appear in the miniversal deformation of singularities of type III, and viceversa. This can be seen for low values of $m$, thanks to a beautiful result of Grothendieck:
+ Not-necessarily Gorenstein singularities can be obtained by gluing various Gorenstein singularities of genus $\leq 2$ along subschemes of length $\leq 3$. Classifying all of them would not necessarily be easy.
+\end{rem}
+
+\begin{rem}
+ Notice that singularities of type II do appear in the miniversal family of singularities of type III, and viceversa. This can be seen for low values of $m$, thanks to a beautiful result of Grothendieck:
  \begin{thm}
   Let $(C,p)$ be a singularity of ADE type. Singularities that appear in the miniversal deformation of $(C,p)$ are all and only those ADE, whose Dynkin diagram can be obtained as a full subgraph of the diagram of $(C,p)$.
  \end{thm}
@@ -492,7 +557,7 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
  
  Condition \eqref{cond:aut} translates to: the locus where the automorphism group is unramified is open in the base.
  
- The other conditions are topological, hence constructible. With Noetherian assumptions, it is enough to check their openness over a dvr scheme. Assume that the geometric generic fiber $C_{\bar\eta}$ contains two genus one subcurve $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$; their closures $E_1$ and $E_2$ in $\mathcal C$ are then flat families of genus one curves over $\dvr$. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are disconnected, then so are $E_1$ and $E_2$, by local constancy of the number of connected components of fibers of a flat proper morphism with geometrically normal fibers. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are joined by a (disconnecting) node $q_{\bar\eta}$, then so are $E_{1,0}$ and $E_{2,0}$; indeed, the unique limit of $q_{\bar\eta}$ must be a singular point of the projection, but cannot be any worse than a node by local constancy of the arithmetic genus. Finally, if $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ share a branch, then so do $E_{1,0}$ and $E_{2,0}$; on the other hand, if $E_{i,\bar\eta}$ has more than one branch, then so does $E_i$. Similarly, if $C_{\bar\eta}$ contains only one subcurve of genus one, with two nodes joined by a rational chain, so does $C_0$. The upshot of this discussion is that
+ The other conditions are topological, hence constructible. With Noetherian assumptions, it is enough to check their openness over a dvr scheme. Assume that the geometric generic fiber $C_{\bar\eta}$ contains two genus one subcurve $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$; their closures $E_1$ and $E_2$ in $\mathcal C$ are then flat families of genus one curves over $\dvr$. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are disconnected, then so are $E_1$ and $E_2$, by local constancy of the number of connected components of fibers of a flat proper morphism with \textcolor{red}{geometrically normal} fibers. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are joined by a (disconnecting) node $q_{\bar\eta}$, then so are $E_{1,0}$ and $E_{2,0}$; indeed, the unique limit of $q_{\bar\eta}$ must be a singular point of the projection, but cannot be any worse than a node by local constancy of the arithmetic genus. Finally, if $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ share a branch, then so do $E_{1,0}$ and $E_{2,0}$; on the other hand, if $E_{i,\bar\eta}$ has more than one branch, then so does $E_i$. Similarly, if $C_{\bar\eta}$ contains only one subcurve of genus one, with two nodes joined by a rational chain, so does $C_0$. The upshot of this discussion is that
  \[\lvert E_{i,\bar\eta}\cap\overline{C_{\bar\eta}\setminus E_{i,\bar\eta}}\rvert=\lvert E_{i,0}\cap\overline{C_{0}\setminus E_{i,0}}\rvert.\]
  The number of markings on $E_i$ is also constant. Hence we can deduce condition \eqref{cond:lev1} for $C_{\bar\eta}$ from the same condition on $C_0$. Condition \eqref{cond:lev2} follows as in Remark \ref{rmk:lev1solev2}. Condition \eqref{cond:lev2} can be proved analogously when there is no subcurve of genus one.
  
@@ -522,7 +587,49 @@ In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice
  
 \end{prop}
 \begin{proof}
- \emph{Existence of limits.} We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
+ \emph{Existence of limits.}
+  We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails.
+  
+  Now check whether $p_1$ afferes to a Weierstrass point or not: in the former case, change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^3$, in the latter with $\pi^{\prime\prime}\mapsto(\pi^\prime)^2$; then resolve. This has the effect of replacing every node with a chain of two (resp. one) $-2$-curve. It is a technical expedient we find useful in the construction. We drop the primes from notation.
+  
+  Next we identify a (not necessarily connected) subcurve that needs be contracted in order to find the $m$-stable limit. The process can be thought of as drawing expanding circles on the dual graph (except, they are not always expanding). We may at any point blow-up the curve at a marking on the central fiber, and consider the strict transform of the corresponding section; thus markings can effectively be considered as legs going to infinity in the dual graph.
+  
+  We start from the case that the core $Z$ is irreducible. Suppose that the level of $Z$ is $l\leq m$; then we may contract (a subcurve containing) $Z$ as follows. Let $q_1$ the point of $Z$ closest to $p_1$.
+ \begin{enumerate}
+  \item\label{caseW} If $(Z,q_1)$ is Weierstrass, call $S_h$ the $-2$-curves closest to $\tilde Z$, and $R_h$ the second closest. Consider the line bundle
+  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(3\tilde Z+2\sum_{h=1}^{l_j-1}S_h+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j}).\]
+  By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I\!I_{l}$ (which works out by our initial choice of base-change), and $p_1$ is connected to the singular branch.
+  \item\label{casenW} If $(Z,q_1)$ is not Weierstrass, call $R_h$ the $-2$-curves closest to $\tilde Z$. In case there is no rational tail attached to $\bar q_1$, blow up the latter point. Consider then the line bundle
+  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(2\tilde Z+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j});\]
+  By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I_{l}$ or $I\!I_{l+1}$ (in which case one of the twin branches is dangling), and $p_1$ is connected to one of the twin branches.
+ \end{enumerate}
+ More generally, in case \ref{caseW} we may draw circles around $Z$ that at each step expand by $1$ along the tail containing $p_1$ and by $3$ along all other tails. Note that at each step the number of branches is the same as the level one step before that thanks to our base-change choice. If $l$ denotes the radius of the circle along $T_1$, the line bundle
+ \[\omega_{\mathcal C}\left(3lZ+\sum_{R_i\in T_1}3(l-\operatorname{dist}(R_i,Z))R_i+\sum_{R_i\not\in T_1}(l-\operatorname{dist}(R_i,Z))R_i+\sigma_1+\ldots+\sigma_n\right)\]
+ performs the desired contraction.
+  
+ Suppose the minimal subcurve of genus two $Z$ contains two subcurves of genus one; call $E_1$ and $E_2$ the minimal such, and assume that $p_1$ afferes to $E_1$. Start drawing circles around $E_2$. If $E_2$ already has level bigger than $m+1$, stop with the circle of radius $0$. Otherwise grow the radius by $1$ at a time. The curve to be contracted is the inner disk, so the number of branches is measured by the vertices lying on the circle, and the level by the number of exciding edges. Both are non-decreasing with the radius. We exmine the Weierstrass case; the conjugate is entirely analogous. Note that at this stage we perform one meaningful step every three, due to our choice of base-change.
+  \begin{enumerate}
+   \item If level $\geq m+2$ is reached before the circle touches $E_1$, take the next possible $\equiv 2\mod 3$ radius, then contract the inner circle by the line bundle
+   \[ \omega_{\mathcal C}((l_2+1)E_2+\sum_i \max(l_2+1-\operatorname{dist}(E_2,R_i),0)R_i\oplus\sigma_1\oplus\ldots\oplus\sigma_n)\]
+   where $l_2$ is the radius of the circle around $E_2$. Consider now $E_1$: if $\lev(E_1)\leq m+1$ start expanding the circle around it. Again, either level $\geq m+2$ can be reached before touching $E_2$, or, by contracting the maximal balanced subcurve of genus one containing $E_1$, we produce a curve having two genus one singularities that share a branch. Notice that in this case $p_1$ afferes to the only genus one subcurve that may have level $\leq m+1$.
+   \item Otherwise, one step before reaching $E_1$, we may contract to produce a genus one singularity with a genus one branch. If the level is $\leq m$ at this point, consider the genus two subcurve $Z$ as a whole. Observe that the line bundle we would like to consider at this point starts with weight $3$ instead of $1$ along the tail connecting $p_1$ to $E_1$. This means that it will be supported two steps further along each rational tail departing from $Z$ except the tail containing $p_1$. Note also that getting to include $E_2$ happens at a step $\equiv 0 \mod 3$, therefore including two more components on each rational tail will not make the number of branches grow above $m$. We may now continue as before, at every step expanding the circle by $1$ along $T_1$ and by $3$ along all other rational tails.
+  \end{enumerate}
+ In case $p_1$ is equidistant from $E_1$ and $E_2$ (it must then affere to the rational chain joining them), start by expanding a circle around the one with lower level; if they have the same level, expand them simultaneously. If at a later stage $p_1$ becomes closer to one of the two circles, proceed as above.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ \begin{comment} We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
  
  We may construct a zigzag diagram of birational morphisms of curves over $\dvr$, never altering the generic fiber:
  \bcd
@@ -535,7 +642,7 @@ In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice
   \item\label{cond:regnodes} the total space of $\mathcal C_i$ is regular at the nodes of $\mathcal C_{i,0}$;
   \item every nodally attached rational component of $\mathcal C_i$ has at least two special points;
   \item if $\mathcal C_i$ contains two subcurves of genus one, then so do all $\mathcal C_j, j\leq i$ and their minimal level sequence is non-decreasing; on the other hand, if $\mathcal C_i$ contains only subcurve of genus one, then so do all $\mathcal C_j, j\leq i$, and their minimal level sequence is non-decreasing;
-  \item the level of a minimal subcurve of genus two is nono-decreasing;
+  \item the level of a minimal subcurve of genus two is non-decreasing;
   \item $\mathcal C_t$ contains a genus two singularity and no disconnecting nodes.
  \end{enumerate}
  Here is the procedure:
@@ -557,7 +664,7 @@ In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice
   \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(2\tilde Z+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j});\]
   it is indeed a line bundle, again by assumption \ref{cond:regnodes}. By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I_{l_i+1}$, and $p_1$ is connected to one of the twin branches.
  \end{enumerate}
- Notice again that the number of rationally attached rational components strictly decreases at every step, hence after finitely many steps we obtain $\mathcal C_{t,0}=Z$ and there are no disconnecting nodes.
+ Notice again that the number of rationally attached rational components strictly decreases at every step, hence after finitely many steps we obtain $\mathcal C_{t,0}=Z$ and there are no disconnecting nodes.\end{comment}
  \medskip
  
  \emph{Uniqueness of limits.} By the theorem of semistable reduction \cite{DM}, we may find a diagram
@@ -576,7 +683,21 @@ In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice
  
  \textbf{Claim:} We may assume that $\mathcal C^{ss}$ contains either no $-1$-curve, or only one, which is contracted by neither $\phi$ nor $\phi^\prime$.
  
- If there is a $-1$-curve contracted by both, $\phi$ and $\phi^\prime$ factor through a smaller regular model. Assume there is a $-1$-curve not contracted by $\phi$. Then, by stability, its image is one of the special branches of a dangling singularity of type $I\!I_{l+1}$, $l\leq m$; call $x$ the singular point, and $Z=\phi^{-1}(x)$. We may then write $\mathcal C_0=Z\cup R_0\cup\ldots\cup R_l$, with $R_0=R$, and $R_1$ (the tail including) the preimage of the other special branch, which contains $p_1$. Is it possible that $\phi^\prime$ contracts a different subcurve than $Z$? By the previous claim, $\phi^\prime$ has to contract a subcurve of genus two $Z^\prime$. If $Z^\prime$ contains $R$ and is of shape $I\!I$, then it is strictly larger than $Z$, therefore its contraction will not be dangling and it will have at least $m+1$ branches, by the condition on the level of the minimal genus two subcurve of $\mathcal C_0$. Otherwise $Z^\prime$ can be of shape $I\!I\!I$; this forces $R_0$ and $R_1$ to meet on a trunk $T$, that is attached to a Weierstrass point of $Z$. If $Z^\prime$ starts from the top of $T$ or further away from the core along $R_1$, then $Z^\prime$ contains $Z$ strictly, therefore $\mathcal C^\prime_0$ will have a singularity of type $I\!I\!I_{\geq m+1}$, by the assumption on the level of the minimal subcurve of genus two of $\mathcal C_0$. On the other hand, if $Z^\prime$ starts closer to the core than the top of $T$, then the level of the minimal subcurve of genus two of $\mathcal C^\prime$ will be at most $m$.
+ If there is a $-1$-curve contracted by both, $\phi$ and $\phi^\prime$ factor through a smaller regular model. Assume there is a $-1$-curve not contracted by $\phi$. Then, by stability, its image is one of the special branches of a dangling singularity of type $I\!I_{l+1}$, $l\leq m$; call $x$ the singular point, and $Z=\phi^{-1}(x)$. We may then write $\mathcal C_0=Z\cup R_0\cup\ldots\cup R_l$, with $R_0=R$, and $R_1$ (the tail including) the preimage of the other special branch, which contains $p_1$. Is it possible that $\phi^\prime$ contracts a different subcurve than $Z$? By the previous claim, $\phi^\prime$ has to contract a subcurve of genus two $Z^\prime$. If $Z^\prime$ contains $R$ and is of shape $I\!I$, then it is strictly larger than $Z$, therefore its contraction will not be dangling and it will have at least $m+1$ branches, by the condition on the level of the minimal genus two subcurve of $\mathcal C_0$. Otherwise $Z^\prime$ can be of shape $I\!I\!I$; this forces $R_0$ and $R_1$ to meet on a trunk $T$, that is attached to a Weierstrass point of the core of $\mathcal C^{ss}_0$. If $Z^\prime$ starts from the top of $T$ or further away from the core along $R_1$, then $Z^\prime$ contains $Z$ strictly, therefore $\mathcal C^\prime_0$ will have a singularity of type $I\!I\!I_{\geq m+1}$, by the assumption on the level of the minimal subcurve of genus two of $\mathcal C_0$. On the other hand, if $Z^\prime$ starts closer to the core than the top of $T$, then the level of the minimal subcurve of genus two of $\mathcal C^\prime$ will be at most $m$. In fact this argument proves more, namely that if $\mathcal C_0$ has a dangling $I\!I$ singularity, then the exceptional loci of $\phi$ and $\phi^\prime$ coincide, therefore $\mathcal C\cong\mathcal C^\prime$ (see below).
+ 
+ \textbf{Claim:} The exceptional loci of $\phi$ and $\phi^\prime$ coincide.
+ 
+ If $\mathcal C_0$ has only nodes, then so does $\mathcal C^\prime_0$, and we can conclude by the uniqueness part of the stable reduction theorem \cite{DM}. The meat is in the higher genus components of the exceptional loci.
+ 
+ If $\mathcal C_0$ has a genus one singularity $x$, then it cannot have a genus two singularity, so neither can $\mathcal C^\prime_0$. If $\mathcal C_0$ has a second genus one singularity $y$, let $E_1=\phi^{-1}(x)$ and $E_2=\phi^{-1}(y)$; they are disjoint balanced subcurves of genus one and level $\leq m+1$ in $\mathcal C^{ss}_0$, therefore $\phi^\prime$ must contract them. Enlarging the contraction radius of any one of them would produce a singularity with at least $m+2$ branches, unless by enlarging we make them touch, in which case we should contract to a genus two singularity, which is also not allowed. The case of a single genus one singularity with a genus one branch, or with a disjoint subcurve of genus one, is entirely similar. In the case of a genus one singularity with two branches joined by a (possibly empty) rational chain $R$, notice that the argument that expanding the contraction radius increases the number of branches of $\phi^\prime(E^\prime)$ above $m+1$ may fail in the case that the contraction circle includes the entire $R$, but in this case we would find a genus two singularity in $\mathcal C^\prime_0$.
+ 
+ Finally, if $\mathcal C_0$ has a genus two singularity $x$ - the case of a dangling $I\!I_{m+1}$ was dealt with above -, write $\mathcal C^{ss}_0=Z\cup R_1\cup\ldots\cup R_l$, with $Z=\phi^{-1}(x)$ and $l\leq m$. Now $\phi^\prime(Z)$ must be a point $x^\prime$, by stability considerations. If $p_1$ afferes to a non-Weierstrass point of $Z$, $x^\prime$ must be of type $I\!I$; therefore $Z^\prime=(\phi^\prime)^{-1}(x^\prime)$ has shape $I\!I$, which is determined by one parameter. Since $Z\subsetneq Z^\prime$ implies $x^\prime$ has at least $m+1$ branches by level considerations, we conclude $Z=Z^\prime$. If instead $p_1$ afferes to a Weierstrass point, there are multiple possibilities. If $x$ is type $I\!I\!I$, and $x^\prime$ as well, the argument is as before; if instead $x^\prime$ is of type $I\!I$, notice that $Z^\prime$ must start further away from the core than $Z$ (otherwise $Z^\prime\subsetneq Z$, hence the level of $\mathcal C^\prime_0$ is not enough), but then $Z\subsetneq Z\prime$, and the singularity of $\mathcal C^\prime_0$ is too bad. The other cases are symmetric.
+ 
+ The claim now follows from the observation that the exceptional loci of $\phi$ and $\phi^\prime$ are the fibers over higher genus singularity (call them $Z$) union those rational curves with only two special points that are disjoint from $Z$.
+ 
+ \textbf{Claim:} The generic isomorphism between $\mathcal C$ and $\mathcal C^\prime$ extends over $\dvr$.
+ 
+ Follows from \cite[Lemma1.13]{Debarre}.
 \end{proof}
 
 \begin{dfn}
@@ -587,7 +708,7 @@ In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice
   \item\label{cond:lev1} If $E$ is a nodally attached subcurve of arithmetic genus one, then $\lev(E)>m+1$.
   \item\label{cond:aut} $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$.
   \item\label{cond:p1} If $C$ contains a singularity of genus two, $p_1$ is connected (through a rational chain) to one of the distinguished branches.
-  \item Every subcurve of genus zero with a non-Gorenstein singularity either is disconnecting, or contains $p_1$.
+  \item If there is a Gorenstein subcurve of genus one and level less than $m+2$, then it is not nodally attached and $p_1$ afferes to it.
  \end{enumerate}
 \end{dfn}
 \begin{rem}
