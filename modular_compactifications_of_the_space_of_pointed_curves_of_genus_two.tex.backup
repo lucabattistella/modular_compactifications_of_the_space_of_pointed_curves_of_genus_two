@@ -211,7 +211,7 @@ We will also find the following observations to be useful:
  \item there is an exact sequence of $R/\m=\k$-modules:
  \[ 0\to A_k:=\frac{\tm^k\cap R}{\tm^{k+1}\cap R}\to \frac{\tm^k}{\tm^{k+1}}\to \left(\tR/R\right)_k\to 0\]
 \end{enumerate}
-\begin{lem}
+\begin{lem}\label{lem:unibranch}
  There are two unibranch curve singularities of genus two; only one of them is Gorenstein, the $A_4$-singularity or \emph{ramphoid cusp}: $V(y^2-x^5)\subseteq\Aaff^2_{x,y}$.
 \end{lem}
 \begin{proof}
@@ -287,7 +287,7 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
  \begin{align}\label{coordII-cs}
  \begin{split}
   x_1= & t_1\oplus0\oplus\ldots\oplus\alpha_{1,m}t_m+\beta_{1,m}t_m^2\\
-  x_2= & 0\oplus t_2\oplus\ldots\oplus\beta_{2,m}\oplus t_m^2\\
+  x_2= & 0\oplus t_2\oplus\ldots\oplus\beta_{2,m}t_m^2\\
   &\ldots\\
   x_{m-1}= & 0\oplus\ldots\oplus t_{m-1}\oplus \beta_{m-1,m}t_m^2 \mod\tm^3,
  \end{split}
@@ -327,10 +327,10 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
   x_2= & 0\oplus t_2\oplus\ldots\oplus t_m^3\\
   &\ldots\\
   x_{m-1}= & 0\oplus\ldots\oplus t_{m-1}\oplus t_m^3\\
-  x_m= & 0\oplus\ldots\oplus t_m^2.
+  x_m= & 0\oplus\ldots\oplus t_m^2 \mod\tm^4.
   \end{split}
  \end{align}
- We may check that $R/I=\langle 1,x_1,\ldots,x_{m-1},x_m\rangle$ and $\tR/R$ is of type $(1,0,1)$. For $m=1$ we recover the ramphoid cusp. Equations are given by
+ We may check that $R/I=\langle 1,x_1,\ldots,x_{m-1},x_m\rangle$ and $\tR/R$ is of type $(1,0,1)$. For $m=1$ we recover the unique Gorenstein singularity of Lemma \ref{lem:unibranch}. Equations are
  \begin{itemize}
   \item $x^5-y^2$ if $m=1$ ($A_4$-singularity or \emph{ramphoid cusp});
   \item $y(y^3-x^2)$ if $m=2$ ($D_5$-singularity);
@@ -356,30 +356,36 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
 
 
 \section{Tangent sheaf and automorphisms}
-In this section we study the tangent sheaf of a genus two singularity. For a complete Gorenstein pointed curve of genus two, we translate the absence of infinitesimal automorphisms into a combinatorial condition.
+In this section we analyse the tangent sheaf of a genus two singularity. For a complete Gorenstein curve of genus two with markings, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial condition. The crimping space naturally makes its appearance in the process.
 
 
-\begin{prop}
- Describes the tangent sheaf of a genus two singularity in local coordinates.
-\end{prop}
+\begin{lem}
+Let $(C,p)$ be a Gorenstein curve singularity of genus two, with pointed normalisation $\nu\colon(\tilde C,\{p_i\}_{i=1,\ldots,m})\to (C,p)$, and assume $\operatorname{char}(\k)\neq 2,3,5$. There is a diagram of exact sequences of sheaves
+\bcd
+0\ar[r]  & \nu_*\Omega_{\tilde C}^\vee(-\sum_i 3p_i)\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i p_i)\ar[r]\ar[dr,phantom,"\Box"]  &\nu_*\bigoplus_i\Omega_{\tilde C}^\vee(-p_i)_{|2p_i}\ar[r]  & 0 \\
+0\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i 3p_i)\ar[r]\ar[u,equal]  & \Omega_C^\vee\ar[r]\ar[u] & \k^{\oplus m}\ar[r]\ar[u] & 0
+\ecd
+ The right-most vertical map admits an explicit description in local coordinates.
+\end{lem}
 \begin{proof}
- Let $\nu\colon\tilde C\to C$ be the normalisation map, and $K(\tilde C)$ the constant sheaf of rational functions on $\tilde C$. A section of $\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ is contained in $\Omega_C^\vee$ if and only if its image under the push-forward map
+ Let $K(\tilde C)$ denote the constant sheaf of rational functions on $\tilde C$. A section of $\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ is contained in $\Omega_C^\vee$ iff its image under the push-forward map
  \[\nu_*\colon\nu_*\hhom(\Omega_{\tilde C},K(\tilde C))\to \hhom(\Omega_C,K(\tilde C)) \]
- lies in the subspace $\hhom(\Omega_C,\OO_C)$. We may work formally around the singular point in the coordinates given above.
+ lies in the subspace $\hhom(\Omega_C,\OO_C)$. We may work locally around the singular point in the coordinates studied in the previous section.
 \begin{description}
- \item[$A_4$] In the coordinates $x=t^2,y=t^5$, the section $f(t)\frac{d}{dt}\in\nu_*\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ pushes forward to
- \[\nu_*\left(f(t)\frac{d}{dt}\right)=2tf(t)\frac{d}{dx}+5t^4f(t)\frac{d}{dy},\]
+ \item[$A_4$] In the coordinates $x=t^2+ct^3,y=t^4,z=t^5$ (they are redundant, but it will not matter in what follows), the section $f(t)\frac{d}{dt}\in\nu_*\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ pushes forward to
+ \[\nu_*\left(f(t)\frac{d}{dt}\right)=(2t+3ct^2)f(t)\frac{d}{dx}+4t^3f(t)\frac{d}{dy}+5t^4f(t)\frac{d}{dz},\]
  from which, writing $f(t)=f_0+f_1t+f_2t^2+O(t^3)$, we see that
- \[2tf(t),5t^4f(t)\in\hat\OO_{C,p}\Leftrightarrow f_0=f_2=0.\]
- \item[$A_5$] In the coordinates $x=t_1\oplus t_2,y=t_1^3$, the section $f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}$ pushes forward to
- \[\nu_*\left(f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}\right)=\left(f_1(t_1)\oplus f_2(t_2)\right)\frac{d}{dx}+3t_1^2f_1(t_1)\frac{d}{dy},\]
+ \[(2t+3ct^2)f(t),4t^3f(t),5t^4f(t)\in\hat\OO_{C,p}\Leftrightarrow f_0=0,cf_1+2f_2=0.\]
+ \item[$A_5$] In the coordinates $x=t_1\oplus at_2+bt_2^2,y=t_1^3$, the section $f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}$ pushes forward to
+ \[\nu_*\left(f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}\right)=\left(f_1(t_1)\oplus (a+2bt_2) f_2(t_2)\right)\frac{d}{dx}+3t_1^2f_1(t_1)\frac{d}{dy},\]
  from which, writing $f_i(t_i)=f_{i0}+f_{i1}t_i+f_{i2}t_i^2+O(t_i^3),i=1,2$, we see that
- \[f_1(t_1)\oplus f_2(t_2),3t_1^2f_1(t_1)\in\hat\OO_{C,p} \Leftrightarrow \begin{cases} f_{10}=f_{20}=0,\\ f_{11}=f_{21},\\ f_{12}=f_{22}.\end{cases}\]
- \item[$I\!I_{m\geq 3}$] In the coordinates of \eqref{coordII},
- \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\left(f_1(t_1)\oplus f_m(t_m)\right)\frac{d}{dx_1}+\sum_{i=2}^m\left(f_i(t_i)\oplus2t_mf_m(t_m)\right)\frac{d}{dx_i},\]
+ \[f_1(t_1)\oplus (a+2bt_2)f_2(t_2),3t_1^2f_1(t_1)\in\hat\OO_{C,p} \Leftrightarrow \begin{cases} f_{10}=f_{20}=0,\\ f_{11}=f_{21},\\ 2bf_{21}+af_{22}=a^2f_{12}.\end{cases}\]
+ \item[$I\!I_{m\geq 3}$] In the coordinates of \eqref{coordII-cs},
+ \begin{multline*}\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\left(f_1(t_1)\oplus(\alpha_{1,m}+2\beta_{1,m}t_m) f_m(t_m)\right)\frac{d}{dx_1}+\\
+ \sum_{i=2}^m\left(f_i(t_i)\oplus2\beta_{i,m}t_mf_m(t_m)\right)\frac{d}{dx_i},\end{multline*}
  hence we deduce that
- \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ 2f_{11}=f_{i1}=2f_{m1}, & \text{for } i=2,\ldots,m-1,\\ f_{12}=f_{m2}.\end{cases}\]
-  \item[$I\!I\!I_{m\geq 2}$] In the coordinates of \eqref{coordIII},
+ \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ 2f_{11}=f_{i1}=2f_{m1}, & \text{for } i=2,\ldots,m-1,\\ \beta_{1,m}f_{m1}+\alpha_{1,m}f_{m2}=\alpha_{1,m}^2f_{12}.\end{cases}\]
+  \item[$I\!I\!I_{m\geq 2}$] In the coordinates of \eqref{coordIII-cs},
  \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\sum_{i=1}^{m-1}\left(f_i(t_i)\oplus3t_m^2f_m(t_m)\right)\frac{d}{dx_i}+2t_mf_m(t_m)\frac{d}{dx_m},\]
  hence we deduce that
  \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ f_{i1}=3f_{m1}, & \text{for } i=1,\ldots,m-1,\\ f_{m2}=0.\end{cases}\]
@@ -389,7 +395,7 @@ In this section we study the tangent sheaf of a genus two singularity. For a com
 Recall Smyth's description of Gorenstein curves of genus one with no automorphisms \cite[Proposition 2.3, Corollary 2.4]{SMY1}.
 
 \begin{dfn}
- Let $(C,p_1,\ldots,p_n)$ be a pointed Gorenstein curve. A connected subcurve $D\subseteq C$ is said to be \emph{nodally attached} if $D\cap\overline{C\setminus D}$ consists of nodes only. Let us call a point \emph{special} if it is either a marking or a node. For a nodal and nodally attached subcurve $D$ with normalisation $\nu\colon \tilde D\to D$, pointed by $\nu^{-1}(\{p_1,\ldots,p_n\}\cap D)\cup (D\cap\overline{C\setminus D})\cup\{q\in D|q\text{ node of } D\}$, we shall say that \emph{DM stability holds} if every rational component has at least three special points, and every elliptic component has at least one. We say that $C$ is \emph{rDM} if DM stability holds for every nodal and nodally attached subcurve of $C$.
+ Let $(C,p_1,\ldots,p_n)$ be a pointed Gorenstein curve. A connected subcurve $D\subseteq C$ is said to be \emph{nodally attached} if $D\cap\overline{C\setminus D}$ consists of nodes only. Let us call a point \emph{special} if it is either a marking or a node. For a nodal and nodally attached subcurve $D$ with normalisation $\nu\colon \tilde D\to D$, pointed by $\nu^{-1}\left((\{p_1,\ldots,p_n\}\cap D)\cup (D\cap\overline{C\setminus D})\cup\{q\in D|q\text{ node of } D\}\right)$, we shall say that \emph{DM stability holds} if every rational component has at least three special points, and every elliptic component has at least one. We say that $C$ is \emph{rDM} if DM stability holds for every nodal and nodally attached subcurve of $C$.
 \end{dfn}
 
 \begin{cor}
@@ -405,7 +411,7 @@ Recall Smyth's description of Gorenstein curves of genus one with no automorphis
 \end{cor}
 
 \section{Dualising line bundle and semistable tails}
-This is the most delicate and combinatorially delicate section of the paper. We classify the nodal subcurves that can be contracted in a one-parameter smoothing in order to obtain a Gorenstein singularity of genus two. The upshot is that the shape of the curve depends on one parameter only, namely the distance of the distinguished (i.e. twin or singular) branches from the core (minimal subcurve of genus two), no matter what the latter is. This is going to play a key role in the proof that our moduli spaces are proper.
+This is the most technical and combinatorially delicate section of the paper. We classify the nodal subcurves that can be contracted in a one-parameter smoothing in order to obtain a Gorenstein singularity of genus two. The upshot is that the shape of the curve depends on one parameter only, namely the distance of the distinguished (i.e. twin or singular) branches from the core (minimal subcurve of genus two), no matter what the latter is. This is going to play a key role in the proof that our moduli spaces are proper.
 
 \begin{rem}
  Smyth's contraction lemma \cite[Lemma 2.13]{SMY1} carries over essentially unchanged.
