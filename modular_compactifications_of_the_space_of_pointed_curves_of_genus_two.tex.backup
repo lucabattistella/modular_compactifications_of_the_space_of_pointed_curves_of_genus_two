@@ -355,7 +355,7 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
 \end{dfn}
 
 
-\section{Tangent sheaf and automorphisms}
+\section{Tangent sheaf, crimping space, and automorphisms}
 In this section we analyse the tangent sheaf of a genus two singularity. For a complete Gorenstein curve of genus two with markings, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial condition. The crimping space naturally makes its appearance in the process.
 
 
@@ -386,11 +386,62 @@ Let $(C,p)$ be a Gorenstein curve singularity of genus two, with pointed normali
  hence we deduce that
  \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ 2f_{11}=f_{i1}=2f_{m1}, & \text{for } i=2,\ldots,m-1,\\ \beta_{1,m}f_{m1}+\alpha_{1,m}f_{m2}=\alpha_{1,m}^2f_{12}.\end{cases}\]
   \item[$I\!I\!I_{m\geq 2}$] In the coordinates of \eqref{coordIII-cs},
- \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\sum_{i=1}^{m-1}\left(f_i(t_i)\oplus3t_m^2f_m(t_m)\right)\frac{d}{dx_i}+2t_mf_m(t_m)\frac{d}{dx_m},\]
+ \begin{multline*}\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\sum_{i=1}^{m-1}\left(f_i(t_i)\oplus3\gamma_{i,m}t_m^2f_m(t_m)\right)\frac{d}{dx_i}+\\(2t_m+3\gamma_{m,m}t_m^2)f_m(t_m)\frac{d}{dx_m},\end{multline*}
  hence we deduce that
- \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ f_{i1}=3f_{m1}, & \text{for } i=1,\ldots,m-1,\\ f_{m2}=0.\end{cases}\]
+ \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ f_{i1}=3f_{m1}, & \text{for } i=1,\ldots,m-1,\\ 3\gamma_{m,m}f_{m1}+2f_{m2}=0.\end{cases}\]
 \end{description}
 \end{proof}
+
+From this description we see that the letters $\alpha,\beta$ and $\gamma$ will play a role in determining the automorphism group of a complete curve with markings. We recall some key concepts from F. van der Wyck's thesis.
+
+We work over $\k$. We can consider the stack $\mathcal S$ of reduced one-dimensional $\k$-algebras $R$, and the stack $\mathcal T$ of reduced 1d algebras with resolution $(R\hookrightarrow (S,J))$, where $S$ is a smooth one-dimensional $\k$-algebra, and $J$ is the radical of the conductor of $R\subseteq S$. Basically, $R$ is the (local) ring of a reduced curve with one singular point, $S$ is its normalisation, and $J$ is the ideal of the reduced fiber over the singular point of $\operatorname{Spec}(R)$. $\mathcal S$ and $\mathcal T$ are limit-preserving stacks over $\operatorname{Spec}(\k)$ \cite[Proposition 1.21]{vdW}. Furthermore, we may fix a reduced 1d algebra with resolution $\tau_0:(R_0\hookrightarrow(S_0,J_0))$, and consider the substack $\mathcal T(\tau_0)$ of reduced 1d algebras with singularity type $\tau_0$ (i.e. isomorphic to $\tau_0$ locally on both the base and the curve, see \cite[Definition 1.64]{vdW}; that various notions of ``locally'' coincide is proved in \cite[Proposition 1.50]{vdW}). There is a forgetful morphism $\mathcal T\to\mathcal S$, and the \emph{crimping space} of $\tau_0$ is defined to be the fiber over $R_0$ of the restriction of such morphism to $\mathcal T(\tau_0)$. The crimping space is a smooth $\k$-scheme \cite[Theorems 1.70 and 1.73]{vdW}; indeed, it is isomorphic to the quotient of $\Aut_{(S_0,J_0)/\k}$ by $\Aut_{(S_0,J_0)/R_0}$, the latter being the subgroup of automorphisms of the normalisation preserving the subalgebra of the singularity; moreover, the quotient can be computed after modding out the lowest power of $J$ that is contained in $R$ \cite[Theorem 1.53]{vdW}. Crimping spaces should be thought of as moduli for the normalisation map. %We shall compute the crimping space of the genus two singularities.
+
+\begin{lem}
+ The crimping space of a genus two singularity with $m$ branches is (a number - depending on the type - of copies of) $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
+\end{lem}
+\begin{proof}
+We resume notation from the previous section. We are going to fix the subalgebra $\tau_0$ given in coordinates by \eqref{coordII} and \eqref{coordIII} above respectively.
+
+\textbf{Type II}: recall that in this case $\tm^3\subseteq R$. For a $\k$-algebra $A$, let
+\[G_i(A)=\{t_i\mapsto g_{i1}t_i+g_{i2}t_i^2,t_j\mapsto t_j\ |\ g_{i1}\in A^\times,g_{i2}\in A\},\]
+and notice that
+\[\Aut_{(\tR,\tm)}^{\mod\tm^3}(A)=(G_1\times\ldots\times G_m)\rtimes \mathfrak{S}_m(A).\]
+
+Consider now the action of a group element of the form $(g_1,\ldots,g_m;\id_{\mathfrak{S}_m})$ on the given generators of $R$:
+\begin{align*}
+ x_1\mapsto& g_{11}t_1+g_{12}t_1^2\oplus\ldots\oplus g_{m1}t_m+g_{m2}t_m^2;\\
+ x_i\mapsto& \ldots\oplus g_{i1}t_i+g_{i2}t_i^2\oplus\ldots\oplus g_{m1}^2t_m^2,\quad\text{for } i=2,\ldots,m-1.
+\end{align*}
+The former belongs to $R$ iff $g_{11}=g_{m1}$ and $g_{12}=g_{m2}$; the latter does iff $g_{i1}=g_{m1}^2$. Thus, such elements span a subgroup isomorphic to $\Gm\times\Ga^{m-1}(A)$. On the other hand, all branches are isomorphic to one another, but there is a pair of distinguished ones (parametrised by $t_1$ and $t_m$ respectively). We conclude that
+\[\Aut_{\tau_0}^{\mod\tm^3}(A)=(\Gm\times\Ga^{m-1})\rtimes(\mathfrak{S}_2\times\mathfrak{S}_{m-2})(A).\]
+The quotient is then isomorphic to $\binom{m}{2}$ copies of $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
+
+\textbf{Type III}: in this case $\tm^4\subseteq R$. For a $\k$-algebra $A$, let
+\[G_i(A)=\{t_i\mapsto g_{i1}t_i+g_{i2}t_i^2+g_{i3}t_i^3,t_j\mapsto t_j\ |\ g_{i1}\in A^*,g_{i2},g_{i3}\in A\},\]
+and notice that
+\[\Aut_{(\tR,\tm)}^{\mod\tm^4}(A)=(G_1\times\ldots\times G_m)\rtimes \mathfrak{S}_m(A).\]
+
+Consider now the action of a group element of the form $(g_1,\ldots,g_m;\id_{\mathfrak{S}_m})$ on the given generators of $R$:
+\begin{align*}
+ x_i\mapsto& \ldots\oplus g_{i1}t_i+g_{i2}t_i^2+g_{i3}t_i^3\oplus\ldots\oplus g_{m1}^3t_m^3,\quad\text{for } i=1,\ldots,m-1;\\
+ x_m\mapsto& \ldots\oplus g_{m1}^2t_m^2+2g_{m1}g_{m2}t_m^3.
+\end{align*}
+The former belongs to $R$ iff $g_{i1}=g_{m1}^3$; the latter does iff $g_{m2}=0$. Thus such elements span a subgroup isomorphic to $\Gm\times\Ga^{m-1}\times\Ga^m(A)$. On the other hand, there is a special (singular) branch, parametrised by $t_m$. We conclude that
+\[\Aut_{\tau_0}^{\mod\tm^3}(A)=(\Gm\times\Ga^{m-1}\times\Ga^m)\rtimes(\mathfrak{S}_{m-1})(A).\]
+The quotient is therefore isomorphic to $m$ copies of $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$. 
+\end{proof}
+It is now clear that the benefit of a two-step classification where at first we do not allow ourselves to change coordinates (i.e. act by automorphisms of the normalisation) is that it makes the crimping space apparent already from the expressions \eqref{coordII-cs} and \eqref{coordIII-cs} for the generators of the singularity subalgebra.
+
+There is a more geometric way to see the crimping spaces. It is well-known that a cusp can be obtained by collapsing (\emph{push-out}) a generic (i.e. non-zero) tangent vector at $p\in\PP^1$. More generally, a Gorenstein singularity of genus one and $m$ branches can be obtained by collapsing a generic (not contained in any coordinate linear subspace) tangent line at an ordinary (i.e. rational) $m$-fold point \cite[Lemma 2.2]{SMY1}. Hence, we recover the crimping space of the elliptic $m$-fold point, which is isomorphic to $(\Aaff^1\setminus\{0\})^{m-1}$, as the maximal torus inside $\PP(T_pR_m)\simeq\PP^{m-1}$, where $(R_m,p)$ is the rational $m$-fold point. Besides, this gives a natural compactification of the crimping space supporting a universal family of curves - in fact, two: either we collapse non-generic tangent vectors, obtaining non-Gorenstein singularities along the boundary (this family has a common normalisation, that is the trivial family $\widetilde{\mathcal C}=R_m\times \PP(T_pR_m)$); or we blow-up $\widetilde{\mathcal C}$ along the boundary (\emph{sprouting}), and we replace the non-Gorenstein singularities by more elliptic $m$-fold points, this time with strictly semistable branches \cite[\S 2.2-3]{SMY2}.
+
+Similarly, a Gorenstein singularity of genus two admits a partial normalisation by a non-Gorenstein singularity of genus one: $\tau_0^{II}$ admits a partial normalisation $\sigma_0^{II}$ by (by which we mean a factorisation of the seminormalisation through) a singularity of genus one, by adjoining the generator $t_m^2$. The resulting non-Gorenstein singularity is the wedge union of a tacnode in the $(t_1,t_m)$-plane with $m-2$ axes. On the other hand, $\tau_0^{III}$ admits a partial normalisation $\sigma_0^{III}$ by a cusp (parametrised by $t_m$) wedge union $m-1$ axes, by adjoining $t_m^3$. These fit together nicely in the following picture.
+
+Let $V_m$ be the tangent space to a rational $m$-fold point $R_m$ at its singular point $p$. Over $\PP(V_m)$ (representing linear combinations of tangent vectors, i.e. hyperplanes in $V_m^\vee$) there is a natural family of genus one singularities $E_m$ obtained by collapsing (push-out) the corresponding tangent vector in $T_pR_m$, considered already in \cite[\S2.2]{SMY2}. Observe now that there is a $\Gm$-worth of $\sigma_0^{II}$ singularities corresponding to choosing a generic tangent vector in the plane $T_pA_1\oplus T_pA_m$ (where $A_i$ stands for the $i$-th axis); these degenerate to a singularity of type $\sigma_0^{III}$ when the tangent vector becomes parallel to $T_pA_m$. Up to relabelling the branches, we see that the interesting for us locus $L$ consists of the $\binom{m}{2}$ coordinate lines, together with the $m$ coordinate points in $\PP(V_m)$. The restriction of $E_m$ to $L$ gives a family of singularities of type $\sigma_0$ (II and III). The crimping space of the Gorenstein singularities of genus two dwells as an open subscheme inside $P=\PP(T_p E_m|_L)$. It is geometrically clear that the generic fiber over a coordinate line is $\PP^{m-1}$, in which $\Gm^{m-2}\times\Ga$ is carved by removing the $m-1$ hyperplanes generated by (a) the tangent line to the tacnode and the $m-2$ axes, and (b) the plane containing the tacnode and all but one of the $m-2$ axes. On the other hand, the fiber over the coordinate points is $\PP^m$, in which $\Gm^{m-1}\times\Ga$ is carved by removing the $m$ planes generated by (a) the tangent cone of the cusp and the $m-1$ axes, and (b) the plane containing the cusp and all but one of the $m-1$ axes. \textbf{Question}: what are the singularities arising along such hyperplanes?
+
+-recall crimping space and moduli of singular curves of fixed combinatorial type
+-give aut/aut description of cs
+-describe all the cs at once
+-we suspect that the crimping space is also themoduli space of right-most vertical maps in the diagram above such that... (preserve the subalgebra of a singularity determining it, which should imply Lie subalgebra)
 
 Recall Smyth's description of Gorenstein curves of genus one with no automorphisms \cite[Proposition 2.3, Corollary 2.4]{SMY1}.
 

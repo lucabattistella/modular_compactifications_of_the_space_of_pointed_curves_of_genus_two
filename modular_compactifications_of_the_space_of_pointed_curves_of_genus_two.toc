@@ -3,7 +3,7 @@
 \contentsline {subsection}{\tocsubsection {}{1.1}{Outline of results}}{3}{subsection.1.1}
 \contentsline {subsection}{\tocsubsection {}{1.2}{Future directions}}{3}{subsection.1.2}
 \contentsline {section}{\tocsection {}{2}{Gorenstein curve singularities of genus two}}{4}{section.2}
-\contentsline {section}{\tocsection {}{3}{Tangent sheaf and automorphisms}}{8}{section.3}
-\contentsline {section}{\tocsection {}{4}{Dualising line bundle and semistable tails}}{10}{section.4}
-\contentsline {section}{\tocsection {}{5}{The new moduli functors}}{15}{section.5}
-\contentsline {section}{\tocsection {}{}{References}}{22}{section*.2}
+\contentsline {section}{\tocsection {}{3}{Tangent sheaf, crimping space, and automorphisms}}{8}{section.3}
+\contentsline {section}{\tocsection {}{4}{Dualising line bundle and semistable tails}}{13}{section.4}
+\contentsline {section}{\tocsection {}{5}{The new moduli functors}}{18}{section.5}
+\contentsline {section}{\tocsection {}{}{References}}{25}{section*.2}
