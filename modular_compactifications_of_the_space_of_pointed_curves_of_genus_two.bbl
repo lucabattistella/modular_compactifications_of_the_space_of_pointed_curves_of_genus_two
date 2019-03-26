@@ -67,6 +67,11 @@ P.~Deligne and D.~Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
 
+\bibitem[Dr{\'{e}}06]{Drezet}
+Jean-Marc Dr{\'{e}}zet.
+\newblock Faisceaux coh\'{e}rents sur les courbes multiples.
+\newblock {\em Collect. Math.}, 57(2):121--171, 2006.
+
 \bibitem[Gie82]{Gieseker}
 D.~Gieseker.
 \newblock {\em Lectures on moduli of curves}, volume~69 of {\em Tata Institute
@@ -97,6 +102,12 @@ Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
 \newblock {Genus Two Stable Maps, Local Equations and Modular Resolutions}.
 \newblock {\em arXiv e-prints}, page arXiv:1201.2427, Jan 2012.
 
+\bibitem[HM98]{HM}
+Joe Harris and Ian Morrison.
+\newblock {\em Moduli of curves}, volume 187 of {\em Graduate Texts in
+  Mathematics}.
+\newblock Springer-Verlag, New York, 1998.
+
 \bibitem[Hun99]{Hun}
 Craig Huneke.
 \newblock Hyman {B}ass and ubiquity: {G}orenstein rings.
@@ -104,10 +115,24 @@ Craig Huneke.
   1997)}, volume 243 of {\em Contemp. Math.}, pages 55--78. Amer. Math. Soc.,
   Providence, RI, 1999.
 
+\bibitem[Kee99]{Keel-bpf}
+Se\'{a}n Keel.
+\newblock Basepoint freeness for nef and big line bundles in positive
+  characteristic.
+\newblock {\em Ann. of Math. (2)}, 149(1):253--286, 1999.
+
 \bibitem[KM97]{KM}
 Se\'{a}n Keel and Shigefumi Mori.
 \newblock Quotients by groupoids.
 \newblock {\em Ann. of Math. (2)}, 145(1):193--213, 1997.
+
+\bibitem[KM98]{KolM}
+J\'{a}nos Koll\'{a}r and Shigefumi Mori.
+\newblock {\em Birational geometry of algebraic varieties}, volume 134 of {\em
+  Cambridge Tracts in Mathematics}.
+\newblock Cambridge University Press, Cambridge, 1998.
+\newblock With the collaboration of C. H. Clemens and A. Corti, Translated from
+  the 1998 Japanese original.
 
 \bibitem[LZ09]{LZ}
 Jun Li and Aleksey Zinger.
@@ -168,7 +193,7 @@ Jan Stevens.
   Basel, 1996.
 
 \bibitem[vdW10]{vdW}
-Frederick~DW van~der Wyck.
+Frederick van~der Wyck.
 \newblock {\em Moduli of singular curves and crimping}.
 \newblock PhD thesis, Harvard University, 2010.
 
