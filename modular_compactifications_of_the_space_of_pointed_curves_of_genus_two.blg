@@ -7,45 +7,45 @@ Warning--there's a number but no volume in AFS3
 Warning--there's a number but no volume in BalSwi
 Warning--empty journal in Demazure
 Warning--there's a number but no volume in DM
-You've used 35 entries,
+You've used 38 entries,
             2543 wiz_defined-function locations,
-            810 strings with 9624 characters,
-and the built_in function-call counts, 16200 in all, are:
-= -- 1759
-> -- 533
-< -- 35
-+ -- 177
-- -- 171
-* -- 1065
-:= -- 2368
-add.period$ -- 109
-call.type$ -- 35
-change.case$ -- 199
-chr.to.int$ -- 32
-cite$ -- 39
-duplicate$ -- 789
-empty$ -- 1175
-format.name$ -- 223
-if$ -- 3522
+            834 strings with 10010 characters,
+and the built_in function-call counts, 17286 in all, are:
+= -- 1873
+> -- 568
+< -- 37
++ -- 187
+- -- 181
+* -- 1147
+:= -- 2545
+add.period$ -- 119
+call.type$ -- 38
+change.case$ -- 215
+chr.to.int$ -- 35
+cite$ -- 42
+duplicate$ -- 833
+empty$ -- 1261
+format.name$ -- 238
+if$ -- 3741
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 38
-newline$ -- 178
-num.names$ -- 105
-pop$ -- 174
+missing$ -- 41
+newline$ -- 194
+num.names$ -- 114
+pop$ -- 182
 preamble$ -- 1
-purify$ -- 238
+purify$ -- 257
 quote$ -- 0
-skip$ -- 758
+skip$ -- 793
 stack$ -- 0
-substring$ -- 1200
-swap$ -- 307
-text.length$ -- 35
-text.prefix$ -- 17
+substring$ -- 1280
+swap$ -- 310
+text.length$ -- 37
+text.prefix$ -- 19
 top$ -- 0
-type$ -- 264
+type$ -- 288
 warning$ -- 4
-while$ -- 143
-width$ -- 40
-write$ -- 463
+while$ -- 155
+width$ -- 43
+write$ -- 504
 (There were 4 warnings)

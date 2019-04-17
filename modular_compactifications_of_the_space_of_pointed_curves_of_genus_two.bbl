@@ -51,6 +51,11 @@ Giulio {Codogni}, Luca {Tasin}, and Filippo {Viviani}.
   of stable pointed curves}.
 \newblock {\em arXiv e-prints}, page arXiv:1808.00231, Aug 2018.
 
+\bibitem[Cuk89]{Cukierman}
+Fernando Cukierman.
+\newblock Families of {W}eierstrass points.
+\newblock {\em Duke Math. J.}, 58(2):317--346, 1989.
+
 \bibitem[Deb01]{Debarre}
 Olivier Debarre.
 \newblock {\em Higher-dimensional algebraic geometry}.
@@ -61,6 +66,12 @@ Michel Demazure.
 \newblock Classification des germes \`a point critique isol\'{e} et \`a nombres
   de modules 0 ou 1 (d'apr\`es {V}. {I}. {A}rnol'd).
 \newblock pages 124--142. Lecture Notes in Math., Vol. 431, 1975.
+
+\bibitem[Dia85]{Diaz}
+Steven Diaz.
+\newblock Exceptional {W}eierstrass points and the divisor on moduli space that
+  they define.
+\newblock {\em Mem. Amer. Math. Soc.}, 56(327):iv+69, 1985.
 
 \bibitem[DM69]{DM}
 P.~Deligne and D.~Mumford.
@@ -96,6 +107,12 @@ Brendan Hassett.
 Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
 \newblock {Genus Two Stable Maps, Local Equations and Modular Resolutions}.
 \newblock {\em arXiv e-prints}, page arXiv:1201.2427, Jan 2012.
+
+\bibitem[HM82]{HarrisMumford}
+Joe Harris and David Mumford.
+\newblock On the {K}odaira dimension of the moduli space of curves.
+\newblock {\em Invent. Math.}, 67(1):23--88, 1982.
+\newblock With an appendix by William Fulton.
 
 \bibitem[HM98]{HM}
 Joe Harris and Ian Morrison.
