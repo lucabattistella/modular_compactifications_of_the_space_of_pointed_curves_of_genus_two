@@ -551,7 +551,7 @@ Given a family of prestable (pointed) curves of genus two over the spectrum of a
 \end{rem}
 
 
-\begin{prop}
+\begin{prop}\label{prop:tailI}
  Let $\phi\colon\mathcal C\to\overline{\mathcal C}$ be a contraction over the spectrum of a discrete valuation ring $\dvr$, where: $\mathcal C\to \dvr$ is a family of prestable (reduced, nodal) curves of arithmetic genus two, with regular total space and smooth generic fiber $\mathcal C_{\eta}$; and $\overline{\mathcal C}\to\dvr$ is a family of Gorenstein curves of arithmetic genus two, with $\overline{\mathcal C}_{\eta}$ smooth, and $\overline{\mathcal C}_0$ containing a genus two singularity of type $I_m$. Denote by $(Z;q_1,\ldots,q_m)$ the exceptional locus of $\phi$ marked with $Z\cap\overline{\mathcal C_0\setminus Z}$, where $q_1$ corresponds to the special branch of $\overline{\mathcal C}_0$. Then:
  \begin{enumerate}[leftmargin=.6cm]
   \item The stabilisation of $(Z,q_1)$ is Weierstrass.
@@ -562,25 +562,34 @@ Given a family of prestable (pointed) curves of genus two over the spectrum of a
    k+2\dist(q_1,\tilde r_i)  & \text{if } r_i=r_1
   \end{cases} 
   \end{equation*}
- where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
+ ($i=2,\ldots,m$), where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
  \end{enumerate}
 \end{prop}
 
-\begin{prop}
+\begin{prop}\label{prop:tailII}
  Same as above with $\overline{\mathcal C}_0$ containing a genus two singularity of type $I\!I_m$, and $q_1,q_2$ corresponding to the special branches. Then:
  \begin{enumerate}[leftmargin=.6cm]
   \item The stabilisation of $(Z,q_1,q_2)$ is conjugate.
   \item $R_1$ and $R_2$ have the same length $k$, and $R_i$ has length 
   \begin{equation*}
   \begin{cases}
-   2k+\dist(r_1,r_i) & \text{if } \dist(r_1,r_2)=1 \text{ and } \dist(r_1,r_i)>0,\\
-   
+   2k+\min_{\epsilon\in\{1,2\}}\dist^*(r_\epsilon,r_i) & \text{if } r_1\neq r_2, \text{ and } r_i\notin\{r_1,r_2\},\\
+   k+\dist(q_1,\tilde r_i)  & \text{if } r_1\neq r_2, \text{ and } r_i=r_1 (\text{and symm. } 1\leftrightarrow 2), \\
+   2k+\dist(r_1,\tilde r_2)+\dist(r_1,r_i) & \text{if } r_1= r_2, \text{ and } r_i\neq r_1, \\
+   k+\dist(q_1,\tilde r_i)+\delta(\dist(\tilde r_2,\tilde r_i)-1)& \text{if } r_1= r_2=r_i, \text{ and } \delta=\begin{cases} 1 & \tilde r_2\in[q_1,\tilde r_i] \\ 0 & \text{otherwise} \end{cases}
   \end{cases} 
   \end{equation*}
- where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
+ ($i=2,\ldots,m$), where we set $\dist^*(r_\epsilon,r_i)=1$ if the core consists of a genus one curve with a rational bridge, and $r_i$ lies between $r_1$ and $r_2$ on this rational bridge, and $\dist^*(r_\epsilon,r_i)=\dist(r_\epsilon,r_i)$ otherwise.
  \end{enumerate}
 \end{prop}
 
+\begin{prop}
+ Let $(\mathcal C,\Sigma_1,\ldots,\Sigma_n)\to\dvr$ be a family of pointed semistable curves of arithmetic genus two such that $\mathcal C$ has regular total space and smooth generic fiber, and $(\mathcal C,\Sigma_1)\to \Delta$ is Weierstrass. Let $(Z,q_1,\ldots,q_m)$ be a genus two subcurve of $\mathcal C_0$ containing none of the $\Sigma_i(0)$, marked by $Z\cap \overline{\mathcal C_0\setminus Z}$ so that the tail containing $\Sigma_1$ is attached to $Z$ at $q_1$, and satisfying all the shape prescriptions of Proposition \ref{prop:tailI}(2). There exists a contraction $\phi\colon\mathcal C\to\overline{\mathcal C}$ over $\dvr$, with exceptional locus $Z$, such that $\overline{\mathcal C}\to\dvr$ is a family of Gorenstein curves containing a type $I_m$ singularity in the central fiber.
+\end{prop}
+
+\begin{prop}
+ Same as above with $(\mathcal C,\Sigma_1,\Sigma_2)\to \Delta$ conjugate, $(Z,q_1,\ldots,q_m)$ shaped as prescribed by Proposition \ref{prop:tailII}(2), and the resulting $\overline{\mathcal C}\to\dvr$ containing a type $I\!I_m$ singularity in the central fiber.
+\end{prop}
 
 \section{Dualising line bundle and semistable tails - old}
 This is the most technical and combinatorially delicate section of the paper. We classify the nodal subcurves that can be contracted in a one-parameter smoothing in order to obtain a Gorenstein singularity of genus two. The upshot is that the distinguished (i.e. twin or singular) branches are attached to special (i.e. conjugate or Weierstrass) points of the core (minimal subcurve of genus two). That said, the shape of the contracted curve depends on one parameter only, namely the distance of the distinguished branch(es) from the core - parallel to Smyth's \emph{balanced} condition \cite[Definition 2.11]{SMY1} in genus one, and its generalisation by the strict interior of a circle around the circuit in \cite{RSPW1}. This is going to play a key role in the proof that our moduli spaces are proper.

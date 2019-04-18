@@ -562,22 +562,24 @@ Given a family of prestable (pointed) curves of genus two over the spectrum of a
    k+2\dist(q_1,\tilde r_i)  & \text{if } r_i=r_1
   \end{cases} 
   \end{equation*}
- where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
+ ($i=2,\ldots,m$), where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
  \end{enumerate}
 \end{prop}
 
 \begin{prop}
- Same as above with $\overline{\mathcal C}_0$ containing a genus two singularity of type $I\!I_m$, and $q_1,q_2$ corresponding to the special branches.
+ Same as above with $\overline{\mathcal C}_0$ containing a genus two singularity of type $I\!I_m$, and $q_1,q_2$ corresponding to the special branches. Then:
  \begin{enumerate}[leftmargin=.6cm]
-  \item The stabilisation of $(Z,q_1)$ is Weierstrass.
-  \item Let $r_1$ be the point of the core of $Z$ closest to $q_1$, and let $k$ be the length of $R_1$, the rational chain separating $q_1$ from $r_1$. With similar notation, $R_i$ has length 
+  \item The stabilisation of $(Z,q_1,q_2)$ is conjugate.
+  \item $R_1$ and $R_2$ have the same length $k$, and $R_i$ has length 
   \begin{equation*}
   \begin{cases}
-   3k+1+\dist(r_1,r_i) & \text{if } r_i\neq r_1,\\
-   k+2\dist(q_1,\tilde r_i)  & \text{if } r_i=r_1
+   2k+\min_{\epsilon\in\{1,2\}}\dist^*(r_\epsilon,r_i) & \text{if } r_1\neq r_2, \text{ and } r_i\notin\{r_1,r_2\},\\
+   k+\dist(q_1,\tilde r_i)  & \text{if } r_1\neq r_2, \text{ and } r_i=r_1 (\text{and symm. } 1\leftrightarrow 2), \\
+   2k+\dist(r_1,\tilde r_2)+\dist(r_1,r_i) & \text{if } r_1= r_2, \text{ and } r_i\neq r_1, \\
+   k+\dist(q_1,\tilde r_i)+\delta(\dist(\tilde r_2,\tilde r_i)-1)& \text{if } r_1= r_2=r_i, \text{ and } \delta=\begin{cases} 1 & \tilde r_2\in[q_1,\tilde r_i] \\ 0 & \text{otherwise} \end{cases}
   \end{cases} 
   \end{equation*}
- where $\tilde r_i$ is the point of $R_1$ closest to $q_i$, and $\dist(a,b)$ is the number of irreducible components between the points $a$ and $b$ (so for example it is $1$ if $a$ and $b$ lie on the same irreducible component).
+ ($i=2,\ldots,m$), where we set $\dist^*(r_\epsilon,r_i)=1$ if the core consists of a genus one curve with a rational bridge, and $r_i$ lies between $r_1$ and $r_2$ on this rational bridge, and $\dist^*(r_\epsilon,r_i)=\dist(r_\epsilon,r_i)$ otherwise.
  \end{enumerate}
 \end{prop}
 

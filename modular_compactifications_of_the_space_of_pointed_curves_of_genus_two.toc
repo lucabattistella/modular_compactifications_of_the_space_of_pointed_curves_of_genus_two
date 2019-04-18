@@ -5,6 +5,6 @@
 \contentsline {section}{\tocsection {}{2}{Gorenstein curve singularities of genus two}}{4}{section.2}
 \contentsline {section}{\tocsection {}{3}{Tangent sheaf, crimping space, and automorphisms}}{8}{section.3}
 \contentsline {section}{\tocsection {}{4}{Dualising line bundle and semistable tails}}{15}{section.4}
-\contentsline {section}{\tocsection {}{5}{Dualising line bundle and semistable tails - old}}{17}{section.5}
+\contentsline {section}{\tocsection {}{5}{Dualising line bundle and semistable tails - old}}{18}{section.5}
 \contentsline {section}{\tocsection {}{6}{The new moduli functors}}{27}{section.6}
-\contentsline {section}{\tocsection {}{}{References}}{33}{section*.2}
+\contentsline {section}{\tocsection {}{}{References}}{34}{section*.2}
