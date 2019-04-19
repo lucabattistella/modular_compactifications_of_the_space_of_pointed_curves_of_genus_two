@@ -22,6 +22,12 @@ Jarod Alper, Maksym Fedorchuk, David~Ishii Smyth, and Frederick van~der Wyck.
 \newblock Second flip in the {H}assett-{K}eel program: a local description.
 \newblock {\em Compos. Math.}, 153(8):1547--1583, 2017.
 
+\bibitem[AK70]{AK}
+Allen Altman and Steven Kleiman.
+\newblock {\em Introduction to {G}rothendieck duality theory}.
+\newblock Lecture Notes in Mathematics, Vol. 146. Springer-Verlag, Berlin-New
+  York, 1970.
+
 \bibitem[Arn72]{Arnold}
 V.~I. Arnol'd.
 \newblock Normal forms of functions near degenerate critical points, the {W}eyl
