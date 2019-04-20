@@ -39,11 +39,24 @@ Luca {Battistella}, Francesca {Carocci}, and Cristina {Manolache}.
 \newblock {Reduced invariants from cuspidal maps}.
 \newblock {\em arXiv e-prints}, page arXiv:1801.07739, Jan 2018.
 
+\bibitem[BLR90]{BLR}
+Siegfried Bosch, Werner L\"{u}tkebohmert, and Michel Raynaud.
+\newblock {\em N\'{e}ron models}, volume~21 of {\em Ergebnisse der Mathematik
+  und ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)]}.
+\newblock Springer-Verlag, Berlin, 1990.
+
 \bibitem[BS08]{BalSwi}
 Elizabeth Baldwin and David Swinarski.
 \newblock A geometric invariant theory construction of moduli spaces of stable
   maps.
 \newblock {\em Int. Math. Res. Pap. IMRP}, (1):Art. ID rp. 004, 104, 2008.
+
+\bibitem[Cat82]{Catanese}
+Fabrizio Catanese.
+\newblock Pluricanonical-{G}orenstein-curves.
+\newblock In {\em Enumerative geometry and classical algebraic geometry
+  ({N}ice, 1981)}, volume~24 of {\em Progr. Math.}, pages 51--95.
+  Birkh\"{a}user Boston, Boston, MA, 1982.
 
 \bibitem[CML13]{C-ML}
 Sebastian Casalaina-Martin and Radu Laza.
@@ -194,6 +207,11 @@ David~Ishii Smyth.
 David~Ishii Smyth.
 \newblock {Intersections of psi-classes on moduli spaces of m-stable curves}.
 \newblock {\em arXiv e-prints}, page arXiv:1808.03214, Aug 2018.
+
+\bibitem[{Sta}18]{stacks-project}
+The {Stacks Project Authors}.
+\newblock \textit{Stacks Project}.
+\newblock \url{https://stacks.math.columbia.edu}, 2018.
 
 \bibitem[Ste96]{Stev}
 Jan Stevens.
