@@ -151,7 +151,7 @@
 \tableofcontents
 
 \section{Introduction}
-One of the most beautiful and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne and D. Mumford \cite{DM}, through the introduction of \emph{stable} pointed curves.
+One of the most beautiful and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen \cite{DM}???, through the introduction of \emph{stable} pointed curves.
 
 \begin{dfn}
  Assume $2g-2+n>0$. A connected, reduced, complete curve $C$ with distinct markings $(p_1,\ldots,p_n)$ is \emph{stable} if:
@@ -164,7 +164,7 @@ One of the most beautiful and influential results of modern algebraic geometry i
 \begin{thm}
  Assume $2g-2+n>0$. The moduli stack of stable pointed curves $\oM_{g,n}$ is a smooth and proper connected DM stack over $\operatorname{Spec}(\mathbb Z)$, with projective coarse moduli space $\overline{\mathbf M}_{g,n}$. The boundary $\oM_{g,n}\setminus\pazocal M_{g,n}$, representing nodal curves, is a normal crossing divisor.
 \end{thm}
-On one hand, the Deligne-Mumford compactification has every desirable property one can hope for; on the other, it is not unique, and it is an interesting deep question to classify all possible modular compactifications of $\pazocal M_{g,n}$ - a natural partial answer has been given by D.I. Smyth \cite{SMY-towards}.
+On one hand, the Deligne-Mumford compactification has nearly every desirable property one can hope for; on the other, it is not unique, and it is an interesting and deep question to classify all possible modular compactifications of $\pazocal M_{g,n}$ - a natural partial answer has been given by D.I. Smyth \cite{SMY-towards}.
 
 Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard general theory on stacks \cite{KM}, this space was first constructed by means of GIT \cite{Gieseker,GIT,BalSwi}. The study of alternative compactifications of $\pazocal M_{g,n}$ is motivated as well by an interest in the birational geometry of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition, and realising that the resulting quotient still enjoys a modular interpretation \cite{Schubert,Hassettg2}. The consequent program that goes under the name of B. Hassett and S. Keel aims to describe all the different possible quotients, and to understand whether every step of a minimal model program for $\overline{\mathbf M}_{g,n}$ can be given a modular interpretation in terms of curves with worse than nodal singularities. Since the early stages of this study, it has developed into a fascinating playground for testing implementations of ideas originating from GIT into a general structural theory for Artin stacks \cite{AFS1,AFS2,AFS3,CTV}.
 
@@ -213,8 +213,8 @@ The dualising line bundle of a minimal (with no separating nodes) Gorenstein cur
 \section{Gorenstein curve singularities of genus two}
 In this and the next sections we work over an algebraically closed field of characteristic different from $2,3,5$. We provide an algebraic classification of the (complete) local rings of Gorenstein curve singularities of genus two.
 
-Let $(C,x)$ be the germ of a curve singularity, and let $(R,\m)$ denote $(\hat\OO_{C,x},\m_x)$, with normalisation $(\tR,\tm)\simeq\left(\k[[t_1]]\oplus\ldots\oplus\k[[t_m]],\langle t_1,\ldots,t_m\rangle\right)$.
-Here $m$ is the number of branches. Recall from Definition \ref{def:genus} that the genus is:
+Let $(C,q)$ be the germ of a curve singularity, and let $(R,\m)$ denote $(\hat\OO_{C,q},\m_q)$, with normalisation $(\tR,\tm)\simeq\left(\k[\![t_1]\!]\oplus\ldots\oplus\k[\![t_m]\!],\langle t_1,\ldots,t_m\rangle\right)$.
+Here $m$ is the number of branches of $C$ at $q$. Recall from Definition \ref{def:genus} that the genus is:
 \[g=\delta-m+1,\]
 so, for genus two, $\delta=m+1$. Following \cite[Appendix A]{SMY1}, we consider $\tR/R$ as a $\mathbb Z$-graded module with:
 \[ (\tR/R)_i:=\tm^i/(\tm^i\cap R)+\tm^{i+1};\]
@@ -236,9 +236,9 @@ We will also find the following observations to be useful:
 \begin{proof}
  In the unibranch case $\dim_\k(\tR/R)_1\leq 1$, hence equality must hold (by observation (3) above). We are left with two cases:
  \begin{itemize}[leftmargin=15pt]
-  \item Either $\dim_\k(\tR/R)_2=1$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 3$: in this case $\tm^3\subseteq\m$ by observation (4). From (5) we see that $\tm^3=\m$, hence $R\simeq\k[[t^3,t^4,t^5]],$ a spatial non-Gorenstein singularity.
+  \item Either $\dim_\k(\tR/R)_2=1$ and $\dim_\k(\tR/R)_i=0$ for all $i\geq 3$: in this case $\tm^3\subseteq\m$ by observation (4). From (5) we see that $\tm^3=\m$, hence $R\simeq\k[\![t^3,t^4,t^5]\!],$ a spatial non-Gorenstein singularity.
   
-  \item Or $\dim_\k(\tR/R)_3=1$ and $\dim_\k(\tR/R)_i=0$ for $i=2$ and for all $i\geq 4$: in this case $\tm^4\subseteq\m$ by observation (4). On the other hand from $\dim_\k(\tm^2\cap R/\tm^3\cap R)=1$ we deduce that there is a generator of degree $2$, and from $\dim_\k(\tm^3\cap R/\tm^4\cap R)=0$ there is none of degree $3$. We may write the generator as $x=t^2+ct^3$, and $\m=\langle x\rangle+\tm^4$. Up to a coordinate change (i.e. automorphism of $\k[[t]]$), we may take $x=t^2$, and \[\m/\m^2=\langle t^2,t^5\rangle,\] so $R\simeq\k[[x,y]]/(x^5-y^2)$, as anticipated.
+  \item Or $\dim_\k(\tR/R)_3=1$ and $\dim_\k(\tR/R)_i=0$ for $i=2$ and for all $i\geq 4$: in this case $\tm^4\subseteq\m$ by observation (4). On the other hand from $\dim_\k(\tm^2\cap R/\tm^3\cap R)=1$ we deduce that there is a generator of degree $2$, and from $\dim_\k(\tm^3\cap R/\tm^4\cap R)=0$ there is none of degree $3$. We may write the generator as $x=t^2+ct^3$, and $\m=\langle x\rangle+\tm^4$. Up to a coordinate change (i.e. automorphism of $\k[\![t]\!]$), we may take $x=t^2$, and \[\m/\m^2=\langle t^2,t^5\rangle,\] so $R\simeq\k[\![x,y]\!]/(x^5-y^2)$, as anticipated.
  \end{itemize}
 \end{proof}
 
@@ -251,7 +251,7 @@ We will also find the following observations to be useful:
  There is a generator which we may assume is of the form: 
  \[f_1=t_1+at^n_2\in\m\;\;\text{for}\;\; n=1,2;\] on the other hand $\tm^2\cap R$ is spanned by $f_1^2$. Now, if $a=0$, does not matter if $n=1$ or $2$ and we have \[\m/\m^2=\langle t_1,t_2^3,t_2^4,t_2^5\rangle\] is the union of the non-Gorenstein unibranch singularity with a transversal axis. Otherwise we have two cases, in both we can assume wlog $a=1$. 
  \begin{description}[leftmargin=0pt]
- \item[$n=1$] then $\tm^4\subseteq\m^2$, hence \[\m/\m^2=\langle f_1,t_2^3\rangle\] and $R\simeq k[[x,y]]/y(x^3-y)$, so we have the union two smooth branches intersecting along a length $3$ sub-scheme.
+ \item[$n=1$] then $\tm^4\subseteq\m^2$, hence \[\m/\m^2=\langle f_1,t_2^3\rangle\] and $R\simeq k[\![x,y]\!]/y(x^3-y)$, so we have the union two smooth branches intersecting along a length $3$ sub-scheme.
  \item[$n=2$] then in $\m$ we have $t_1^2=f_1^2-t_2^4$ since $t_2^4\in\tm^3\subseteq\m;$ however this latter element in not in $\m^2$, so
  \[\m/\m^2=\langle f_1=t_1+t_2^2,t_1^2,t_2^3\rangle.\]
  The singularity we have in this case is a union of a cusp and a smooth branch (a parabola) in the 3-space with intersection of length $2$.
@@ -277,24 +277,24 @@ We will also find the following observations to be useful:
 \begin{remark}
 It seems that the genus $2$ case is significantly more difficult that the genus $1$ due to the fact that in this case we need to consider non homogeneous generators. It does seem hopeless to perform the classification for an arbitrary number of branches.
  However, we see that each 2-branches genus $2$ singularity is obtained by gluing two singularities $R_1$ and $R_2$ with $g(R_i)\leq 2$ along a closed sub-scheme of length $\leq 3.$ 
- This is clear if we look at the factorisation of the normalisation $R\hookrightarrow \widetilde{R}=k[[t_1]]\oplus k[[t_2]]$ 
+ This is clear if we look at the factorisation of the normalisation $R\hookrightarrow \widetilde{R}=k[\![t_1]\!]\oplus k[\![t_2]\!]$ 
  through $R\hookrightarrow R_1\oplus \R_2\hookrightarrow \widetilde{R},$ where 
  the first partial normalisation correspond to separate the branches. Algebraically this can be achieved considering the $k$ subvector space $K^{\rm{br}}$ of $\widetilde{R}/R$ generated by those conditions involving only one branch at the time an then taking the Kernel of $\widetilde{R}\to K^{\rm{br}}.$
 \end{remark}\end{comment}
-From now on, we are going to study only Gorenstein singularities. With notation as above, let $I=(R:\tilde R)=\operatorname{Ann}_R(\tilde R/R)$ be the conductor ideal of the singularity. Recall (see e.g. \cite[Theorem 6.4]{Hun}) that $(C,x)$ is Gorenstein iff :
+From now on, we are going to study only Gorenstein singularities. With notation as above, let $I=(R:\tilde R)=\operatorname{Ann}_R(\tilde R/R)$ be the conductor ideal of the singularity. Recall (see e.g. \cite[Theorem 6.4]{Hun}) that $(C,q)$ is Gorenstein iff :
 \[\dim_\k(R/I)=\dim_\k(\tR/R)(=\delta).\]
 
-Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emph{decomposable} if $C$ is the union of two curves $C_1$ and $C_2$ that lie in distinct smooth spaces intersecting each other transversely in $p$. Given a parametrisation $x_i=x_i(t_1,\ldots,t_m),\ i=1,\ldots,n$, this means that we can find a partition $S\sqcup S^\prime=\{1,\ldots,m\}$ such that $x_i$ only depends on $t_s,s\in S$, or $s\in S^\prime$, for all $i$. Recall from \cite[Proposition 2.1]{AFSGm} that, aside from the node, Gorenstein singularities are never decomposable.
+Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,q)$ is \emph{decomposable} if $C$ is the union of two curves $C_1$ and $C_2$ that lie in distinct smooth spaces intersecting each other transversely in $q$. Given a parametrisation $x_i=x_i(t_1,\ldots,t_m),\ i=1,\ldots,n$, this means that we can find a partition $S\sqcup S^\prime=\{1,\ldots,m\}$ such that $x_i$ only depends on $t_s,s\in S$, or $s\in S^\prime$, for all $i$. Recall from \cite[Proposition 2.1]{AFSGm} that, aside from the node, Gorenstein singularities are never decomposable.
 
 \begin{prop}\label{prop:classification}
  For every fixed integer $m\geq 2$, there are exactly two Gorenstein curve singularities of genus two with $m$ branches.
 \end{prop}
 \begin{proof}
- We wish to find a basis for $\m/\m^2$, because a map of complete local rings that is surjective on cotangent spaces is surjective. We use the filtrations above.
+ We wish to find a basis for $\m/\m^2$, because a map of complete local rings that is surjective on cotangent spaces is surjective. From observation (3) again, we find three possibilities for the vector $(d_1,d_2,d_3)$, $d_k=\dim_{\k}(\tR/R)_k$.
  
- \textbf{Case I}: $(2,0,0)$. We see that $\tm^2\subseteq I$, so (by the Gorenstein assumption) $m+1=\delta=\dim_\k(R/I)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_\k A_1=m-1$, contradiction. We note that in this case the singularity is decomposable.
+ \textbf{Case} $(2,0,0)$. We see that $\tm^2\subseteq I$, so (by the Gorenstein assumption) $m+1=\delta=\dim_\k(R/I)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_\k A_1=m-1$, contradiction. We note that in this case the singularity is decomposable.
  
- \textbf{Case II}: $(1,1,0)$. We have $\tm^3\subseteq I$. We are going to write down the $m-1$ generators of $A_1$ ($\operatorname{mod} \tm^3$)\footnote{To make them into the simplest possible form, we allow ourselves to perform linear algebra operations at first, and only at the end we may change coodinates - the benefit of this two-step process will become apparent in the next section.}. The first generator, call it, $x_1$, has a non-trivial linear term in at least one of the variables, wlog $t_1$. By scaling $x_1$ and possibly adding a multiple of $x_1^2$, we can make it into the form:
+ \textbf{Case} $(1,1,0)$. We have $\tm^3\subseteq I$. We are going to write down the $m-1$ generators of $A_1$ ($\operatorname{mod} \tm^3$)\footnote{To make them into the simplest possible form, we allow ourselves to perform linear algebra operations at first, and only at the end we may change coodinates - the benefit of this two-step process will become apparent in the next section.}. The first generator, call it, $x_1$, has a non-trivial linear term in at least one of the variables, wlog $t_1$. By scaling $x_1$ and possibly adding a multiple of $x_1^2$, we can make it into the form:
  $x_1=t_1\oplus p_{1,2}(t_2)\oplus\ldots\oplus p_{1,m}(t_m) \mod\tm^3.$ Now we can use $x_1$ and $x_1^2$ to make sure the second generator does not involve $t_1$ at all. It will still have a linear term independent of $t_1$, say non-trivial in $t_2$. By scaling and adding a multiple of $x_2^2$, we can write $x_2=0\oplus t_2\oplus\ldots\oplus p_{1,m}(t_m) \mod\tm^3.$ By taking a linear combination of $x_1$ with $x_2$ and $x_2^2$, we may now reduce $x_1$ to the form $t_1\oplus0\oplus p_{1,3}(t_3)\oplus\ldots\oplus p_{1,m}(t_m)\mod\tm^3$. Therefore, by Gaussian elimination with the generators and their squares, we may assume that
  \begin{align*}
   x_1= & t_1\oplus0\oplus\ldots\oplus\alpha_{1,m}t_m+\beta_{1,m}t_m^2\\
@@ -328,7 +328,7 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
  \end{itemize}
 
  
- \textbf{Case III}: $(1,0,1)$. We have $\tm^4\subseteq I$. By an argument similar to the above, we write generators for $A_1$ as $x_i=\ldots\oplus t_i\oplus\ldots \oplus\alpha_{i,m}t_m+\beta_{i,m}t_m^2+\gamma_{i,m}t_m^3$, for $i=1,\ldots,m-1$.
+ \textbf{Case} $(1,0,1)$. We have $\tm^4\subseteq I$. By an argument similar to the above, we write generators for $A_1$ as $x_i=\ldots\oplus t_i\oplus\ldots \oplus\alpha_{i,m}t_m+\beta_{i,m}t_m^2+\gamma_{i,m}t_m^3$, for $i=1,\ldots,m-1$.
  Then $R/I=\langle 1,x_1,\ldots,x_{m-1},y\rangle$. For all but at most one $i$, $x_i^2\in I$, but definitely $x_i^3\in I$ for all $i$. On the other hand $t_m^3\notin R$, because otherwise $t_i^3=x_i^3-\alpha_{i,m}^3t_m^3+O(t_m^4)$ would belong to $R$ as well, contradicting $\dim_\k(\tR/R)_3=1$. From this we deduce that $\alpha_{i,m}=0$ for all $i=1,\ldots,m-1$. By $\dim_\k(\tR/R)_2=0$ there has to be another generator of degree two in $t_m$, which we may write as $x_m=t_m^2+\gamma_{m,m}t_m^3$ of $\m/\m^2$. We can use $x_m$ to remove all the $t_m^2$ pieces from $x_1,\ldots,x_{m-1}$, so we are reduced to
   \begin{align}\label{coordIII-cs}
  \begin{split}
@@ -358,20 +358,20 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,p)$ is \emp
  \end{itemize}
 \end{proof}
 
-\begin{rem}
- Not-necessarily Gorenstein singularities can be obtained by gluing various Gorenstein singularities of genus $\leq 2$ along subschemes of length $\leq 3$. Classifying all of them would not necessarily be easy.
-\end{rem}
+%\begin{rem}
+ %Not-necessarily Gorenstein singularities can be obtained by gluing various Gorenstein singularities of genus $\leq 2$ along subschemes of length $\leq 3$. Classifying all of them would not necessarily be easy.
+%\end{rem}
+
+\begin{dfn}\label{def:special_branches}
+ In case $(1,1,0)$, we shall call the singularities \emph{of type II}, and the branches parametrised by $t_1$ and $t_m$ \emph{twin}; in case $(1,0,1)$, we say the singularity is \emph{of type I}, and the branch parametrised by $t_m$ is called the \emph{singular} branch. We shall refer to them as \emph{special} or \emph{distinguished} branches; all other branches are \emph{axes}. \emph{Branch} remains a generic name, indicating any of the previous ones.
+\end{dfn}
 
 \begin{rem}
- Singularities of type II do appear in the miniversal family of singularities of type III, and viceversa. For low values of $m$ - which is the playground of al our speculations -, this follows neatly from a beautiful result of A. Grothendieck that I have learnt from \cite{C-ML} (see also \cite{Arnold,Demazure}):
+ Singularities of type I do appear in the miniversal family of singularities of type II, and viceversa. For low values of $m$ - which serves as the playground for our speculations -, this follows neatly from a beautiful result of A. Grothendieck that we have learnt from \cite{C-ML} (see also \cite{Arnold,Demazure}):
  \begin{thm}\label{thm:ADE}
   Let $(C,p)$ be a curve singularity of ADE type. Singularities that appear in the miniversal deformation of $(C,p)$ are all and only those ADE, whose Dynkin diagram can be obtained as a full subgraph of the diagram of $(C,p)$.
  \end{thm}
 \end{rem}
-
-\begin{dfn}\label{def:special_branches}
- In case II, we shall call the branches parametrised by $t_1$ and $t_m$ \emph{twin}; in case III, the branch parametrised by $t_m$ is called the \emph{singular} branch. We shall refer to them as \emph{special} or \emph{distinguished} branches; all other branches are \emph{axes}. \emph{Branch} remains a generic name, indicating any of the previous ones.
-\end{dfn}
 
 
 \section{Tangent sheaf, crimping space, and automorphisms}
@@ -462,9 +462,9 @@ Similarly, a Gorenstein singularity of genus two can be obtained by collapsing a
  The crimping space is related to the moduli of arrows $\phi$ as in the diagram of Lemma \ref{lem:aut}, satisfying a number of requirements.
  
  We note that $H^0(\Omega_{\PP^1}^\vee(-p)_{|2p})$ is the tangent space to the subgroup of automorphisms of $\PP^1$ fixing one point $p$, so it is isomorphic as a Lie algebra to the only non-abelian Lie algebra of dimension two $V$. It has a basis $e_1=\begin{pmatrix} 1 & 0 \\ 0 & -1\end{pmatrix}$, $e_2=\begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix}$ with $[e_1,e_2]=-2e_2$. The vector $(\varphi,\psi)$ therefore corresponds to the infinitesimal automorphism: \[t\mapsto\frac{1+\epsilon\varphi t}{1-\epsilon(\varphi t+\psi)}=t+\epsilon(2\varphi t-\psi t^2).\]
- We require $\phi$ to be the embedding (i.e. a point of $\operatorname{Gr}(m,V^{\oplus m})$) of a Lie subalgebra, such that the corresponding group of infinitesimal automorphisms fixes uniquely the subalgebra of a singularity of genus two in $\k[[t_1]]\oplus\ldots\oplus\k[[t_m]]$.
+ We require $\phi$ to be the embedding (i.e. a point of $\operatorname{Gr}(m,V^{\oplus m})$) of a Lie subalgebra, such that the corresponding group of infinitesimal automorphisms fixes uniquely the subalgebra of a singularity of genus two in $\k[\![t_1]\!]\oplus\ldots\oplus\k[\![t_m]\!]$.
  
- We start with some heuristics. The unibranch case goes as follows: the subalgebra of $\k[[t]]$ generated by $x=t^2+ct^3$ is preserved by $(\varphi,\psi)$ iff
+ We start with some heuristics. The unibranch case goes as follows: the subalgebra of $\k[\![t]\!]$ generated by $x=t^2+ct^3$ is preserved by $(\varphi,\psi)$ iff
  \[(1+2\varphi)^2t^2-2\psi(1+2\varphi)t^3+c(1+2\varphi)^3t^3\text{ is a multiple of } t^2+ct^3,\]
  which reduces to $\varphi(1+2\varphi)c=\psi$. This furthermore determines $c$ iff $\varphi\neq 0$. Note that in this case (dimension one) the Lie subalgebra condition is automatically satisfied. We have found $(\varphi,\psi)\in\k^\times\times\k$.
  
@@ -490,7 +490,7 @@ Similarly, a Gorenstein singularity of genus two can be obtained by collapsing a
   w_{12}w_{13}=0 & \quad & w_{12}(w_{34}-w_{14})=0 \\ w_{13}w_{34}=0 & \quad & (w_{12}+w_{23})w_{34}=0
  \end{align*}
  which also are automatically satisfied after \eqref{eqn:vanishing_of_minors}. We see the various equations above cut inside $\PP^5_{[w_{ij}]}$ the locus \[(\Aaff^1_{{w_{14}}/{w_{12}}}\setminus\{0\})\times\Aaff^1_{{w_{24}}/{w_{12}}}.\]
- More generally, given a subalgebra $R_{\alpha,\beta}$ of $W=\bigoplus_{i=1}^m\k[[t_i]]/(t_i^2)$, with generators of the form described in \eqref{coordII-cs}, the subalgebra of $V^{\oplus m}_{(\varphi_i,\psi_i)_{i=1,\ldots,m}}$ preserving $R_{\alpha,\beta}$ is isomorphic to $\k^{\oplus m}$ with equations (see Lemma \ref{lem:aut}):
+ More generally, given a subalgebra $R_{\alpha,\beta}$ of $W=\bigoplus_{i=1}^m\k[\![t_i]\!]/(t_i^2)$, with generators of the form described in \eqref{coordII-cs}, the subalgebra of $V^{\oplus m}_{(\varphi_i,\psi_i)_{i=1,\ldots,m}}$ preserving $R_{\alpha,\beta}$ is isomorphic to $\k^{\oplus m}$ with equations (see Lemma \ref{lem:aut}):
  \[\begin{cases} 2\varphi_1=\varphi_i=2\varphi_m, & \text{for } i=2,\ldots,m-1,\\ 2\beta_{1,m}\varphi_m-\alpha_{1,m}\psi_m=-\alpha_{1,m}^2\psi_1;\end{cases}\]
  it is easily seen that such a subalgebra of $V^{\oplus m}$ does not determine $R_{\alpha,\beta}$, but it does determine $(\alpha_{1,m},\beta_{1,m})$. The situation of type III is analogous.
 \end{rem}
@@ -682,25 +682,26 @@ Finally, let us look at the core $K$. Consider it as a one-pointed (case (a)), r
  \item $K$ contains two distinct subcurves of genus one $E_1$ and $E_2$. We start by solving the balancing equation on one of them, say $E=E_1$.
  If all but one of the neighbouring components have multiplicity $d_E-1$, then the last one is forced to have multiplicity $d_E-1$ as well (by degree reasons). The case that all but two neighbouring components have multiplicity $d_E-1$ occurs when either one $2$-tree or one $3$-tree (and exactly one) is attached to $E$ at $x$; let $F$ be the other component with undetermined multiplicity, which lies between $E_1$ and $E_2$ (possibly $F=E_2$), and let $E\cap F=\{y\}$. The case of a $2$-tree forces $d_F=d_E$ by degree reason, but then we are left to solve $x\sim y$ in $\Pic(E)$, which is impossible; on the other hand, the case of a $3$-tree imposes $d_F=d_E+1$ and $2x\sim 2y$ in $\Pic(E)$, i.e. $K$ is Weierstrass. By the same token, the two $2$-trees have two hit the same genus one curve, say $E_1$, in nodes $x_1,x_2$ such that $x_1+x_2\sim 2y$ and $d_F=d_E+1$.
  
- Assume now that there is a chain of rational curves $S_i$ lying between $E_1$ and $E_2$ in $K$, and one of the special trees connects to one of the $S_i$; in case (b), then, both $2$-trees must connect to (possibly different) $S_i$, by the previous paragraph. Furthermore, the growth rate along the rational chains at $E_1$ and $E_2$ has to be $1$. This in turn implies that, in case (b), the growth rate along the chain separating the two $2$-trees is $0$. In particular, the two $2$-trees are attached to components with the same multiplicity for $D$, so $q_1$ and $q_m$ are equidistant from the core.
+ Assume now that there is a chain of rational curves $S_i$ lying between $E_1$ and $E_2$ in $K$, and one of the special trees connects to one of the $S_i$; in case (b), then, both $2$-trees must connect to (possibly different) $S_i$, by the previous paragraph. Furthermore, the growth rate along the rational chains at $E_1$ and $E_2$ has to be $1$. This in turn implies that, in case (b), the growth rate along the chain separating the two $2$-trees is $0$. In particular, the two $2$-trees are attached to components with the same multiplicity for $D$, so $q_1$ and $q_m$ are equidistant from the core. See Figure \ref{fig:E1E2} for some examples.
  
- \begin{center}
- \includegraphics[width=.8\textwidth]{two_genus_one}  
-  \end{center}
+ \begin{figure}
+ \includegraphics[width=.8\textwidth]{E1E2example} 
+ \caption{Examples of $Z$ with two genus one components (the white dots). The numbers indicate the multiplicity of $D$. On the left, one $3$-tree attached to $E_1$; on the right, two $2$-trees attached to the same bead of the rational chain separating $E_1$ from $E_2$.}\label{fig:E1E2}
+  \end{figure}
   
- \item $\bar K\in\Delta_{irr}$, i.e. $K$ contains an irreducible subcurve of arithmetic genus one $E$, with two points $y_1$ and $y_2$ on $E$ that are joined in $K$ by a (possibly empty) rational chain. We see as above that either a $3$-tree is attached to a point $x\in E$ satisfying $2x\sim y_1+y_2$ in $\Pic(E)$, or two $2$-trees are attached to $x_1,x_2\in E$ satisfying $x_1+x_2\sim y_1+y_2$ in $\Pic(E)$, or the rational chain is not empty and all the distinguished trees are attached to it. In this case, solve the balancing equation on $E$: let $d=d_E$, $d_1$ and $d_2$ be the multiplicities of the rational components attached to $y_1$ and $y_2$ respectively; then either $d_1=d_2=d-1$, or $d_1=d-1+k$, $d_2=d-1-k$ and $r_1-r_2$ is $k$-torsion in $\Pic(E)$. But, by chasing the balancing equation along the rational necklace, we find that, if $k\geq 1$, then the growth rate increases when passing through a distinguished bead, so that ultimately $d-1-k=d_2>d_1d-1+k$, which is absurd. So the only possibility is to have a rational chain symmetric with respect to the distinguished beads, namely: in case (a) the two pieces of the rational chain standing between the special bead and $E$ have the same length, and in case (b) the distance shortest path between a special bead and $E$ is the same for the two special beads.
+ \item $\bar K\in\Delta_{irr}$, i.e. $K$ contains an irreducible subcurve of arithmetic genus one $E$, with two points $y_1$ and $y_2$ on $E$ that are joined in $K$ by a (possibly empty) rational chain. We see as above that either a $3$-tree is attached to a point $x\in E$ satisfying $2x\sim y_1+y_2$ in $\Pic(E)$, or two $2$-trees are attached to $x_1,x_2\in E$ satisfying $x_1+x_2\sim y_1+y_2$ in $\Pic(E)$, or the rational chain is not empty and all the distinguished trees are attached to it. In this case, solve the balancing equation on $E$: let $d=d_E$, $d_1$ and $d_2$ be the multiplicities of the rational components attached to $y_1$ and $y_2$ respectively; then either $d_1=d_2=d-1$, or $d_1=d-1+k$, $d_2=d-1-k$ and $r_1-r_2$ is $k$-torsion in $\Pic(E)$. But, by chasing the balancing equation along the rational necklace, we find that, if $k\geq 1$, then the growth rate increases when passing through a distinguished bead, so that ultimately $d-1-k=d_2>d_1d-1+k$, which is absurd. So the only possibility is to have a rational chain symmetric with respect to the distinguished beads, namely: in case (a) the two pieces of the rational chain standing between the special bead and $E$ have the same length, and in case (b) the distance shortest path between a special bead and $E$ is the same for the two special beads. See Figure \ref{fig:ER}.
  
-  \begin{center}
- \includegraphics[width=.8\textwidth]{one_genus_one}  
-  \end{center}
+  \begin{figure}
+ \includegraphics[width=.8\textwidth]{ERexample}
+ \caption{$K$ is a genus one curve $E$ with a rational bridge $R$. Left column, one $3$-tree; right, two $2$-trees. Above: the special trees affere to $E$; below: they affere to $R$ - note that $R$ is necessarily symmetric in this case.}\label{fig:ER}
+  \end{figure}
  
- \item Finally, we consider the case that $K$ has geometric genus $0$. It is easy to see that, if a special tree afferes to a stable component, the only chance that the balancing condition may be satisfied is that there are two $2$-trees and they affere to different stable components; the semistable chains have arbitrary length and $D$ has the same multiplicity along every component of the core. There remain three possibilities for the dual graph, according to how the distinguished components (denoted by $R$) and the other stable components (denoted by $A$ and $B$) distribute themselves:
-  
-  \begin{center}
- \includegraphics[width=.8\textwidth]{rational_pretzel}  
-  \end{center}
+ \item Finally, we consider the case that $K$ has geometric genus $0$. It is easy to see that, if a special tree afferes to a stable component, the only chance that the balancing condition may be satisfied is that there are two $2$-trees and they affere to different stable components; the semistable chains have arbitrary length and $D$ has the same multiplicity along every component of the core; see the upper left corner of Figure \ref{fig:Krat}. There remain three possibilities for the dual graph, according to how the distinguished components (denoted by $R$) and the other stable components (denoted by $A$ and $B$) distribute themselves.
+  \begin{figure}
+ \includegraphics[width=.8\textwidth]{rational_pretzel} 
+ \caption{When $K$ consists of rational curves.}\label{fig:Krat}
+  \end{figure}
  Denoting by $t$ the growth rate along various rational chains, we find that in case (a) and (b).1 balancing along $A$ or $B$ is equivalent to $\sum_it_i=1$. Assume $t_1\geq0$; then $d_A>d_B$, therefore $t_2,t_3>0$, which contradicts $\sum_it_i=1$. Similarly, if $t_1\leq -2$, then $d_A<d_B$, therefore $t_2,t_3<0$, which makes $\sum_it_i=1$ again impossible. We find only one solution with $t_1=-1$ and $t_2=t_3=0$ - notice that it is a degeneration of the case considered in the previous point.
- 
  On the other hand, in case (b).2, we find $\sum_it_i=1$ when balancing $B$, and $\sum_it_i=-1$ when balancing $A$, which is a contradiction.
 \end{enumerate}
 This concludes the proof of Propositions \ref{prop:tailI}(2) and \ref{prop:tailII}(2).
@@ -710,6 +711,7 @@ There is a stable $2$-pointed curve that arises as a solution of the balancing e
   \begin{center}
  \includegraphics[width=.6\textwidth]{extra_conjugate}  
   \end{center}
+In this case, the line bundle $\omega_{\mathcal C/\dvr}(D)$ trivial along $Z$ might not be semiample.
 \end{rem}
 
 
