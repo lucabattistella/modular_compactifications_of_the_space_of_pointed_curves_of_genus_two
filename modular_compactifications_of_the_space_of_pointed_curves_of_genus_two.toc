@@ -6,4 +6,4 @@
 \contentsline {section}{\tocsection {}{3}{Tangent sheaf, crimping space, and automorphisms}}{8}{section.3}
 \contentsline {section}{\tocsection {}{4}{Dualising line bundle and semistable tails}}{15}{section.4}
 \contentsline {section}{\tocsection {}{5}{The new moduli functors}}{26}{section.5}
-\contentsline {section}{\tocsection {}{}{References}}{34}{section*.2}
+\contentsline {section}{\tocsection {}{}{References}}{35}{section*.2}

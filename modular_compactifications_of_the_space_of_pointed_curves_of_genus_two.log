@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  21 APR 2019 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  5 MAY 2019 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1242,23 +1242,16 @@ Overfull \hbox (3.74081pt too wide) in paragraph at lines 734--741
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
  [29]
+[30] [31] <critical_step.png, id=489, 634.37pt x 190.311pt>
+File: critical_step.png Graphic file (type png)
 
-LaTeX Warning: Reference `lem:contraction' on page 30 undefined on input line 1
-200.
-
-
-LaTeX Warning: Reference `lem:contraction' on page 30 undefined on input line 1
-203.
-
-[30]
-Overfull \hbox (4.08348pt too wide) detected at line 1206
-\OML/cmm/m/it/10.95 ![] []
- []
-
-[31] [32]
+<use critical_step.png>
+Package pdftex.def Info: critical_step.png used on input line 1219.
+(pdftex.def)             Requested size: 306.42528pt x 91.92902pt.
+ [32] [33 <./critical_step.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
+ [34]
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.bbl
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
@@ -1270,26 +1263,27 @@ Underfull \hbox (badness 1033) in paragraph at lines 10--14
 flip in
  []
 
-[34]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 214.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+[35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35])
-Underfull \hbox (badness 10000) in paragraph at lines 1323--1326
+ [36]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 214.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1353
 
  []
 
-[36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1328.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1328.
+[37]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1355.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1328.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1355.
 
 Package rerunfilecheck Info: File `modular_compactifications_of_the_space_of_po
 inted_curves_of_genus_two.out' has not changed.
@@ -1298,16 +1292,16 @@ inted_curves_of_genus_two.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1328.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1355.
  ) 
 Here is how much of TeX's memory you used:
- 29995 strings out of 494901
- 559074 string characters out of 6179486
- 653017 words of memory out of 5000000
- 32428 multiletter control sequences out of 15000+600000
+ 29997 strings out of 494901
+ 559164 string characters out of 6179486
+ 653342 words of memory out of 5000000
+ 32431 multiletter control sequences out of 15000+600000
  29542 words of font info for 94 fonts, out of 8000000 for 9000
  197 hyphenation exceptions out of 8191
- 56i,16n,82p,10445b,1006s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,82p,10445b,1006s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/luca/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/lu
 ca/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/luca/.texmf-va
 r/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/luca/.texmf-var/fonts/pk/l
@@ -1335,10 +1329,10 @@ r/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
 /msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
 Output written on modular_compactifications_of_the_space_of_pointed_curves_of_g
-enus_two.pdf (36 pages, 709518 bytes).
+enus_two.pdf (37 pages, 735296 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
- 568 compressed objects within 6 object streams
- 185 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1100 PDF objects out of 1200 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 183 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

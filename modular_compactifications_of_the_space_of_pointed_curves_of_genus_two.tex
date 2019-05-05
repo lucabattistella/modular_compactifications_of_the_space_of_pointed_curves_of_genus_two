@@ -1125,7 +1125,7 @@ Similarly to \cite[Corollary 3.2, Lemma 3.5]{SMY1} we can prove the following.
 \end{lem}
 
 We finally come to the definition of $m$-stability for curves of genus two.
-\begin{dfn}
+\begin{dfn}\label{def:m-stability}
  Fix positive integers $m<n$. Let $(C,p_1,\ldots,p_n)$ be a connected, reduced, complete curve of arithmetic genus two, marked by smooth distinct points. We say that $C$ is $m$-stable if:
  \begin{enumerate}[leftmargin=.7cm]
   \item\label{cond:sing} $C$ is Gorenstein with only: nodes; elliptic $l$-fold points, $l\leq m+1$; type $I_{\leq m}$, type $I\!I_{\leq m}$, and dangling $I\!I_{m+1}$ singularities of genus two, as singular points.
@@ -1189,6 +1189,41 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
  \emph{Existence of limits.}
   We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails.
   
+  We check whether $p_1$ is Weierstrass or not: in the former case, change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^3$ and resolve; in the latter, mark $\mathcal C^\prime$ with an extra section $\bar p_1$ given by the closure of the conjugate point $\bar p_1(\eta)$ (unless it coincides with one of $p_1,\ldots,p_n$; if it coincides with $p_1$, we have a Weierstrass point indeed), then change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^2$ and resolve. We drop the primes from notation. $\mathcal C_0$ is now marked with a(n extra) smooth point $\bar p_1$. The base-change is a technical expedient we find useful in the forthcoming construction.
+  
+  We claim there is a unique genus two subcurve $Z$ of $\mathcal C_0$ that satisfies the shape requirements of Proposition \ref{prop:tailI} (resp. \ref{prop:tailII}) - or consists of two disjoint balanced subcurves of genus one - guaranteeing the curve we obtain by contracting $Z$ has bounded above singularities and bounded below level as in conditions \eqref{cond:sing},\eqref{cond:lev2}, and \eqref{cond:lev1} of Definition \ref{def:m-stability}.
+  
+  We think of this process as drawing a family of expanding circles on the dual graph (except, they are neither exactly circles, nor always expanding). Note that we may at any point blow-up the curve at a marking on the central fiber, and consider the strict transform of the corresponding section; thus markings can effectively be considered as infinite legs in the dual graph. We are going to contract the strict interior of the circle; note that the number of branches of the resulting singularity is determined by the inner valence of the circle, and the level by the outer valence.
+  
+  For simplicity, we start by examining the case that the core of $\mathcal C_0$ is irreducible, and $p_1$ is Weierstrass. Step $0$: if the core $K$ has level $\geq m+1$, then the curve is already $m$-stable. Otherwise, draw a first circle comprising $K$, and reaching every second closest rational component along any rational tree attached to $K$, except for the tree containing $p_1$. Note that the inner valence is exactly $\lev(K)$, thanks to the base-change we have performed earlier, and in particular it is no larger than $m$; on the other hand, semistability implies that the outer valence is non-decreasing - it is important to consider markings as infinite legs for this -: if it is $\geq m+1$ we stop, otherwise we repeat the process. Calling $K_1$ the union of the components strictly inside the first circle, $\mathcal C_0$ is the union of $K_1$ and a number of rational trees; if the outer valence at the first step is still $\leq m$, we enlarge the circle by reaching one step further along the rational tree containing $p_1$, and three steps along all the other ones. Because a circle of very large radius has both inner and outer valence equal to $n>m$, by increasing the radius step by step we will eventually reach level $m+1$ or higher. If we stop at the $l$-th step, the line bundle we will use to perform the contraction is
+  \begin{multline*}
+  \mathcal L=\omega_{\mathcal C/\dvr}(3l K + \sum_{R\in [p_1,K]}[3l-3\dist(R,K)]_+R +\sum_{R\notin T_1}[3l-\dist(R,K)]_+R +\\
+  \sum_{R\in T_1,R\notin [p_1,K]}[3l-3\dist(T_1\wedge T_R,K)-\dist(R,T_1\wedge T_R)]_+R+ \sum_{i=1}^np_i)
+  \end{multline*}
+  where $T_1$ is the rational tree (connected component of $\mathcal C_0\setminus K$) containing $p_1$, $T_R$ the one containing $R$, $T_1\wedge T_R$ their common component furthest from the core, $\dist$ is the distance on the dual graph, and $[k]_+=\max\{0,k\}$ for any integer $k$. If $\mathcal L$ differs from $\omega_{\mathcal C/\dvr}^{\text{log}}$ by a vertical divisor whose support is $Z$, the shape prescription being satisfied by construction, it follows from Proposition \ref{prop:contractionI} that $\mathcal L$ is $\pi$-semiample, and the contraction it produces contains a singularity of type I with $p_1$ affering to the special branch. Note that $\mathcal L$ contracts as well the semistable rational components that are disjoint from $Z$, hence the resulting curve has no (infinitesimal) automorphisms. The level condition is satisfied by construction, therefore $\overline{\mathcal C}_0$ is $m$-stable.
+  
+  The case that the core is irreducible and $p_1$ is not Weierstrass is dealt with in a similar fashion. Remember that in this case we have constructed a conjugate section $\bar p_1$; this is an auxiliary marking that will be forgotten in the end, and should not be taken into account when computing the level. At every step we draw a larger circle by including one more component along the trees containing $p_1$ and $\bar p_1$, and two more along every other tree; the inner valence of the new circle is the same as the outer valence of the old one, thanks to the $2:1$ base-change. At the $l$-th step we are going to use the line bundle
+  \begin{multline*}
+  \mathcal L=\omega_{\mathcal C/\dvr}(2l K + \sum_{\substack{R\in [p_1,K]\\ \text{ or }[\bar p_1,K]}}[2l-2\dist(R,K)]_+R +\sum_{R\notin T_1,\bar T_1}[2l-\dist(R,K)]_+R +\\
+  \sum_{\substack{R\in T_1,R\notin [p_1,K]\text{ or} \\ R\in \bar T_1,R\notin [\bar p_1,K]}}[2l-2\dist(T_1\wedge T_R,K)-\dist(R,T_1\wedge T_R)]_+R+ \sum_{i=1}^np_i+\bar p_1)
+  \end{multline*}
+  to contract the strict interior of the circle. It follows from Proposition \ref{prop:contractionII} that $\mathcal L$ is $\pi$-semiample, and the associated contraction contains a singularity of type II with $p_1$ affering to one of the twin branches. Note that a $I\!I_{m+1}$ singularity will occur only if the level is $m$ and $\bar p_1$ does not coincide with any other special point, so that one of the twin branches remains dangling after forgetting $\bar p_1$. Again, the stability condition is satisfied by construction.
+  
+  \smallskip
+  
+  Suppose next that the minimal subcurve of genus two $Z$ contains two subcurves of genus one; call $E_1$ and $E_2$ the minimal such, and assume that $p_1$ afferes to $E_1$ in a point that is $2$-torsion with respect to the node separating $E_1$ from $E_2$. We start by drawing expanding circles around $E_2$ until the level condition for it is satisfied, and then we do the same for $E_1$, so that \eqref{cond:p1} holds; observe, though, that as soon as the two circles touch, the contraction will not have two distinguished genus one subcurves anymore, therefore we need to check \eqref{cond:lev2} rather than \eqref{cond:lev1}.
+  \begin{itemize}[leftmargin=.4cm]
+  \item If $\lev(E_2)\geq m+2$ is attained before the circle around $E_2$ gets to touch $E_1$, take the next $l_2\equiv 2  \pmod 3$ (thus ``undoing'' the $3:1$ base-change, which was unnecessary in this case), then contract the inner disc by the line bundle \[\mathcal L_2=\omega_{\mathcal C/\dvr}((l_2+1)E_2+\sum [l_2+1-\operatorname{dist}(E_2,R)]_+R+\sum_{i=1}^n p_i).\] Smyth's contraction lemma \cite[Lemma 2.13]{SMY1} applies, so that $E_2$ is contracted to an elliptic $l$-fold point $q_2$ ($l\leq m+1$). Consider now $E_1$. If $\lev(E_1)\leq m+1$, start drawing expanding circles around it. Either level $\geq m+2$ can be reached before touching the singularity at $q_2$, or, by contracting the maximal balanced subcurve of genus one containing $E_1$ and not $q_2$, we produce a curve having two genus one singularities that share a branch. Note that $p_1$ afferes to the only genus one subcurve that may have level $\leq m+1$.
+  \item Otherwise, one step before including $E_1$, we may contract the disc around $E_2$ to produce a genus one singularity with a genus one branch. If $\lev_2\leq m$ at this point, we need to contract the whole genus two subcurve. What happens at this critical step is that the multiplicity of $D$ along $E_1$ grows from $0$ to $3$, hence $D$ will be supported three steps further along each rational tail departing from $E_2$. Because the critical step is $\equiv 1\pmod 3$, the length of the rational tails is and remains $\equiv 2 \pmod 3$, hence we perform only one ``meaningful'' step forward (i.e. on the original central fiber, before changing base), thanks to the preliminary base-change. See Figure \ref{fig:critical}. In particular, the inner valence of the disc will be $\leq m$.
+  \begin{figure}
+   \includegraphics[width=.8\textwidth]{critical_step}
+   \caption{An instance of the critical step, when we pass from contracting the two genus one subcurves separately, to contracting the genus two subcurve as a whole. On the left, the contraction produces a tacnode with a genus one branch, having $\lev_2=3$. On the right, the contraction produces a singularity of type $I_3$. Note that in the meantime we performed a blow-up at $p_1$.}\label{fig:critical}
+  \end{figure}
+ We may now proceed as in the irreducible case, expanding the circle at every step by $1$ along $T_1$ and by $3$ along all other rational tails.
+ \end{itemize}
+ The case that the central fiber contains two subcurves of genus one, and $p_1$ afferes to a non-Weierstrass point, is analogous: it is enough to replace the number $3$ by the number $2$, and $2$ by $1$, in the previous argument. The only novelty is, it can happen that $p_1$ is equidistant from $E_1$ and $E_2$ - it must then affere to the rational chain joining them. In this case we start by expanding a circle around the one with the lowest level; if they have the same level, expand them simultaneously. If at a later stage $p_1$ becomes closer to one of the two circles, proceed as above.  
+
+  \begin{comment}
   Now check whether $p_1$ afferes to a Weierstrass point or not: in the former case, change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^3$, in the latter with $\pi^{\prime\prime}\mapsto(\pi^\prime)^2$; then resolve. This has the effect of replacing every node with a chain of two (resp. one) $-2$-curve. It is a technical expedient we find useful in the construction. We drop the primes from notation.
   
   Next we identify a (not necessarily connected) subcurve that needs be contracted in order to find the $m$-stable limit. The process can be thought of as drawing expanding circles on the dual graph (except, they are not always expanding). We may at any point blow-up the curve at a marking on the central fiber, and consider the strict transform of the corresponding section; thus markings can effectively be considered as legs going to infinity in the dual graph.
@@ -1220,15 +1255,7 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- \begin{comment} We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
+  We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
  
  We may construct a zigzag diagram of birational morphisms of curves over $\dvr$, never altering the generic fiber:
  \bcd
