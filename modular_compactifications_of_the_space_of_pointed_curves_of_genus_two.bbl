@@ -28,6 +28,11 @@ Allen Altman and Steven Kleiman.
 \newblock Lecture Notes in Mathematics, Vol. 146. Springer-Verlag, Berlin-New
   York, 1970.
 
+\bibitem[AK16]{AlperKresch}
+Jarod Alper and Andrew Kresch.
+\newblock Equivariant versal deformations of semistable curves.
+\newblock {\em Michigan Math. J.}, 65(2):227--250, 2016.
+
 \bibitem[Arn72]{Arnold}
 V.~I. Arnol'd.
 \newblock Normal forms of functions near degenerate critical points, the {W}eyl
@@ -64,11 +69,17 @@ Sebastian Casalaina-Martin and Radu Laza.
   singularities.
 \newblock {\em Trans. Amer. Math. Soc.}, 365(5):2271--2295, 2013.
 
-\bibitem[CTV18]{CTV}
+\bibitem[CTV18]{CTV1}
 Giulio {Codogni}, Luca {Tasin}, and Filippo {Viviani}.
 \newblock {On the first steps of the minimal model program for the moduli space
   of stable pointed curves}.
 \newblock {\em arXiv e-prints}, page arXiv:1808.00231, Aug 2018.
+
+\bibitem[CTV19]{CTV2}
+Giulio {Codogni}, Luca {Tasin}, and Filippo {Viviani}.
+\newblock {On some modular contractions of the moduli space of stable pointed
+  curves}.
+\newblock {\em arXiv e-prints}, page arXiv:1904.13212, Apr 2019.
 
 \bibitem[Cuk89]{Cukierman}
 Fernando Cukierman.
@@ -96,6 +107,12 @@ Steven Diaz.
 P.~Deligne and D.~Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
+
+\bibitem[FS13]{FS}
+Maksym Fedorchuk and David~Ishii Smyth.
+\newblock Alternate compactifications of moduli spaces of curves.
+\newblock In {\em Handbook of moduli. {V}ol. {I}}, volume~24 of {\em Adv. Lect.
+  Math. (ALM)}, pages 331--413. Int. Press, Somerville, MA, 2013.
 
 \bibitem[Gie82]{Gieseker}
 D.~Gieseker.
@@ -157,6 +174,12 @@ Se\'{a}n Keel and Shigefumi Mori.
 \newblock Quotients by groupoids.
 \newblock {\em Ann. of Math. (2)}, 145(1):193--213, 1997.
 
+\bibitem[Knu83]{Knudsen}
+Finn~F. Knudsen.
+\newblock The projectivity of the moduli space of stable curves. {II}. {T}he
+  stacks {$M_{g,n}$}.
+\newblock {\em Math. Scand.}, 52(2):161--199, 1983.
+
 \bibitem[LZ09]{LZ}
 Jun Li and Aleksey Zinger.
 \newblock On the genus-one {G}romov-{W}itten invariants of complete
@@ -169,6 +192,12 @@ D.~Mumford, J.~Fogarty, and F.~Kirwan.
   Mathematik und ihrer Grenzgebiete (2) [Results in Mathematics and Related
   Areas (2)]}.
 \newblock Springer-Verlag, Berlin, third edition, 1994.
+
+\bibitem[{Mor}11]{Morrison}
+Ian {Morrison}.
+\newblock {Mori theory of moduli spaces of stable curves}.
+\newblock \url{http://www.projectivepress.com/moduli/moristablecurves.pdf},
+  2011.
 
 \bibitem[RSW17a]{RSPW1}
 Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
@@ -208,10 +237,10 @@ David~Ishii Smyth.
 \newblock {Intersections of psi-classes on moduli spaces of m-stable curves}.
 \newblock {\em arXiv e-prints}, page arXiv:1808.03214, Aug 2018.
 
-\bibitem[{Sta}18]{stacks-project}
+\bibitem[{Sta}19]{stacks-project}
 The {Stacks Project Authors}.
 \newblock \textit{Stacks Project}.
-\newblock \url{https://stacks.math.columbia.edu}, 2018.
+\newblock \url{https://stacks.math.columbia.edu}, 2019.
 
 \bibitem[Ste96]{Stev}
 Jan Stevens.
