@@ -144,38 +144,38 @@
 \begin{document}
 
 \begin{abstract}
-We study the geometry of Gorenstein curve singularities of genus two, and of their semistable tails. There are two families of such singularities, corresponding to either Weierstrass or conjugate points on a curve of genus two. For every $1\leq m <n$, a stability condition - using one of the markings as a reference point, and therefore not $\mathfrak S_n$-symmetric - defines proper Deligne-Mumford stacks $\oM_{2,n}^{(m)}$ containing the locus of smooth curves as a dense open.
+We study the geometry of Gorenstein curve singularities of genus two, and of their stable limits. There are two families of such singularities, corresponding to either Weierstrass or conjugate points on a semistable tail. For every $1\leq m <n$, a stability condition - using one of the markings as a reference point, and therefore not $\mathfrak S_n$-symmetric - defines proper Deligne-Mumford stacks $\oM_{2,n}^{(m)}$ containing the locus of smooth curves as a dense open.
 \end{abstract}
 
 \maketitle
 \tableofcontents
 
 \section{Introduction}
-\subsection{From the Deligne-Mumford space to the Hassett-Keel program} One of the most fascinating and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen \cite{DM,Knudsen}, via the introduction of \emph{stable} pointed curves.
+\subsection{From the Deligne-Mumford space to the Hassett-Keel program} One of the most fascinating and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen, via the introduction of \emph{stable} pointed curves.
 
-\begin{dfn}
- A connected, reduced, complete curve $C$ with distinct markings $(p_1,\ldots,p_n)$ lying in the smooth locus of $C$ is \emph{stable} if:
+\begin{dfn}\cite{DM}
+ A connected, reduced, complete curve $C$, with distinct markings $(p_1,\ldots,p_n)$ lying in the smooth locus of $C$, is \emph{stable} if:
  \begin{enumerate}[leftmargin=.7cm]
-  \item $C$ admits only nodes as singularities;
+  \item $C$ admits only nodes (ordinary double points) as singularities;
   \item every rational component of $C$ has at least three special points (markings or nodes), and every elliptic component has at least one.
  \end{enumerate}
 \end{dfn}
 
-\begin{thm}
+\begin{thm} \cite{DM,Knudsen}
  Assume $2g-2+n>0$. The moduli stack of stable pointed curves $\oM_{g,n}$ is a smooth and proper connected Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z)$, with projective coarse moduli space $\overline{\mathbf M}_{g,n}$. The boundary $\oM_{g,n}\setminus\pazocal M_{g,n}$, representing nodal curves, is a normal crossing divisor.
 \end{thm}
-On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a difficult problem, which has so far only found a partial, beautiful answer in work of D.I. Smyth \cite{SMY-towards}.
+On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a challenging task, which has so far found only a partial solution in the beautiful work of D.I. Smyth \cite{SMY-towards}.
 
-Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard general theory of stacks \cite{KM}, this moduli space was first constructed as a quotient, prompting the development of the powerful techniques of Geometric Invariant Theory  \cite{Gieseker,GIT,BalSwi}. The study of alternative compactifications of $\pazocal M_{g,n}$ is motivated as well by an interest in the birational geometry of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition under consideration, and then realising that the resulting quotient still enjoyed a modular interpretation \cite{Schubert,Hassettg2}. The consequent program that goes under the name of B. Hassett and S. Keel aims to describe all the  quotients arising in this way, and to determine whether every step of a minimal model program for $\overline{\mathbf M}_{g,n}$ can be provided with a modular interpretation in terms of curves with worse than nodal singularities \cite{CTV1,CTV2}. Since the early stages of this program, it has developed into a fascinating playground for implementing ideas that originated from (v)GIT into a general structure theory of Artin stacks \cite{AlperKresch,AFS1,AFS2,AFS3}. See for instance \cite{Morrison, FS} for more comprehensive and instructive accounts.
+Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard general theory of stacks \cite{KM}, this moduli space was first constructed as a quotient, prompting the development of the powerful techniques of Geometric Invariant Theory  \cite{Gieseker,GIT,BalSwi}. The study of alternative compactifications of $\pazocal M_{g,n}$ is motivated as well by an interest in the birational geometry of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition under consideration, and analysing the modular properties of the resulting quotient \cite{Schubert,Hassettg2}. The consequent program that goes under the name of B. Hassett and S. Keel aims to describe all the quotients arising in this way, and to determine whether every step of a minimal model program for $\overline{\mathbf M}_{g,n}$ enjoys a modular interpretation in terms of curves with worse than nodal singularities \cite{CTV1,CTV2}. Since the early stages of this program, it has developed into a fascinating playground for implementing ideas that originated from (v)GIT into a general structure theory of Artin stacks \cite{AlperKresch,AFS1,AFS2,AFS3}. See for instance \cite{Morrison, FS} for more comprehensive and instructive accounts.
 
-Only few steps of the Hassett-Keel program have been carried out in full generality. On the other hand, the program has been completed to a larger extent in low genus: with the introduction of weighted pointed curves \cite{Hassettweighted} in genus zero, and with Smyth's pioneering work in genus one \cite{SMY1,SMY2,SMY3}, extending in a direction an earlier work of D. Schubert. The philosophy is that an alternative compactification is defined by allowing a reasonably larger class of curve singularities (\emph{local condition}), identifying their (semi)stable models, and disallowing the latter by imposing a stronger stability condition (\emph{global condition}, usually combinatorial); this ensures that the resulting moduli problem be again separated and universally closed, by the valuative criterion.
+Only few steps of the Hassett-Keel program have been carried out in full generality. On the other hand, the program has been completed to a larger extent in low genus: with the introduction of weighted pointed curves \cite{Hassettweighted} in genus zero, and with Smyth's pioneering work in genus one \cite{SMY1,SMY2,SMY3}, extending earlier work of D. Schubert in a direction. The philosophy is that an alternative compactification is defined by allowing a reasonably larger class of curve singularities (\emph{local condition}), while identifying their (semi)stable models, and disallowing them by imposing a stronger stability condition (\emph{global condition}, usually combinatorial); this ensures that the resulting moduli problem be again separated and universally closed, by the valuative criterion.
 
 A useful notion in this respect is that of the \emph{genus} of an isolated curve singularity: let $(C,x)$ be (the germ of) a reduced curve over an algebraically closed field $\k$ at its unique singular point $x$, with normalisation $\nu\colon\widetilde{C}\to C$.
-\begin{dfn}\label{def:genus}
-Let $C$ have $m$ branches at $x$, and $\delta$ be the $\k$-dimension of $\nu_*\OO_{\widetilde C}/\OO_C$, a skyscraper sheaf supported at $x$. The genus of $(C,x)$ is then:
+\begin{dfn}\label{def:genus}\cite{SMY1}
+If $C$ has $m$ branches at $x$, and $\delta$ is the $\k$-dimension of $\nu_*\OO_{\widetilde C}/\OO_C$, a skyscraper sheaf supported at $x$. The genus of $(C,x)$ is defined as:
 \[g=\delta-m+1.\] 
 \end{dfn}
-It can be thought of as the number of conditions that a function must satisfy in order to descend from the seminormalisation (the initial object in the category of universal homeomorphism $C^\prime\to C$, see \cite[\href{https://stacks.math.columbia.edu/tag/0EUS}{Tag 0EUS}]{stacks-project}, or a curve with the same topological space as $C$ and an ordinary $m$-fold point at $x$) to $C$. The node, for example, has genus zero, since it coincides with its own seminormalisation. It is a notion that behaves well in families, in the sense that a complete, reduced curve $C$ with only one singularity at $x$, of $\delta$-invariant $\delta$, and normalisation a union of $m$ copies of $\PP^1$, will appear in a family of curves of arithmetic genus $g$.
+It can be thought of as the number of conditions that a function must satisfy in order to descend from the seminormalisation (the initial object in the category of universal homeomorphism $C^\prime\to C$, see \cite[\href{https://stacks.math.columbia.edu/tag/0EUS}{Tag 0EUS}]{stacks-project}, or a curve with the same topological space as $C$ and an ordinary $m$-fold point at $x$) to $C$. The node, for example, has genus zero, since it coincides with its own seminormalisation. It is a notion that behaves well in families, in the sense that a complete, reduced curve $C$ with only one singularity at $x$, of $\delta$-invariant $\delta$, and normalisation a union of $m$ copies of $\PP^1$, can only appear in a family of curves of arithmetic genus $g$.
 
 Smyth found that, for every fixed number of branches $m$, there is a unique germ of Gorenstein singularity of genus one up to isomorphism, namely:
 \begin{description}
@@ -185,9 +185,9 @@ Smyth found that, for every fixed number of branches $m$, there is a unique germ
 \end{description}
 Singularities of this kind, with up to $m$ branches, together with nodes, form a deformation-open class of singularities. Furthermore, the elliptic $m$-fold point can be obtained by contracting a smooth elliptic curve with $m$ rational tails in a one-parameter smoothing, and, roughly speaking, all stable models look like this.
 \begin{dfn}\cite{SMY1}
- A connected, reduced, complete curve $C$ of arithmetic genus one with smooth distinct markings $(p_1,\ldots,p_n)$ is $m$-stable, $1\leq m<n$, if:
+ A connected, reduced, complete curve $C$ of arithmetic genus one with smooth distinct markings $(p_1,\ldots,p_n)$ is \emph{$m$-stable}, $1\leq m<n$, if:
  \begin{enumerate}[leftmargin=0.7cm]
-  \item it has only nodes and elliptic $l$-fold points, $l\leq m$, as singularities;
+  \item it admits only nodes and elliptic $l$-fold points, $l\leq m$, as singularities;
   \item for every connected subcurve $E\subseteq C$ of arithmetic genus one, its \emph{level}:
   
   \noindent$\lvert E\cap\overline{C\setminus E}\rvert+\lvert\{i\colon p_i\in E\}\rvert$ is strictly larger than $m$;
@@ -196,10 +196,10 @@ Singularities of this kind, with up to $m$ branches, together with nodes, form a
 \end{dfn}
 The latter can be taken for a decency condition on the moduli stack. The second one, instead, is essential in guaranteeing the uniqueness of $m$-stable limits, as per the discussion above. Smyth's main result is the following.
 \begin{thm}\cite{SMY1,SMY2}
- The moduli stack of $m$-stable curves $\oM_{1,n}(m)$ is a proper irreducible Deligne-Mumford stack over $\operatorname{Spec}\mathbb Z[1/6]$. It is \emph{not} smooth for $m\geq 6$. The coarse moduli spaces $\overline{\mathbf{M}}_{1,n}(m)$ arise as birational models of $\overline{\mathbf{M}}_{1,n}$ for the big line bundles $D(s)=s\lambda+\psi-\Delta$, where $\psi$ is the sum of the $\psi$-classes, $\Delta$ is a boundary class, and $s$ and $m$ are explicitly related.
+ The moduli stack of $m$-stable curves $\oM_{1,n}(m)$ is a proper irreducible Deligne-Mumford stack over $\operatorname{Spec}\mathbb Z[1/6]$. It is \emph{not} smooth for $m\geq 6$. The coarse moduli spaces $\overline{\mathbf{M}}_{1,n}(m)$ arise as birational models of $\overline{\mathbf{M}}_{1,n}$ for the big line bundles $D(s)=s\lambda+\psi-\Delta$, where $\psi$ is the sum of the $\psi$-classes, $\Delta$ is a boundary class, and there is an explicit relation between $s$ and $m$.
 \end{thm}
 
-\subsection{Experimenting on a genus two tale}  The following is classically known.
+\subsection{Experimenting on a genus two tale}  Here is a classical
 \begin{fact}
  There are two unibranch singularities of genus two, namely the \emph{ramphoid cusp} or \emph{$A_4$-singularity} $V(y^2-x^5)\subseteq \Aaff^2_{x,y}$, and the singularity $\operatorname{Spec}(\k[t^3,t^4,t^5])$ in $3$-space. The former is Gorenstein, and its stable model is a Weierstrass tail (a genus two curve attached to a rational one at a Weierstrass point), while the latter is not Gorenstein, and its stable model is a non-Weierstrass genus two tail.
 \end{fact}
@@ -209,63 +209,75 @@ in a unique way up to projectivities.
 \begin{comment}; indeed, the unique $\mathfrak g^1_2$ is the complete canonical series\end{comment}
 The deck transformation is called the hyperelliptic involution $\sigma$; ramification points (fixed points of $\sigma$) are called Weierstrass, while in general $\{p,\sigma(p)\}$ are called conjugate points. See Remark \ref{rmk:Wandconj} below.
 
-Let us try to apply Smyth's approach to genus two curves, starting from $\oM_{2,2}^{(1)}$. If we are going to require the level of a genus two subcurve to be at least $2$, it seems we need to include non-Gorenstein singularities in order to keep our moduli space proper. This might lead us into trouble; for example, the (log) dualising line bundle is classically used to construct canonical polarisations on stable curves, which in turn are essential in the proof that $\oM_{g,n}$ is an algebraic stack (or in the construction of $\overline{\mathbf M}_{g,n}$). Yet, there is a way around the awful singularity $\k[t^3,t^4,t^5]$.
+Let us try out Smyth's approach on genus two curves, starting from $\oM_{2,2}^{(1)}$. If we are going to require the level of a genus two subcurve to be at least $2$, it seems we need to include non-Gorenstein singularities in order to keep our moduli space proper. This might lead us into trouble; for example, the (log) dualising line bundle is classically used to construct canonical polarisations on stable curves, which in turn are essential in the proof that $\oM_{g,n}$ is an algebraic stack (or in the construction of $\overline{\mathbf M}_{g,n}$). Yet, there is a way around the awful singularity $\k[t^3,t^4,t^5]$.
 \begin{fact}
- The $A_5$-singularity $V(y^2-yx^3)\subseteq\Aaff^2_{x,y}$ is a Gorenstein singularity of genus two with two branches. Its stable model is a genus two bridge, with the two nodes being conjugate points. A marked union of two $\PP^1$ along an $A_5$-singularity has no non-trivial automorphisms as soon as one of the two branches contains at least two markings.
+ The $A_5$-singularity $V(y^2-yx^3)\subseteq\Aaff^2_{x,y}$ is a Gorenstein singularity of genus two with two branches. Its stable model is a genus two bridge, with the two nodes being conjugate points. A marked union of two copies of $\PP^1$ along an $A_5$-singularity has no non-trivial automorphisms as soon as one of the two branches contains at least two markings.
 \end{fact}
-See Proposition \ref{prop:classification} and Corollary \ref{cor:explicitnoaut} below. Let us go back to $\oM_{2,2}$. Suppose there is a rational tail $R$ on which the two markings lie, so as to contravene the requirement that the level of any genus two subcurve is at least $2$. If $R$ is attached to a Weierstrass point of the minimal subcurve of genus two $Z$, we may simply contract the latter (in a one-parameter smoothing), thus producing an irreducible ramphoid cusp with two markings. If instead $R$ is attached to a non-Weierstrass point $q_1$ of $Z$, we may blow up the one-parameter family at the conjugate point $\sigma(q_1)$ on the central fiber, and then contract $Z$ to get a \emph{dangling} $A_5$-singularity (meaning that one of the branches is unmarked), which nonetheless has trivial automorphism group.
+See Proposition \ref{prop:classification} and Corollary \ref{cor:explicitnoaut} below. Let us go back to $\oM_{2,2}$. Suppose $C$ is the nodal union of a genus two curve $Z$ with a rational tail $R$ supporting the two markings, so that $\lev(Z)=1$. If $R$ is attached to a Weierstrass point of $Z$, we may simply contract the latter (in a $1$-parameter smoothing), thus producing an irreducible ramphoid cusp with two markings. If instead $R$ is attached to a non-Weierstrass point $q_1$ of $Z$, we may blow up the one-parameter family at the conjugate point $\sigma(q_1)$ in the central fiber, and then contract $Z$ to get a \emph{dangling} $A_5$-singularity (meaning that one of the branches is unmarked), which nonetheless has trivial automorphism group. We pursue this strategy, which makes our compactifications not semistable (see \cite[Definition 1.2]{SMY-towards} for the terminology). The necessity to include such curves was prefigured in \cite{AFSGm}.
 
 To complete the picture, note that, in order to fix a deformation-open class of singularities, we need to allow cusps and tacnodes as well.
 \begin{fact}
  The singularities appearing in the miniversal family of an $A_m$-singularity are all and only the $A_l$-singularities with $l\leq m$.
 \end{fact}
-See Theorem \ref{thm:ADE} below for a more general statement - valid for all ADE singularities - due to A. Grothendieck. For the sake of separatedness, we should at the same time require that the level of a genus one subcurve be at least $3$. Note that hybrid situation may emerge: e.g. an elliptic curve with a cusp, or an irreducible tacnode; what is worth mentioning is that, since we want to allow a tacnode and a cusp sharing a branch, the level condition for genus one subcurves should be applied only to \emph{nodally attached} subcurves. In particular, there cannot be any nodally attached subcurve of genus one. Besides, in the last example we need to break the $\mathfrak S_2$-symmetry (relabelling the markings) in order to have a unique limit: we do so by declaring that $p_1$ lie on the cuspidal branch. See Figure \ref{fig:one_tail_example}.
+See Theorem \ref{thm:ADE} below for a more general statement - valid for all ADE singularities - due to A. Grothendieck. For the sake of separatedness, we should at the same time require that the level of a genus one subcurve be at least $3$. Note that hybrid situations may emerge: e.g. an elliptic curve with a cusp, or an irreducible tacnode; it is worth pointing out that, as we need to allow a tacnode and a cusp sharing a branch, we should impose the level condition on genus one subcurves only when they are \emph{nodally attached} - in this case, any nodally attached subcurve of genus one will violate $1$-stability. Besides, in the last example we need to break the $\mathfrak S_2$-symmetry (relabelling the markings) in order to have a unique limit: we do so by declaring that $p_1$ lie on the cuspidal branch. See Figure \ref{fig:one_tail_example}.
 
 \begin{figure}
- \includegraphics[width=.8\textwidth]{one_tail_example}
+ \includegraphics[width=\textwidth]{one_tail_example}
   \caption{Examples of $2$-pointed stable curves and their $1$-stable limits.}\label{fig:one_tail_example}
 \end{figure}
 
 We now have a plausible definition of $\oM_{2,2}^{(1)}$.
 \begin{dfn}
- A connected, reduced, complete curve of arithmetic genus two $C$ over $\k=\bar\k$, with smooth and disjoint markings $p_1,p_2$, is $1$-stable if:
+ A connected, reduced, complete curve of arithmetic genus two $C$ over $\k=\bar\k$, with smooth and disjoint markings $p_1,p_2$, is \emph{$1$-stable} if:
  \begin{enumerate}[leftmargin=0.7cm]
   \item $C$ has only $A_1-,\ldots,A_4-$ and dangling $A_5-$ singularities.
-  \item Every subcurve of genus two has level $2$ at least.
-  \item There is no nodally attached subcurve of genus one; if there are two genus one singularities sharing a branch, $p_1$ is connected to the one of lowest level.
+  %\item Every subcurve of genus two has level $2$.
+  \item There is no proper subcurve of arithmetic genus two.
+  \item A subcurve of arithmetic genus one is either nodally attached and of level $3$, or it is not nodally attached and it contains $p_1$.
+  %\item There is no nodally attached subcurve of genus zero.
  \end{enumerate}
 \end{dfn}
 
-The main result of the paper is that $\oM_{2,2}^{(1)}$ is a proper Deligne-Mumford stack, and the generalisations to an arbitrary number of markings that we are going to discuss in the next subsection.
+The main result of the paper is that $\oM_{2,2}^{(1)}$ is a proper Deligne-Mumford stack, and the generalisation of this statement to an arbitrary number of markings and a range of stability conditions that we are going to discuss in the next subsection.
 
-Let us note in passing that the birational map $\oM_{2,2}\dashrightarrow\oM_{2,2}^{(1)}$ is not defined everywhere. The reason boils down to the following:
+Let us note in passing that the birational map $\oM_{2,2}\dashrightarrow\oM_{2,2}^{(1)}$ is not defined everywhere. The reason boils down to the following
 \begin{fact}
  There is only one isomorphism class of $2$-pointed curves whose normalisation is $(\PP^1,q_1)\sqcup(\PP^1,q_2,p_1,p_2)$ and having an $A_5$-singularity at $q_1=q_2$. On the other hand, the moduli space of $2$-pointed irreducible curves of geometric genus zero and having an $A_4$-singularity is isomorphic to $\Aaff^1$.
 \end{fact}
-The second statement can be motivated as follows: the pointed normalisation of such a curve is $(\PP^1,q,p_1,p_2)$, which has neither automorphisms, nor deformations. To produce an $A_4$-singularity at $q$ we may first collapse a non-zero tangent vector at $q$ (for which we have no choice), producing a cusp, and then collapse a line in the tangent space to the cusp, different from the tangent cone $\ell$ of the cusp itself (the moduli space is therefore $\PP^1\setminus\{\ell\}=\Aaff^1$). See Lemma \ref{lem:crimping} and the discussion thereafter.
+The second statement can be motivated as follows: the pointed normalisation of such a curve is $(\PP^1,q,p_1,p_2)$, which has neither automorphisms, nor deformations. To produce an $A_4$-singularity at $q$ we may first collapse a non-zero tangent vector at $q$ (all the choices are equivalent), producing a cusp, and then collapse a line in the tangent space to the cusp, avoiding the tangent cone $\ell$ of the cusp (the moduli space is therefore $\PP^1\setminus\{\ell\}=\Aaff^1$). See Lemma \ref{lem:crimping} and the discussion thereafter.
 
-Let $\mathcal W\subseteq\oM_{2,2}$ the codimension $2$ locus of Weierstrass tails. From the fact above, we conjecture that there is a factorisation:
+Let $\Delta=\Delta_{1,\emptyset|0,\{1,2\}}\subseteq\oM_{2,2}$ be the divisor of rational tails, and $\mathcal W\subseteq\oM_{2,2}$ the codimension $2$ locus of Weierstrass tails. The $1$-stable limit of any point in $\Delta\setminus\mathcal W$ is the dangling $A_5$-singularity, while the $1$-stable limit of a Weierstrass tail is ill-defined (it depends on the choice of a $1$-parameter smoothing); we conjecture that the rational map (identity on the locus of smooth curves) admits a factorisation:
 \bcd
 & \operatorname{Bl}_{\mathcal W}(\oM_{2,2})\ar[dl]\ar[dr] & \\
 \oM_{2,2}\ar[rr,dashed] & & \oM_{2,2}^{(1)}
 \ecd
-We plan to come back to this point in future work.
+We plan to address this point in forthcoming work.
 
-\subsection{Outline of results and plan of the paper}
-Here are the main novelties of our construction. It is not a semistable compactification (see \cite[Definition 1.2]{SMY-towards}), in that we allow dangling singularities of type $I\!I$ (see ??? below for a definition), whose normalisation has a one-pointed rational component. The necessity to do so was prefigured in \cite{AFSGm} already.
+\subsection{Outline of results and plan of the paper} In Section \ref{sec:sing} we classify all the Gorenstein curve singularities of genus two. They come in two families: the first ($I$) one includes the ramphoid cusp, the $D_5$-singularity, and for $m\geq 3$ the union of \emph{a singular branch} (a cusp) and $m-1$ lines living in $\Aaff^m$. The second ($I\!I$) one includes the $A_5$- nd $D_6$-singularities, and for $m\geq 4$ the union of \emph{two tangent branches} (forming a tacnode) with $m-2$ lines in $\Aaff^{m-1}$. See Proposition \ref{prop:classification}.
 
-The dualising line bundle of a minimal (with no separating nodes) Gorenstein curve of genus one is trivial \cite[Lemma 3.3]{SMY1}. This plays a fundamental role in the study of semistable tails, as well as in the boundedness of the moduli functor. On the other hand the dualising line bundle of a minimal Gorenstein curve of genus two $Z$ has degree two. For this reason we had to desymmetrise the problem and use the first marking as a reference point, in order to write $\omega_Z=\OO_Z(q_1+\bar q_1)$ whenever needed, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ is conjugate to $q_1$ (it is not always defined uniquely).
+In Section \ref{sec:crimp} we translate the condition that a complete pointed curve of genus two have no infinitesimal automorphisms into a \emph{mostly} combinatorial criterion. For every fixed number of branches $m$ and genus two singularity type $\in\{I,I\!I\}$, there are two isomorphism classes of pointed curves whose normalisation is $\bigsqcup_{i=1}^m(\PP^1,q_i,p_i)$ and having a singularity of the prescribed type at $q$; one of them has $\Aut(C,p)=\Gm$, while the other one has trivial automorphism group. This phenomenon has not emerged in lower genus. We take a detour into moduli spaces of singularities to justify the claim, and explain how to interpret the \emph{crimping spaces} geometrically in terms of the information we need to construct a genus two singularity from a (non-Gorenstein) singularity of lower genus. This is not strictly necessary in what follows, since the singularity with one-pointed branches does not satisfy the level condition we demand from our curves, yet this description is expected to be useful in analysing the indeterminacy of $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$.
 
-\subsection{Future directions}
-\begin{enumerate}
- \item Resolve the indeterminacy of the rational map $\oM_{2,n}(m_1)\dashrightarrow\oM_{2,n}(m_2)$; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}. It would be interesting to put this work in the context of the Hassett-Keel program, as in \cite{SMY2}. More generally, a question outstanding to our knowledge is whether the whole program fits in the theoretical framework developed in \cite{DHLinstability}.
- \item Our main motivation to start this project arose from Gromov-Witten theory. In genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain light in \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. If this is the case, they will provide a clear definition of reduced invariants, and hopefully ease the access to comparison (standard vs. reduced) results. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. This might lead to a mathematical definition of all-genera Gopakumar-Vafa invariants, one day.
+In Section \ref{sec:sstails} we study the (semi)stable limits; starting from a $1$-parameter family of semistable curves with smooth generic fiber and regular total space, we show that the shape of a subcurve of the central fiber that can be contracted into a Gorenstein singularity is strongly constrained. Singularities of type $I$ arise when the special branch (corresponding to the cusp in the contraction) is attached to a \emph{Weierstrass point} of the minimal subcurve of genus two (the \emph{core}), while singularities of type $I\!I$ occur when the special branches (corresponding to the tacnode in the contraction) are attached to \emph{conjugate points}. Furthermore, the size of the curve to be contracted only depends on one number - roughly speaking, the distance of the special branches from the core. The first statement is a consequence of the following simple observation: if $\phi\colon\widetilde{\mathcal C}\to\mathcal C$ is a contraction to a family of Gorenstein curves, $\phi^*\omega_{\mathcal C}$ is trivial on a neighbourhood of the exceptional locus of $\phi$, and it coincides with $\omega_{\widetilde{\mathcal C}}$ outside it. Now, whereas the dualising line bundle of a Gorenstein curve of genus one with no separating nodes is trivial (see \cite[Lemma 3.3]{SMY1}) and all smooth points look the same (i.e. they are not special), the simplest instance of Brill-Noether theory manifests itself in genus two, with the distinction between Weierstrass and non-Weierstrass points, and the expression $\omega_Z=\OO_Z(q+\sigma(q))$. The correct extension of these concepts to nodal curves was formulated in the '80s within the theory of admissible covers and limit linear series, and we spend some time to discuss the relevant combinatorics.
+
+In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-pointed curve of genus two, for every $1\leq m<n$. The basic idea is to trade worse singularities - of both genus one and two, bounded by $m$ in the sense of the embedding dimension - with more constraints on the combinatorics of the dual graph - the \emph{level} condition, which bounds below in terms of $m$ the number of special points (nodes and markings) that any subcurve of genus one or two has to contain. On the other hand, it is already clear from the discussion above that we need to break the $\mathfrak S_n$-symmetry, in order to write the dualising line bundle of the minimal subcurve of genus two as $\OO_Z(q_1+\sigma(q_1))$, in other words to choose which branches of a semistable model are to be dubbed special. We do so by using the first marking as a reference point, so that $q_1$ comes to denote the point of $Z$ closest to $p_1$. This shapes our algorithm to construct the $m$-stable limit of a given $1$-parameter smoothing. Unavoidably, the formulation of the stability condition is slightly involved, including a description of the interplay between $p_1$ and the singularity. Our main result is:
+\begin{teo*}
+ $\oM^{(m)}_{2,n}$ is a proper irreducible Deligne-Mumfod stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
+\end{teo*}
+
+
+\subsection{Future directions of work} Besides regarding this as a case-study of the birational geometry of moduli spaces, we are looking forwards to applications in enumerative geometry. We set up some questions we would like to come back to.
+\begin{enumerate}[leftmargin=.7cm]
+ \item Resolve the indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$, and study the intersection theory of these spaces; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}. It would be interesting to put this work in the context of the Hassett-Keel program, as in \cite{SMY2}.
+ 
+ More generally, a question outstanding to our knowledge is whether the whole program fits in the theoretical framework developed in \cite{DHLinstability}.
+ 
+ \item We expect this work to find applications in Gromov-Witten theory. In genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. Maps from singular curves would provide a conceptual definition of reduced invariants for projective complete intersections and beyond, and hopefully make comparison results (standard vs. reduced) accessible. It would be interesting to relate them to Gopakumar-Vafa formulae \cite{Pandha}.
 \end{enumerate}
 
-\subsection{Acknowledgements}
+\subsection{Acknowledgements} This project arose from discussions with Francesca Carocci, whom we thank for her availability and support. We would also like to thank Daniele Agostini, Fabio Bernasconi, Maria Beatrice Pozzetti, and Luca Tasin for helpful conversations. We thank the Max Planck Institute for Mathematics for providing financial support and a stimulating research environment.
 
 
-\section{Gorenstein curve singularities of genus two}
+\section{Gorenstein curve singularities of genus two}\label{sec:sing}
 In this and the next sections we work over an algebraically closed field of characteristic different from $2,3,5$. We provide an algebraic classification of the (complete) local rings of Gorenstein curve singularities of genus two.
 
 Let $(C,q)$ be the germ of a curve singularity, and let $(R,\m)$ denote $(\hat\OO_{C,q},\m_q)$, with normalisation $(\tR,\tm)\simeq\left(\k[\![t_1]\!]\oplus\ldots\oplus\k[\![t_m]\!],\langle t_1,\ldots,t_m\rangle\right)$.
@@ -429,7 +441,7 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,q)$ is \emp
 \end{rem}
 
 
-\section{Tangent sheaf, crimping space, and automorphisms}
+\section{Tangent sheaf, crimping space, and automorphisms}\label{sec:crimp}
 In this section we analyse the tangent sheaf of a genus two singularity. For a complete Gorenstein curve of genus two with markings, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial condition. The crimping space naturally makes its appearance in the process.
 
 
@@ -585,7 +597,7 @@ Special points are either nodes or markings.
  \end{enumerate}
 \end{cor}
 
-\section{Dualising line bundle and semistable tails}
+\section{Dualising line bundle and semistable tails}\label{sec:sstails}
 
 Given a family of prestable (pointed) curves of genus two over the spectrum of a discrete valuation ring $\mathcal C\to\dvr$, with smooth generic fiber $\mathcal C_{\eta}$ and regular total space, we classify the subcurves of the central fiber $\mathcal C_{0}$ that can be contracted to produce a Gorenstein singularity of genus two. In the genus one case, Smyth answered the analogous question by identifying the class of \emph{balanced} subcurves: subcurves of arithmetic genus one, such that, when breaking them into a \emph{core} (minimal subcurve of genus one, i.e. not containing any separating node) and a number of rational trees (with root corresponding to the component adjacent to the core, and leaves corresponding to the components adjacent to the portion of $\mathcal C_0$ that is not contracted), the distance between any leaf and the root for any such tree is constant. In the case at hand, the answer turns out to be slightly more complicated: first, the special branch(es) of a type I (resp. II) singularity correspond through a rational chain to a Weierstrass (resp. two conjugate) point(s) of the core, and the special branches are always the closest to the core. Second, if the core is reducible, the lengths of the rational trees may vary according to where their attaching points lie on the core, but they are determined by the length of the special chains and the configuration of the attaching points on the core.
 
@@ -1147,7 +1159,7 @@ There are two cases of stable $2$-pointed curves that arise as solutions of the 
 \end{proof}
 \end{comment}
 
-\section{The new moduli functors}
+\section{The new moduli functors}\label{sec:stability}
 The following generalises \cite[Definition 3.4]{SMY1}.
 \begin{dfn}
  Let $(C,p_1,\ldots,p_n)$ be a reduced curve, marked by smooth points. For a nodally attached subcurve $D\subseteq C$, we define its \emph{level} as \[ \lev(D)=\lvert D\cap\overline{C\setminus D}\rvert+\lvert\{p_1,\ldots,p_n\}\cap D\rvert.\]
