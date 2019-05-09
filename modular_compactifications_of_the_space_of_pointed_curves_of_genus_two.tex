@@ -151,6 +151,12 @@ We study the geometry of Gorenstein curve singularities of genus two, and of the
 \tableofcontents
 
 \section{Introduction}
+We construct alternative compactifications of the moduli stack of smooth $n$-pointed curves of genus two. The boundary of the Deligne-Mumford compactification, consisting of stable nodal curve, is gradually replaced by ever more singular curves, complying with more restrictive combinatorial requisites on the dual graph. For $1\leq m <n$, the notion of $m$-stability allows genus one and two singularities, while demanding that every higher genus subcurve contain at least a number of special points. Our main result on the stack of $m$-stable curves is:
+\begin{teo*}
+ $\oM^{(m)}_{2,n}$ is a \emph{proper} irreducible Deligne-Mumfod stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
+\end{teo*}
+This paper fits into the context of birational geometry of moduli spaces, extending work of D.I. Smyth in genus one, but we also expect it to find applications in enumerative geometry. We classify singularities of genus two and their (semi)stable models, highlighting the relation with Brill-Noether theory. We interpret crimping spaces as moduli spaces for the differential geometric data needed in order to construct a higher genus singularity from an ordinary $m$-fold point, and verify their impact on the existence of automorphisms, a phenomenon that had not fully emerged in lower genus.
+
 \subsection{From the Deligne-Mumford space to the Hassett-Keel program} One of the most fascinating and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen, via the introduction of \emph{stable} pointed curves.
 
 \begin{dfn}\cite{DM}
@@ -164,7 +170,7 @@ We study the geometry of Gorenstein curve singularities of genus two, and of the
 \begin{thm} \cite{DM,Knudsen}
  Assume $2g-2+n>0$. The moduli stack of stable pointed curves $\oM_{g,n}$ is a smooth and proper connected Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z)$, with projective coarse moduli space $\overline{\mathbf M}_{g,n}$. The boundary $\oM_{g,n}\setminus\pazocal M_{g,n}$, representing nodal curves, is a normal crossing divisor.
 \end{thm}
-On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a challenging task, which has so far found only a partial solution in the beautiful work of D.I. Smyth \cite{SMY-towards}.
+On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a challenging task, which has so far found only a partial solution in the beautiful work of Smyth \cite{SMY-towards}.
 
 Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard general theory of stacks \cite{KM}, this moduli space was first constructed as a quotient, prompting the development of the powerful techniques of Geometric Invariant Theory  \cite{Gieseker,GIT,BalSwi}. The study of alternative compactifications of $\pazocal M_{g,n}$ is motivated as well by an interest in the birational geometry of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition under consideration, and analysing the modular properties of the resulting quotient \cite{Schubert,Hassettg2}. The consequent program that goes under the name of B. Hassett and S. Keel aims to describe all the quotients arising in this way, and to determine whether every step of a minimal model program for $\overline{\mathbf M}_{g,n}$ enjoys a modular interpretation in terms of curves with worse than nodal singularities \cite{CTV1,CTV2}. Since the early stages of this program, it has developed into a fascinating playground for implementing ideas that originated from (v)GIT into a general structure theory of Artin stacks \cite{AlperKresch,AFS1,AFS2,AFS3}. See for instance \cite{Morrison, FS} for more comprehensive and instructive accounts.
 
@@ -172,10 +178,10 @@ Only few steps of the Hassett-Keel program have been carried out in full general
 
 A useful notion in this respect is that of the \emph{genus} of an isolated curve singularity: let $(C,q)$ be (the germ of) a reduced curve over an algebraically closed field $\k$ at its unique singular point $q$, with normalisation $\nu\colon\widetilde{C}\to C$.
 \begin{dfn}\label{def:genus}\cite{SMY1}
-If $C$ has $m$ branches at $q$, and $\delta$ is the $\k$-dimension of $\nu_*\OO_{\widetilde C}/\OO_C$, a skyscraper sheaf supported at $q$. The genus of $(C,q)$ is defined as:
+If $C$ has $m$ branches at $q$, and $\delta$ is the $\k$-dimension of $\nu_*\OO_{\widetilde C}/\OO_C$, a skyscraper sheaf supported at $q$, the genus of $(C,q)$ is defined as:
 \[g=\delta-m+1.\] 
 \end{dfn}
-It can be thought of as the number of conditions that a function must satisfy in order to descend from the seminormalisation (the initial object in the category of universal homeomorphism $C^\prime\to C$, see \cite[\href{https://stacks.math.columbia.edu/tag/0EUS}{Tag 0EUS}]{stacks-project}, or a curve with the same topological space as $C$ and an ordinary $m$-fold point at $q$) to $C$. The node, for example, has genus zero, since it coincides with its own seminormalisation. It is a notion that behaves well in families, in the sense that a complete, reduced curve $C$ with only one singularity at $q$, of $\delta$-invariant $\delta$, and normalisation a union of $m$ copies of $\PP^1$, can only appear in a family of curves of arithmetic genus $g$.
+The genus can be thought of as the number of conditions that a function must satisfy in order to descend from the seminormalisation (the initial object in the category of universal homeomorphism $C^\prime\to C$, see \cite[\href{https://stacks.math.columbia.edu/tag/0EUS}{Tag 0EUS}]{stacks-project}, or a curve with the same topological space as $C$ and an ordinary $m$-fold point at $q$) to $C$. The node, for example, has genus zero (it coincides with its own seminormalisation). It is a notion that behaves well in families: a complete, reduced curve $C$ with only one singularity at $q$, of $\delta$-invariant $\delta$, and normalisation a union of $m$ copies of $\PP^1$, can only appear in a family of curves of arithmetic genus $g$.
 
 Smyth found that, for every fixed number of branches $m$, there is a unique germ of Gorenstein singularity of genus one up to isomorphism, namely:
 \begin{description}
@@ -191,7 +197,7 @@ Singularities of this kind, with up to $m$ branches, together with nodes, form a
   \item for every connected subcurve $E\subseteq C$ of arithmetic genus one, its \emph{level}:
   
   \noindent$\lvert E\cap\overline{C\setminus E}\rvert+\lvert\{i\colon p_i\in E\}\rvert$ is strictly larger than $m$;
-  \item $H^0(C,\Omega_C^\vee(-\sum_i p_i))=0$.
+  \item $H^0(C,\Omega_C^\vee(-\sum_i p_i))=0$ (i.e. $\Aut(C,\underline p)$ is a finite group).
  \end{enumerate}
 \end{dfn}
 The latter can be taken for a decency condition on the moduli stack. The second one, instead, is essential in guaranteeing the uniqueness of $m$-stable limits, as per the discussion above. Smyth's main result is the following.
@@ -199,11 +205,11 @@ The latter can be taken for a decency condition on the moduli stack. The second 
  The moduli stack of $m$-stable curves $\oM_{1,n}(m)$ is a proper irreducible Deligne-Mumford stack over $\operatorname{Spec}\mathbb Z[1/6]$. It is \emph{not} smooth for $m\geq 6$. The coarse moduli spaces $\overline{\mathbf{M}}_{1,n}(m)$ arise as birational models of $\overline{\mathbf{M}}_{1,n}$ for the big line bundles $D(s)=s\lambda+\psi-\Delta$, where $\psi$ is the sum of the $\psi$-classes, $\Delta$ is a boundary class, and there is an explicit relation between $s$ and $m$.
 \end{thm}
 
-\subsection{Experimenting on a genus two tale}  Here is a classical
+\subsection{Experimenting on a genus two tale}  In this subsection, we walk through the motivations and methods at the heart of our construction, exemplifying them in the simplest possible case, that of $\oM_{2,2}^{(1)}$. The facts we mention are either proved or explained in greater detail and generality in the paper. Here is a classical
 \begin{fact}
  There are two unibranch singularities of genus two, namely the \emph{ramphoid cusp} or \emph{$A_4$-singularity} $V(y^2-x^5)\subseteq \Aaff^2_{x,y}$, and the singularity $\operatorname{Spec}(\k[t^3,t^4,t^5])$ in $3$-space. The former is Gorenstein, and its stable model is a Weierstrass tail (a genus two curve attached to a rational one at a Weierstrass point), while the latter is not Gorenstein, and its stable model is a non-Weierstrass genus two tail.
 \end{fact}
-See Lemma \ref{lem:unibranch} and Proposition \ref{prop:tailI} below. Recall that every smooth curve of genus two is hyperelliptic, i.e. it can be realised as a $2:1$ cover of $\PP^1$, 
+See Lemma \ref{lem:unibranch} and Proposition \ref{prop:tailI} below. Recall that every smooth curve of genus two is hyperelliptic, i.e. it can be realised as a two-fold cover of $\PP^1$, 
 \begin{comment}ramified in six points\end{comment}
 in a unique way up to projectivities. 
 \begin{comment}; indeed, the unique $\mathfrak g^1_2$ is the complete canonical series\end{comment}
@@ -221,12 +227,12 @@ To complete the picture, note that, in order to fix a deformation-open class of 
 \end{fact}
 See Theorem \ref{thm:ADE} below for a more general statement - valid for all ADE singularities - due to A. Grothendieck. For the sake of separatedness, we should at the same time require that the level of a genus one subcurve be at least $3$. Note that hybrid situations may emerge: e.g. an elliptic curve with a cusp, or an irreducible tacnode; it is worth pointing out that, as we need to allow a tacnode and a cusp sharing a branch, we should impose the level condition on genus one subcurves only when they are \emph{nodally attached} - in this case, any nodally attached subcurve of genus one will violate $1$-stability. Besides, in the last example we need to break the $\mathfrak S_2$-symmetry (relabelling the markings) in order to have a unique limit: we do so by declaring that $p_1$ lie on the cuspidal branch. See Figure \ref{fig:one_tail_example}.
 
-\begin{figure}
+\begin{figure}[h]
  \includegraphics[width=\textwidth]{one_tail_example}
   \caption{Examples of $2$-pointed stable curves and their $1$-stable limits.}\label{fig:one_tail_example}
 \end{figure}
 
-We now have a plausible definition of $\oM_{2,2}^{(1)}$.
+We are now in a position to cast a plausible definition of $\oM_{2,2}^{(1)}$.
 \begin{dfn}
  A connected, reduced, complete curve of arithmetic genus two $C$ over $\k=\bar\k$, with smooth and disjoint markings $p_1,p_2$, is \emph{$1$-stable} if:
  \begin{enumerate}[leftmargin=0.7cm]
@@ -255,14 +261,11 @@ We plan to address this point in forthcoming work.
 
 \subsection{Outline of results and plan of the paper} In Section \ref{sec:sing} we classify all the Gorenstein curve singularities of genus two. They come in two families: the first ($I$) one includes the ramphoid cusp, the $D_5$-singularity, and for $m\geq 3$ the union of \emph{a singular branch} (a cusp) and $m-1$ lines living in $\Aaff^m$. The second ($I\!I$) one includes the $A_5$- nd $D_6$-singularities, and for $m\geq 4$ the union of \emph{two tangent branches} (forming a tacnode) with $m-2$ lines in $\Aaff^{m-1}$. See Proposition \ref{prop:classification}.
 
-In Section \ref{sec:crimp} we translate the condition that a complete pointed curve of genus two have no infinitesimal automorphisms into a \emph{mostly} combinatorial criterion. For every fixed number of branches $m$ and genus two singularity type $\in\{I,I\!I\}$, there are two isomorphism classes of pointed curves whose normalisation is $\bigsqcup_{i=1}^m(\PP^1,q_i,p_i)$ and having a singularity of the prescribed type at $q$; one of them has $\Aut(C,p)=\Gm$, while the other one has trivial automorphism group. This phenomenon has not emerged in lower genus. We take a detour into moduli spaces of singularities to justify the claim, and explain how to interpret the \emph{crimping spaces} geometrically in terms of the information we need to construct a genus two singularity from a (non-Gorenstein) singularity of lower genus. This is not strictly necessary in what follows, since the singularity with one-pointed branches does not satisfy the level condition we demand from our curves, yet this description is expected to be useful in analysing the indeterminacy of $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$.
+In Section \ref{sec:crimp} we translate the condition that a complete pointed curve of genus two have no infinitesimal automorphisms into a \emph{mostly} combinatorial criterion. For every fixed number of branches $m$ and genus two singularity type $\in\{I,I\!I\}$, there are two isomorphism classes of pointed curves whose normalisation is $\bigsqcup_{i=1}^m(\PP^1,q_i,p_i)$ and having a singularity of the prescribed type at $q$; one of them has $\Aut(C,p)=\Gm$, while the other one has trivial automorphism group. This is a novelty phenomenon to genus two. We take a detour into moduli spaces of singularities to justify the claim, and explain how to interpret the \emph{crimping spaces} geometrically in terms of the information we need to construct a genus two singularity from a (non-Gorenstein) singularity of lower genus. This is not strictly necessary in what follows, since the singularity with one-pointed branches does not satisfy the level condition we demand from our curves, yet this description is expected to be useful in analysing the indeterminacy of $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$.
 
 In Section \ref{sec:sstails} we study the (semi)stable limits; starting from a $1$-parameter family of semistable curves with smooth generic fiber and regular total space, we show that the shape of a subcurve of the central fiber that can be contracted into a Gorenstein singularity is strongly constrained. Singularities of type $I$ arise when the special branch (corresponding to the cusp in the contraction) is attached to a \emph{Weierstrass point} of the minimal subcurve of genus two (the \emph{core}), while singularities of type $I\!I$ occur when the special branches (corresponding to the tacnode in the contraction) are attached to \emph{conjugate points}. Furthermore, the size of the curve to be contracted only depends on one number - roughly speaking, the distance of the special branches from the core. The first statement is a consequence of the following simple observation: if $\phi\colon\widetilde{\mathcal C}\to\mathcal C$ is a contraction to a family of Gorenstein curves, $\phi^*\omega_{\mathcal C}$ is trivial on a neighbourhood of the exceptional locus of $\phi$, and it coincides with $\omega_{\widetilde{\mathcal C}}$ outside it. Now, whereas the dualising line bundle of a Gorenstein curve of genus one with no separating nodes is trivial (see \cite[Lemma 3.3]{SMY1}) and all smooth points look the same (i.e. they are not special), the simplest instance of Brill-Noether theory manifests itself in genus two, with the distinction between Weierstrass and non-Weierstrass points, and the expression $\omega_Z=\OO_Z(q+\sigma(q))$. The correct extension of these concepts to nodal curves was formulated in the '80s within the theory of admissible covers and limit linear series, and we spend some time to discuss the relevant combinatorics.
 
-In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-pointed curve of genus two, for every $1\leq m<n$. The basic idea is to trade worse singularities - of both genus one and two, bounded by $m$ in the sense of the embedding dimension - with more constraints on the combinatorics of the dual graph - the \emph{level} condition, which bounds below in terms of $m$ the number of special points (nodes and markings) that any subcurve of genus one or two has to contain. On the other hand, it is already clear from the discussion above that we need to break the $\mathfrak S_n$-symmetry, in order to write the dualising line bundle of the minimal subcurve of genus two as $\OO_Z(q_1+\sigma(q_1))$, in other words to choose which branches of a semistable model are to be dubbed special. We do so by using the first marking as a reference point, so that $q_1$ comes to denote the point of $Z$ closest to $p_1$. This shapes our algorithm to construct the $m$-stable limit of a given $1$-parameter smoothing. Unavoidably, the formulation of the stability condition is slightly involved, including a description of the interplay between $p_1$ and the singularity. Our main result is:
-\begin{teo*}
- $\oM^{(m)}_{2,n}$ is a proper irreducible Deligne-Mumfod stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
-\end{teo*}
+In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-pointed curve of genus two, for every $1\leq m<n$. The basic idea is to trade worse singularities - of both genus one and two, bounded by $m$ in the sense of the embedding dimension - with more constraints on the combinatorics of the dual graph - the \emph{level} condition, which bounds below in terms of $m$ the number of special points (nodes and markings) that any subcurve of genus one or two has to contain. On the other hand, it is already clear from the discussion above that we need to break the $\mathfrak S_n$-symmetry, in order to write the dualising line bundle of the minimal subcurve of genus two as $\OO_Z(q_1+\sigma(q_1))$, in other words to choose which branches of a semistable model are to be dubbed special. We do so by using the first marking as a reference point, so that $q_1$ comes to denote the point of $Z$ closest to $p_1$. This shapes our algorithm to construct the $m$-stable limit of a given $1$-parameter smoothing. Unavoidably, the formulation of the stability condition is slightly involved, including a prescription of the interplay between $p_1$ and the singularity. We prove that the moduli stack of $m$-stable curves is algebraic, and it satisfies the valuative criterion of properness.
 
 
 \subsection{Future directions of work} Besides regarding this as a case-study of the birational geometry of moduli spaces, we are looking forwards to applications in enumerative geometry. We set up some questions we would like to come back to.
@@ -274,7 +277,7 @@ In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-poi
  \item We expect this work to find applications in Gromov-Witten theory. In genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. Maps from singular curves would provide a conceptual definition of reduced invariants for projective complete intersections and beyond, and hopefully make comparison results (standard vs. reduced) accessible. It would be interesting to relate them to Gopakumar-Vafa formulae \cite{Pandha}.
 \end{enumerate}
 
-\subsection{Acknowledgements} This project arose from discussions with Francesca Carocci, whom we thank for her availability and support. We would also like to thank Daniele Agostini, Fabio Bernasconi, Maria Beatrice Pozzetti, and Luca Tasin for helpful conversations. We thank the Max Planck Institute for Mathematics for providing financial support and a stimulating research environment.
+\subsection{Acknowledgements} This project arose from discussions with Francesca Carocci, whom we thank for her availability and support. We also thank Daniele Agostini, Fabio Bernasconi, Maria Beatrice Pozzetti, and Luca Tasin for helpful conversations. We thank the Max Planck Institute for Mathematics in Bonn for providing financial support and a stimulating research environment.
 
 
 \section{Gorenstein curve singularities of genus two}\label{sec:sing}
@@ -408,67 +411,61 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,q)$ is \emp
 
 
 \section{Tangent sheaf, crimping space, and automorphisms}\label{sec:crimp}
-In this section we analyse the tangent sheaf of a genus two singularity. For a complete Gorenstein curve of genus two with markings, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial condition. The crimping space naturally makes its appearance in the process.
+In this section we analyse the tangent sheaf of a genus two singularity. For a complete Gorenstein curve of genus two with markings, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial condition. The crimping space naturally makes an appearance in the process.
 
 
 \begin{lem}\label{lem:aut}
-Let $(C,p)$ be a Gorenstein curve singularity of genus two, with pointed normalisation $\nu\colon(\tilde C,\{p_i\}_{i=1,\ldots,m})\to (C,p)$, and assume $\operatorname{char}(\k)\neq 2,3,5$. There is a diagram of exact sequences of sheaves
+Let $(C,q)$ be a Gorenstein curve singularity of genus two, with pointed normalisation $\nu\colon(\tilde C,\{q_i\}_{i=1,\ldots,m})\to (C,q)$, and assume $\operatorname{char}(\k)\neq 2,3,5$. There is a diagram of exact sequences of sheaves
 \bcd
-0\ar[r]  & \nu_*\Omega_{\tilde C}^\vee(-\sum_i 3p_i)\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i p_i)\ar[r]\ar[dr,phantom,"\Box"]  &\nu_*\bigoplus_i\Omega_{\tilde C}^\vee(-p_i)_{|2p_i}\ar[r]  & 0 \\
-0\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i 3p_i)\ar[r]\ar[u,equal]  & \Omega_C^\vee\ar[r]\ar[u] & \k^{\oplus m}\ar[r]\ar[u,hook,"\phi"] & 0
+0\ar[r]  & \nu_*\Omega_{\tilde C}^\vee(-\sum_i 3q_i)\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i q_i)\ar[r]\ar[dr,phantom,"\Box"]  &\nu_*\bigoplus_i\Omega_{\tilde C}^\vee(-q_i)_{|2q_i}\ar[r]  & 0 \\
+0\ar[r]  &\nu_*\Omega_{\tilde C}^\vee(-\sum_i 3q_i)\ar[r]\ar[u,equal]  & \Omega_C^\vee\ar[r]\ar[u] & \k^{\oplus m}\ar[r]\ar[u,hook,"\phi"] & 0
 \ecd
- The right-most vertical map admits an explicit description in local coordinates.
+ The rightmost vertical map admits an explicit description in local coordinates.
 \end{lem}
 \begin{proof}
- Let $K(\tilde C)$ denote the constant sheaf of rational functions on $\tilde C$. A section of $\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ is contained in $\Omega_C^\vee$ iff its image under the push-forward map
+ Let $K(\tilde C)$ denote the constant sheaf of rational functions on $\tilde C$. A section of $\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ is contained in $\Omega_C^\vee$ if and only if its image under push-forward
  \[\nu_*\colon\nu_*\hhom(\Omega_{\tilde C},K(\tilde C))\to \hhom(\Omega_C,K(\tilde C)) \]
- lies in the subspace $\hhom(\Omega_C,\OO_C)$. We may work locally around the singular point in the coordinates studied in the previous section.
+ lies in the subspace $\hhom(\Omega_C,\OO_C)$. We may work locally around the singular point in the coordinates we found in Section \ref{sec:sing}.
 \begin{description}
- \item[$A_4$] In the coordinates $x=t^2+ct^3,y=t^4,z=t^5$ (they are redundant, but it will not matter in what follows), the section $f(t)\frac{d}{dt}\in\nu_*\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ pushes forward to
+ \item[$A_4$] In the coordinates $x=t^2+ct^3,y=t^4,z=t^5$ (they are redundant, but this will not cause any problem), the section $f(t)\frac{d}{dt}\in\nu_*\Omega_{\tilde C}^\vee\otimes K(\tilde C)$ pushes forward to
  \[\nu_*\left(f(t)\frac{d}{dt}\right)=(2t+3ct^2)f(t)\frac{d}{dx}+4t^3f(t)\frac{d}{dy}+5t^4f(t)\frac{d}{dz},\]
  from which, writing $f(t)=f_0+f_1t+f_2t^2+O(t^3)$, we see that
  \[(2t+3ct^2)f(t),4t^3f(t),5t^4f(t)\in\hat\OO_{C,p}\Leftrightarrow f_0=0,cf_1+2f_2=0.\]
+ 
  \item[$A_5$] In the coordinates $x=t_1\oplus at_2+bt_2^2,y=t_1^3$, the section $f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}$ pushes forward to
  \[\nu_*\left(f_1(t_1)\frac{d}{dt_1}\oplus f_2(t_2)\frac{d}{dt_2}\right)=\left(f_1(t_1)\oplus (a+2bt_2) f_2(t_2)\right)\frac{d}{dx}+3t_1^2f_1(t_1)\frac{d}{dy},\]
  from which, writing $f_i(t_i)=f_{i0}+f_{i1}t_i+f_{i2}t_i^2+O(t_i^3),i=1,2$, we see that
  \[f_1(t_1)\oplus (a+2bt_2)f_2(t_2),3t_1^2f_1(t_1)\in\hat\OO_{C,p} \Leftrightarrow \begin{cases} f_{10}=f_{20}=0,\\ f_{11}=f_{21},\\ 2bf_{21}+af_{22}=a^2f_{12}.\end{cases}\]
+ 
+  \item[$I_{m\geq 2}$] In the coordinates of \eqref{coordIII-cs},
+ \begin{multline*}\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\sum_{i=1}^{m-1}\left(f_i(t_i)\oplus3\gamma_{i,m}t_m^2f_m(t_m)\right)\frac{d}{dx_i}+\\(2t_m+3\gamma_{m,m}t_m^2)f_m(t_m)\frac{d}{dx_m},\end{multline*}
+ hence we deduce that
+ \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ f_{i1}=3f_{m1}, & \text{for } i=1,\ldots,m-1,\\ 3\gamma_{m,m}f_{m1}+2f_{m2}=0.\end{cases}\]
+ 
  \item[$I\!I_{m\geq 3}$] In the coordinates of \eqref{coordII-cs},
  \begin{multline*}\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\left(f_1(t_1)\oplus(\alpha_{1,m}+2\beta_{1,m}t_m) f_m(t_m)\right)\frac{d}{dx_1}+\\
  \sum_{i=2}^m\left(f_i(t_i)\oplus2\beta_{i,m}t_mf_m(t_m)\right)\frac{d}{dx_i},\end{multline*}
  hence we deduce that
  \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ 2f_{11}=f_{i1}=2f_{m1}, & \text{for } i=2,\ldots,m-1,\\ \beta_{1,m}f_{m1}+\alpha_{1,m}f_{m2}=\alpha_{1,m}^2f_{12}.\end{cases}\]
-  \item[$I\!I\!I_{m\geq 2}$] In the coordinates of \eqref{coordIII-cs},
- \begin{multline*}\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)=\sum_{i=1}^{m-1}\left(f_i(t_i)\oplus3\gamma_{i,m}t_m^2f_m(t_m)\right)\frac{d}{dx_i}+\\(2t_m+3\gamma_{m,m}t_m^2)f_m(t_m)\frac{d}{dx_m},\end{multline*}
- hence we deduce that
- \[\nu_*\left(\sum_{i=1}^m f_i(t_i)\frac{d}{dt_i}\right)\in\Omega_C^\vee\otimes\hat\OO_{C,p}\Leftrightarrow \begin{cases} f_{i0}=0 & \text{for } i=1,\ldots,m,\\ f_{i1}=3f_{m1}, & \text{for } i=1,\ldots,m-1,\\ 3\gamma_{m,m}f_{m1}+2f_{m2}=0.\end{cases}\]
+ 
 \end{description}
 \end{proof}
 
-From this description we see that the letters $\alpha,\beta$ and $\gamma$ will play a role in determining the automorphism group of a complete curve with markings. We recall some key concepts from F. van der Wyck's thesis.
-
-We work over $\k$. We can consider the stack $\mathcal S$ of reduced one-dimensional $\k$-algebras $R$, and the stack $\mathcal T$ of reduced 1d algebras with resolution $(R\hookrightarrow (S,J))$, where $S$ is a smooth one-dimensional $\k$-algebra, and $J$ is the radical of the conductor of $R\subseteq S$. Basically, $R$ is the (local) ring of a reduced curve with one singular point, $S$ is its normalisation, and $J$ is the ideal of the reduced fiber over the singular point of $\operatorname{Spec}(R)$. $\mathcal S$ and $\mathcal T$ are limit-preserving stacks over $\operatorname{Spec}(\k)$ \cite[Proposition 1.21]{vdW}. Furthermore, we may fix a reduced 1d algebra with resolution $\tau_0:(R_0\hookrightarrow(S_0,J_0))$, and consider the substack $\mathcal T(\tau_0)$ of reduced 1d algebras with singularity type $\tau_0$ (i.e. isomorphic to $\tau_0$ locally on both the base and the curve, see \cite[Definition 1.64]{vdW}; that various notions of ``locally'' coincide is proved in \cite[Proposition 1.50]{vdW}). There is a forgetful morphism $\mathcal T\to\mathcal S$, and the \emph{crimping space} of $\tau_0$ is defined to be the fiber over $R_0$ of the restriction of such morphism to $\mathcal T(\tau_0)$. The crimping space is a smooth $\k$-scheme \cite[Theorems 1.70 and 1.73]{vdW}; indeed, it is isomorphic to the quotient of $\Aut_{(S_0,J_0)/\k}$ by $\Aut_{(S_0,J_0)/R_0}$, the latter being the subgroup of automorphisms of the normalisation preserving the subalgebra of the singularity; moreover, the quotient can be computed after modding out the lowest power of $J$ that is contained in $R$ \cite[Theorem 1.53]{vdW}. Crimping spaces should be thought of as moduli for the normalisation map. %We shall compute the crimping space of the genus two singularities.
+We anticipate that the letters $\alpha,\beta$ and $\gamma$ will play a role in determining the automorphism group of a complete curve with markings. We recall some key concepts from F. van der Wyck's thesis.
+Working over $\k$, he considers the stacks:
+\begin{itemize}[leftmargin=.5cm]
+ \item $\mathcal S$ of reduced one-dimensional (1d) $\k$-algebras $R$,
+ \item $\mathcal T$ of reduced 1d algebras with resolution $(R\hookrightarrow (S,J))$, where $S$ is a smooth one-dimensional $\k$-algebra, and $J$ the radical of the conductor of $R\subseteq S$.
+\end{itemize}
+  Basically, $R$ represents the (local) ring of a reduced curve with one singular point, $S$ is its normalisation, and $J$ is the ideal of the reduced fiber over the singular point of $\operatorname{Spec}(R)$. $\mathcal S$ and $\mathcal T$ are limit-preserving stacks over $\operatorname{Spec}(\k)$ \cite[Proposition 1.21]{vdW}. Furthermore, we may fix a reduced 1d algebra with resolution $\tau_0:(R_0\hookrightarrow(S_0,J_0))$, and consider the substack $\mathcal T(\tau_0)$ of reduced 1d algebras with singularity type $\tau_0$ (i.e. isomorphic to $\tau_0$ locally on both the base and the curve, see \cite[Definition 1.64]{vdW}; that various notions of ``locally'' coincide is proved in \cite[Proposition 1.50]{vdW}). There is a forgetful morphism $\mathcal T\to\mathcal S$, and the \emph{crimping space} of $\tau_0$ is defined to be the fiber over $R_0$ of the restriction of such morphism to $\mathcal T(\tau_0)$. The crimping space is a smooth $\k$-scheme \cite[Theorems 1.70 and 1.73]{vdW}; indeed, it is isomorphic to the quotient of $\Aut_{(S_0,J_0)/\k}$ by $\Aut_{(S_0,J_0)/R_0}$, the latter consisting of automorphisms of the normalisation that preserve the subalgebra of the singularity; moreover, the quotient can be computed after modding out the lowest power of $J$ contained in $R$ \cite[Theorem 1.53]{vdW}. Crimping spaces can be thought of as moduli for the normalisation map. %We shall compute the crimping space of the genus two singularities.
 
 \begin{lem}\label{lem:crimping}
  The crimping space of a genus two singularity with $m$ branches is (a number - depending on the type - of copies of) $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
 \end{lem}
 \begin{proof}
-We resume notation from the previous section. We are going to fix the subalgebra $\tau_0$ given in coordinates by \eqref{coordII} and \eqref{coordIII} above respectively.
+We resume notation from the previous section. We are going to fix the subalgebra $\tau_0$ given in coordinates by \eqref{coordIII} and \eqref{coordII} above respectively.
 
-\textbf{Type II}: recall that in this case $\tm^3\subseteq R$. For a $\k$-algebra $A$, let
-\[G_i(A)=\{t_i\mapsto g_{i1}t_i+g_{i2}t_i^2,t_j\mapsto t_j\ |\ g_{i1}\in A^\times,g_{i2}\in A\},\]
-and notice that
-\[\Aut_{(\tR,\tm)}^{\mod\tm^3}(A)=(G_1\times\ldots\times G_m)\rtimes \mathfrak{S}_m(A).\]
-
-Consider now the action of a group element of the form $(g_1,\ldots,g_m;\id_{\mathfrak{S}_m})$ on the given generators of $R$:
-\begin{align*}
- x_1\mapsto& g_{11}t_1+g_{12}t_1^2\oplus\ldots\oplus g_{m1}t_m+g_{m2}t_m^2;\\
- x_i\mapsto& \ldots\oplus g_{i1}t_i+g_{i2}t_i^2\oplus\ldots\oplus g_{m1}^2t_m^2,\quad\text{for } i=2,\ldots,m-1.
-\end{align*}
-The former belongs to $R$ iff $g_{11}=g_{m1}$ and $g_{12}=g_{m2}$; the latter does iff $g_{i1}=g_{m1}^2$. Thus, such elements span a subgroup isomorphic to $\Gm\times\Ga^{m-1}(A)$. On the other hand, all branches are isomorphic to one another, but there is a pair of distinguished ones (parametrised by $t_1$ and $t_m$ respectively). We conclude that
-\[\Aut_{\tau_0}^{\mod\tm^3}(A)=(\Gm\times\Ga^{m-1})\rtimes(\mathfrak{S}_2\times\mathfrak{S}_{m-2})(A).\]
-The quotient is then isomorphic to $\binom{m}{2}$ copies of $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
-
-\textbf{Type III}: in this case $\tm^4\subseteq R$. For a $\k$-algebra $A$, let
+\textbf{Type $I$}: recall that in this case $\tm^4\subseteq R$. For a $\k$-algebra $A$, let
 \[G_i(A)=\{t_i\mapsto g_{i1}t_i+g_{i2}t_i^2+g_{i3}t_i^3,t_j\mapsto t_j\ |\ g_{i1}\in A^*,g_{i2},g_{i3}\in A\},\]
 and notice that
 \[\Aut_{(\tR,\tm)}^{\mod\tm^4}(A)=(G_1\times\ldots\times G_m)\rtimes \mathfrak{S}_m(A).\]
@@ -481,25 +478,42 @@ Consider now the action of a group element of the form $(g_1,\ldots,g_m;\id_{\ma
 The former belongs to $R$ iff $g_{i1}=g_{m1}^3$; the latter does iff $g_{m2}=0$. Thus such elements span a subgroup isomorphic to $\Gm\times\Ga^{m-1}\times\Ga^m(A)$. On the other hand, there is a special (singular) branch, parametrised by $t_m$. We conclude that
 \[\Aut_{\tau_0}^{\mod\tm^3}(A)=(\Gm\times\Ga^{m-1}\times\Ga^m)\rtimes(\mathfrak{S}_{m-1})(A).\]
 The quotient is therefore isomorphic to $m$ copies of $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$. 
+
+\textbf{Type $I\!I$}: recall that in this case $\tm^3\subseteq R$. For a $\k$-algebra $A$, let
+\[G_i(A)=\{t_i\mapsto g_{i1}t_i+g_{i2}t_i^2,t_j\mapsto t_j\ |\ g_{i1}\in A^\times,g_{i2}\in A\},\]
+and notice that
+\[\Aut_{(\tR,\tm)}^{\mod\tm^3}(A)=(G_1\times\ldots\times G_m)\rtimes \mathfrak{S}_m(A).\]
+
+Consider now the action of a group element of the form $(g_1,\ldots,g_m;\id_{\mathfrak{S}_m})$ on the given generators of $R$:
+\begin{align*}
+ x_1\mapsto& g_{11}t_1+g_{12}t_1^2\oplus\ldots\oplus g_{m1}t_m+g_{m2}t_m^2;\\
+ x_i\mapsto& \ldots\oplus g_{i1}t_i+g_{i2}t_i^2\oplus\ldots\oplus g_{m1}^2t_m^2,\quad\text{for } i=2,\ldots,m-1.
+\end{align*}
+The former belongs to $R$ iff $g_{11}=g_{m1}$ and $g_{12}=g_{m2}$; the latter does iff $g_{i1}=g_{m1}^2$. Thus, such elements span a subgroup isomorphic to $\Gm\times\Ga^{m-1}(A)$. On the other hand, all branches are isomorphic to one another, but there is a pair of distinguished ones (parametrised by $t_1$ and $t_m$ respectively). We conclude that
+\[\Aut_{\tau_0}^{\mod\tm^3}(A)=(\Gm\times\Ga^{m-1})\rtimes(\mathfrak{S}_2\times\mathfrak{S}_{m-2})(A).\]
+The quotient is then isomorphic to $\binom{m}{2}$ copies of $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
 \end{proof}
-It is now clear that the benefit of a two-step classification where at first we do not allow ourselves to change coordinates (i.e. act by automorphisms of the normalisation) is that it makes the crimping space apparent already from the expressions \eqref{coordII-cs} and \eqref{coordIII-cs} for the generators of the singularity subalgebra.
+
+The benefit of a two-step classification should now be clear: if we do not allow ourselves to change coordinates (i.e. act by automorphisms of the normalisation) until the end, the crimping space appears already from the expressions \eqref{coordII-cs} and \eqref{coordIII-cs} for the generators of the subalgebra of the singularity.
 
 \smallskip
 
-There is a more geometric way to see the crimping spaces. It is well-known that a cusp can be obtained by collapsing (\emph{push-out}) a generic (i.e. non-zero) tangent vector at $p\in\PP^1$. More generally, a Gorenstein singularity of genus one and $m$ branches can be obtained by collapsing a generic (not contained in any coordinate linear subspace) tangent line at an ordinary (i.e. rational) $m$-fold point \cite[Lemma 2.2]{SMY1}. Hence, we recover the crimping space of the elliptic $m$-fold point, which is isomorphic to $(\Aaff^1\setminus\{0\})^{m-1}$, as the maximal torus inside $\PP(T_pR_m)\simeq\PP^{m-1}$, where $(R_m,p)$ is the rational $m$-fold point. Besides, this gives a natural compactification of the crimping space supporting a universal family of curves - in fact, two: either we collapse non-generic tangent vectors, obtaining non-Gorenstein singularities along the boundary (this family $\mathcal C$ has a common normalisation, that is the trivial family $\widetilde{\mathcal C}=R_m\times \PP(T_pR_m)$); or we blow-up $\widetilde{\mathcal C}$ along the boundary (\emph{sprouting}), and we replace the non-Gorenstein singularities by more elliptic $m$-fold points, this time with strictly semistable branches \cite[\S 2.2-3]{SMY2}.
+There is a more geometric way to realise the crimping spaces. It is well-known that a cusp can be obtained by collapsing (\emph{push-out}) a generic (i.e. non-zero) tangent vector at $p\in\PP^1$. More generally, a Gorenstein singularity of genus one and $m$ branches can be obtained by collapsing a generic (not contained in any coordinate linear subspace) tangent line at an ordinary $m$-fold point (which is a non-Gorenstein singularity of genus zero) \cite[Lemma 2.2]{SMY1}. Therefore, the crimping space of the elliptic $m$-fold point, isomorphic to $(\Aaff^1\setminus\{0\})^{m-1}$, can be realised as the complement of the coordinate hyperplanes inside $\PP(T_pR_m)\simeq\PP^{m-1}$, where $(R_m,p)$ is the rational $m$-fold point. Besides, this gives rise to a natural compactification of the crimping space supporting a universal family of curves - in fact, two: either we collapse non-generic tangent vectors, obtaining non-Gorenstein singularities along the boundary (this family $\mathcal C$ has a common normalisation, that is the trivial family $\widetilde{\mathcal C}=R_m\times \PP(T_pR_m)$); or we blow $\widetilde{\mathcal C}$ up along the boundary (\emph{sprouting}), and we replace the non-Gorenstein singularities with elliptic $m$-fold points having strictly semistable branches \cite[\S 2.2-3]{SMY2}.
 
-Similarly, a Gorenstein singularity of genus two can be obtained by collapsing a generic tangent line to a genus one non-Gorenstein singularity. Indeed, type $\tau_0^{II}$ admits a partial normalisation by $\sigma_0^{II}$, which is the decomposable union of a tacnode in the $(t_1,t_m)$-plane together with $m-2$ axes, by adjoining the generator $t_m^2$; while type $\tau_0^{III}$ by $\sigma_0^{III}$, which is the decomposable union of a cusp (parametrised by $t_m$) together with $m-1$ axes, by adjoining $t_m^3$. These fit together nicely in the following picture: if we restrict $\mathcal C$ from the previous paragraph to the union of the coordinate lines in $\PP(T_pR_m)$, we obtain $m$ copies of $\sigma_0^{III}$ over the points, together with $\binom{m}{2}$ copies of the universal curve of type $\sigma_0^{II}$ over its crimping space - which is isomorphic to $\Aaff^1\setminus\{0\}$ -, identified with the open lines. Let $P=\PP(T_p\mathcal C_{|\cup\text{lines}})$ be the projectivised tangent space at the singular point in the fiber of this family of genus one singularities. For each of the $\binom{m}{2}$ coordinate lines, $P$ has one component $P^{II}_i$ that is a $\PP^{m-1}$-bundle over such line; besides, $P$ has $m$ components $P^{III}_j$ isomorphic to $\PP^m$ and supported over the points. The crimping space of the genus two singularities (of type II and III together) with $m$ branches can be seen to be an open subscheme of $P$: it is obtained by removing from the $\PP^{m-1}$-fibers of $P^{II}$ the $m-1$ hyperplanes generated by (a) the tangent line to the tacnode and the $m-2$ axes, and (b) the plane containing the tacnode and all but one of the $m-2$ axes; and from each component of $P^{III}$ the $m$ planes generated by (a) the tangent cone of the cusp and the $m-1$ axes, and (b) the plane containing the cusp and all but one of the $m-1$ axes.
+Similarly, a Gorenstein singularity of genus two can be obtained by collapsing a generic tangent line to a non-Gorenstein singularity of genus one. Indeed, type $\tau_0^{I}$ admits a partial normalisation by $\sigma_0^{I}$, which is the decomposable union of a cusp (parametrised by $t_m$) together with $m-1$ axes, by adjoining the generator $t_m^3$; while type $\tau_0^{I\!I}$ admits a partial normalisation by $\sigma_0^{I\!I}$, which is the decomposable union of a tacnode in the $(t_1,t_m)$-plane together with $m-2$ axes, by adjoining the generator $t_m^2$.
 
+These fit together nicely in a unifying picture: if we restrict $\mathcal C$ from the previous paragraph to the union of the coordinate lines in $\PP(T_pR_m)$, we obtain $m$ copies of $\sigma_0^{I}$ over the points, together with $\binom{m}{2}$ copies of the universal curve of type $\sigma_0^{I\!I}$ over its crimping space - which is isomorphic to $\Aaff^1\setminus\{0\}$ -, identified with the line minus two points. Let $P=\PP(T_p\mathcal C_{|\cup\text{lines}})$ be the projectivised tangent space at the singular point in the fiber of this family of genus one singularities. For each of the $\binom{m}{2}$ coordinate lines, $P$ has one component $P^{I\!I}_i$ that is a $\PP^{m-1}$-bundle over such a line; besides, $P$ has $m$ components $P^{I}_j$ isomorphic to $\PP^m$ and supported over the points. The crimping space of the genus two singularities with $m$ branches (of type $I$ and $I\!I$ together) can be realised as an open subscheme of $P$: it is obtained by removing from the $\PP^{m-1}$-fibers of $P^{I\!I}$ the $m-1$ hyperplanes generated by (a) the tangent line to the tacnode and the $m-2$ axes, and (b) the plane containing the tacnode and all but one of the $m-2$ axes; and from each component of $P^{I}$ the $m$ planes generated by (a) the tangent cone of the cusp and the $m-1$ axes, and (b) the plane containing the cusp and all but one of the $m-1$ axes.
 
 \begin{rem}
- The crimping space is related to the moduli of arrows $\phi$ as in the diagram of Lemma \ref{lem:aut}, satisfying a number of requirements.
+ The crimping space is related to the moduli space of arrows $\phi$ in the diagram of Lemma \ref{lem:aut}.
  
- We note that $H^0(\Omega_{\PP^1}^\vee(-p)_{|2p})$ is the tangent space to the subgroup of automorphisms of $\PP^1$ fixing one point $p$, so it is isomorphic as a Lie algebra to the only non-abelian Lie algebra of dimension two $V$. It has a basis $e_1=\begin{pmatrix} 1 & 0 \\ 0 & -1\end{pmatrix}$, $e_2=\begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix}$ with $[e_1,e_2]=-2e_2$. The vector $(\varphi,\psi)$ therefore corresponds to the infinitesimal automorphism: \[t\mapsto\frac{1+\epsilon\varphi t}{1-\epsilon(\varphi t+\psi)}=t+\epsilon(2\varphi t-\psi t^2).\]
- We require $\phi$ to be the embedding (i.e. a point of $\operatorname{Gr}(m,V^{\oplus m})$) of a Lie subalgebra, such that the corresponding group of infinitesimal automorphisms fixes uniquely the subalgebra of a singularity of genus two in $\k[\![t_1]\!]\oplus\ldots\oplus\k[\![t_m]\!]$.
+ We interpret $H^0(\Omega_{\PP^1}^\vee(-p)_{|2p})$ as the tangent space to the subgroup of $PGL_2$ fixing the point $p\in\PP^1$, thus it inherits a natural Lie algebra structure, isomorphic to the only non-abelian Lie algebra of dimension two $V$. It has a basis: \[e_1=\begin{pmatrix} 1 & 0 \\ 0 & -1\end{pmatrix}, \quad e_2=\begin{pmatrix} 0 & 0 \\ 1 & 0\end{pmatrix},\quad \text{with } [e_1,e_2]=-2e_2.\]
+ The vector $(\varphi,\psi)$ is seen to correspond to the infinitesimal automorphism: \[t\mapsto\frac{1+\epsilon\varphi t}{1-\epsilon(\varphi t+\psi)}=t+\epsilon(2\varphi t-\psi t^2).\]
+ We are interested in arrows $\phi$ that are embeddings (i.e. $\in\operatorname{Gr}(m,V^{\oplus m})$) of Lie subalgebras, such that the corresponding groups of infinitesimal automorphisms fix a (unique?) subalgebra of a singularity of genus two inside $\k[\![t_1]\!]\oplus\ldots\oplus\k[\![t_m]\!]$.
  
- We start with some heuristics. The unibranch case goes as follows: the subalgebra of $\k[\![t]\!]$ generated by $x=t^2+ct^3$ is preserved by $(\varphi,\psi)$ iff
+ We start with some heuristics. Here is the unibranch case: the subalgebra of $\k[\![t]\!]$ generated by $x=t^2+ct^3$ is preserved by $(\varphi,\psi)$ if and only if
  \[(1+2\varphi)^2t^2-2\psi(1+2\varphi)t^3+c(1+2\varphi)^3t^3\text{ is a multiple of } t^2+ct^3,\]
- which reduces to $\varphi(1+2\varphi)c=\psi$. This furthermore determines $c$ iff $\varphi\neq 0$. Note that in this case (dimension one) the Lie subalgebra condition is automatically satisfied. We have found $(\varphi,\psi)\in\k^\times\times\k$.
+ which reduces to $\varphi(1+2\varphi)c=\psi$. This further determines $c$ if and only if $\varphi\neq 0$. Note that in this case (dimension one) the Lie subalgebra condition is automatically satisfied. We have found $(\varphi,\psi)\in\k^\times\times\k$.
  
  The case of type $I\!I_2$-algebras is more interesting. Let $x=(t_1,\alpha t_2+\beta t_2^2)$ be the generator of such an algebra. The image of $x$ under $(\varphi_1,\psi_1,\varphi_2,\psi_2)$ is:
  \[\left((1+2\varphi_1)t_1-\psi_1t_1^2,\alpha(1+2\varphi_2)t_2+(\beta(1+4\varphi_2)-\alpha\psi_2)t_2^2\right),\]
@@ -522,43 +536,42 @@ Similarly, a Gorenstein singularity of genus two can be obtained by collapsing a
  \begin{align*}
   w_{12}w_{13}=0 & \quad & w_{12}(w_{34}-w_{14})=0 \\ w_{13}w_{34}=0 & \quad & (w_{12}+w_{23})w_{34}=0
  \end{align*}
- which also are automatically satisfied after \eqref{eqn:vanishing_of_minors}. We see the various equations above cut inside $\PP^5_{[w_{ij}]}$ the locus \[(\Aaff^1_{{w_{14}}/{w_{12}}}\setminus\{0\})\times\Aaff^1_{{w_{24}}/{w_{12}}}.\]
- More generally, given a subalgebra $R_{\alpha,\beta}$ of $W=\bigoplus_{i=1}^m\k[\![t_i]\!]/(t_i^2)$, with generators of the form described in \eqref{coordII-cs}, the subalgebra of $V^{\oplus m}_{(\varphi_i,\psi_i)_{i=1,\ldots,m}}$ preserving $R_{\alpha,\beta}$ is isomorphic to $\k^{\oplus m}$ with equations (see Lemma \ref{lem:aut}):
+ automatically satisfied after \eqref{eqn:vanishing_of_minors} too. These equations cut inside $\PP^5_{[w_{ij}]}$ the locus \[(\Aaff^1_{{w_{14}}/{w_{12}}}\setminus\{0\})\times\Aaff^1_{{w_{24}}/{w_{12}}}.\]
+ More generally, given a type $I\!I$ subalgebra $R_{\alpha,\beta}$ of $W=\bigoplus_{i=1}^m\k[\![t_i]\!]/(t_i^2)$, with generators of the form described in \eqref{coordII-cs}, the subalgebra of $V^{\oplus m}_{(\varphi_i,\psi_i)_{i=1,\ldots,m}}$ preserving $R_{\alpha,\beta}$ is isomorphic to $\k^{\oplus m}$ with equations (see Lemma \ref{lem:aut}):
  \[\begin{cases} 2\varphi_1=\varphi_i=2\varphi_m, & \text{for } i=2,\ldots,m-1,\\ 2\beta_{1,m}\varphi_m-\alpha_{1,m}\psi_m=-\alpha_{1,m}^2\psi_1;\end{cases}\]
- it is easily seen that such a subalgebra of $V^{\oplus m}$ does not determine $R_{\alpha,\beta}$, but it does determine $(\alpha_{1,m},\beta_{1,m})$. The situation of type III is analogous.
+ it is easily seen that such a subalgebra of $V^{\oplus m}$ does not determine $R_{\alpha,\beta}$, but it does determine $(\alpha_{1,m},\beta_{1,m})$. The case of type $I$ is analogous.
 \end{rem}
 
-We are going to use the preceding discussion in order to study the automorphism group of complete marked curves with a genus two singularity. The only case that actually requires such a discussion is when every component of the normalisation is rational and contains one extra marking, besides the preimage of the singularity: in this case it does make a difference what point of the crimping space we are looking at. The concept has been formalised again in van der Wyck's thesis, see \cite[Proposition 1.102, Theorem 1.105 and Corollary 1.106]{vdW}, where he introduces the concept of reduced pointed curve with resolution of type $T$ (encoding the amount and type of the singular points, the distribution of genus and markings among the components of the normalisation, and the adjacency data between components and singular points), and the algebraic stack $\mathcal N_T$ of such objects. In the case at hand, such stack is isomorphic to $[\Aaff^1/\Gm]$ (see also \cite[Examples 1.111-112]{vdW}), and it therefore has two points: one with $\Gm$, and the other with trivial stabiliser.
+We apply the preceding discussion to the study of automorphism groups of complete marked curves with a genus two singularity. The relevant category has been formalised in van der Wyck's thesis, see \cite[Proposition 1.102, Theorem 1.105 and Corollary 1.106]{vdW}, where he introduces the concept of type $T$ reduced pointed curve with resolution, and the algebraic stack $\mathcal N_T$ of such objects. The type encodes the number and isomorphism class of the singularities, the distribution of genus and markings among the components of the normalisation, and the adjacency data between components and singular points. In the case that $T$ has a unique singularity of genus two, with $m$ one-marked rational branches, the stack $\mathcal N_T$ is isomorphic to $[\Aaff^1/\Gm]$ (see \cite[Examples 1.111-112]{vdW}), so it has two points: one with $\Gm$, and the other with trivial stabiliser.
 
 \begin{dfn}
- The \emph{atom} of type $I\!I_m$ is obtained by gluing the subalgebra of $\k[t_1]\oplus\ldots\oplus\k[t_m]$ generated by $x_1,\ldots,x_{m-1}$ (and $y$) as in \eqref{coordII} (and following lines) with $m$ copies of $(\k[s],(s))$ under the identification $s_i=t_i^{-1}$. There is a $\Gm$-action on the type II atom by $\lambda.t_i=\lambda t_i$ for $i=1,m$ and $\lambda.t_i=\lambda^2 t_i$ for $i=2,\ldots,m-1$.
+ The \emph{atom} of type $I_m$ (the name is borrowed from \cite{AFS1}) is obtained by gluing the subalgebra of $\k[t_1]\oplus\ldots\oplus\k[t_m]$ generated by $x_1,\ldots,x_m$ as in \eqref{coordIII} with $m$ copies of $(\k[s],(s))$ under the identification $s_i=t_i^{-1}$. $\Gm$ acts on the  atom by $\lambda.t_i=\lambda^3 t_i$ for $i=1,\ldots,m-1$ and $\lambda.t_i=\lambda t_i$ for $i=m$.
  
- Similarly, the atom of type $I\!I\!I_m$ is obtained by gluing the subalgebra of $\k[t_1]\oplus\ldots\oplus\k[t_m]$ generated by $x_1,\ldots,x_m$ as in \eqref{coordIII} with $m$ copies of $(\k[s],(s))$ under the identification $s_i=t_i^{-1}$. There is a $\Gm$-action on the type III atom by $\lambda.t_i=\lambda t_i$ for $i=m$ and $\lambda.t_i=\lambda^3 t_i$ for $i=1,\ldots,m-1$.
+ Similarly, the atom of type $I\!I_m$ is obtained by gluing the subalgebra of $\k[t_1]\oplus\ldots\oplus\k[t_m]$ generated by $x_1,\ldots,x_{m-1}$ (and $y$) as in \eqref{coordII} (and following lines) with $m$ copies of $(\k[s],(s))$ under the identification $s_i=t_i^{-1}$. There is a $\Gm$-action on the type II atom by $\lambda.t_i=\lambda t_i$ for $i=1,m$ and $\lambda.t_i=\lambda^2 t_i$ for $i=2,\ldots,m-1$.
  
- The curve with a genus two singularity and one marked point for every branch that has trivial automorphism group will be called the \emph{non-atom}.
+ The curve with a genus two singularity and one-marked rational branches that has trivial automorphism group will be called the \emph{non-atom}.
 \end{dfn}
 
-Following the previous discussion, there is a more geometric way to realise the dicotomy between the atom and the non-atom. The non-Gorenstein genus one singularity of type $\sigma_0^{II}$ (resp. $\sigma_0^{III}$), with every branch rational and one-marked, has automorphism group $\Gm^{m-1}$ (resp. $\Gm^m$); the latter group therefore acts on the tangent space at the singular point, and it can be checked that of the lines fixed by this action only one sits inside the open subset corresponding to the crimping space, while all other lines in the open are identified under the group action - by collapsing them, they give rise to the atom and non-atom respectively.
+There is a more geometric way to realise this dicotomy. The non-Gorenstein genus one singularity of type $\sigma_0^{I\!I}$ (resp. $\sigma_0^{I}$), with one-marked rational branches, has automorphism group $\Gm^{m-1}$ (resp. $\Gm^m$). This acts on the tangent space at the singular point: of the lines fixed by this action, only one (call it $\ell^\prime$) sits inside the open subset corresponding to the crimping space; all other lines in the crimping space are identified under the group action (call $\ell$ their equivalence class). Collapsing $\ell$ yields the non-atom, while collapsing $\ell^\prime$ yields the atom.
 
-As a third viewpoint, automorphisms can be studied by twisting the exact sequences of Lemma \ref{lem:aut} by the ideal of the markings and then taking global sections. It appears that the dicotomy arises from the map $\phi$: if the last condition imposed on infinitesimal automorphisms interweaves first and second order non-trivially (i.e. when $\beta_{1,m}$, resp. $\gamma_{m,m}$, are non-zero) then it is enough that automorphisms be trivial to second order on all branches for them to be trivial tout-court.
+As a third viewpoint, automorphisms can be studied by twisting the exact sequences of Lemma \ref{lem:aut} by the ideal of the markings, and then taking global sections. The dicotomy arises then from the map $\phi$: if the last condition imposed on infinitesimal automorphisms interweaves first and second order non-trivially (i.e. when $\beta_{1,m}$, resp. $\gamma_{m,m}$, are non-zero) then it is enough that automorphisms be trivial to second order on every branch for them to be trivial for good.
 
 \smallskip
 
-Finally, we shall turn the condition that the automorphism group be finite into a combinatorial one. For this, recall Smyth's description of Gorenstein curves of genus one with no automorphisms \cite[Proposition 2.3, Corollary 2.4]{SMY1}.
+Finally, we shall turn the condition that the automorphism group be finite into an explicit one in terms of types. Recall Smyth's description of Gorenstein curves of genus one with no automorphisms \cite[Proposition 2.3, Corollary 2.4]{SMY1}.
 
 \begin{dfn}
- Let $(C,p_1,\ldots,p_n)$ be a pointed reduced curve. A connected subcurve $D\subseteq C$ is said to be \emph{nodally attached} if $D\cap\overline{C\setminus D}$ consists of nodes only.
- %Let us call a point \emph{special} if it is either a marking or a node. For a nodal and nodally attached subcurve $D$ with normalisation $\nu\colon \tilde D\to D$, pointed by $\nu^{-1}\left((\{p_1,\ldots,p_n\}\cap D)\cup (D\cap\overline{C\setminus D})\cup\{q\in D|q\text{ node of } D\}\right)$, we shall say that \emph{DM stability holds} if every rational component has at least three special points, and every elliptic component has at least one.
- We say that $C$ is \emph{residually DM} (rDM) if every nodal and nodally attached subcurve $D$ of $C$, marked by $\{p_i\in D\}\cup D\cap\overline{C\setminus D}$, is Deligne-Mumford stable.
+ Let $(C,p_1,\ldots,p_n)$ be a reduced pointed curve. A connected subcurve $D\subseteq C$ is said to be \emph{nodally attached} if $D\cap\overline{C\setminus D}$ consists of nodes only.
+  We say that $C$ is \emph{residually DM} (rDM) if every nodal and nodally attached subcurve $D$ of $C$, marked by $\{p_i\in D\}\cup (D\cap\overline{C\setminus D}$), is Deligne-Mumford stable. As usual, by \emph{special points} we mean markings and nodes.
 \end{dfn}
-Special points are either nodes or markings.
+
 \begin{cor}\label{cor:explicitnoaut}
- Let $(C,p_1\ldots,p_n)$ be a pointed Gorenstein curve of arithmetic genus two. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
+ Let $(C,p_1\ldots,p_n)$ be a Gorenstein pointed curve of arithmetic genus two. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
  \begin{enumerate}[leftmargin=.6cm]
-  \item $C$ has a singularity of type $I\!I_{m\geq 2}$: either all branches contain exactly one special point and $C$ is not atomic; or at least one of its twin branches contains a special point, each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
-  \item $C$ has a singularity of type $I\!I\!I_{m\geq 1}$: either all branches contain exactly one special point and $C$ is not atomic; or each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
+  \item $C$ has a singularity of type $I_{m\geq 1}$: either all branches contain exactly one special point and $C$ is the non-atom; or each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
+  \item $C$ has a singularity of type $I\!I_{m\geq 2}$: either all branches contain exactly one special point and $C$ is the non-atom; or at least one of its twin branches contains a special point, each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
   \item $C$ has two elliptic $m$-fold points: each of their branches contains at least one special point, and either they share a branch, or at least one branch of each singular point contains at least two special points. Furthermore $C$ is rDM.
-  \item $C$ has one elliptic $m$-fold point: one of its branches is a genus one curve, or two of its branches coincide, and each of the other ones contains at least one special point; otherwise, all branches contain at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
+  \item $C$ has one elliptic $m$-fold point: one of its branches is a genus one curve, and every other branch contains at least one special point; otherwise, all branches contain at least one, and either two of its branches coincide, or at least one branch has at least two special points. Furthermore $C$ is rDM.
   \item $C$ contains only nodes and is Deligne-Mumford stable.
  \end{enumerate}
 \end{cor}
@@ -1370,7 +1383,7 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
 
 Summing up, we have proved the following:
 \begin{thm}
- For every $1\leq m <n$, $m$-stability defines a proper Deligne-Mumford stack $\oM_{2,n}^{(m)}$ over $\k$, containing $\mathcal M_{2,n}$ as a dense open substack.
+ For every $1\leq m <n$, $m$-stability defines a proper Deligne-Mumford stack $\oM_{2,n}^{(m)}$ over $\k$, containing $\pazocal M_{2,n}$ as a dense open substack.
 \end{thm}
 
 \begin{comment}
@@ -1396,7 +1409,7 @@ Non-Gorenstein subcurves appear by taking the union of some - but not all - the 
 %\newpage
 
 \noindent Luca Battistella\\
-Max Planck Institut f\"ur Mathematik - Bonn \\
+Max-Planck-Institut f\"ur Mathematik - Bonn \\
 \texttt{battistella@mpim-bonn.mpg.de}\\
 
 
