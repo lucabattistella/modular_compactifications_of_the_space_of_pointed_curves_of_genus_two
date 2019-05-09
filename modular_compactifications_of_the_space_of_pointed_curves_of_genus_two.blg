@@ -3,50 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
-Warning--I didn't find a database entry for "Deligne"
 Warning--there's a number but no volume in AFS3
 Warning--there's a number but no volume in BalSwi
+Warning--there's a number but no volume in Deligne-Gabber
 Warning--empty journal in Demazure
 Warning--there's a number but no volume in DM
-You've used 47 entries,
+You've used 48 entries,
             2543 wiz_defined-function locations,
-            894 strings with 11252 characters,
-and the built_in function-call counts, 20945 in all, are:
-= -- 2257
-> -- 707
-< -- 45
-+ -- 232
-- -- 225
-* -- 1377
-:= -- 3101
-add.period$ -- 148
-call.type$ -- 47
-change.case$ -- 265
-chr.to.int$ -- 44
-cite$ -- 51
-duplicate$ -- 1005
-empty$ -- 1536
-format.name$ -- 295
-if$ -- 4529
+            900 strings with 11396 characters,
+and the built_in function-call counts, 21312 in all, are:
+= -- 2297
+> -- 715
+< -- 46
++ -- 234
+- -- 227
+* -- 1405
+:= -- 3159
+add.period$ -- 152
+call.type$ -- 48
+change.case$ -- 270
+chr.to.int$ -- 45
+cite$ -- 53
+duplicate$ -- 1020
+empty$ -- 1566
+format.name$ -- 299
+if$ -- 4603
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 50
-newline$ -- 239
-num.names$ -- 141
-pop$ -- 239
+missing$ -- 51
+newline$ -- 245
+num.names$ -- 144
+pop$ -- 242
 preamble$ -- 1
-purify$ -- 318
+purify$ -- 324
 quote$ -- 0
-skip$ -- 955
+skip$ -- 964
 stack$ -- 0
-substring$ -- 1483
-swap$ -- 365
-text.length$ -- 45
-text.prefix$ -- 23
+substring$ -- 1515
+swap$ -- 366
+text.length$ -- 46
+text.prefix$ -- 24
 top$ -- 0
-type$ -- 352
-warning$ -- 4
-while$ -- 188
-width$ -- 53
-write$ -- 621
+type$ -- 360
+warning$ -- 5
+while$ -- 192
+width$ -- 54
+write$ -- 636
 (There were 5 warnings)

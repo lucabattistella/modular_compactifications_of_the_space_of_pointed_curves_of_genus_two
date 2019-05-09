@@ -91,6 +91,13 @@ Olivier Debarre.
 \newblock {\em Higher-dimensional algebraic geometry}.
 \newblock Universitext. Springer-Verlag, New York, 2001.
 
+\bibitem[Del85]{Deligne-Gabber}
+Pierre Deligne.
+\newblock Le lemme de {G}abber.
+\newblock {\em Ast\'{e}risque}, (127):131--150, 1985.
+\newblock Seminar on arithmetic bundles: the Mordell conjecture (Paris,
+  1983/84).
+
 \bibitem[Dem75]{Demazure}
 Michel Demazure.
 \newblock Classification des germes \`a point critique isol\'{e} et \`a nombres
