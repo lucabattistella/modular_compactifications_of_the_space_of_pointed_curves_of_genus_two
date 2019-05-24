@@ -115,6 +115,11 @@ P.~Deligne and D.~Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
 
+\bibitem[FG18]{FedorchukGrimes}
+Maksym {Fedorchuk} and Matthew {Grimes}.
+\newblock {VGIT presentation of the second flip of $\overline{M}_{2,1}$}.
+\newblock {\em arXiv e-prints}, page arXiv:1805.08581, May 2018.
+
 \bibitem[FS13]{FS}
 Maksym Fedorchuk and David~Ishii Smyth.
 \newblock Alternate compactifications of moduli spaces of curves.
@@ -162,6 +167,12 @@ Joe Harris and Ian Morrison.
 \newblock {\em Moduli of curves}, volume 187 of {\em Graduate Texts in
   Mathematics}.
 \newblock Springer-Verlag, New York, 1998.
+
+\bibitem[JP18]{PolishchukJohnson}
+Drew {Johnson} and Alexander {Polishchuk}.
+\newblock {Birational models of $\overline{M}_{2,2}$ arising as moduli of
+  curves with nonspecial divisors}.
+\newblock {\em arXiv e-prints}, page arXiv:1807.09746, Jul 2018.
 
 \bibitem[Kee99]{Keel-bpf}
 Se\'{a}n Keel.
@@ -213,6 +224,12 @@ Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
 Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
 \newblock {Moduli of stable maps in genus one and logarithmic geometry II}.
 \newblock {\em arXiv e-prints}, page arXiv:1709.00490, September 2017.
+
+\bibitem[Rul01]{Rulla}
+William~F. Rulla.
+\newblock {\em The birational geometry of $\overline{M}_{2,1}$ and
+  $\overline{M}_3$}.
+\newblock PhD thesis, University of Texas at Austin, 2001.
 
 \bibitem[Sch91]{Schubert}
 David Schubert.

@@ -105,7 +105,7 @@
 \newtheorem{com}[thm]{Comment}
 \newtheorem{num}{Number}
 \newtheorem*{sketch}{Sketch}
-\newtheorem{caveat}{Caveat}
+\newtheorem*{caveat}{Caveat}
 \newtheorem{rem}[thm]{Remark}
 
 
@@ -136,7 +136,7 @@
 \newcommand{\thismonthyear}{{\thismonth} {\number\year}}
 \newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
 
-\title{Modular compactifications of $\pazocal{M}_{2,n}$ I}
+\title{On some modular compactifications of $\pazocal{M}_{2,n}$}
 \author{Luca Battistella}
 %\date{\today}
 
@@ -151,11 +151,11 @@ We study the geometry of Gorenstein curve singularities of genus two, and of the
 \tableofcontents
 
 \section{Introduction}
-We construct alternative compactifications of the moduli stack of smooth $n$-pointed curves of genus two. The boundary of the Deligne-Mumford compactification, consisting of stable nodal curve, is gradually replaced by ever more singular curves, complying with more restrictive combinatorial requisites on the dual graph. For $1\leq m <n$, the notion of $m$-stability allows genus one and two singularities, while demanding that every higher genus subcurve contain at least a number of special points. Our main result on the stack of $m$-stable curves is:
+We construct alternative compactifications of the moduli stack of smooth $n$-pointed curves of genus two. The boundary of the Deligne-Mumford compactification, consisting of stable nodal curves, is gradually replaced by ever more singular curves, complying with more restrictive combinatorial requisites on the dual graph. For $1\leq m <n$, a notion of $m$-stability allows singularities of genus one and two, while demanding that higher genus subcurves contain a minimum number of special points. Our main result on the stack of $m$-stable curves is:
 \begin{teo*}
- $\oM^{(m)}_{2,n}$ is a \emph{proper} irreducible Deligne-Mumfod stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
+ $\oM^{(m)}_{2,n}$ is a \emph{proper} irreducible Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
 \end{teo*}
-This paper fits into the context of birational geometry of moduli spaces, extending work of D.I. Smyth in genus one, but we also expect it to find applications in enumerative geometry. We classify singularities of genus two and their (semi)stable models, highlighting the relation with Brill-Noether theory. We interpret crimping spaces as moduli spaces for the differential geometric data needed in order to construct a higher genus singularity from an ordinary $m$-fold point, and verify their impact on the existence of automorphisms, a phenomenon that had not fully emerged in lower genus.
+This paper fits into the context of birational geometry of moduli spaces, extending work of D.I. Smyth in genus one, but we expect it to find applications to enumerative geometry as well. We classify Gorenstein singularities of genus two with any number of branches, and their (semi)stable models, highlighting the relation with Brill-Noether theory. We interpret crimping spaces as moduli spaces for the differential geometric data needed in order to construct a higher genus singularity from an ordinary $m$-fold point, and verify their impact on the existence of automorphisms, a phenomenon that had not fully emerged in lower genus. Though some relevant work has been carried out on the birational geometry of $\oM_2,n$ for low values of $n$ \cite{Hassettg2,FedorchukGrimes,PolishchukJohnson}, this seems to be the first attempt to propose a number of modular compactifications for every $n$.
 
 \subsection{From the Deligne-Mumford space to the Hassett-Keel program} One of the most fascinating and influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen, via the introduction of \emph{stable} pointed curves.
 
@@ -457,8 +457,8 @@ Working over $\k$, he considers the stacks:
  \item $\mathcal S$ of reduced one-dimensional (1d) $\k$-algebras $R$,
  \item $\mathcal T$ of reduced 1d algebras with resolution $(R\hookrightarrow (S,J))$, where $S$ is a smooth one-dimensional $\k$-algebra, and $J$ the radical of the conductor of $R\subseteq S$.
 \end{itemize}
-  Basically, $R$ represents the (local) ring of a reduced curve with one singular point, $S$ is its normalisation, and $J$ is the ideal of the reduced fiber over the singular point of $\operatorname{Spec}(R)$. $\mathcal S$ and $\mathcal T$ are limit-preserving stacks over $\operatorname{Spec}(\k)$ \cite[Proposition 1.21]{vdW}. Furthermore, we may fix a reduced 1d algebra with resolution $\tau_0:(R_0\hookrightarrow(S_0,J_0))$, and consider the substack $\mathcal T(\tau_0)$ of reduced 1d algebras with singularity type $\tau_0$ (i.e. isomorphic to $\tau_0$ locally on both the base and the curve, see \cite[Definition 1.64]{vdW}; that various notions of ``locally'' coincide is proved in \cite[Proposition 1.50]{vdW}). There is a forgetful morphism $\mathcal T\to\mathcal S$, and the \emph{crimping space} of $\tau_0$ is defined to be the fiber over $R_0$ of the restriction of such morphism to $\mathcal T(\tau_0)$. The crimping space is a smooth $\k$-scheme \cite[Theorems 1.70 and 1.73]{vdW}; indeed, it is isomorphic to the quotient of $\Aut_{(S_0,J_0)/\k}$ by $\Aut_{(S_0,J_0)/R_0}$, the latter consisting of automorphisms of the normalisation that preserve the subalgebra of the singularity; moreover, the quotient can be computed after modding out the lowest power of $J$ contained in $R$ \cite[Theorem 1.53]{vdW}. Crimping spaces can be thought of as moduli for the normalisation map. %We shall compute the crimping space of the genus two singularities.
-
+  Basically, $R$ represents the (local) ring of a reduced curve with one singular point, $S$ is its normalisation, and $J$ is the ideal of the reduced fiber over the singular point of $\operatorname{Spec}(R)$. $\mathcal S$ and $\mathcal T$ are limit-preserving stacks over $\operatorname{Spec}(\k)$ \cite[Proposition 1.21]{vdW}. Furthermore, we may fix a reduced 1d algebra with resolution $\tau_0:(R_0\hookrightarrow(S_0,J_0))$, and consider the substack $\mathcal T(\tau_0)$ of reduced 1d algebras with singularity type $\tau_0$ (i.e. isomorphic to $\tau_0$ locally on both the base and the curve, see \cite[Definition 1.64]{vdW}; that various notions of ``locally'' coincide is proved in \cite[Proposition 1.50]{vdW}). There is a forgetful morphism $\mathcal T\to\mathcal S$, and the \emph{crimping space} of $\tau_0$ is defined to be the fiber over $R_0$ of the restriction of such morphism to $\mathcal T(\tau_0)$. The crimping space is a smooth $\k$-scheme \cite[Theorems 1.70 and 1.73]{vdW}; indeed, it is isomorphic to the quotient of $\Aut_{(S_0,J_0)/\k}$ by $\Aut_{(S_0,J_0)/R_0}$, the latter consisting of automorphisms of the normalisation that preserve the subalgebra of the singularity; moreover, the quotient can be computed after modding out the lowest power of $J$ contained in $R$ \cite[Theorem 1.53]{vdW}. Crimping spaces can be thought of as moduli for the normalisation map.
+  
 \begin{lem}\label{lem:crimping}
  The crimping space of a genus two singularity with $m$ branches is (a number - depending on the type - of copies of) $\Aaff^1\times(\Aaff^1\setminus\{0\})^{m-1}$.
 \end{lem}
@@ -693,7 +693,7 @@ Let us now consider $d_S=1$. We stick to the notation above; furthermore, there 
  \[\deg(\mathcal L_{|S})= -2+d_R+\sum d_{T_i}=0.\]
  so either $d_R=2$, $h=0$ and $k\geq 1$ arbitrary, i.e. $S$ is adjacent to $\overline{C\setminus Z}$; or $d_R=1$, $h=1$, and $d_{T_1}=1$ (with $k$ arbitrary). In the latter case, though, by repeating the same argument on $T_1$ etc., we would find an infinite chain in $Z$. 
  \begin{rem}\label{rmk:ignoring_1-trees}
-  More generally, an analogous computation shows that, when balancing a component $A$ of multiplicity $d_A$, all neighbouring components of multiplicity $d_A-1$ can be safely ignored (at the same time, the number of such components is bounded only by $m$, due to the semistability of $Z$).%\footnote{define the trend along a rational chain and show it is unaltered by $\alpha-(\alpha-1)$-interactions}
+  More generally, an analogous computation shows that, when balancing a component $A$ of multiplicity $d_A$, all neighbouring components of multiplicity $d_A-1$ can be safely ignored (at the same time, the number of such components is bounded only by $m$, due to the semistability of $Z$).
  \end{rem}
 
  We now prove that $d_R>d_S$ holds in general for $S$ on a rational tree. The preceding paragraphs deal with the cases $d_S=0,1$; we may therefore assume $d_S>1$ (which in particular implies $0\leq k\leq 2$). We have
@@ -704,14 +704,14 @@ Let us now consider $d_S=1$. We stick to the notation above; furthermore, there 
 In fact, we can prove as on \cite[p.893]{SMY1} that $d_R=d_S+1$, unless $d_S=3$ and $q_m\in S$ (type $I$), or $d_S=2$ and either $q_1$ or $q_m$ (or both) are on $S$ (type $I\!I$). We introduce some terminology to describe the weighted dual graph of $D$.
 
 \begin{dfn}
- A $g$-chain is a weighted graph that is a chain and such that the weight of two adjacent vertices differ by $g$. We call $g$ the growth rate; the vertex with highest (resp. lowest) weight is called the root (resp. leaf) of the chain. An $(a,g)$-chain is a $g$-chain with leaf weight $a$. The chain $C_1$ can be attached to the chain $C_0$ by identifying the root of $C_1$ with a vertex of $C_0$ having the same weight. A $1$-tree is obtained by attaching a number of $(1,1)$-chains among themselves.
+ A $t$-chain is a weighted graph that is a chain and such that the weight of two adjacent vertices differ by $t$. We call $t$ the \emph{trend}; the vertex with highest (resp. lowest) weight is called the root (resp. leaf) of the chain. An $(a,t)$-chain is a $t$-chain with leaf weight $a$. The chain $C_1$ can be attached to the chain $C_0$ by identifying the root of $C_1$ with a vertex of $C_0$ having the same weight. A $1$-tree is obtained by attaching a number of $(1,1)$-chains among themselves.
 \end{dfn}
 
-Let us now look at a component $S$ with $d_S=2$ and at least one of $q_1$ and $q_m$ attached to it. The balancing equation is
+Let us now look at a component $S$ with $d_S=2$ and at least one of $q_1$ and $q_m$ attached to it (case $I\!I$). The balancing equation is
 \[\deg(\mathcal L_{|S})= -2-(h+k+1)+d_R+\sum d_{T_i}=0,\]
-with $k\in\{1,2\}$. The preceding discussion implies that $d_{T_i}=1$ for all $i=1,\ldots,h$, so $d_R=3+k$. If $k=2$, i.e. both $q_1$ and $q_m$ are on $S$ - in which case they are indeed equidistant from the core -, then $d_R=5$, and it can be shown inductively that the multiplicity of $D$ increases by $3$ for every step we make from $S$ towards the core. The same holds in case I, with $q_m$ attached to $S$ and $d_S=3$.
+with $k\in\{1,2\}$. The preceding discussion implies that $d_{T_i}=1$ for all $i=1,\ldots,h$, so $d_R=3+k$. If $k=2$, i.e. both $q_1$ and $q_m$ are on $S$ - in which case they are indeed equidistant from the core -, then $d_R=5$, and it can be shown inductively that the multiplicity of $D$ increases by $3$ for every step we make from $S$ towards the core. The same holds in case $I$, with $q_m$ attached to $S$ and $d_S=3$.
 
-Finally, say $d_S=2$ and only $q_1\in S$. Then $d_R=4$, and the growth rate along the chain that connects $S$ to the core is $2$, unless there is a component $S^\prime$ at which two $2$-chains meet.
+Finally, say $d_S=2$ and only $q_1\in S$. Then $d_R=4$, and the trend along the chain that connects $S$ to the core is $2$, unless there is a component $S^\prime$ at which two $2$-chains meet, in which case the trend becomes $3$ after $S^\prime$.
 
 \begin{dfn}
  A $2$-tree is obtained by attaching a number of $(1,1)$-chains to a $(2,2)$-chain. A $3$-tree is obtained by attaching a number of $(1,1)$-chains either to a $(3,3)$-chain, or to a weighted graph itself obtained by attaching two $(2,2)$-chains to the leaf of a $3$-chain.
@@ -719,7 +719,7 @@ Finally, say $d_S=2$ and only $q_1\in S$. Then $d_R=4$, and the growth rate alon
 
 From the preceding discussion it is clear that the weighted dual graph of $D$ is obtained by attaching a number of $1$-trees, and either (a) one $3$-tree or (b) two $2$-trees to the dual graph of the core $K$, weighted in an appropriate fashion.
 
-Finally, let us look at the core $K$. Consider it as a one-pointed (case (a)), resp. two-pointed (case (b)) curve of genus two, by ignoring all the attachment points of the $1$-trees (which works by Remark \ref{rmk:ignoring_1-trees}), and let $\bar K\in\oM_{2,1}$ (resp. $\oM_{2,2}$) be its stable model. The following can happen:
+Finally, let us look at the core $K$. Consider it as a one-pointed (case (a)), resp. two-pointed (case (b)) curve of genus two, by ignoring all the attachment points of the $1$-trees (it does not alter the balancing equation along $K$ by Remark \ref{rmk:ignoring_1-trees}), and let $\bar K\in\oM_{2,1}$ (resp. $\oM_{2,2}$) be its stable model. The following can happen:
 
 \begin{enumerate}[leftmargin=.6cm]
 
@@ -727,29 +727,29 @@ Finally, let us look at the core $K$. Consider it as a one-pointed (case (a)), r
  which admits a solution if and only if $K$ is Weierstrass. Similarly case (b) can be balanced if and only if $K$ is conjugate.
  
  \item $K$ contains two distinct subcurves of genus one $E_1$ and $E_2$. We start by solving the balancing equation on one of them, say $E=E_1$.
- If all but one of the neighbouring components have multiplicity $d_E-1$, then the last one is forced to have multiplicity $d_E-1$ as well (by degree reasons). The case that all but two neighbouring components have multiplicity $d_E-1$ occurs when either one $2$-tree or one $3$-tree (and exactly one) is attached to $E$ at $x$; let $F$ be the other component with undetermined multiplicity, which lies between $E_1$ and $E_2$ (possibly $F=E_2$), and let $E\cap F=\{y\}$. The case of a $2$-tree forces $d_F=d_E$ by degree reason, but then we are left to solve $x\sim y$ in $\Pic(E)$, which is impossible; on the other hand, the case of a $3$-tree imposes $d_F=d_E+1$ and $2x\sim 2y$ in $\Pic(E)$, i.e. $K$ is Weierstrass. By the same token, the two $2$-trees have two hit the same genus one curve, say $E_1$, in nodes $x_1,x_2$ such that $x_1+x_2\sim 2y$ and $d_F=d_E+1$.
+ If all but one of the neighbouring components have multiplicity $d_E-1$, then the last one is forced to have multiplicity $d_E-1$ as well (by degree reasons). The case that all but two neighbouring components have multiplicity $d_E-1$ occurs when either one $2$-tree or one $3$-tree (and exactly one) is attached to $E$ at $x$; let $F$ be the other component with undetermined multiplicity, which lies between $E_1$ and $E_2$ (possibly $F=E_2$), and let $E\cap F=\{y\}$. The case of a $2$-tree forces $d_F=d_E$ by degree reason, but then we are left to solve $x\sim y$ in $\Pic(E)$, which is impossible; on the other hand, the case of a $3$-tree imposes $d_F=d_E+1$ and $2x\sim 2y$ in $\Pic(E)$, i.e. $K$ is Weierstrass. By the same token, the two $2$-trees have two hit the same genus one curve, say $E_1$, in points $x_1,x_2$ such that $x_1+x_2\sim 2y\in\Pic(E_1)$ and $d_F=d_E+1$.
  
- Assume now that there is a chain of rational curves $S_i$ lying between $E_1$ and $E_2$ in $K$, and one of the special trees connects to one of the $S_i$; in case (b), then, both $2$-trees must connect to (possibly different) $S_i$, by the previous paragraph. Furthermore, the growth rate along the rational chains at $E_1$ and $E_2$ has to be $1$. This in turn implies that, in case (b), the growth rate along the chain separating the two $2$-trees is $0$. In particular, the two $2$-trees are attached to components with the same multiplicity for $D$, so $q_1$ and $q_m$ are equidistant from the core. See Figure \ref{fig:E1E2} for some examples.
+ Assume now that there is a chain of rational curves $S_i$ lying between $E_1$ and $E_2$ in $K$, and one of the special trees connects to one of the $S_i$; in case (b), then, both $2$-trees must connect to (possibly different) $S_i$, by the previous paragraph. Furthermore, the trend along the rational chains at $E_1$ and $E_2$ has to be $1$. This in turn implies that, in case (b), the trend along the chain separating the two $2$-trees is $0$. In particular, the two $2$-trees are attached to components with the same multiplicity for $D$, so $q_1$ and $q_m$ are equidistant from the core. See Figure \ref{fig:E1E2} for some examples.
  
- \begin{figure}
+ \begin{figure}[h]
  \includegraphics[width=.8\textwidth]{E1E2example} 
  \caption{Examples of $Z$ with two genus one components (the white dots). The numbers indicate the multiplicity of $D$. On the left, one $3$-tree attached to $E_1$; on the right, two $2$-trees attached to the same bead of the rational chain separating $E_1$ from $E_2$.}\label{fig:E1E2}
   \end{figure}
   
- \item $\bar K\in\Delta_{irr}$, i.e. $K$ contains an irreducible subcurve of arithmetic genus one $E$, with two points $y_1$ and $y_2$ on $E$ that are joined in $K$ by a (possibly empty) rational chain. We see as above that either a $3$-tree is attached to a point $x\in E$ satisfying $2x\sim y_1+y_2$ in $\Pic(E)$, or two $2$-trees are attached to $x_1,x_2\in E$ satisfying $x_1+x_2\sim y_1+y_2$ in $\Pic(E)$, or the rational chain is not empty and all the distinguished trees are attached to it. In this case, solve the balancing equation on $E$: let $d=d_E$, $d_1$ and $d_2$ be the multiplicities of the rational components attached to $y_1$ and $y_2$ respectively; then either $d_1=d_2=d-1$, or $d_1=d-1+k$, $d_2=d-1-k$ and $r_1-r_2$ is $k$-torsion in $\Pic(E)$. But, by chasing the balancing equation along the rational necklace, we find that, if $k\geq 1$, then the growth rate increases when passing through a distinguished bead, so that ultimately $d-1-k=d_2>d_1d-1+k$, which is absurd. So the only possibility is to have a rational chain symmetric with respect to the distinguished beads, namely: in case (a) the two pieces of the rational chain standing between the special bead and $E$ have the same length, and in case (b) the distance shortest path between a special bead and $E$ is the same for the two special beads. See Figure \ref{fig:ER}.
+ \item\label{KinDirr} $\bar K\in\Delta_{irr}$, i.e. $K$ contains an irreducible subcurve of arithmetic genus one $E$, with two points $y_1$ and $y_2$ on $E$ that are joined in $K$ by a (possibly empty) rational chain. We see as above that either a $3$-tree is attached to a point $x\in E$ satisfying $2x\sim y_1+y_2$ in $\Pic(E)$, or two $2$-trees are attached to $x_1,x_2\in E$ satisfying $x_1+x_2\sim y_1+y_2$ in $\Pic(E)$, or the rational chain is not empty and all the distinguished trees are attached to it. In this case, solve the balancing equation on $E$: let $d=d_E$, $d_1$ and $d_2$ be the multiplicities of the rational components attached to $y_1$ and $y_2$ respectively; then either $d_1=d_2=d-1$, or $d_1=d-1+k$, $d_2=d-1-k$ and $r_1-r_2$ is $k$-torsion in $\Pic(E)$. But, by chasing the balancing equation along the rational necklace, we find that, if $k\geq 1$, then the trend increases when passing through a distinguished bead, so that ultimately $d-1-k=d_2>d_1=d-1+k$, contradiction. So the only possibility is to have a rational chain symmetric with respect to the distinguished beads, namely: in case (a) the two pieces of the rational chain standing between the special bead and $E$ have the same length, and in case (b) the distance of the shortest path between a special bead and $E$ is the same for the two special beads. See Figure \ref{fig:ER}.
  
-  \begin{figure}
+  \begin{figure}[h]
  \includegraphics[width=.8\textwidth]{ERexample}
- \caption{$K$ is a genus one curve $E$ with a rational bridge $R$. Left column, one $3$-tree; right, two $2$-trees. Above: the special trees cleave to $E$; below: they cleave to $R$ - note that $R$ is necessarily symmetric in this case.}\label{fig:ER}
+ \caption{$K$ is a genus one curve $E$ with a rational bridge $R$. Left column, one $3$-tree; right column, two $2$-trees. Above: the special trees connect to $E$; below: they connect to $R$ - note that $R$ is necessarily symmetric in this case.}\label{fig:ER}
   \end{figure}
  
- \item Finally, we consider the case that $K$ has geometric genus $0$. It is easy to see that, if a special tree cleaves to a stable component, the only chance that the balancing condition may be satisfied is that there are two $2$-trees and they cleave to different stable components; the semistable chains have arbitrary length and $D$ has the same multiplicity along every component of the core; see the upper left corner of Figure \ref{fig:Krat}. There remain three possibilities for the dual graph, according to how the distinguished components (denoted by $R$) and the other stable components (denoted by $A$ and $B$) distribute themselves.
+ \item Finally, we consider the case that $K$ has geometric genus $0$, namely it is the union of two stable components along three semistable chains. It is easy to see that, if a special tree cleaves to a stable component, the only chance that the balancing condition may be satisfied is that there are two $2$-trees and they cleave to different stable components; the semistable chains have arbitrary length and $D$ has the same multiplicity along every component of the core; see the upper left corner of Figure \ref{fig:Krat}. There remain three possibilities for the dual graph, according to how the distinguished components (denoted by $R$) and the other stable components (denoted by $A$ and $B$) distribute themselves.
   \begin{figure}
  \includegraphics[width=.8\textwidth]{rational_pretzel} 
  \caption{When $K$ consists of rational curves.}\label{fig:Krat}
   \end{figure}
- Denoting by $t$ the growth rate along various rational chains, we find that in case (a) and (b).1 balancing along $A$ or $B$ is equivalent to $\sum_it_i=1$. Assume $t_1\geq0$; then $d_A>d_B$, therefore $t_2,t_3>0$, which contradicts $\sum_it_i=1$. Similarly, if $t_1\leq -2$, then $d_A<d_B$, therefore $t_2,t_3<0$, which makes $\sum_it_i=1$ again impossible. We find only one solution with $t_1=-1$ and $t_2=t_3=0$ - notice that it is a degeneration of the case considered in the previous point.
- On the other hand, in case (b).2, we find $\sum_it_i=1$ when balancing $B$, and $\sum_it_i=-1$ when balancing $A$, which is a contradiction.
+ Denoting by $t$ the trend along various rational chains, we find that in case (a) and (b).2 balancing along $A$ or $B$ is equivalent to $\sum_it_i=1$. Assume $t_1\geq0$; then $d_A>d_B$, therefore $t_2,t_3>0$, which contradicts $\sum_it_i=1$. Similarly, if $t_1\leq -2$, then $d_A<d_B$, therefore $t_2,t_3<0$, which makes $\sum_it_i=1$ again impossible. We find only one solution with $t_1=-1$ and $t_2=t_3=0$ - notice that it is a degeneration of case \ref{KinDirr} above.
+ In case (b).1, we find $\sum_it_i=1$ when balancing $B$, and $\sum_it_i=-1$ when balancing $A$, which is a contradiction.
 \end{enumerate}
 This concludes the proof of Propositions \ref{prop:tailI}(2) and \ref{prop:tailII}(2).
 \end{proof}
@@ -763,20 +763,21 @@ In this case, the line bundle $\omega_{\mathcal C/\dvr}(D)$ trivial along $Z$ mi
 
 
 \begin{proof}(of Proposition \ref{prop:contractionI})
- By blowing down some rational tails outside $Z$, we can assume that $\mathcal C_0\setminus Z=\sqcup_{i=1}^m T_i$ with each $T_i\simeq\PP^1$. The image of $\Sigma_i(0)$ and $\Sigma_j(0)$ may now coincide for $i\neq j$. The total space of the curve can still be assumed to be smooth. By abuse of notation, we denote the resulting family of pointed curves by $(\mathcal C,\Sigma_1,\ldots,\Sigma_n)$. By assumption on the shape of $Z$, we can find an effective Cartier $D$ supported on $Z$ such that $\mathcal L=\omega_{\mathcal C/\dvr}(D+\Sigma)$ be trivial on $Z$ and relatively ample elsewhere (both on $T_i$ and on the generic fiber). Consider a second line bundle $\mathcal L^\prime=\OO(2\Sigma_1+\Sigma)$. Since we assumed $\Sigma_1$ to be Weierstrass, $\mathcal L_\eta\simeq\mathcal L^\prime_\eta$. On the other hand it is easy to see that the multi-degrees of $\mathcal L_0$ and $\mathcal L^\prime_0$ coincide; it follows from the separatedness of $\Pic^0_{\mathcal C/\dvr}\to\dvr$ (see \cite[p. 136]{Deligne} or \cite[\S 9.4]{BLR}) that $\mathcal L$ and $\mathcal L^\prime$ are isomorphic line bundles, so that in particular $\mathcal L$ is trivial on a neighbourhood of $Z$. Observe now that 
- \[R^1\pi_*\mathcal L(-D)= R^1\pi_*\omega_{\mathcal C/\dvr}(\Sigma)=0\]
- by semistability, hence $\pi_*\mathcal L\twoheadrightarrow \pi_*(\mathcal L_{|D})=\pi_*\OO_D$ which contains the constants, showing that $\mathcal L$ is semiample along $Z$ (that it is along the $T_i$ is easier). We therefore have a contraction
+ By blowing down some rational tails outside $Z$, we can assume that $\mathcal C_0\setminus Z=\sqcup_{i=1}^m T_i$ with each $T_i\simeq\PP^1$. The image of $p_i(0)$ and $p_j(0)$ may now coincide for $i\neq j$. The total space of the curve can still be assumed to be smooth. By abuse of notation, we denote the resulting family of pointed curves by $(\mathcal C,p_1,\ldots,p_n)$. By assumption on the shape of $Z$, we can find an effective Cartier $D$ supported on $Z$ such that $\mathcal L=\omega_{\mathcal C/\dvr}(D+\sum p_i)$ is trivial on $Z$ and relatively ample elsewhere (both on $T_i$ and on the generic fiber). Consider a second line bundle $\mathcal L^\prime=\OO(2p_1+\sum p_i)$. Since we assumed $p_1$ to be Weierstrass, $\mathcal L_\eta\simeq\mathcal L^\prime_\eta$. On the other hand it is easy to see that the multi-degrees of $\mathcal L_0$ and $\mathcal L^\prime_0$ coincide; it follows from the separatedness of $\Pic^0_{\mathcal C/\dvr}\to\dvr$ (see \cite[p. 136]{Deligne-Gabber} or \cite[\S 9.4]{BLR}) that $\mathcal L$ and $\mathcal L^\prime$ are isomorphic line bundles, so that in particular $\mathcal L$ is trivial \emph{on a neighbourhood of $Z$}. Observe now that 
+ \[R^1\pi_*\mathcal L(-D)= R^1\pi_*\omega_{\mathcal C/\dvr}(\sum p_i)=0\]
+ by semistability, hence $\pi_*\mathcal L\twoheadrightarrow \pi_*(\mathcal L_{|D})=\pi_*\OO_D$, which contains the constants, showing that $\mathcal L$ is semiample along $Z$ (that it is along the $T_i$ is easier). We therefore have a well-defined  morphism:
  \[\mathcal C\xrightarrow{\phi}\overline{\mathcal C}=\underline{\operatorname{Proj}}_\dvr\left(\bigoplus_{n\geq 0}\pi_*\mathcal L^{\otimes n}\right)\to\dvr\]
  associated to $\mathcal L$. The proof that $\overline{\mathcal C}\to \dvr$ is a flat family of Gorenstein curves goes along the lines of \cite[Lemma 2.13]{SMY1} or \cite[Proposition 3.7.3.1]{RSPW1}. It is the clear from the classification that it contains a type $I_m$-singularity in the central fiber. The proof of Proposition \ref{prop:contractionII} is entirely analogous.
 \end{proof}
 
 
-\begin{caveat}
- It seems not to be true in general that, if we have a family of semistable curves $\pi\colon\mathcal C\to\dvr$ over a discrete valuation ring, and a line bundle $\mathcal L$ on $\mathcal C$ that is trivial on a higher genus subcurve $Z$ of $\mathcal C_0$, and $\pi$-ample elsewhere, then $\mathcal L$ is $\pi$-semiample, i.e. relatively generated by global sections. It will rather depend on the family, and, in particular, the assumption that the total space of $\mathcal C$ is regular along $Z$ seems to be essential. This seems not to be an issue in positive characteristic, thanks to a result of S. Keel \cite{Keel-bpf}, so assume $\operatorname{char}(\k)=0$; we give a counterexample using the theory of limit linear series: we produce a linear series that can be smoothed while having basepoints along a Weierstrass tail.\footnote{It has been pointed out to us by F. Carocci that a similar but easier computation can be carried out for a genus one tail as well. This shows that the regularity assumption of \cite[Lemma 2.13]{SMY1} is necessary.} For any such smoothing, the corresponding line bundle $\mathcal L$ is not globally generated along $Z$ - though we do not know how the powers of $\mathcal L$ behave.
+\begin{caveat} Here is a natural question: given a family of semistable curves $\pi\colon\mathcal C\to\dvr$ over a discrete valuation ring, and a line bundle $\mathcal L$ on $\mathcal C$ that is trivial on a higher genus subcurve $Z$ of $\mathcal C_0$ and $\pi$-ample elsewhere, is $\mathcal L$ $\pi$-semiample? is it relatively generated by global sections? A positive answer follows from a result of S. Keel in positive characteristic \cite{Keel-bpf}. If $\operatorname{char}(\k)=0$, the answer seems to depend on the family; in particular, the assumption that the total space of $\mathcal C$ is regular along $Z$ seems to be relevant. We construct a counterexample using the theory of limit linear series (l.l.s.): we produce a linear series that can be smoothed while having basepoints along a Weierstrass tail.\footnote{It was pointed out by F. Carocci that a similar computation can be carried out for a genus one tail as well. This shows that the regularity assumption of \cite[Lemma 2.13]{SMY1} is necessary.} For any such smoothing, the corresponding line bundle $\mathcal L$ is not globally generated along $Z$ - though we do not know how the powers of $\mathcal L$ behave.
  
- Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the lls has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. Notice that in the case at hand we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially, i.e. the locus in $\operatorname{Gr}(1,\PP^3)$ of lines meeting a fixed line $\ell$, which is a Schubert cycle of dimension $3$. We therefore need to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fiber of $X$ over $q\in Z$.
+ Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the l.l.s. has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. Notice that in the case at hand we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially, i.e. the locus in $\operatorname{Gr}(1,\PP^3)$ of lines meeting a fixed line $\ell$, which is a Schubert cycle of dimension $3$. We therefore need to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fiber of $X$ over $q\in Z$.
  
  Let us start by examining the other possibilities for $\mathcal G^{d-2}_d(X_0)$: the $R$-aspect can in fact restrict to any line bundle of degree $0$ on $Z$, which we are going to write as $\OO_Z(p_1+p_2-2q)$ for two moving points $p_1,p_2$ on $Z$ (think of them as coordinates on $\Pic(Z)$). Then $\mathcal L_Z=\OO_Z((d-2)q+p_1+p_2)$.
+ 
+ \smallskip
  
  \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
   $\subseteq\Pic(Z)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq \PP H^0(R,\OO_R(d))$ & dim \\ \hline
@@ -786,7 +787,11 @@ In this case, the line bundle $\omega_{\mathcal C/\dvr}(D)$ trivial along $Z$ mi
   $p_1+p_2\ngeq q$ & $2$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
  \end{tabular}
 
+ \smallskip
+ 
  If we now let $q$ vary in $B\simeq Z$, we may generically assume that it is not Weierstrass. We then find the following:
+ 
+ \smallskip
  
  \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
   $\subseteq\Pic(X)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq\PP H^0(R,\OO_R(d))$ & dim \\ \hline
@@ -796,348 +801,11 @@ In this case, the line bundle $\omega_{\mathcal C/\dvr}(D)$ trivial along $Z$ mi
   $p_1+p_2\ngeq q$ & $2+1$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
  \end{tabular}
  
- We conclude that $\mathcal G^{d-2}_d(X/B)$ has pure dimension $3$, and we may therefore apply the Regeneration Theorem to deduce that all lls with $\mathcal L_{R|Z}\simeq\OO_Z$ - in particular those with base-locus $Z$ - are smoothable.
+ \smallskip
+ 
+ We conclude that $\mathcal G^{d-2}_d(X/B)$ has pure dimension $3$, and we may therefore apply the Regeneration Theorem to deduce that all l.l.s. with $\mathcal L_{R|Z}\simeq\OO_Z$ - in particular those with base-locus $Z$ - are smoothable.
 \end{caveat}
 
-\begin{comment}
-section{Dualising line bundle and semistable tails - old}
-This is the most technical and combinatorially delicate section of the paper. We classify the nodal subcurves that can be contracted in a one-parameter smoothing in order to obtain a Gorenstein singularity of genus two. The upshot is that the distinguished (i.e. twin or singular) branches are attached to special (i.e. conjugate or Weierstrass) points of the core (minimal subcurve of genus two). That said, the shape of the contracted curve depends on one parameter only, namely the distance of the distinguished branch(es) from the core - parallel to Smyth's \emph{balanced} condition \cite[Definition 2.11]{SMY1} in genus one, and its generalisation by the strict interior of a circle around the circuit in \cite{RSPW1}. This is going to play a key role in the proof that our moduli spaces are proper.
-
-\begin{lem}\label{lem:contraction}
- Let $\pi\colon\mathcal C\to\dvr$ be a family of nodal curves over a DVR, and let $\mathcal L$ be a line bundle on $\mathcal C$ that is trivial \emph{on a neighbourhood} of a connected subcurve $Z$ of genus two in the central fiber $C=\mathcal C_0$, and $\pi$-ample everywhere else. Assume that $\mathcal C$ is regular along $Z$. Then $\mathcal L$ is $\pi$-semiample. Setting \[\phi\colon\mathcal C\to \mathcal C^\prime=\Proj_\dvr\left(\bigoplus_{n\geq0}\pi_*\mathcal L^{\otimes n}\right),\] $\mathcal C^\prime$ is a flat family of reduced curves, and $C^\prime$ has a genus two singularity at $q=\phi(Z)$ with $m=\lvert Z\cap\overline{C\setminus Z}\rvert$ branches, whose normalisation is $\phi_{\lvert\overline{C\setminus Z}}$. Moreover, $q$ is a Gorenstein singularity if and only if $\mathcal L$ can be written in the form $\omega_{\mathcal C/\dvr}(D+\Sigma)$, where $D$ is supported on $Z$ and $\Sigma$ is supported away from $Z$.
-\end{lem}
-\begin{proof}
- This is a straightforward extension of Smyth's contraction lemma \cite[Lemma 2.13]{SMY1}. Up to substituting $\mathcal L$ by a sufficiently high power of itself, we claim that there exists a divisor $D^\prime$ on $\mathcal C$, supported on $Z$, such that $R^1\pi_*\mathcal L(-D^\prime)=0$. Indeed, if $\lev(Z)=\lvert Z\cap\overline{C\setminus Z}\rvert\geq 3$, it is enough to take $D^\prime=Z$, by cohomology and base-change, and Serre duality. On the other hand, if $Z$ is either a conjugate bridge or a Weierstrass tail (we leave the discussion of the other possible situations, since they will not occur in what follows), we have to go through a case-by-case analysis:
- \begin{itemize}[leftmargin=.3cm]
-  \item if $Z$ is irreducible, it is enough to take $D^\prime=3Z$ (in fact, $2Z$ when $Z$ is a bridge);
-  \item if $Z=E_1\sqcup_q E_2$ is the union of two curves of genus one, attached to the rest of $C$ along $E_1$, then $D^\prime=2E_1+3E_2$ suffices;
-  \item if $Z=E\sqcup_{\{q_1,q_2\}} R$ is the union of a genus one curve with a rational bridge, attached to the rest of $C$ along $E$, take $D^\prime=2E+3R$; while take $D^\prime=3E+2R$ if the same $Z$ is attached to the rest of $C$ along $R$;
-  \item if $Z$ is formed of three rational components such that $R_1\cap R_2$ is two nodes, $R_1\cap R_0$ and $R_2\cap R_0$ are each one node, and the rest of $C$ is attached to $Z$ along $R_0$, then it is enough to choose $D^\prime=3R_0+4R_1+4R_2$.
- \end{itemize}
- Similar solutions can be found if $Z$ contains rational trees, or if a rational curve is replaced by a chain in the above. The vanishing of $R^1\pi_*\mathcal L(-D^\prime)$ implies that $\pi_*\mathcal L$ surjects onto $\pi_*\mathcal L_{|D^\prime}=\pi_*\OO_{D^\prime}$, by the assumption that $\mathcal L$ is trivial on a neighbourhood of $Z$. On the other hand, $Z=(D^\prime)_{\mathrm{red}}$ implies that $H^0(D^\prime,\OO_{D^\prime})\twoheadrightarrow H^0(Z,\OO_Z)=\k$, hence $\mathcal L$ is globally generated along $Z$. The remaining assertions have been proved by Smyth (\emph{loc. cit.}; see also \cite[Proposition 3.7.3.1]{RSPW1}). 
-\end{proof}
-
-\begin{rem}
- The assumption that the total space of $\mathcal C$ is regular along $Z$ seems to be necessary for $\mathcal L$ to be generated by global sections along $Z$. Assume $\operatorname{char}(\k)=0$\footnote{This is in fact not an issue in positive characteristic, thanks to a result of S. Keel \cite{Keel-bpf}.}; using the theory of limit linear series, we show that for certain line bundles $\mathcal L$ - trivial on $Z$ and ample elsewhere - on certain one-parameter smoothings of a genus two tail $Z$, the associated complete linear system has base-points along $Z$. We do not know how the powers of $\mathcal L$ behave, though.
- 
- Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the lls has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. Notice that in the case at hand we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially, i.e. the locus in $\operatorname{Gr}(1,\PP^3)$ of lines meeting a fixed line $\ell$, which is a Schubert cycle of dimension $3$. We therefore need to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fiber of $X$ over $q\in Z$.
- 
- Let us start by examining the other possibilities for $\mathcal G^{d-2}_d(X_0)$: the $R$-aspect can in fact restrict to any line bundle of degree $0$ on $Z$, which we are going to write as $\OO_Z(p_1+p_2-2q)$ for two moving points $p_1,p_2$ on $Z$ (think of them as coordinates on $\Pic(Z)$). Then $\mathcal L_Z=\OO_Z((d-2)q+p_1+p_2)$.
- 
- \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
-  $\subseteq\Pic(Z)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq \PP H^0(R,\OO_R(d))$ & dim \\ \hline
-  $p_1+p_2\sim 2q$ & $0$ & $\{d-2,d\}$ & $\geq\{0,2\}$ & $\{\ell^\prime\in\operatorname{Gr}(1,\PP^3)|\ell^\prime\cap\ell\neq\empty
-  \}$ & $3$\\
-  $2q\nsim p_1+p_2\geq q$ & $1$ & $\{d-3,d-1\}$ & $\geq\{1,3\}$ & $\PP^1$ & $1$\\
-  $p_1+p_2\ngeq q$ & $2$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
- \end{tabular}
-
- If we now let $q$ vary in $B\simeq Z$, we may generically assume that it is not Weierstrass. We then find the following:
- 
- \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
-  $\subseteq\Pic(X)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq\PP H^0(R,\OO_R(d))$ & dim \\ \hline
-  $p_1+p_2\sim \omega_Z$ & $0+1$ & $\{d-2,d-1\}$ & $\geq\{1,2\}$ & $(\PP^{2})^*$ & $2$\\
-  $p_1+p_2\sim 2q$ & $0+1$ & $\{d-3,d\}$ & $\geq\{0,3\}$ & $\PP^2$ & $2$\\
-  $\omega_Z,2q\nsim p_1+p_2\geq q$ & $1+1$ & $\{d-3,d-1\}$ & $\geq\{1,3\}$ & $\PP^1$ & $1$\\
-  $p_1+p_2\ngeq q$ & $2+1$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
- \end{tabular}
- 
- We conclude that $\mathcal G^{d-2}_d(X/B)$ has pure dimension $3$, and we may therefore apply the Regeneration Theorem to deduce that all lls with $\mathcal L_{R|Z}\simeq\OO_Z$ - in particular those with base-locus $Z$ - are smoothable.\footnote{It has been pointed out to us by F. Carocci that a similar but easier computation can be carried out for a genus one tail as well.}
-\end{rem}
-
-The following lemma is useful in determining the multiplicity of $D$ (as in Lemma \ref{lem:contraction}) along components of $Z$ adjacent to $\overline{C\setminus Z}$.
-
-\begin{comment}
-\begin{rem}\label{rmk:contraction}
- We are going to produce line bundles on smoothings of nodal curves that are trivial on a genus two subcurve $Z$ of the central fiber, and have positive degree on all other components of the fibers; so they are suitable to produce a contraction of $Z$, as soon as they are globally generated over the base. We postpone the discussion of this issue until when we have described such line bundles explicitly. For now we content ourselves to observe that a na\"ive extension of Smyth's contraction lemma \cite[Lemma 2.13]{SMY1} does not seem to hold.
-\end{rem}
-
-\begin{lem}\label{lem:general_contraction}
- Let $\pi\colon\mathcal C\to\dvr$ be a family of nodal curves over a DVR, and let $\mathcal L$ be a line bundle on $\mathcal C$ that is trivial on a connected subcurve $Z$ of genus two in $C=\mathcal C_0$, and $\pi$-ample otherwise. Assume that $\mathcal C$ is regular along $Z$ and that \[\lev(Z)=\lvert Z\cap\overline{C\setminus Z}\rvert\geq 3.\] Then $\mathcal L$ is $\pi$-semiample. Setting $\phi\colon\mathcal C\to \mathcal C^\prime=\Proj_\dvr\left(\bigoplus_{n\geq0}\pi_*\mathcal L^{\otimes n}\right)$, $\mathcal C^\prime$ is a flat family of reduced curves, and $C^\prime$ has a genus two singularity at $q=\phi(Z)$ with $m=\lvert Z\cap\overline{C\setminus Z}\rvert$ branches, whose normalisation is $\phi_{\lvert\overline{C\setminus Z}}$.
-\end{lem}
-\begin{proof}
- Smyth's proof (\emph{loc.cit.}) works unchanged. We review it quickly. Up to replacing $\mathcal L$ with a sufficiently high power of itself, $R^1\pi_*\mathcal L(-Z)=0$, so $\pi_*\mathcal L$ surjects onto $\pi_*\OO_Z$, thus having a section not vanishing along $Z$. The vanishing of $R^1\pi_*\mathcal L(-Z)$ follows from cohomology and base-change, since the restriction of $\mathcal L(-Z)$ to $Z$ has degree equal to $\lev(Z)\geq 3$ by assumption, so $h^1=0$.
-\end{proof}
-
-\begin{lem}\label{lem:Gorenstein_contraction}
- Let $\phi\colon\mathcal C\to \mathcal C^\prime$ be a $\dvr$-contraction induced by a line bundle $\mathcal L$ on $\mathcal C$, as above. Then $\mathcal C^\prime$ is a family of Gorenstein curves if and only if $\mathcal L$ can be written in the form $\mathcal L=\omega_{\mathcal C/\dvr}(D+\Sigma)$ for some effective divisors $D$ supported on $\Exc(\phi)$, and $\Sigma$ supported away from $\Exc(\phi)$.
-\end{lem}
-\begin{proof}
- $\omega_{\mathcal C^\prime/\dvr}$ and $\OO_{\mathcal C^\prime}(1)(-\phi(\Sigma))$ are $S_2$-sheaves isomorphic outside a codimension two locus, therefore they coincide and the former is a line bundle. See the proof of \cite[Lemma 2.13]{SMY1} and \cite[Proposition 3.7.3.1]{RSPW1}.
- %Follows from some place in Koll\'ar-Mori.
-\end{proof}
-
-\begin{customrmk}{4.1(continued)}
- %This is a follow-up to Remark \ref{rmk:contraction}.
- Assume $\operatorname{char}(\k)=0$\footnote{This is in fact not an issue in positive characteristic, thanks to a result of S. Keel \cite{Keel-bpf}.}; using the theory of limit linear series, we show that for certain line bundles $\mathcal L$ - trivial on $Z$ and ample elsewhere - on certain one-parameter smoothings of a genus two tail $Z$, the associated complete linear system has base-points along $Z$. We do not know how the powers of $\mathcal L$ behave, though.
- 
- Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the lls has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. Notice that in the case at hand we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially, i.e. the locus in $\operatorname{Gr}(1,\PP^3)$ of lines meeting a fixed line $\ell$, which is a Schubert cycle of dimension $3$. We therefore need to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fiber of $X$ over $q\in Z$.
- 
- Let us start by examining the other possibilities for $\mathcal G^{d-2}_d(X_0)$: the $R$-aspect can in fact restrict to any line bundle of degree $0$ on $Z$, which we are going to write as $\OO_Z(p_1+p_2-2q)$ for two moving points $p_1,p_2$ on $Z$ (think of them as coordinates on $\Pic(Z)$). Then $\mathcal L_Z=\OO_Z((d-2)q+p_1+p_2)$.
- 
- \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
-  $\subseteq\Pic(Z)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq \PP H^0(R,\OO_R(d))$ & dim \\ \hline
-  $p_1+p_2\sim 2q$ & $0$ & $\{d-2,d\}$ & $\geq\{0,2\}$ & $\{\ell^\prime\in\operatorname{Gr}(1,\PP^3)|\ell^\prime\cap\ell\neq\empty
-  \}$ & $3$\\
-  $2q\nsim p_1+p_2\geq q$ & $1$ & $\{d-3,d-1\}$ & $\geq\{1,3\}$ & $\PP^1$ & $1$\\
-  $p_1+p_2\ngeq q$ & $2$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
- \end{tabular}
-
- If we now let $q$ vary in $B\simeq Z$, we may generically assume that it is not Weierstrass. We then find the following:
- 
- \hspace{-.7cm} \begin{tabular}{lc|c|c|cr}
-  $\subseteq\Pic(X)$ & dim & $\alpha_{Z;d-3,d-2}$ & $\alpha_{R;0,1}$ & $\subseteq\PP H^0(R,\OO_R(d))$ & dim \\ \hline
-  $p_1+p_2\sim \omega_Z$ & $0+1$ & $\{d-2,d-1\}$ & $\geq\{1,2\}$ & $(\PP^{2})^*$ & $2$\\
-  $p_1+p_2\sim 2q$ & $0+1$ & $\{d-3,d\}$ & $\geq\{0,3\}$ & $\PP^2$ & $2$\\
-  $\omega_Z,2q\nsim p_1+p_2\geq q$ & $1+1$ & $\{d-3,d-1\}$ & $\geq\{1,3\}$ & $\PP^1$ & $1$\\
-  $p_1+p_2\ngeq q$ & $2+1$ & $\{d-3,d-2\}$ & $\{2,3\}$ & pt & $0$\\
- \end{tabular}
- 
- We conclude that $\mathcal G^{d-2}_d(X/B)$ has pure dimension $3$, and we may therefore apply the Regeneration Theorem to deduce that all lls with $\mathcal L_{R|Z}\simeq\OO_Z$ - in particular those with base-locus $Z$ - are smoothable.
-\end{customrmk}
-
-If we want to produce a Gorenstein singularity of genus two $(\bar C,q)$ by contracting a subcurve $Z$ of arithmetic genus two in a (smoothing) family of nodal curves $\mathcal C$, we are going to need a line bundle on $\mathcal C$ of the form prescribed by Lemma \ref{lem:Gorenstein_contraction}. The next lemma allows us to determine the multiplicity of the divisor $D$ in Lemma \ref{lem:Gorenstein_contraction} along components of $Z$ adjacent to the components of $C$ normalising $\bar C$ at $q$.
-
-end{comment}
-
-
-\begin{lem}\label{lem:dualising_lb}
- Let $\nu\colon\tilde C\to C$ be the normalisation of a Gorenstein singularity of genus two, with $\nu^{-1}(p)=\{p_1,\ldots,p_m\}$. Then $\nu^*\omega_C=\omega_{\tilde C}(3p_1+2p_2+\ldots+2p_{m-1}+3p_m)$ (case II) or $\nu^*\omega_C=\omega_{\tilde C}(2p_1+\ldots+2p_{m-1}+4p_m)$ (case III).
-\end{lem}
-\begin{proof}
- Recall the explicit description of the dualising sheaf for curves:
- \[\omega_C(U)=\{\eta\in \Omega_{\tilde C}\otimes K(\nu^{-1}(U)) | \sum_{p_i\in\nu^{-1}(p),p\in U}\operatorname{Res}_{p_i}((\nu^*f)\eta)=0,\ \forall f\in\OO_C(U)\}.\]
- We are going to use the explicit coordinates in \eqref{coordII-cs} and \eqref{coordIII-cs}. In case II, we know that $\tm^3\subseteq R$, therefore we have poles of third order at most. It is enough to study the possible polar tails. Let \[\eta=c_1\frac{\operatorname{d}t_1}{t_1^3}+b_1\frac{\operatorname{d}t_1}{t_1^2}+a_1\frac{\operatorname{d}t_1}{t_1}\oplus\ldots\oplus c_m\frac{\operatorname{d}t_m}{t_m^3}+b_m\frac{\operatorname{d}t_m}{t_m^2}+a_m\frac{\operatorname{d}t_m}{t_m}.\]
- From looking at $1\cdot\eta$ we deduce $\sum_{i=1}^m a_i=0$; from $x_i\cdot\eta$ we see $b_1+b_m=0$ (if $i=1$), and $b_i+c_m=0$ (if $i=2,\ldots,m-1$); finally from $x_i^2\cdot\eta$ we have $c_1+c_m=0$ (if $i=1$), and $c_i=0$ (if $i=2,\ldots,m-1$). Therefore $\omega_C/\nu_*\omega_{\tilde C}$ is spanned by
- \begin{align*}
-  \frac{\operatorname{d}t_1}{t_1}-\frac{\operatorname{d}t_m}{t_m},\ldots,\frac{\operatorname{d}t_{m-1}}{t_{m-1}}-\frac{\operatorname{d}t_m}{t_m},\frac{\operatorname{d}t_1}{t_1^2}-\frac{\operatorname{d}t_m}{t_m^2},\\
-  \bar{\eta}=\frac{\operatorname{d}t_1}{t_1^3}+\frac{\operatorname{d}t_2}{t_2^2}+\ldots+\frac{\operatorname{d}t_{m-1}}{t_{m-1}^2}-\frac{\operatorname{d}t_m}{t_m^3}.
- \end{align*}
-In particular $\omega_C$ is generated by $\bar{\eta}$ as an $\OO_C$-module. Hence the first claim.
-
-In case III, we know that $\tm^4\subseteq R$, therefore we have poles of fourth order at most. On the other hand $t_i^2\in R$ for all $i$ implies the part of order three is trivial. So let \[\eta=c_1\frac{\operatorname{d}t_1}{t_1^4}+b_1\frac{\operatorname{d}t_1}{t_1^2}+a_1\frac{\operatorname{d}t_1}{t_1}\oplus\ldots\oplus c_m\frac{\operatorname{d}t_m}{t_m^4}+b_m\frac{\operatorname{d}t_m}{t_m^2}+a_m\frac{\operatorname{d}t_m}{t_m}.\]
- From looking at $1\cdot\eta$ we deduce $\sum_{i=1}^m a_i=0$; from $x_i\cdot\eta$ we see $b_i+c_m=0$ for all $i$, and from $x_i^3\cdot\eta$ we have $c_i=0$ for all $i$. (The statement about third order poles can be evinced from $x_i^2\cdot\eta$ or from $z\cdot\eta$ indifferently.) Therefore $\omega_C/\nu_*\omega_{\tilde C}$ is spanned by
- \begin{align*}
-  \frac{\operatorname{d}t_1}{t_1}-\frac{\operatorname{d}t_m}{t_m},\ldots,\frac{\operatorname{d}t_{m-1}}{t_{m-1}}-\frac{\operatorname{d}t_m}{t_m},\frac{\operatorname{d}t_m}{t_m^2}\\
-  \bar{\eta}=\frac{\operatorname{d}t_1}{t_1^2}+\ldots+\frac{\operatorname{d}t_{m-1}}{t_{m-1}^2}-\frac{\operatorname{d}t_m}{t_m^4}.
- \end{align*}
-In particular $\omega_C$ is generated by $\bar{\eta}$ as an $\OO_C$-module. Hence the second claim.
-\end{proof}
-
-\begin{cor}
- The dualising sheaf has multi-degree $(1,0,\ldots,0,1)$ (case II) and $(0,\ldots,0,2)$ (case III) respectively.
-\end{cor}
-
-\begin{rem}
- $H^0(C,\Omega_C^\vee(-\sum_{i=1}^np_i))=0$ implies the ampleness of $\omega_C(\sum_{i=1}^np_i)$.
-\end{rem}
-
-%\begin{rem}
-% Recall Smyth's \emph{balancing} condition \cite[Definition 2.11]{SMY1}, generalised by the interior of a circle around the circuit in \cite{RSPW1}.
-%\end{rem}
-\begin{rem}
- Recall that every smooth curve $C$ of genus two is hyperelliptic; a point $p\in C$ is Weierstrass if it is a ramification point for the unique $\mathfrak g^1_2$, while two points $p_1,p_2\in C$ are conjugate if they are swapped under the hyperelliptic involution. The notion can be generalised to nodal curves by declaring $(C,p)$ to be Weierstrass if its stabilisation lies in the closure of \[\{(C,p)|\ C\text{ smooth and } p \text{ Weierstrass}\}\subseteq\oM_{2,1},\]
- and similarly for conjugate points. We can give a more explicit characterisation of the closure thanks to the theory of admissible covers \cite[Theorem 5.45]{HM}. Another way to see it is that, up to the involution action, the Weierstrass locus is isomorphic to $\oM_{0,6}/\mathfrak S_5$ and the conjugate locus is isomorphic to  $\oM_{0,7}/\mathfrak S_6$.
- \begin{itemize}[leftmargin=.5cm]
-  \item If $p$ belongs to a component of genus one $E$, which is attached to another component of genus one at a node $q$, then $p$ is Weierstrass iff $2p\sim 2q\in\Pic(E)$; if instead $E$ has a self-node that glues $q_1$ with $q_2$, then $p$ is Weierstrass iff $2p\sim q_1+q_2\in\Pic(E)$. If instead $p$ is on a rational component $R$, $p$ is Weierstrass if either $R$  is attached to a genus one curve at two distinct points, or $R$ has a self-node gluing $q_1$ and $q_2$ and is attached to a genus one tail at $r$, in which case we require $\phi(q_1)=\phi(q_2)$ for a double cover $\phi\colon R\to\PP^1$ ramified at $p$ and $r$, or $R$ has two self-nodes gluing $q_1$ with $q_2$, and $r_1$ with $r_2$, in which case we require $p$ to be a ramification point for a double cover $\phi\colon R\to\PP^1$ such that $\phi(q_1)=\phi(q_2)$ and $\phi(r_1)=\phi(r_2)$.
-  
-  includegraphics[width=.9\textwidth]{admissible_Weierstrass}
-  
-  \item If $p_1$ and $p_2$ are conjugate, they have to map to the same component of the target of the admissible cover. The description of the previous point works by replacing every condition on $2p$ by its analogue for $p_1+p_2$.  There are a few more situations to take into account: $p_1$ and $p_2$ could belong to a rational component $R$ bubbling off from a Weierstrass point of a genus two curve, or bridging between two distinct curves of genus one, or $p_1$ and $p_2$ could lie on two distinct rational components $R_1$ and $R_2$ intersecting at one node and meeting a curve of genus one in two distinct points.
-  \begin{center}
-  includegraphics[width=.8\textwidth]{admissible_conjugate}  
-  \end{center}
-
- \end{itemize}
-\end{rem}
-
-
-\begin{prop}[Semistable tails]\label{prop:semistable tails} Let $(C,q)$ be a Gorenstein singularity of genus two, with pointed normalisation $\bigsqcup_{i=1}^m(\PP^1,q_i)$. Let $\mathcal C\to\dvr$ be a one-parameter smoothing of $C$, and $\phi\colon\mathcal C^{ps}\to\mathcal C$ a birational contraction from a prestable curve with regular total space. Let $(Z,p_1,\ldots,p_m)$ be $\phi^{-1}(q)$ marked with the intersection points with the rest of $\mathcal C^{ps}_0$.
- \begin{itemize}[leftmargin=.5cm]
-  \item Case II: $p_1$ and $p_m$ belong to rational tails attached to conjugate points of the core. $p_1$ and $p_m$ are at the same distance from the core, while all other $p_i$ are further away from it.
-  \item Case III: $p_m$ is on a rational tail attached to a Weierstrass point of the core, and all other $p_i$ are further away than $p_m$ from the core.
- \end{itemize}
-\end{prop}
-\begin{proof}
- %By Smyth's contraction lemma \cite[Lemma 2.13]{SMY1}, a semistable curve of genus two $(Z,p_1,\ldots,p_m)$ is a semistable tail iff there exists a smoothing $\mathcal C^s\to\dvr$ of a compactification obtained by adjoining an $m$-marked tail to $p_1,\ldots,p_m$, and a line bundle $\mathcal L$ on $\mathcal C^s$ of the form $\omega_{\mathcal C^s/\dvr}(D)$, with $D$ an effective divisor supported on $Z$, such that $\mathcal L$ is ample everywhere except on $Z$, where it restricts to the structure sheaf.
- We are going to find conditions on $\mathcal C^{ps}_0$ so that a line bundle of the form $\omega_{\mathcal C^{ps}/\dvr}(D+\Sigma)$ as in Lemma \ref{lem:contraction} may be found, such that it restricts to the trivial line bundle on a neighbourhood of $Z$, and it is ample over $\dvr$ everywhere else.
- 
- By Castelnuovo's criterion, we may assume that $Z$ is semistable, i.e. every rational component contains at least two special points. We may split $Z$ into a core $K$ (minimal subcurve of genus two) and a number (possibly zero) of rational trees. We start by analysing the former.
- 
- Suppose we have $\phi$ as above. $\mathcal C$ is a family of hyperelliptic curves, i.e. there is a $2:1$ cover $\mathcal C\to \PP(\pi_*\omega_{\mathcal C/\dvr})$ over $\dvr$. By choosing a hyperplane away from the image of the singular point, we may represent $\omega_{\mathcal C/\dvr}$ by a horizontal divisor of degree $2$ over $\dvr$ that avoids the singularity. Up to a base-change, we may therefore decree $\omega_{\mathcal C_\dvr}=\OO_{\mathcal C}(H_1+H_2)$, where $H_1$ and $H_2$ are generically conjugate points, and intersect the central fiber in the special branch(es). By pulling back via $\phi$ (since the latter is an isomorphism away from $Z$, $H_1$ and $H_2$ define horizontal Cartier divisors on $\mathcal C^{ps}$), and taking the pointed stabilisation of $(\mathcal C^{ps},H_1,H_2)$, we see that the special branches are attached to conjugate (type II) or Weierstrass (type III) points of $K$, according to whether $\overline{H_1(0)}\neq\overline{H_2(0)}$ (resp. they coincide).
- 
- On the other hand, suppose that $K$ marked by the attaching points of the rational trees containing $p_1$ and $p_m$ (resp. $p_m$) is conjugate (resp. Weierstrass). Then, by smoothness of the conjugate (resp. Weierstrass) locus, we may extend these to sections $Q_1$ and $Q_m$ over $\dvr$. By the regularity assumption, we may obtain $\mathcal C^{ps}_0$ by repeatedly blowing up $K$ along (smooth points in the exceptional divisors over) the attaching points of the tails containing $p_1,\ldots,p_m$. By taking the strict transforms of $Q_1$ and $Q_m$, and adding a horizontal divisor supported on the rational trees outside of $K$, we may obtain a line bundle on $\mathcal C^{ps}$ of the form prescribed by Lemma \ref{lem:contraction}, namely trivial on a neighbourhood of $K$ and generically supercanonical. We come now to a more detailed analysis of the rational chains and trees that may be part of $Z$.
- 
- By Lemma \ref{lem:dualising_lb}, in case II both $p_1$ and $p_m$ are attached to components that appear with multiplicity $2$ in $D$ - respectively, in case III, $p_m$ is attached to a component of multiplicity $3$ -, while all other markings lie on components along which $D$ has multiplicity $1$.
- 
- Let $d_A$ denote the multiplicity of the divisor $D$ along the component $A$ of $Z$. First, we claim that no component can appear with $d_A=0$. Assume that this occurred along one of the rational trees. Call $S$ ($S\simeq\PP^1$) a component furthest from the core such that $d_S=0$; $R$ the one that precedes it, and $T_1,\ldots, T_h$ the ones that follow it (when sweeping the tree from the core) - so that $h\geq1$ by the previous paragraph, and $d_{T_i}\geq 1$ by assumption. Then, by adjunction,
- \[\deg(\mathcal L_{|S})= -2+(h+1)+d_R+\sum d_{T_i}=0,\]
- which necessarily implies $h=1$, and $d_R=d_{T_i}=0$, contradicting the assumption. The case that $S$ belongs to the core is similar ($\omega_S$ may only be more positive).
- %hence we are looking at a bead of a rational chain. Since this consideration propagates, in the long run we will span the whole of $Z$, hence showing that $Z$ is itself a rational chain, which is absurd.
- %In the long run, this implies that $d_K=0$, but this contradicts $\deg(\mathcal L_{|K})=0$, since the left-hand side is a sum of $\deg(\omega_K(-K))$ with other positive terms.
- 
- %Let us now consider $d_S=1$. We stick to the notation above; furthermore, there can be a number of $p_i$, $i\in\{(1,)2,\ldots,m-1\}$, lying on $S$, which we think of as extra tails $T_1^\prime,\ldots,T_k^\prime$ attached to $S$, but lying outside the support of $D$. Then
- %\[\deg(\mathcal L_{|S})= -2+(h+k+1)-(h+k+1)+d_R+\sum d_{T_i}=0.\]
- %Either $d_R=2$, $h=0$ and $k\geq 1$; or $d_R=1$, $h=1$, and $d_{T_1}=1$ (with $k$ arbitrary). In the latter case, though, we may repeat the argument on $T_1$, and we find an infinite chain in $Z$, which can be excluded. More generally, an analogous computation shows that, when balancing a component $A$ of multiplicity $d_A$, all neighbouring components of multiplicity $d_A-1$ can be safely ignored (at the same time, the number of such components is only bounded by the semistability of $Z$ and the quantity of markings).\footnote{define the trend along a rational chain and show it is unaltered by $\alpha-(\alpha-1)$-interactions}
- Let us now consider $d_S=1$. We stick to the notation above; furthermore, there may be a number of $p_i$, $i\in\{(1,)2,\ldots,m-1\}$, lying on $S$. Then, by adjunction,
- \[\deg(\mathcal L_{|S})= -2+d_R+\sum d_{T_i}=0.\]
- so either $d_R=2$, $h=0$ and $k\geq 1$ arbitrary, i.e. $S$ is adjacent to $\overline{C\setminus Z}$; or $d_R=1$, $h=1$, and $d_{T_1}=1$ (with $k$ arbitrary). In the latter case, though, we may repeat the argument on $T_1$, and we find an infinite chain in $Z$, which can be excluded. 
- \begin{rem}\label{rmk:ignoring_1-trees}
-  More generally, an analogous computation shows that, when balancing a component $A$ of multiplicity $d_A$, all neighbouring components of multiplicity $d_A-1$ can be safely ignored (at the same time, the number of such components is only bounded by $m$, due to the semistability of $Z$).%\footnote{define the trend along a rational chain and show it is unaltered by $\alpha-(\alpha-1)$-interactions}
- \end{rem}
-
- We now prove that $d_R>d_S$ holds in general for $S$ on a rational tree. The preceding paragraphs deal with the cases $d_S=0,1$; we may therefore assume $d_S>1$ (which in particular implies $0\leq k\leq 2$). We have
- \[\deg(\mathcal L_{|S})= -2+d_R-(d_S-1)(h+k+1)+\sum d_{T_i}=0.\]
- By proceeding from leaves to root, we can assume that $d_S>d_{T_i},\ i=1,\ldots,h$. We may therefore rewrite the previous equality as
- \[d_R=(d_S-1)(h+k+1)-\sum d_{T_i}+2\geq(d_S-1)(k+1)+2=d_S+1+k(d_S-1)>d_S.\]
- 
-In fact, we can prove as on \cite[p.893]{SMY1} that $d_R=d_S+1$, unless $d_S=2$ and either $p_1$ or $p_m$ (or both) are on $S$ (type II), or $d_S=3$ and $p_m\in S$ (type III). We introduce some terminology to describe the weighted dual graph of $D$.
-
-\begin{dfn}
- A $g$-chain is a weighted graph that is a chain and such that the weight of two adjacent vertices differ by $g$. We call $g$ the growth rate; the vertex with highest (resp. lowest) weight is called the root (resp. leaf) of the chain. An $(a,g)$-chain is a $g$-chain with leaf weight $a$. The chain $C_1$ can be attached to the chain $C_0$ by identifying the root of $C_1$ with a vertex of $C_0$ having the same weight. A $1$-tree is obtained by attaching a number of $(1,1)$-chains among themselves.
-\end{dfn}
-
-Let us now look at a component $S$ with $d_S=2$ and at least one of $p_1$ and $p_m$ attached to it. The balancing equation is
-\[\deg(\mathcal L_{|S})= -2-(h+k+1)+d_R+\sum d_{T_i}=0,\]
-with $k\in\{1,2\}$. The preceding discussion implies that $d_{T_i}=1$ for all $i=1,\ldots,h$, so $d_R=3+k$. If $k=2$, i.e. both $p_1$ and $p_m$ are on $S$ - in which case they are indeed equidistant from the core -, then $d_R=5$, and it can be shown inductively that the multiplicity of $D$ increases by $3$ for every step we make from $S$ towards the core. The same holds in case III, with $p_m$ attached to $S$ and $d_S=3$.
-
-Finally, say $d_S=2$ and only $p_1\in S$. Then $d_R=4$, and the growth rate along the chain that connects $S$ to the core is $2$, unless there is a component $S^\prime$ at which two $2$-chains meet.
-
-\begin{dfn}
- A $2$-tree is obtained by attaching a number of $(1,1)$-chains to a $(2,2)$-chain. A $3$-tree is obtained by attaching a number of $(1,1)$-chains either to a $(3,3)$-chain, or to a weighted graph itself obtained by attaching two $(2,2)$-chains to the leaf of a $3$-chain.
-\end{dfn}
-
-From the preceding discussion it is clear that the weighted dual graph of $D$ is obtained by attaching a number of $1$-trees, and either (a) one $3$-tree or (b) two $2$-trees to the dual graph of the core $K$, weighted in an appropriate fashion.
-
-\begin{comment}
-We single out the former case within the following
-\begin{dfn}
- A $1$-tree is a rooted rational tree with weighted vertices, such that its leaves are all at the same distance $l$ from the root $\circ$, and the weight of a vertex $v$ is determined by $d_v=l-\operatorname{dist}(v,\circ)+1$. Legs are attached to leaves only, and every leaf has at least a leg.
-\end{dfn}
-Let us look at a component $S$ with $d_S=2$ and at least one of $p_1$ and $p_m$ attached to it. The balancing equation is
-\[\deg(\mathcal L_{|S})= -2-(h+k+1)+d_R+\sum d_{T_i}=0,\]
-with $k\in\{1,2\}$. The preceding discussion implies that $d_{T_i}=1$ for all $i=1,\ldots,h$, so $d_R=3+k$. If $k=2$, both $p_1$ and $p_m$ are on $S$ (therefore they are equidistant from the core). In this case $d_R=5$, and it can be shown inductively that the multiplicity of $D$ along a component increases by $3$ for every step we make towards the core. A similar computation shows that the same property holds in case III, when starting from a component $S$ with $d_S=3$ and $p_m$ attached to it. Let us give the following
-\begin{dfn}
- A $3$-chain of weight $w$ is a rooted rational chain of length $l$ such that its leaf has weight $w$ and either one or two distinguished legs. The weight of each vertex $v$ is determined by $w+3(l-\operatorname{dist}(v,\circ))$. A $3$-trunk is obtained by adjoining a finite number of $1$-trees of length $l_i$ to a leg adjacent to a bead of weight $l_i+1$ in a $3$-chain.
-\end{dfn}
-
-Finally, say $d_S=2$ and only $p_1\in S$. Then $d_R=4$. It can again be shown that the growth rate along the chain that connects $S$ to the core is usually $2$.
-\begin{dfn}
- A $2$-chain is a rooted rational chain of length $l$ such that its leaf has weight $2$ and one distinguished leg. The weight of each vertex $v$ is determined by $2+2(l-\operatorname{dist}(v,\circ))$. A $2$-tree is obtained by adjoining a finite number of $1$-trees of length $l_i$ to a leg adjacent to a bead of weight $l_i+1$ in a $2$-chain. The length of a $2$-tree is the length of its $2$-chain.
-\end{dfn}
-It is important to notice that this trend can break only when two $2$-trees meet; at that point the growth rate becomes $3$. Hence the following
-\begin{dfn}
- A $3$-tree of type II is obtained by adjoining two $2$ trees of the same length $l$ to the two legs of a $3$-trunk of weight $4+l$. A $3$-tree of type III is a $3$-trunk with one leg and weight $3$.
-\end{dfn}
-It should be clear from the preceding discussion that $Z$ contains a number of $1$-trees (bounded by $m$), and either (a) one $3$-tree or (b) two $2$-trees.
-
-end{comment}
-
-%Call $P$ the component preceding $R$, and $S,Q_1,\ldots,Q_h$ those following it. By studying the degree of $\mathcal L_{|P}$ we find $d_P+\sum d_{Q_i}=6+3h$, and $d_{Q_i}\leq 3$. So $d_P$ is determined (to be $6$), unless one of the $d_{Q_i}$ is $2$, say $i=1$; but in this case $p_m\in Q_1$, so again $p_1$ and $p_m$ are equidistant from the core. This can be generalised: the growth rate on a ``special rational tail'' (one containing either $p_1$ or $p_m$) is determined and higher than that along an ``ordinary rational tail'' (which is $+1$), and it may change only if the two ``special rational tails'' meet.
-
-Finally, let us look at the core $K$. Consider it as a one-pointed (case (a)), resp. two-pointed (case (b)) curve of genus two, by ignoring all the attachment points of the $1$-trees (which works by Remark \ref{rmk:ignoring_1-trees}), and let $\bar K\in\oM_{2,1}$ (resp. $\oM_{2,2}$) be its stable model. The following can happen: %Recall that $\bar K$ is called Weierstrass if the marking is a fixed-point of the hyperelliptic involution $\sigma$ (case (a)), resp. conjugate if the two markings are swapped by $\sigma$ (case (b)). This is well defined by the existence and uniqueness of a $\mathfrak g^1_2$. More generally, $K$ admits a non-degenerate $2:1$ morphism to $\PP^1$ such that $p_1$ is a ramification point (resp. $\{p_1,p_2\}$ is a fiber) if and only if $\bar K$ does.
-\begin{enumerate}[leftmargin=.6cm]
-
- \item $K$ is a smooth curve of genus two. In case (a), let $R$ be the component adjacent to the core along the $3$-tree, and let $q=R\cap K$; then $d_K=d_R+3$ by balancing $R$. Now balancing $K$ gives \[\omega_{\mathcal C^{ps}/\dvr}(d_RR+d_KK)_{|K}=\omega_K(d_Rq-(d_R+2)q)\simeq\OO_K,\]
- which admits a solution if and only if $K$ is Weierstrass. Similarly case (b) can be balanced if and only if $K$ is conjugate.
- 
- \item $K$ contains two distinct subcurves of genus one $E_1$ and $E_2$. We start by solving the balancing equation on one of them, say $E=E_1$. %If all the neighbouring components have multiplicity $d_E-1$, it's fine.
- If all but one of the neighbouring components have multiplicity $d_E-1$, then the last one is forced to have multiplicity $d_E-1$ as well (by degree reasons). The case that all but two neighbouring components have multiplicity $d_E-1$ occurs when either a $2$-tree or a $3$-tree is attached to $E$ at $q$; let $F$ be the other component with undetermined multiplicity, which lies between $E_1$ and $E_2$ (possibly $F=E_2$), and let $E\cap F=\{r\}$. The case of a $2$-tree forces $d_F=d_E$ by degree reason, but then we are left to solve $q\sim r$ in $\Pic(E)$, which is impossible; on the other hand, the case of a $3$-tree imposes $d_F=d_E+1$ and $2q\sim 2r$ in $\Pic(E)$, i.e. $K$ is Weierstrass. By the same token, the two $2$-trees have two hit the same genus one curve, say $E_1$, in nodes $q_1,q_2$ such that $q_1+q_2\sim 2r$ and $d_F=d_E+1$.
- 
- Assume now that there is a chain of rational curves $R_i$ standing between $E_1$ and $E_2$ in $K$, and one of the special trees connects to one of the $R_i$; in case (b), then, both $2$-trees must connect to (possibly different) $R_i$, by the previous paragraph. Furthermore, the growth rate along the rational chains at $E_1$ and $E_2$ has to be $1$. This in turn implies that, in case (b), the growth rate along the chain separating the two $2$-trees is $0$. In particular, the two $2$-trees are attached to components with the same multiplicity for $D$, so $p_1$ and $p_m$ are equidistant from the core.
- %It can thus be shown that the rational chain $\{R_i\}$ is symmetric, namely: in case (a) the marking is equidistant from $E_1$ and $E_2$, and in case (b) the distance between a marking and its closest (resp. furthest) $E_i$ are the same for the two markings.
- 
- \begin{center}
- includegraphics[width=.8\textwidth]{two_genus_one}  
-  \end{center}
-  
- \item $\bar K\in\Delta_{irr}$, i.e. $K$ contains an irreducible subcurve of arithmetic genus one $E$, with two points $r_1$ and $r_2$ on $E$ that are joined in $K$ by a (possibly empty) rational chain. We see as above that either a $3$-tree is attached to a point $q\in E$ satisfying $2q\sim r_1+r_2$ in $\Pic(E)$, or two $2$-trees are attached to $q_1,q_2\in E$ satisfying $q_1+q_2\sim r_1+r_2$ in $\Pic(E)$, or the rational chain is not empty and all the distinguished trees are attached to it. In this case, solve the balancing equation on $E$: let $d=d_E$, $d_1$ and $d_2$ be the multiplicities of the rational components attached to $r_1$ and $r_2$ respectively; then either $d_1=d_2=d-1$, or $d_1=d-1+k$, $d_2=d-1-k$ and $r_1-r_2$ is $k$-torsion in $\Pic(E)$. But, by chasing the balancing equation along the rational necklace, we find that, if $k\geq 1$, then the growth rate increases when passing through a distinguished bead, so that ultimately $d-1-k=d_2>d_1d-1+k$, which is absurd. So the only possibility is to have a rational chain symmetric with respect to the distinguished beads, namely: in case (a) the two pieces of the rational chain standing between the special bead and $E$ have the same length, and in case (b) the distance shortest path between a special bead and $E$ is the same for the two special beads.
- 
-  \begin{center}
- includegraphics[width=.8\textwidth]{one_genus_one}  
-  \end{center}
- 
- \item Finally, we consider the case that $K$ has geometric genus $0$. There are three possibilities for the dual graph, according to how the distinguished components (denoted by $R$) and the other stable components (denoted by $A$ and $B$) distribute:
-  
-  \begin{center}
- includegraphics[width=.8\textwidth]{rational_pretzel}  
-  \end{center}
- In case (a) and (b).1, we find that balancing along $A$ or $B$ is equivalent to $\sum_it_i=1$. Assume $t_1\geq0$; then $d_A>d_B$, therefore $t_2,t_3>0$, which contradicts $\sum_it_i=1$. Similarly, if $t_1\leq -2$, then $d_A<d_B$, therefore $t_2,t_3<0$, which makes $\sum_it_i=1$ again impossible. We find only one solution with $t_1=-1$ and $t_2=t_3=0$ - notice that it is a degeneration of the case considered in the previous point.
- 
- On the other hand, in case (b).2, we find $\sum_it_i=1$ when balancing $B$, and $\sum_it_i=-1$ when balancing $A$, which is a contradiction.
- \begin{comment}Finally, the case that the normalisation of $K$ is a union of $\PP^1$. The only really new case is when a distinguished component contains two nodes such that removing them preserves connectedness. 
- 
- %It can be shown that case (a) admits solution as soon as $K$ is not the union of two $\PP^1$ along three nodes. Case (b) %admits a solution if and only if either $q_1$ and $q_2$ belong to different components, or they belong to the same component %and $K$ is not the union of two $\PP^1$ along three nodes.
- 
- \begin{tikzpicture}
-  \draw[fill=black] (0,0) circle(2pt) -- node[above]{$l_2$} (4,0) circle(2pt);
-  \draw (0,0) to[out=-30,in=-150] node[above]{$l_3$} (4,0);
-  \draw (0,0) to[out=30,in=150] node[above]{$l_1$} (4,0);
- \end{tikzpicture}
-Denoting by $l_i$ the length of a rational chain and by $t_i$ the trend along it, balancing reduces to the following system in case (a) and (b).2:\footnote{I am not sure when this admits integral solutions, e.g. not if all $l_i$ are equal}
-\[
-\begin{pmatrix}
- 1 & 1 & 1 \\ l_1+1 & -l_2-1 & 0 \\ l_1+1 & 0 & -l_3-1
-\end{pmatrix}
-\begin{pmatrix}
- t_1\\ t_2\\ t_3
-\end{pmatrix}
-=
-\begin{pmatrix}
- 1 \\ 0 \\ 0
-\end{pmatrix}
-\]
-
-end{comment}
-
-\end{enumerate}
-%Say there are two special tails $T_1$ and $T_m$, intersecting $K$ at $q_1$ and $q_m$, and ordinary tails $T^\prime_1,\ldots,T^\prime_h$, meeting it at $q_1^\prime,\ldots,q_h^\prime$. Then we know from our previous computations that we need $d_K=d_{T_1}+3=d_{T_m}+3$ and $d_K=d_{T_i^\prime}+1$ for all $i$, from which we deduce that $p_1$ and $p_m$ are equidistant from the core even when they are on different rational tails, and all the other $p_i$ are further away; besides this,
-%\[\omega_K(-K)(d_KK+d_{T_1}T_1+d_{T_2}T_2+\sum d_{T_i^\prime}T_i^\prime)=\omega_K(-q_1-q_m)\simeq\OO_K\]
-%allows us to conclude that $q_1$ and $q_m$ have to be conjugate. In the case that $p_1$ and $p_m$ lie on the same rational tail $T$, the growth rate becomes then $4$, so that $d_K=d_T+4$ and the same computation allows us to conclude that $q$ must be Weierstrass.
-\end{proof}
-
-\begin{rem}\label{rmk:extra_conjugate}
-There are two cases of stable $2$-pointed curves that arise as solutions of the balancing equation, but are not conjugate, namely:
-  \begin{center}
- includegraphics[width=.8\textwidth]{extra_conjugate}  
-  \end{center}
-\end{rem}
-\begin{comment}
-\begin{lem}
- Suppose that $\pi\colon\mathcal C\to \dvr$ is a family of nodal curves over a DVR with regular total space, and that $C=\mathcal C_0$ contains a genus two subcurve $Z$ which is either a Weierstrass tail or a conjugate bridge. Then the line bundle $\mathcal L=\omega_{\mathcal C/\dvr}(D+\Sigma)$ is $\pi$-semiample, where $D$ is the effective divisor supported on $Z$ uniquely determined by Proposition \ref{prop:semistable tails}. All the conclusions of Lemma \ref{lem:general_contraction} apply.
-\end{lem}
-\begin{proof}
- We outline a proof in the case that $Z$ pointed by the intersection with $\overline C\setminus Z$ is stable. Note that all the multiple curves we are interested in are l.c.i.
- 
- Assume first that $(Z,p)$ is irreducible and a Weierstrass tail. The desired line bundle is then $\mathcal L=\omega_{\mathcal C/\dvr}(3Z+\Sigma)$. Note that $R^1\pi_*\mathcal L(-3Z)=0$, therefore it is enough to study $\pi_*\mathcal L_{|3Z}$. There is an exact sequence:
- \[0\to\OO_{2Z}(-Z)\to\OO_{3Z}\to\OO_Z\to0\]
- which, tensored with $\mathcal L$ and using adjunction \cite[Proposition 5.73]{KolM}, gives:
- \[0\to\omega_{2Z}\to\mathcal L_{|3Z}\simeq\omega_{3Z}\to\OO_Z\to0\]
- Now, since $\pi_*\OO_Z$ has a section not vanishing along $Z$, it is enough for us to show that $H^1(\omega_{2Z})$ injects into $H^1(\omega_{3Z})$, which, by Serre duality, is equivalent to the surjectivity of $H^0(\OO_{3Z})\to H^0(\OO_{2Z})$. From the exact sequence:
- \[0\to\OO_{Z}(-2Z)\to\OO_{3Z}\to\OO_{2Z}\to0\]
- it is enough for us to show that $H^1(\OO_Z(-2Z)$ injects into $H^1(\OO_{3Z})$. Since the former has dimension $1$ over $\k$, it is equivalent to say that $H^1(\OO_{3Z})\to H^1(\OO_{2Z})$ has non-trivial kernel. But this map can be identified with the differential of the restriction map $\Pic(3Z)\to\Pic(2Z)$, which has positive-dimensional fiber by \cite[\S3.1]{Drezet} (the argument there is for a smooth underlying curve, but it seems to extend to the nodal case).
- 
- Assume now that $Z$ is the union of two curves of genus one, $p\in E_1$ and $E_2$. We need to study $\mathcal L=\omega_{\mathcal C/\dvr}(3E_1+4E_2+\Sigma)$. Observe that $R^1\pi_*\mathcal L(-E_1-2E_2)=0$, therefore we can just as well study $\pi_*\mathcal L_{|E_1+2E_2}$. We have an exact sequence:
-  \[0\to\OO_{2E_2}(-E_1)\to\OO_{E_1+2E_2}\to\OO_{E_1}\to 0\]
-  By tensoring with $\mathcal L$ we find $\mathcal L_{2E_2}(-E_1)\simeq\omega_{2E_2}(2E_1+2E_2)\simeq\omega_{2E_2}$ (because the divisor in brackets can be written as the difference between a multiple of $\pi^*(0)$ and something supported away from a neighbourhood of $E_2$), and $\mathcal L_{E_1+2E_2}\simeq\omega_{E_1+2E_2}(-2p)$. We want the injectivity of $H^1(\omega_{2E_2})\to H^1(\omega_{E_1+2E_2}(-2p))$, which is Serre-dual to the surjectivity of $H^0(\OO_{E_1+2E_2}(2p))\to H^0(\OO_{2E_2})$. By twisting with $-2E_1-2E_2$ the exact sequence:
-  \[0\to\OO_{E_1}(-2E_2)\to\OO_{E_1+2E_2}\to\OO_{2E_2}\to 0\]
-  and noticing that $H^1(\OO_{E_1}(2p-2q))\simeq\k$ ($Z$ is a Weierstrass tail iff $2p\sim2q\in\Pic(E_1)$), it is enough to show that $H^1(\OO_{E_1+2E_2}(2p))\to H^1(\OO_{2E_2})$ has non-trivial kernel. By working locally around $q$, we find that  an exact sequence:
-  \begin{equation}\label{eq:normalisation}
-   0\to \OO_{E_1+2E_2}\to \OO_{E_1}\oplus\OO_{2E_2}\to \k^2\to 0
-  \end{equation}
-  If the first ring is $\k[x,y]/(xy^2)$, the second map sends $(b(y),a(x)+ya^\prime(x))$ to $(b_0-a_0,b_1-a^\prime_0)$. Twisting with $2p$, it is enough to show that
-  \begin{equation}\label{eqn:su}
-  H^0(\OO_{E_1}(2p))\oplus H^0(\OO_{2E_2})\to\k^2  
-  \end{equation}
-  is not surjective. From $2p\sim 2q$, the exact sequence:
-  \[0\to \OO_{E_2}(-E_2)\to \OO_{2E_2}\to\OO_{E_2}\to 0\]
-  and the local description, we see that the image of \eqref{eqn:su} is contained in the subspace $\k\oplus0$. This concludes the proof that $\pi^*\pi_*\mathcal L\to\mathcal L$ is surjective along $E_1$. As for $E_2$, tensoring with $\mathcal L$ the exact sequence
-   \[0\to \OO_{E_1+E_2}(-E_2)\to \OO_{E_1+2E_2}\to\OO_{E_2}\to 0\]
-   we see that it is enough to show $H^1(\omega_{E_1+E_2}(2E_1+2E_2))\hookrightarrow H^1(\omega_{E_1+2E_2}(2E_1+2E_2))$, or its Serre dual $H^0(\OO_{E_1+2E_2}(2p))\twoheadrightarrow H^0(\OO_{E_1+E_2}(2p))$, which follows from \eqref{eq:normalisation} and the usual normalisation exact sequence for the nodal curve $E_1+E_2$.
-   
-  Let us deal with the case that $Z$ is the union of a rational curve $p\in R$ with a genus one curve $E$ along two nodes $q_1,q_2$. We are interested in the line bundle $\mathcal L=\omega_{\mathcal C/\dvr}(3R+4E+\Sigma)$, and we find that $R^1\pi_*\mathcal L(-R-2E)=0$. Following in the steps of the previous case, the surjectivity of $\pi_*\mathcal L_{|E+2R}\to\pi_*\OO_R$ follows from the surjectivity of $H^0(\OO_{R+2E}(2p))\to H^0(\OO_{2E})$, but the latter is easily implied by $h^1(\OO_{R}(2p-2(q_1+q_2)))=0$. Similarly, the surjectivity of $\pi_*\mathcal L_{|E+2R}\to\pi_*\OO_E$ follows from comparing the ``normalisation sequences'' as in the previous paragraph. This exhausts the stable Weierstrass tails.
-\end{proof}
-\end{comment}
 
 \section{The new moduli functors}\label{sec:stability}
 The following generalises \cite[Definition 3.4]{SMY1}.
@@ -1161,7 +829,7 @@ We may similarly describe minimal (sub)curves of genus two.
   \item\label{case:twice1} an elliptic $m$-fold point $x$ whose normalisation is the disjoint union of either $m-1$ copies of $\PP^1$ (i.e. two branches of $x$ coincide), or $m-1$ copies of $\PP^1$ and a minimal Gorenstein curve of genus one (i.e. $Z$ contains two genus one subcurves sharing a branch);
   \item\label{case:2} or a singularity of genus two with $m$-branches, whose normalisation is the disjoint union of $m$ copies of $\PP^1$.
  \end{enumerate}
-%In all cases there exists a unique $\mathfrak g^1_2$. In cases \eqref{case:twice1} and \eqref{case:2}, given a smooth point $p$ lying on a special branch, there exists a unique point $\bar p$ (possibly equal to $p$), such that $\omega_Z\simeq\OO(p+\bar p)$.
+
 \end{lem}
 \begin{rem}\label{rem:special}
 In both cases \eqref{case:twice1} and \eqref{case:2} there are special branches supporting the degree of $\omega_Z$ (compare with Definition \ref{def:special_branches} and Corollary \ref{cor:deg_dualising}; recall that the restriction of the dualising sheaf to a component introduces a twist by the conductor ideal, see Noether's formula \cite[Proposition 1.2]{Catanese}). Notice that the notion of conjugate points is not always intrinsic to the curve.\end{rem}
@@ -1171,20 +839,24 @@ Similarly to \cite[Corollary 3.2, Lemma 3.5]{SMY1} we can prove the following.
  Let $(C,p_1,\ldots,p_n)$ be a pointed \emph{semistable} curve of arithmetic genus two, with minimal genus two subcurve $Z$. For every subcurve $Z^\prime\subseteq C$ of genus two, we have an inclusion $Z\subseteq Z^\prime$ and $\lev(Z)\leq\lev(Z^\prime)$.
 \end{lem}
 
+\begin{dfn}
+We say that a point \emph{cleaves} to a component of a curve if it is connected to it by a possibly empty chain of rational curves. 
+\end{dfn}
+
 We finally come to the definition of $m$-stability for curves of genus two.
 \begin{dfn}\label{def:m-stability}
- Fix positive integers $m<n$. Let $(C,p_1,\ldots,p_n)$ be a connected, reduced, complete curve of arithmetic genus two, marked by smooth distinct points. We say that $C$ is $m$-stable if:
+ Fix positive integers $1\leq m<n$. Let $(C,p_1,\ldots,p_n)$ be a connected, reduced, complete curve of arithmetic genus two, marked by smooth distinct points. We say that $C$ is $m$-stable if:
  \begin{enumerate}[leftmargin=.7cm]
   \item\label{cond:sing} $C$ is Gorenstein with only: nodes; elliptic $l$-fold points, $l\leq m+1$; type $I_{\leq m}$, type $I\!I_{\leq m}$, and dangling $I\!I_{m+1}$ singularities of genus two, as singular points.
   \item\label{cond:lev2} If $Z$ is a connected subcurve of arithmetic genus two, then $\lev(Z)>m$.
   \item\label{cond:lev1} If $E$ is a nodally attached subcurve of arithmetic genus one, $\lev(E)>m+1$.
   \item\label{cond:aut} $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$.
-  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold with a self-branch, $p_1$ is connected (through a rational chain) to one of the special branches (see Remark \ref{rem:special}). If $C$ contains two genus one subcurves sharing a branch, and $E_1$ has level less than $m+2$, then $p_1$ is connected to $E_1$.
+  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold with a self-branch or a genus one branch, $p_1$ cleaves to one of the special branches (see Remark \ref{rem:special}). If $C$ contains two genus one subcurves sharing a branch, and $E_1$ has level less than $m+2$, then $p_1$ cleaves to $E_1$.
  \end{enumerate}
 \end{dfn}
 
 \begin{rem}
- The definition is not $\mathfrak{S}_n$-symmetric. In the arguments below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, possibly depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special).
+ The definition is not $\mathfrak{S}_n$-symmetric. In the argument below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, possibly depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special). We also use it to decide which genus one subcurve to contract first in case there are two of the same level.
 \end{rem}
 
 \begin{rem}\label{rmk:lev1solev2}
@@ -1224,7 +896,7 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
 \end{proof}
 
 \begin{dfn}
- We shall denote by $\oM^{(m)}_{2,n}$ the moduli functor of $n$-pointed $m$-stable curves of genus two.
+ We shall denote by $\oM^{(m)}_{2,n}$ the moduli stack of $n$-pointed $m$-stable curves of genus two.
 \end{dfn}
 
 It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}$ is represented by a Deligne-Mumford stack of finite type.
@@ -1277,75 +949,7 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
  \smallskip
  
  Finally, the case that the central fiber has geometric genus zero is dealt with as if the core was irreducible, since we do not introduce any genus zero singularity other than the node (the remaining ones are not Gorenstein).
-
-  \begin{comment}
-  Now check whether $p_1$ afferes to a Weierstrass point or not: in the former case, change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^3$, in the latter with $\pi^{\prime\prime}\mapsto(\pi^\prime)^2$; then resolve. This has the effect of replacing every node with a chain of two (resp. one) $-2$-curve. It is a technical expedient we find useful in the construction. We drop the primes from notation.
-  
-  Next we identify a (not necessarily connected) subcurve that needs be contracted in order to find the $m$-stable limit. The process can be thought of as drawing expanding circles on the dual graph (except, they are not always expanding). We may at any point blow-up the curve at a marking on the central fiber, and consider the strict transform of the corresponding section; thus markings can effectively be considered as legs going to infinity in the dual graph.
-  
-  We start from the case that the core $Z$ is irreducible. Suppose that the level of $Z$ is $l\leq m$; then we may contract (a subcurve containing) $Z$ as follows. Let $q_1$ the point of $Z$ closest to $p_1$.
- \begin{enumerate}
-  \item\label{caseW} If $(Z,q_1)$ is Weierstrass, call $S_h$ the $-2$-curves closest to $\tilde Z$, and $R_h$ the second closest. Consider the line bundle
-  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(3\tilde Z+2\sum_{h=1}^{l_j-1}S_h+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j}).\]
-  By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I\!I_{l}$ (which works out by our initial choice of base-change), and $p_1$ is connected to the singular branch.
-  \item\label{casenW} If $(Z,q_1)$ is not Weierstrass, call $R_h$ the $-2$-curves closest to $\tilde Z$. In case there is no rational tail attached to $\bar q_1$, blow up the latter point. Consider then the line bundle
-  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(2\tilde Z+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j});\]
-  By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I_{l}$ or $I\!I_{l+1}$ (in which case one of the twin branches is dangling), and $p_1$ is connected to one of the twin branches.
- \end{enumerate}
- More generally, in case \ref{caseW} we may draw circles around $Z$ that at each step expand by $1$ along the tail containing $p_1$ and by $3$ along all other tails. Note that at each step the number of branches is the same as the level one step before that thanks to our base-change choice. If $l$ denotes the radius of the circle along $T_1$, the line bundle
- \[\omega_{\mathcal C}\left(3lZ+\sum_{R_i\in T_1}3(l-\operatorname{dist}(R_i,Z))R_i+\sum_{R_i\not\in T_1}(l-\operatorname{dist}(R_i,Z))R_i+\sigma_1+\ldots+\sigma_n\right)\]
- performs the desired contraction.
-  
- Suppose the minimal subcurve of genus two $Z$ contains two subcurves of genus one; call $E_1$ and $E_2$ the minimal such, and assume that $p_1$ afferes to $E_1$. Start drawing circles around $E_2$. If $E_2$ already has level bigger than $m+1$, stop with the circle of radius $0$. Otherwise grow the radius by $1$ at a time. The curve to be contracted is the inner disk, so the number of branches is measured by the vertices lying on the circle, and the level by the number of exciding edges. Both are non-decreasing with the radius. We exmine the Weierstrass case; the conjugate is entirely analogous. Note that at this stage we perform one meaningful step every three, due to our choice of base-change.
-  \begin{enumerate}
-   \item If level $\geq m+2$ is reached before the circle touches $E_1$, take the next possible $\equiv 2\mod 3$ radius, then contract the inner circle by the line bundle
-   \[ \omega_{\mathcal C}((l_2+1)E_2+\sum_i \max(l_2+1-\operatorname{dist}(E_2,R_i),0)R_i\oplus\sigma_1\oplus\ldots\oplus\sigma_n)\]
-   where $l_2$ is the radius of the circle around $E_2$. Consider now $E_1$: if $\lev(E_1)\leq m+1$ start expanding the circle around it. Again, either level $\geq m+2$ can be reached before touching $E_2$, or, by contracting the maximal balanced subcurve of genus one containing $E_1$, we produce a curve having two genus one singularities that share a branch. Notice that in this case $p_1$ afferes to the only genus one subcurve that may have level $\leq m+1$.
-   \item Otherwise, one step before reaching $E_1$, we may contract to produce a genus one singularity with a genus one branch. If the level is $\leq m$ at this point, consider the genus two subcurve $Z$ as a whole. Observe that the line bundle we would like to consider at this point starts with weight $3$ instead of $1$ along the tail connecting $p_1$ to $E_1$. This means that it will be supported two steps further along each rational tail departing from $Z$ except the tail containing $p_1$. Note also that getting to include $E_2$ happens at a step $\equiv 0 \mod 3$, therefore including two more components on each rational tail will not make the number of branches grow above $m$. We may now continue as before, at every step expanding the circle by $1$ along $T_1$ and by $3$ along all other rational tails.
-  \end{enumerate}
- In case $p_1$ is equidistant from $E_1$ and $E_2$ (it must then affere to the rational chain joining them), start by expanding a circle around the one with lower level; if they have the same level, expand them simultaneously. If at a later stage $p_1$ becomes closer to one of the two circles, proceed as above.
  
- 
- 
- 
- 
- 
-  We start with a smooth $n$-pointed curve of genus two over a discrete valuation field. By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fiber is isomorphic to the pullback of the curve we started with. By Castelnuovo's criterion, we may further assume that the central fiber contains no rational tails. We drop the prime from our notation.
- 
- We may construct a zigzag diagram of birational morphisms of curves over $\dvr$, never altering the generic fiber:
- \bcd
- & \mathcal B_1\ar[dl,"p_1"]\ar[dr,"q_1"] & & \mathcal B_2\ar[dl,"p_2"] & \ldots & \mathcal B_{t-1}\ar[dr,"q_{t-1}"] & & \mathcal B_{t}\ar[dl,"p_{t}"]\ar[dr,"q_{t}"] & \\
- \mathcal C_0:=\mathcal C\ar[rr,dashed] & & \mathcal C_1\ar[r,dashed] & {} & \ldots & {}\ar[r,dashed] & \mathcal C_{t-1}\ar[rr,dashed] & & \mathcal C_t
- \ecd
- such that:
- \begin{enumerate}[label=(\roman*)]
-  \item $\mathcal C_i\to\dvr$ is a Gorenstein curve of genus two, with $n$ smooth sections $\sigma_{1,i},\ldots,\sigma_{n,i}$;
-  \item\label{cond:regnodes} the total space of $\mathcal C_i$ is regular at the nodes of $\mathcal C_{i,0}$;
-  \item every nodally attached rational component of $\mathcal C_i$ has at least two special points;
-  \item if $\mathcal C_i$ contains two subcurves of genus one, then so do all $\mathcal C_j, j\leq i$ and their minimal level sequence is non-decreasing; on the other hand, if $\mathcal C_i$ contains only subcurve of genus one, then so do all $\mathcal C_j, j\leq i$, and their minimal level sequence is non-decreasing;
-  \item the level of a minimal subcurve of genus two is non-decreasing;
-  \item $\mathcal C_t$ contains a genus two singularity and no disconnecting nodes.
- \end{enumerate}
- Here is the procedure:
- \begin{enumerate}
-  \item\label{twogenusone} If the special fiber $\mathcal C_{i,0}$ contains two \emph{disjoint} subcurves of genus one, let $E_1$ and $E_2$ be the minimal such. Let $\mathcal B_{i+1}$ be the blow-up of $\mathcal C_i$ in the points $\{\sigma_{1,i},\ldots,\sigma_{n,i}\}\cap(E_1\cup E_2)$; these are smooth points of $\pi_i$, thus $\mathcal C_i$ is regular near them. Denote the strict transform of $\cdot$ by $\tilde{\cdot}$. $\tilde E_1$ and $\tilde E_2$ are nodally attached, hence Cartier by assumption \ref{cond:regnodes}. We may therefore consider the line bundle
-  \[\mathcal L_{i+1}=\omega_{\mathcal B_{i+1}/\dvr}(\tilde E_1+\tilde E_2+\tilde \sigma_{1,i}+\ldots+\tilde\sigma_{n,i}),\]
-  which is: trivial along $\tilde E_1$, $\tilde E_2$ (by adjunction and Lemma \ref{lem:min1}), and every rational tail with only two special points, except those adjacent to either $\tilde E_1$ or $\tilde E_2$; ample everywhere else. Let \[\mathcal C_{i+1}=\Proj_\dvr\pi_{\mathcal B_{i+1},*}\left(\bigoplus_{n=0}^\infty \mathcal L_{i+1}^{\otimes n}\right).\]
-  By the contraction lemma \ref{lem:contraction}...
-  \item\label{onegenusone} Similarly, if the special fiber $\mathcal C_{i,0}$ contains only one subcurve of genus one, which is nodally joined to itself through a rational chain, let $E$ be the minimal such subcurve. $\mathcal B_{i+1}$ is obtained by blowing up $\mathcal C_i$ in the regular points $\{\sigma_{1,i},\ldots,\sigma_{n,i}\}\cap E$. The line bundle
-  \[\mathcal L_{i+1}=\omega_{\mathcal B_{i+1}/\dvr}(\tilde E+\tilde \sigma_{1,i}+\ldots+\tilde\sigma_{n,i})\]
-  is again trivial on $E$ and every rational tail with only two special points, except those adjacent to $\tilde E$; ample averywhere else.
- \end{enumerate}
- Notice that the number of rationally attached rational components strictly decreases at every step, hence after finitely many steps we reach the following situation: the two genus one subcurves have a common node or branch (case \ref{twogenusone}), or the only subcurve of genus one has either two branches that meet in a node, or two coinciding branch. Under these conditions, we pass to considering the minimal genus two subcurve as a whole. At this point - or if there was no genus one subcurve to start with -, proceed as follows. Let $Z$ be the minimal subcurve of genus two in $\mathcal C_{j,0}$; let $q_1$ the point of $Z$ closest to $p_1$.
- \begin{enumerate}
-  \item If $(Z,q_1)$ is Weierstrass, let $\mathcal B_{j+1}$ be obtained as the blow-up of $\mathcal C_j$ at $q_1$, ``three times'' at all the (other) points $\{\sigma_{1,j},\ldots,\sigma_{n,j}\}\cap Z$ (if $p_1\in Z$), and ``twice'' at all the (other) nodes of $\mathcal C_{j,0}$ such that one of their branches is in $Z$, and the other is not (if $q_1\neq p_1$). Call $S_h$ the exceptional divisors closest to $\tilde Z$, and $R_h$ the second closest. Consider then the line bundle
-  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(3\tilde Z+2\sum_{h=1}^{l_j-1}S_h+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j});\]
-  it is indeed a line bundle, again by assumption \ref{cond:regnodes}. By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I\!I_{l_i}$, and $p_1$ is connected to the singular branch.
-  \item If $(Z,q_1)$ is not Weierstrass, blow up $\mathcal C_j$ at $q_1$ and at the point of $Z$ which is conjugate to $q_1$; let $\mathcal B_{j+1}$ be obtained by further blowing up $\mathcal C_j$ ``twice'' at all the (other) points $\{\sigma_{1,j},\ldots,\sigma_{n,j}\}\cap Z$ (if $p_1\in Z$), and only once at all the (other) nodes of $\mathcal C_{j,0}$ such that one of their branches is in $Z$, and the other is not (if $q_1\neq p_1$). Call $R_h$ the exceptional divisors closest to $\tilde Z$. Consider then the line bundle
-  \[\mathcal L_{j+1}=\omega_{\mathcal B_{j+1}/\dvr}(2\tilde Z+\sum_{h=1}^{l_j-1}R_h+\tilde \sigma_{1,j}+\ldots+\tilde\sigma_{n,j});\]
-  it is indeed a line bundle, again by assumption \ref{cond:regnodes}. By the contraction lemma \ref{lem:contraction}... By the classification of semistable tails, $\mathcal C_{j+1,0}$ acquires a singularity of type $I\!I_{l_i+1}$, and $p_1$ is connected to one of the twin branches.
- \end{enumerate}
- Notice again that the number of rationally attached rational components strictly decreases at every step, hence after finitely many steps we obtain $\mathcal C_{t,0}=Z$ and there are no disconnecting nodes.\end{comment}
  \medskip
  
  \emph{Uniqueness of limits.} By the semistable reduction theorem, there is a diagram
@@ -1384,30 +988,14 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
 
 Summing up, we have proved the following:
 \begin{thm}
- For every $1\leq m <n$, $m$-stability defines a proper Deligne-Mumford stack $\oM_{2,n}^{(m)}$ over $\k$, containing $\pazocal M_{2,n}$ as a dense open substack.
+ For $1\leq m <n$, $m$-stability defines a proper Deligne-Mumford stack $\oM_{2,n}^{(m)}$ over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$, containing $\pazocal M_{2,n}$ as a dense open substack.
 \end{thm}
-
-\begin{comment}
-\begin{dfn}
- Fix positive integers $m<n$. Let $(C,p_1,\ldots,p_n)$ be a connected, reduced, complete curve of arithmetic genus two, marked by smooth points. We say that $C$ is $m$-stable if:
- \begin{enumerate}
-  \item\label{cond:sing} $C$ has only nodes; elliptic $l$-fold points, $l\leq m+1$; type $I\!I_{\leq m+1}$, and type $I\!I\!I_{\leq m}$ genus two singularities as singular points.
-  \item\label{cond:lev2} If $Z$ is a connected subcurve of arithmetic genus two, then $\lev(Z)>m$.
-  \item\label{cond:lev1} If $E$ is a \sout{nodally attached} subcurve of arithmetic genus one, then $\lev(E)>m+1$.
-  \item\label{cond:aut} $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$.
-  \item\label{cond:p1} If $C$ contains a singularity of genus two, $p_1$ is connected (through a rational chain) to one of the distinguished branches.
- \end{enumerate}
-\end{dfn}
-
-\begin{rem}
-Non-Gorenstein subcurves appear by taking the union of some - but not all - the branches of a Gorenstein singularity of genus one or two.
-\end{rem}
-\end{comment}
 
 
 \bibliographystyle{alpha}
 \bibliography{genus_two}
-%\newpage
+
+\medskip
 
 \noindent Luca Battistella\\
 Max-Planck-Institut f\"ur Mathematik - Bonn \\

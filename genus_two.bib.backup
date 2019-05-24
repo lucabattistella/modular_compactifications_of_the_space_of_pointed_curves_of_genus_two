@@ -356,6 +356,38 @@ MRREVIEWER = {R. F. Lax},
   MRNUMBER = {2223850},
 MRREVIEWER = {Usha N. Bhosle},
 }
+
+@ARTICLE{FedorchukGrimes,
+       author = {{Fedorchuk}, Maksym and {Grimes}, Matthew},
+        title = "{VGIT presentation of the second flip of $\overline{M}_{2,1}$}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry},
+         year = "2018",
+        month = "May",
+          eid = {arXiv:1805.08581},
+        pages = {arXiv:1805.08581},
+archivePrefix = {arXiv},
+       eprint = {1805.08581},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv180508581F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@incollection {FS,
+    AUTHOR = {Fedorchuk, Maksym and Smyth, David Ishii},
+     TITLE = {Alternate compactifications of moduli spaces of curves},
+ BOOKTITLE = {Handbook of moduli. {V}ol. {I}},
+    SERIES = {Adv. Lect. Math. (ALM)},
+    VOLUME = {24},
+     PAGES = {331--413},
+ PUBLISHER = {Int. Press, Somerville, MA},
+      YEAR = {2013},
+   MRCLASS = {14H10 (14E30)},
+  MRNUMBER = {3184168},
+MRREVIEWER = {Alex Massarenti},
+}
+		
+
 @book {Gieseker,
     AUTHOR = {Gieseker, D.},
      TITLE = {Lectures on moduli of curves},
@@ -577,6 +609,47 @@ MRREVIEWER = {Mark Gross},
 	Volume = {82},
 	Year = {2009}}
 
+@misc{Morrison,
+author = {{Morrison}, Ian},
+title = "{Mori theory of moduli spaces of stable curves}",
+year = 2011,
+howpublished = {\url{http://www.projectivepress.com/moduli/moristablecurves.pdf}}
+}
+
+@article {Pandha,
+    AUTHOR = {Pandharipande, R.},
+     TITLE = {Hodge integrals and degenerate contributions},
+   JOURNAL = {Comm. Math. Phys.},
+  FJOURNAL = {Communications in Mathematical Physics},
+    VOLUME = {208},
+      YEAR = {1999},
+    NUMBER = {2},
+     PAGES = {489--506},
+      ISSN = {0010-3616},
+   MRCLASS = {14N35 (14J32 14J81)},
+  MRNUMBER = {1729095},
+MRREVIEWER = {Paolo Aluffi},
+       DOI = {10.1007/s002200050766},
+       URL = {https://doi.org/10.1007/s002200050766},
+}
+
+@ARTICLE{PolishchukJohnson,
+       author = {{Johnson}, Drew and {Polishchuk}, Alexander},
+        title = "{Birational models of $\overline{M}_{2,2}$ arising as moduli of curves with nonspecial divisors}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry},
+         year = "2018",
+        month = "Jul",
+          eid = {arXiv:1807.09746},
+        pages = {arXiv:1807.09746},
+archivePrefix = {arXiv},
+       eprint = {1807.09746},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2018arXiv180709746J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
 @ARTICLE{RSPW1,
        author = {{Ranganathan}, Dhruv and {Santos-Parker}, Keli and {Wise}, Jonathan},
         title = "{Moduli of stable maps in genus one and logarithmic geometry I}",
@@ -772,5 +845,5 @@ MRREVIEWER = {Tom\'{a}s S\'{a}nchez-Giralda},
     author       = {The {Stacks Project Authors}},
     title        = {\textit{Stacks Project}},
     howpublished = {\url{https://stacks.math.columbia.edu}},
-    year         = {2018},
+    year         = {2019},
   }
