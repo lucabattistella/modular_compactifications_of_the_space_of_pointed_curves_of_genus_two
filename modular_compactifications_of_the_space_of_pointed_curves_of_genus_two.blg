@@ -3,50 +3,83 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
+Warning--to sort, need author or key in HL-tricanonical
+Warning--to sort, need author or key in HL-birational_contraction
+Warning--to sort, need author or key in HassettHyeon
+Warning--to sort, need author or key in Boggi
+Warning--to sort, need author or key in Lekili-Polishchuk
+Warning--to sort, need author or key in Polishchuk-nonspecial
+Warning--to sort, need author or key in Fedorchuk-hyperellipticAD
 Warning--there's a number but no volume in AFS3
+Warning--empty author in Boggi
+Warning--empty title in Boggi
+Warning--empty journal in Boggi
+Warning--empty year in Boggi
 Warning--there's a number but no volume in BalSwi
 Warning--there's a number but no volume in Deligne-Gabber
 Warning--empty journal in Demazure
 Warning--there's a number but no volume in DM
-You've used 51 entries,
+Warning--empty author in Fedorchuk-hyperellipticAD
+Warning--empty title in Fedorchuk-hyperellipticAD
+Warning--empty journal in Fedorchuk-hyperellipticAD
+Warning--empty year in Fedorchuk-hyperellipticAD
+Warning--empty author in HassettHyeon
+Warning--empty title in HassettHyeon
+Warning--empty journal in HassettHyeon
+Warning--empty year in HassettHyeon
+Warning--empty author in HL-tricanonical
+Warning--empty title in HL-tricanonical
+Warning--empty journal in HL-tricanonical
+Warning--empty year in HL-tricanonical
+Warning--empty author in HL-birational_contraction
+Warning--empty title in HL-birational_contraction
+Warning--empty journal in HL-birational_contraction
+Warning--empty year in HL-birational_contraction
+Warning--empty author in Lekili-Polishchuk
+Warning--empty journal in Lekili-Polishchuk
+Warning--empty year in Lekili-Polishchuk
+Warning--empty author in Polishchuk-nonspecial
+Warning--empty journal in Polishchuk-nonspecial
+Warning--empty year in Polishchuk-nonspecial
+You've used 58 entries,
             2543 wiz_defined-function locations,
-            916 strings with 11861 characters,
-and the built_in function-call counts, 22906 in all, are:
-= -- 2486
-> -- 761
+            932 strings with 12243 characters,
+and the built_in function-call counts, 24351 in all, are:
+= -- 2604
+> -- 768
 < -- 49
-+ -- 249
++ -- 251
 - -- 241
-* -- 1467
-:= -- 3360
-add.period$ -- 161
-call.type$ -- 51
-change.case$ -- 286
-chr.to.int$ -- 48
-cite$ -- 56
-duplicate$ -- 1127
-empty$ -- 1661
+* -- 1615
+:= -- 3508
+add.period$ -- 168
+call.type$ -- 58
+change.case$ -- 309
+chr.to.int$ -- 54
+cite$ -- 103
+duplicate$ -- 1218
+empty$ -- 1815
 format.name$ -- 317
-if$ -- 4986
-int.to.chr$ -- 4
+if$ -- 5272
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 53
-newline$ -- 260
+missing$ -- 60
+newline$ -- 281
 num.names$ -- 153
-pop$ -- 258
+pop$ -- 338
 preamble$ -- 1
-purify$ -- 344
+purify$ -- 379
 quote$ -- 0
-skip$ -- 1094
+skip$ -- 1154
 stack$ -- 0
-substring$ -- 1601
+substring$ -- 1658
 swap$ -- 435
 text.length$ -- 49
 text.prefix$ -- 25
 top$ -- 0
-type$ -- 384
-warning$ -- 5
+type$ -- 440
+warning$ -- 38
 while$ -- 202
-width$ -- 57
-write$ -- 675
-(There were 5 warnings)
+width$ -- 64
+write$ -- 719
+(There were 38 warnings)

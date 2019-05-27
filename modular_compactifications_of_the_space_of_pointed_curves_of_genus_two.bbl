@@ -50,6 +50,9 @@ Siegfried Bosch, Werner L\"{u}tkebohmert, and Michel Raynaud.
   und ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)]}.
 \newblock Springer-Verlag, Berlin, 1990.
 
+\bibitem[Bog]{Boggi}
+
+
 \bibitem[BS08]{BalSwi}
 Elizabeth Baldwin and David Swinarski.
 \newblock A geometric invariant theory construction of moduli spaces of stable
@@ -115,6 +118,9 @@ P.~Deligne and D.~Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
 
+\bibitem[Fed]{Fedorchuk-hyperellipticAD}
+
+
 \bibitem[FG18]{FedorchukGrimes}
 Maksym {Fedorchuk} and Matthew {Grimes}.
 \newblock {VGIT presentation of the second flip of $\overline{M}_{2,1}$}.
@@ -138,6 +144,9 @@ Daniel {Halpern-Leistner}.
 \newblock {On the structure of instability in moduli theory}.
 \newblock {\em arXiv e-prints}, page arXiv:1411.0627, Nov 2014.
 
+\bibitem[Has]{HassettHyeon}
+
+
 \bibitem[Has03]{Hassettweighted}
 Brendan Hassett.
 \newblock Moduli spaces of weighted pointed stable curves.
@@ -150,6 +159,12 @@ Brendan Hassett.
 \newblock In {\em Geometric methods in algebra and number theory}, volume 235
   of {\em Progr. Math.}, pages 169--192. Birkh\"{a}user Boston, Boston, MA,
   2005.
+
+\bibitem[HL-a]{HL-tricanonical}
+
+
+\bibitem[HL-b]{HL-birational_contraction}
+
 
 \bibitem[HLN12]{HLN}
 Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
@@ -191,6 +206,9 @@ Finn~F. Knudsen.
   stacks {$M_{g,n}$}.
 \newblock {\em Math. Scand.}, 52(2):161--199, 1983.
 
+\bibitem[Lek]{Lekili-Polishchuk}
+A modular compactification of m1n from ainfty structures.
+
 \bibitem[LZ09]{LZ}
 Jun Li and Aleksey Zinger.
 \newblock On the genus-one {G}romov-{W}itten invariants of complete
@@ -214,6 +232,10 @@ Ian {Morrison}.
 R.~Pandharipande.
 \newblock Hodge integrals and degenerate contributions.
 \newblock {\em Comm. Math. Phys.}, 208(2):489--506, 1999.
+
+\bibitem[Pol]{Polishchuk-nonspecial}
+Moduli of curves with nonspecial divisors and relative moduli of
+  $a_\infty$-structures.
 
 \bibitem[RSW17a]{RSPW1}
 Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.

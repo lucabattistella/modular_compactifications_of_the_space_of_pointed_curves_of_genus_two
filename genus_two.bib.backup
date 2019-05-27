@@ -167,6 +167,9 @@ MRREVIEWER = {James Milne},
        URL = {https://doi.org/10.1007/978-3-642-51438-8},
 }
 
+@article{Boggi,
+}
+
 @article {C-ML,
     AUTHOR = {Casalaina-Martin, Sebastian and Laza, Radu},
      TITLE = {Simultaneous semi-stable reduction for curves with {ADE}
@@ -490,6 +493,15 @@ MRREVIEWER = {Ivan S. Kausz},
        URL = {https://doi.org/10.1016/S0001-8708(02)00058-0},
 }	
 
+@article{HassettHyeon,
+}
+
+@article{HL-tricanonical,
+}
+
+@article{HL-birational_contraction,
+}
+
 @ARTICLE{HLN,
        author = {{Hu}, Yi and {Li}, Jun and {Niu}, Jingchen},
         title = "{Genus Two Stable Maps, Local Equations and Modular Resolutions}",
@@ -680,6 +692,13 @@ archivePrefix = {arXiv},
  primaryClass = {math.AG},
        adsurl = {https://ui.adsabs.harvard.edu/\#abs/2017arXiv170900490R},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@phdthesis{Rulla,
+  title={The birational geometry of $\overline{M}_{2,1}$ and $\overline{M}_3$},
+  author={Rulla, William F.},
+  year={2001},
+  school={University of Texas at Austin}
 }
 
 @article {Schubert,
