@@ -50,8 +50,11 @@ Siegfried Bosch, Werner L\"{u}tkebohmert, and Michel Raynaud.
   und ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)]}.
 \newblock Springer-Verlag, Berlin, 1990.
 
-\bibitem[Bog]{Boggi}
-
+\bibitem[Bog99]{Boggi}
+Marco Boggi.
+\newblock Compactifications of configurations of points on {${\Bbb P}^1$} and
+  quadratic transformations of projective space.
+\newblock {\em Indag. Math. (N.S.)}, 10(2):191--202, 1999.
 
 \bibitem[BS08]{BalSwi}
 Elizabeth Baldwin and David Swinarski.
@@ -118,8 +121,10 @@ P.~Deligne and D.~Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
 
-\bibitem[Fed]{Fedorchuk-hyperellipticAD}
-
+\bibitem[Fed14]{Fedorchuk-hyperellipticAD}
+Maksym Fedorchuk.
+\newblock Moduli spaces of hyperelliptic curves with {A} and {D} singularities.
+\newblock {\em Math. Z.}, 276(1-2):299--328, 2014.
 
 \bibitem[FG18]{FedorchukGrimes}
 Maksym {Fedorchuk} and Matthew {Grimes}.
@@ -144,9 +149,6 @@ Daniel {Halpern-Leistner}.
 \newblock {On the structure of instability in moduli theory}.
 \newblock {\em arXiv e-prints}, page arXiv:1411.0627, Nov 2014.
 
-\bibitem[Has]{HassettHyeon}
-
-
 \bibitem[Has03]{Hassettweighted}
 Brendan Hassett.
 \newblock Moduli spaces of weighted pointed stable curves.
@@ -160,11 +162,22 @@ Brendan Hassett.
   of {\em Progr. Math.}, pages 169--192. Birkh\"{a}user Boston, Boston, MA,
   2005.
 
-\bibitem[HL-a]{HL-tricanonical}
+\bibitem[HH13]{HassettHyeon}
+Brendan Hassett and Donghoon Hyeon.
+\newblock Log minimal model program for the moduli space of stable curves: the
+  first flip.
+\newblock {\em Ann. of Math. (2)}, 177(3):911--968, 2013.
 
+\bibitem[HL07]{HL-tricanonical}
+Donghoon Hyeon and Yongnam Lee.
+\newblock Stability of tri-canonical curves of genus two.
+\newblock {\em Math. Ann.}, 337(2):479--488, 2007.
 
-\bibitem[HL-b]{HL-birational_contraction}
-
+\bibitem[HL14]{HL-birational_contraction}
+Donghoon Hyeon and Yongnam Lee.
+\newblock A birational contraction of genus 2 tails in the moduli space of
+  genus 4 curves {I}.
+\newblock {\em Int. Math. Res. Not. IMRN}, (13):3735--3757, 2014.
 
 \bibitem[HLN12]{HLN}
 Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
@@ -206,8 +219,10 @@ Finn~F. Knudsen.
   stacks {$M_{g,n}$}.
 \newblock {\em Math. Scand.}, 52(2):161--199, 1983.
 
-\bibitem[Lek]{Lekili-Polishchuk}
-A modular compactification of m1n from ainfty structures.
+\bibitem[Lek17]{Lekili-Polishchuk}
+A modular compactification of $\pazocal M_{1,n}$ from $\pazocal A_{\infty}$
+  structures.
+\newblock {\em J. Reine Angew. Math.}, 2017.
 
 \bibitem[LZ09]{LZ}
 Jun Li and Aleksey Zinger.
@@ -233,9 +248,11 @@ R.~Pandharipande.
 \newblock Hodge integrals and degenerate contributions.
 \newblock {\em Comm. Math. Phys.}, 208(2):489--506, 1999.
 
-\bibitem[Pol]{Polishchuk-nonspecial}
-Moduli of curves with nonspecial divisors and relative moduli of
-  $a_\infty$-structures.
+\bibitem[{Pol}15]{Polishchuk-nonspecial}
+Alexander {Polishchuk}.
+\newblock {Moduli of curves with nonspecial divisors and relative moduli of
+  $\pazocal A_\infty$-structures}.
+\newblock {\em arXiv e-prints}, page arXiv:1511.03797, Nov 2015.
 
 \bibitem[RSW17a]{RSPW1}
 Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.

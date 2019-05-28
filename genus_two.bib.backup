@@ -360,6 +360,9 @@ MRREVIEWER = {R. F. Lax},
 MRREVIEWER = {Usha N. Bhosle},
 }
 
+@article{Fedorchuk-hyperellipticAD,
+}
+
 @ARTICLE{FedorchukGrimes,
        author = {{Fedorchuk}, Maksym and {Grimes}, Matthew},
         title = "{VGIT presentation of the second flip of $\overline{M}_{2,1}$}",
@@ -605,6 +608,10 @@ MRREVIEWER = {Mark Gross},
        URL = {https://doi.org/10.1017/CBO9780511662560},
 }
 
+@article{Lekili-Polishchuk,
+title={A modular compactification of m1n from ainfty structures}
+}
+
 @article{LZ,
 	Author = {Li, Jun and Zinger, Aleksey},
 	Date-Added = {2018-02-05 22:06:31 +0000},
@@ -644,6 +651,11 @@ MRREVIEWER = {Paolo Aluffi},
        DOI = {10.1007/s002200050766},
        URL = {https://doi.org/10.1007/s002200050766},
 }
+
+@article{Polishchuk-nonspecial,
+title={Moduli of curves with nonspecial divisors and relative moduli of $A_\infty$-structures},
+}
+
 
 @ARTICLE{PolishchukJohnson,
        author = {{Johnson}, Drew and {Polishchuk}, Alexander},
