@@ -272,11 +272,11 @@ In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-poi
 
 \subsection{Future directions of work} Besides regarding this paper as a case-study of the birational geometry of moduli spaces of curves, we are looking forwards to explore its consequences in Gromov-Witten theory. We set up some questions we would like to come back to in future work.
 \begin{enumerate}[leftmargin=.7cm]
- \item Resolve the indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$, and study the intersection theory of these spaces; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}. The study of line bundles and the projectivity of the coarse moduli space will site this work firmly in the context of the Hassett-Keel program, as in \cite{SMY2}.
+ \item Resolve the indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$, and study the intersection theory of these spaces; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}. The study of the Picard group and the projectivity of the coarse moduli space will firmly site this work in the context of the Hassett-Keel program, as in \cite{SMY2}.
  
- More generally, a question outstanding to our knowledge is whether the whole program fits in the theoretical framework developed in \cite{DHLinstability}.
+ More generally, a question outstanding to our knowledge is whether the whole program fits in the framework of stability developed in \cite{DHLinstability}.
  
- \item Applications to enumerative geometry: in genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. Maps from singular curves would provide a conceptual definition of reduced invariants for projective complete intersections and beyond, and hopefully make comparison results (standard vs. reduced) accessible. It would be interesting to relate them to Gopakumar-Vafa formulae \cite{Pandha}.
+ \item Applications to enumerative geometry: in genus one, the link between reduced Gromov-Witten invariants (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. With F. Carocci we are investigating whether similar techniques may serve to desingularise the main component of the space of genus two maps to projective space. We expect there will be a(n iso)morphism to the modular blow-up constructed in \cite{HLN}. Maps from singular curves would provide a conceptual definition of reduced invariants for projective complete intersections and beyond, and hopefully make comparison results (standard vs. reduced) accessible. It will then be interesting to relate them to Gopakumar-Vafa formulae \cite{Pandha}.
 \end{enumerate}
 
 \subsection{Acknowledgements} This project arose from discussions with Francesca Carocci, whom we thank for her availability and support. We also thank Daniele Agostini, Fabio Bernasconi, Maria Beatrice Pozzetti, and Luca Tasin for helpful conversations. We thank the Max Planck Institute for Mathematics in Bonn for providing financial support and a stimulating research environment.
@@ -323,11 +323,11 @@ Recall from \cite[Definition 2-1]{Stev} that a curve singularity $(C,q)$ is \emp
  For every fixed integer $m\geq 2$, there are exactly two Gorenstein curve singularities of genus two with $m$ branches.
 \end{prop}
 \begin{proof}
- We only need to find a basis for $\m/\m^2$, because a map of complete local rings that is surjective on cotangent spaces is surjective. From observation \eqref{obs:add} again, we find three possibilities for the vector $(d_1,d_2,d_3)$, $d_k=\dim_{\k}(\tR/R)_k$.
+ We only need to find a basis for $\m/\m^2$, because a map of complete local rings that is surjective on cotangent spaces is surjective. From observation \eqref{obs:add} again, we find three possibilities for the vector $(d_1,d_2,d_3)$, $d_i=\dim_{\k}(\tR/R)_i$.
  
  \smallskip
  
- \textbf{Case} $(2,0,0)$. We see that $\tm^2\subseteq I$, so by the Gorenstein assumption we have: \[m+1=\delta=\dim_\k(R/I)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_\k A_1=m-1,\] a contradiction. Note: the singularity turns out to be decomposable in this case.
+ \textbf{Case} $(2,0,0)$. We see that $\tm^2\subseteq I$, so by the Gorenstein assumption and \eqref{obs:ses}: \[m+1=\delta=\dim_\k(R/I)\leq \dim_\k(R/\tm^2)=\dim_\k A_0+\dim_\k A_1=1+(m-2)=m-1,\] a contradiction. Note: the singularity turns out to be decomposable in this case.
  
  \smallskip
  

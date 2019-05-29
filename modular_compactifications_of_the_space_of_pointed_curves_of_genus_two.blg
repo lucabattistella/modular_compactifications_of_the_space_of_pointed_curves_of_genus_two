@@ -3,53 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
-Warning--to sort, need author or key in Lekili-Polishchuk
 Warning--there's a number but no volume in AFS3
 Warning--there's a number but no volume in BalSwi
 Warning--there's a number but no volume in Deligne-Gabber
 Warning--empty journal in Demazure
 Warning--there's a number but no volume in DM
 Warning--there's a number but no volume in HL-birational_contraction
-Warning--empty author in Lekili-Polishchuk
 You've used 58 entries,
             2543 wiz_defined-function locations,
-            958 strings with 12916 characters,
-and the built_in function-call counts, 25708 in all, are:
-= -- 2793
-> -- 843
+            959 strings with 12990 characters,
+and the built_in function-call counts, 25815 in all, are:
+= -- 2803
+> -- 861
 < -- 53
-+ -- 275
-- -- 265
-* -- 1657
-:= -- 3770
-add.period$ -- 181
++ -- 281
+- -- 271
+* -- 1660
+:= -- 3801
+add.period$ -- 182
 call.type$ -- 58
-change.case$ -- 323
+change.case$ -- 325
 chr.to.int$ -- 55
-cite$ -- 67
+cite$ -- 64
 duplicate$ -- 1260
-empty$ -- 1874
-format.name$ -- 350
-if$ -- 5585
+empty$ -- 1872
+format.name$ -- 357
+if$ -- 5602
 int.to.chr$ -- 4
 int.to.str$ -- 0
 missing$ -- 60
-newline$ -- 294
-num.names$ -- 171
-pop$ -- 284
+newline$ -- 295
+num.names$ -- 174
+pop$ -- 285
 preamble$ -- 1
-purify$ -- 388
+purify$ -- 390
 quote$ -- 0
-skip$ -- 1222
+skip$ -- 1224
 stack$ -- 0
-substring$ -- 1816
+substring$ -- 1815
 swap$ -- 475
 text.length$ -- 53
 text.prefix$ -- 28
 top$ -- 0
 type$ -- 440
-warning$ -- 8
-while$ -- 228
+warning$ -- 6
+while$ -- 231
 width$ -- 64
-write$ -- 763
-(There were 8 warnings)
+write$ -- 765
+(There were 6 warnings)

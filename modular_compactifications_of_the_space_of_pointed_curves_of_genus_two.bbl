@@ -34,7 +34,7 @@ Jarod Alper and Andrew Kresch.
 \newblock {\em Michigan Math. J.}, 65(2):227--250, 2016.
 
 \bibitem[Arn72]{Arnold}
-V.~I. Arnol'd.
+Vladimir~Igorevi\v{c} Arnol'd.
 \newblock Normal forms of functions near degenerate critical points, the {W}eyl
   groups {$A_{k},D_{k},E_{k}$} and {L}agrangian singularities.
 \newblock {\em Funkcional. Anal. i Prilo\v{z}en.}, 6(4):3--25, 1972.
@@ -117,7 +117,7 @@ Steven Diaz.
 \newblock {\em Mem. Amer. Math. Soc.}, 56(327):iv+69, 1985.
 
 \bibitem[DM69]{DM}
-P.~Deligne and D.~Mumford.
+Pierre Deligne and David Mumford.
 \newblock The irreducibility of the space of curves of given genus.
 \newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
 
@@ -138,7 +138,7 @@ Maksym Fedorchuk and David~Ishii Smyth.
   Math. (ALM)}, pages 331--413. Int. Press, Somerville, MA, 2013.
 
 \bibitem[Gie82]{Gieseker}
-D.~Gieseker.
+David Gieseker.
 \newblock {\em Lectures on moduli of curves}, volume~69 of {\em Tata Institute
   of Fundamental Research Lectures on Mathematics and Physics}.
 \newblock Published for the Tata Institute of Fundamental Research, Bombay;
@@ -219,9 +219,10 @@ Finn~F. Knudsen.
   stacks {$M_{g,n}$}.
 \newblock {\em Math. Scand.}, 52(2):161--199, 1983.
 
-\bibitem[Lek17]{Lekili-Polishchuk}
-A modular compactification of $\pazocal M_{1,n}$ from $\pazocal A_{\infty}$
-  structures.
+\bibitem[LP17]{Lekili-Polishchuk}
+Yankı Lekili and Alexander Polishchuk.
+\newblock A modular compactification of $\pazocal{M}_{1,n}$ from
+  $\pazocal{A}_{\infty}$ structures.
 \newblock {\em J. Reine Angew. Math.}, 2017.
 
 \bibitem[LZ09]{LZ}
@@ -231,7 +232,7 @@ Jun Li and Aleksey Zinger.
 \newblock {\em J. Differential Geom.}, 82(3):641--690, 2009.
 
 \bibitem[MFK94]{GIT}
-D.~Mumford, J.~Fogarty, and F.~Kirwan.
+David Mumford, John Fogarty, and Frances Kirwan.
 \newblock {\em Geometric invariant theory}, volume~34 of {\em Ergebnisse der
   Mathematik und ihrer Grenzgebiete (2) [Results in Mathematics and Related
   Areas (2)]}.
@@ -244,7 +245,7 @@ Ian {Morrison}.
   2011.
 
 \bibitem[Pan99]{Pandha}
-R.~Pandharipande.
+Rahul Pandharipande.
 \newblock Hodge integrals and degenerate contributions.
 \newblock {\em Comm. Math. Phys.}, 208(2):489--506, 1999.
 

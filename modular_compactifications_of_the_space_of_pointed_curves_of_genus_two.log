@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  28 MAY 2019 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  29 MAY 2019 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,7 +1179,18 @@ Package pdftex.def Info: one_tail_example.png used on input line 231.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-[8] [9] [10]
+[8] [9]
+Overfull \hbox (3.59904pt too wide) detected at line 330
+\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 + 1 = \OML/cmm/m/it/10.95 ^^N \OT1/cmr
+/m/n/10.95 = [][](\OML/cmm/m/it/10.95 R=I\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.
+95 ^^T [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R=[]\OT1/cmr/m/n/10.95 ) = [
+][] \OML/cmm/m/it/10.95 A[] \OT1/cmr/m/n/10.95 + [][] \OML/cmm/m/it/10.95 A[] \
+OT1/cmr/m/n/10.95 = 1 + (\OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr
+/m/n/10.95 2) = \OML/cmm/m/it/10.95 m \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.9
+5 1\OML/cmm/m/it/10.95 ;
+ []
+
+[10]
 Underfull \vbox (badness 2547) has occurred while \output is active []
 
  [11]
@@ -1201,30 +1212,33 @@ Overfull \hbox (42.22762pt too wide) detected at line 451
  [] , []
  []
 
-[14] [15] [16] [17] [18] [19]
-<admissible_Weierstrass.png, id=371, 835.923pt x 574.948pt>
+[14] [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+[17] [18] [19] <admissible_Weierstrass.png, id=373, 835.923pt x 574.948pt>
 File: admissible_Weierstrass.png Graphic file (type png)
 
 <use admissible_Weierstrass.png>
-Package pdftex.def Info: admissible_Weierstrass.png used on input line 595.
+Package pdftex.def Info: admissible_Weierstrass.png used on input line 597.
 (pdftex.def)             Requested size: 344.72478pt x 237.09879pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<admissible_conjugate.png, id=373, 815.045pt x 558.085pt>
+<admissible_conjugate.png, id=375, 815.045pt x 558.085pt>
 File: admissible_conjugate.png Graphic file (type png)
 
 <use admissible_conjugate.png>
-Package pdftex.def Info: admissible_conjugate.png used on input line 601.
+Package pdftex.def Info: admissible_conjugate.png used on input line 603.
 (pdftex.def)             Requested size: 306.42528pt x 209.81786pt.
  [20]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [21 <./admissible_Weierstrass.png>] [22 <./admissible_conjugate.png>]
-Overfull \hbox (2.23788pt too wide) in paragraph at lines 647--648
-\T1/cmr/m/it/10.95 shaped as pre-scribed by Propo-si-tion []4.3[](2), with $\OM
+Overfull \hbox (2.23788pt too wide) in paragraph at lines 652--653
+\T1/cmr/m/it/10.95 shaped as pre-scribed by Propo-si-tion []4.4[](2), with $\OM
 L/cmm/m/it/10.95 q[]; q[]$ \T1/cmr/m/it/10.95 cor-re-spond-ing to the banches
  []
 
@@ -1232,37 +1246,34 @@ L/cmm/m/it/10.95 q[]; q[]$ \T1/cmr/m/it/10.95 cor-re-spond-ing to the banches
 Underfull \vbox (badness 1742) has occurred while \output is active []
 
  [23]
-[24] [25] [26] <E1E2example.png, id=442, 745.184pt x 216.007pt>
+[24] [25] [26] <E1E2example.png, id=445, 745.184pt x 216.007pt>
 File: E1E2example.png Graphic file (type png)
 
 <use E1E2example.png>
-Package pdftex.def Info: E1E2example.png used on input line 737.
+Package pdftex.def Info: E1E2example.png used on input line 752.
 (pdftex.def)             Requested size: 306.42528pt x 88.82382pt.
- <ERexample.png, id=444, 444.059pt x 383.834pt>
+ [27 <./E1E2example.png>]
+<ERexample.png, id=454, 444.059pt x 383.834pt>
 File: ERexample.png Graphic file (type png)
-
-<use ERexample.png>
-Package pdftex.def Info: ERexample.png used on input line 744.
+ <use ERexample.png>
+Package pdftex.def Info: ERexample.png used on input line 759.
 (pdftex.def)             Requested size: 306.42528pt x 264.88087pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<rational_pretzel.png, id=446, 575.751pt x 516.329pt>
+<rational_pretzel.png, id=456, 575.751pt x 516.329pt>
 File: rational_pretzel.png Graphic file (type png)
 
 <use rational_pretzel.png>
-Package pdftex.def Info: rational_pretzel.png used on input line 750.
+Package pdftex.def Info: rational_pretzel.png used on input line 765.
 (pdftex.def)             Requested size: 306.42528pt x 274.8112pt.
- [27 <./E1E2example.png>] [28 <./ERexample.png>]
-<extra_conjugate.png, id=465, 648.824pt x 173.448pt>
+ [28 <./ERexample.png>]
+<extra_conjugate.png, id=468, 648.824pt x 173.448pt>
 File: extra_conjugate.png Graphic file (type png)
  <use extra_conjugate.png>
-Package pdftex.def Info: extra_conjugate.png used on input line 761.
+Package pdftex.def Info: extra_conjugate.png used on input line 776.
 (pdftex.def)             Requested size: 229.82042pt x 61.43552pt.
 
 [29 <./rational_pretzel.png> <./extra_conjugate.png>] [30]
-Overfull \hbox (3.74081pt too wide) in paragraph at lines 784--791
+Overfull \hbox (3.74081pt too wide) in paragraph at lines 799--806
 []  [] 
  []
 
@@ -1270,13 +1281,10 @@ Overfull \hbox (3.74081pt too wide) in paragraph at lines 784--791
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35]
-Underfull \vbox (badness 1231) has occurred while \output is active []
-
- [36]
-<critical_step.png, id=585, 634.37pt x 190.311pt>
+[36] <critical_step.png, id=588, 634.37pt x 190.311pt>
 File: critical_step.png Graphic file (type png)
  <use critical_step.png>
-Package pdftex.def Info: critical_step.png used on input line 940.
+Package pdftex.def Info: critical_step.png used on input line 955.
 (pdftex.def)             Requested size: 306.42528pt x 91.92902pt.
 
 [37 <./critical_step.png>] [38]
@@ -1298,7 +1306,10 @@ flip in
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 243.
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
+File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 244.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1307,28 +1318,28 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42])
-Underfull \hbox (badness 10000) in paragraph at lines 1002--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1020
 
  []
 
 [43]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1007.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1007.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1022.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1022.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1007.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1007.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1022.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1022.
 
 Package rerunfilecheck Info: File `modular_compactifications_of_the_space_of_po
 inted_curves_of_genus_two.out' has not changed.
 (rerunfilecheck)             Checksum: 2510E6541CB258FB1DD64FF93BFD1C14;404.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1007.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1022.
  ) 
 Here is how much of TeX's memory you used:
- 30092 strings out of 494901
- 560884 string characters out of 6179486
- 655617 words of memory out of 5000000
- 32493 multiletter control sequences out of 15000+600000
+ 30710 strings out of 494901
+ 567324 string characters out of 6179486
+ 655642 words of memory out of 5000000
+ 33107 multiletter control sequences out of 15000+600000
  29542 words of font info for 94 fonts, out of 8000000 for 9000
  197 hyphenation exceptions out of 8191
  56i,19n,82p,10445b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1361,10 +1372,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
 Output written on modular_compactifications_of_the_space_of_pointed_curves_of_g
-enus_two.pdf (43 pages, 780369 bytes).
+enus_two.pdf (43 pages, 781709 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 696 compressed objects within 7 object streams
- 215 named destinations out of 1000 (max. 500000)
+ 1246 PDF objects out of 1440 (max. 8388607)
+ 699 compressed objects within 7 object streams
+ 216 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
