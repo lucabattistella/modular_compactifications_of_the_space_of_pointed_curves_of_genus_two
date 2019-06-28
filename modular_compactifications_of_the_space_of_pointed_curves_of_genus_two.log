@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  30 MAY 2019 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.26)  14 JUN 2019 19:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,98 +1118,98 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \openout1 = `modular_compactifications_of_the_space_of_pointed_curves_of_genus_
 two.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 147.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 149.
 LaTeX Font Info:    Try loading font information for OML+npxmi on input line 14
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 147.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMS/npxsy/m/n on input line 149.
 LaTeX Font Info:    Try loading font information for OMS+npxsy on input line 14
-7.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omsnpxsy.fd
 File: omsnpxsy.fd 2013/03/24 Fontinst v1.933 font definitions for OMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for U+npxexa on input line 147
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 149.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 149
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 147.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 149.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 149.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 147.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 149.
+LaTeX Font Info:    ... okay on input line 149.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 147.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 149.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 147.
+LaTeX Font Info:    Try loading font information for U+msa on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 147.
+LaTeX Font Info:    Try loading font information for U+msb on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 147
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 149
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 147
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 149
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 147
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 149
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
-LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 147
+LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 149
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
 
 LaTeX Font Warning: Font shape `OMS/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 147.
+(Font)              size <5> substituted on input line 149.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1277,9 +1277,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-Package xypdf Info: Line width: 0.64604pt on input line 147.
+Package xypdf Info: Line width: 0.64604pt on input line 149.
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring OFF on input line 147.
+Package hyperref Info: Link coloring OFF on input line 149.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1289,9 +1289,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count189
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
+LaTeX Info: Redefining \ref on input line 149.
+LaTeX Info: Redefining \pageref on input line 149.
+LaTeX Info: Redefining \nameref on input line 149.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.out)
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.out)
@@ -1299,14 +1299,16 @@ LaTeX Info: Redefining \nameref on input line 147.
 \openout5 = `modular_compactifications_of_the_space_of_pointed_curves_of_genus_
 two.out'.
 
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 150
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 153
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 154.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 157.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 157.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.toc)
 \tf@toc=\write6
@@ -1319,7 +1321,7 @@ two.toc'.
 File: one_tail_example.png Graphic file (type png)
 
 <use one_tail_example.png>
-Package pdftex.def Info: one_tail_example.png used on input line 236.
+Package pdftex.def Info: one_tail_example.png used on input line 239.
 (pdftex.def)             Requested size: 397.485pt x 114.161pt.
  [5 <./one_tail_example.png>] [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1330,9 +1332,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: admissible_Weierstrass.png Graphic file (type png)
 
 <use admissible_Weierstrass.png>
-Package pdftex.def Info: admissible_Weierstrass.png used on input line 602.
+Package pdftex.def Info: admissible_Weierstrass.png used on input line 605.
 (pdftex.def)             Requested size: 357.73407pt x 246.04723pt.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 606.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 609.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
@@ -1342,14 +1344,14 @@ File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 File: admissible_conjugate.png Graphic file (type png)
 
 <use admissible_conjugate.png>
-Package pdftex.def Info: admissible_conjugate.png used on input line 608.
+Package pdftex.def Info: admissible_conjugate.png used on input line 611.
 (pdftex.def)             Requested size: 317.98921pt x 217.73743pt.
  [20 <./admissible_Weierstrass.png>] [21 <./admissible_conjugate.png>] [22] [23
 ] [24] [25]
 <E1E2example.png, id=427, 798.182pt x 216.007pt>
 File: E1E2example.png Graphic file (type png)
  <use E1E2example.png>
-Package pdftex.def Info: E1E2example.png used on input line 758.
+Package pdftex.def Info: E1E2example.png used on input line 761.
 (pdftex.def)             Requested size: 317.98921pt x 86.05518pt.
 
 
@@ -1358,7 +1360,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [26] <ERexample.png, id=438, 450.483pt x 383.834pt>
 File: ERexample.png Graphic file (type png)
  <use ERexample.png>
-Package pdftex.def Info: ERexample.png used on input line 765.
+Package pdftex.def Info: ERexample.png used on input line 768.
 (pdftex.def)             Requested size: 317.98921pt x 270.94855pt.
 
 
@@ -1368,30 +1370,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: rational_pretzel.png Graphic file (type png)
 
 <use rational_pretzel.png>
-Package pdftex.def Info: rational_pretzel.png used on input line 783.
+Package pdftex.def Info: rational_pretzel.png used on input line 786.
 (pdftex.def)             Requested size: 317.98921pt x 285.17935pt.
  [27 <./E1E2example.png>] [28 <./ERexample.png>]
 [29 <./rational_pretzel.png>] [30] [31] [32] [33] [34] [35]
 <critical_step.png, id=578, 634.37pt x 190.311pt>
 File: critical_step.png Graphic file (type png)
  <use critical_step.png>
-Package pdftex.def Info: critical_step.png used on input line 983.
+Package pdftex.def Info: critical_step.png used on input line 986.
 (pdftex.def)             Requested size: 317.98921pt x 95.39919pt.
 
 [36] <critical_step_ER.png, id=587, 630.355pt x 190.311pt>
 File: critical_step_ER.png Graphic file (type png)
 
 <use critical_step_ER.png>
-Package pdftex.def Info: critical_step_ER.png used on input line 994.
+Package pdftex.def Info: critical_step_ER.png used on input line 997.
 (pdftex.def)             Requested size: 317.98921pt x 96.00319pt.
  [37 <./critical_step.png>] [38 <./critical_step_ER.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39]
-(./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.bbl
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
- on input line 5.
+ on input line 1051.
 
 [40] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
@@ -1399,28 +1400,29 @@ File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 244.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 1290.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 2556) in paragraph at lines 242--246
+Underfull \hbox (badness 2556) in paragraph at lines 1288--1292
 []\T1/ppl/m/n/9 Ian Mor-ri-son. Mori the-ory of mod-uli spaces of sta-ble curve
 s. []$\T1/pcr/m/n/9 http : / / www .
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1054
+
+Underfull \hbox (badness 10000) in paragraph at lines 1388--1391
 
  []
 
 [42]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1056.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1056.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1393.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1393.
 
 (./modular_compactifications_of_the_space_of_pointed_curves_of_genus_two.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1056.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1056.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1393.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1393.
 
 Package rerunfilecheck Info: File `modular_compactifications_of_the_space_of_po
 inted_curves_of_genus_two.out' has not changed.
@@ -1430,14 +1432,14 @@ inted_curves_of_genus_two.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1056.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1393.
  ) 
 Here is how much of TeX's memory you used:
- 31814 strings out of 494901
- 580309 string characters out of 6179486
- 663916 words of memory out of 5000000
- 34076 multiletter control sequences out of 15000+600000
- 89479 words of font info for 241 fonts, out of 8000000 for 9000
+ 31829 strings out of 494901
+ 580386 string characters out of 6179486
+ 663926 words of memory out of 5000000
+ 34090 multiletter control sequences out of 15000+600000
+ 96146 words of font info for 258 fonts, out of 8000000 for 9000
  198 hyphenation exceptions out of 8191
  56i,15n,82p,10445b,1014s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
@@ -1464,7 +1466,7 @@ onts/type1/urw/palatino/uplri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zp
 lx-regular.pfb>
 Output written on modular_compactifications_of_the_space_of_pointed_curves_of_g
-enus_two.pdf (42 pages, 595633 bytes).
+enus_two.pdf (42 pages, 596039 bytes).
 PDF statistics:
  744 PDF objects out of 1000 (max. 8388607)
  660 compressed objects within 7 object streams
