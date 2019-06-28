@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Getting started}{2}
+\contentsline {section}{\numberline {3}Front matter}{2}
+\contentsline {section}{\numberline {4}Environments}{4}
+\contentsline {subsection}{\numberline {4.1}Mathematics}{4}
+\contentsline {subsection}{\numberline {4.2}Proofs}{4}
+\contentsline {subsection}{\numberline {4.3}Acknowledgements}{5}
+\contentsline {section}{\numberline {5}Options}{5}
+\contentsline {subsection}{\numberline {5.1}Document class options}{5}
+\contentsline {subsection}{\numberline {5.2}The {\mdseries \texttt {compositio.cfg}} configuration file}{5}
+\contentsline {section}{\numberline {6}Graphics and tables}{5}
+\contentsline {section}{\numberline {7}Bibliography}{6}
+\contentsline {section}{Appendix\nobreakspace {}A. Converting from other document classes}{6}
+\contentsline {subsection}{\numberline {A.1}Converting from {\mdseries \textsf {article}}}{6}
+\contentsline {subsection}{\numberline {A.2}Converting from {\mdseries \textsf {amsart}}}{7}
+\contentsline {subsection}{\numberline {A.3}Converting from \LaTeX 2.09}{7}
+\contentsline {section}{References}{8}

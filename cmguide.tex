@@ -1,0 +1,491 @@
+% user docs for compositio.cls
+\def\Filedate{2011/01/24} % date this file last revised
+\def\Fileversion{1.15}    % version of compositio.cls documented
+
+\documentclass[noams]{compositio}
+% If you have the AMSLaTeX distribution installed on your system,
+% please delete the "[noams]" option above.
+
+% definitions specific to this author guide only
+\newcommand*{\code}[1]{{\mdseries\texttt{#1}}}
+\newcommand*{\pkg}[1]{{\mdseries\textsf{#1}}}
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\contentsname}{Contents\\{\footnotesize\normalfont(A table
+of contents should normally not be included)}}
+%
+\begin{document}
+
+\title{Using the \pkg{compositio} class file}
+%
+\author{Fran Burstall}
+\email{}
+\address{}
+%
+\author{Ola T\"{o}rnkvist}
+\email{compmath@lms.ac.uk}
+\address{}
+%
+\dedication{A dedication can be included here.}
+\classification{35J25 (primary), 28C15, 28D10 (secondary). At
+least one subject code is required. Please refer to
+\url{http://www.ams.org/msc/} for a list of codes.}
+\keywords{Please provide keywords here.}
+\thanks{This file documents \pkg{compositio} version \Fileversion\ and
+was last revised \Filedate.}
+
+\begin{abstract}
+The \pkg{compositio} \LaTeX\ document class is designed to give
+the page layout, front matter and formatting required for articles
+published in \emph{Compositio Mathematica}. The published version
+of your article will display the Compositio Mathematica
+\textit{logo} and bibliographic information in the upper left-hand
+corner of the title page (see one of the sample files
+\code{cmguide1.pdf} or \code{cmguide1.ps} available at
+\url{http://www.compositio.nl/cmauthor.html}).
+
+An English abstract of less than 200 words is required and should
+contain at least two sentences. Please do not include citations,
+footnotes or references to numbered equations, theorems, figures
+or tables in your abstract. Avoid complicated formulae or
+displayed equations, if possible.
+\end{abstract}
+
+\maketitle
+
+\vspace*{6pt}\tableofcontents  % for this guide only.
+% A table of contents should normally not be included
+
+\section{Introduction}
+\label{sec:introduction}
+
+The \pkg{compositio} \LaTeX\ document class is based on the
+standard \pkg{article} class that you already know and love. While
+\pkg{compositio} performs most of its work behind the scenes, it
+does provide some user-visible features:
+\begin{itemize}
+\item Author ``front matter'' commands are available to provide
+authors' email and spatial addresses, dedications, keywords and MSC
+classifications (see Section~\ref{sec:front-matter}).
+\item Where available, the \pkg{amsthm} and \pkg{amssymb} packages
+are loaded to provide rich support for \texttt{theorem}-like
+environments and access to the AMS fonts such as blackboard bold
+and fraktur (see Subsection \ref{sec:maths}).
+\item Extra environments for proofs (with optional end-of-proof
+boxes) and acknowledgements are available.
+\end{itemize}
+
+This document describes these additional features and outlines the
+structure your electronic manuscript should have.
+
+\section{Getting started}
+\label{sec:getting-started}
+First things first: your document should load the \pkg{compositio}
+class and so begin:
+\begin{verbatim}
+\documentclass{compositio}
+\end{verbatim}
+Thereafter, have a look at the sample shown in
+Figure~\ref{fig:ex1} on page~\pageref{fig:ex1}.  This tells most
+of the story. You will find the details in the subsequent sections.
+\begin{figure}[!t]\vspace*{6pt}
+\hspace*{1in}\begin{minipage}{5.1in}\small\begin{verbatim}
+\documentclass{compositio}     % 'we are using the compositio class'
+
+%% packages
+\usepackage{amsmath}            % 'not essential, but very useful'
+
+\begin{document}
+
+\title
+  [Short Title]         % 'optional short form; for the running head'
+  {A longish title like this goes here} % 'Main title'
+
+% 'Each author has his or her own set of coordinates.'
+\author{F. Author}
+\email{f.author@some.where.ac.uk}  % 'optional'
+\address{Mathematics Department\\Some University\\Where Road\\%
+         Here\\MT55 9XX}
+\curraddr{Mathematics Institute\\Another University\\
+          There\\BA1 1HZ}          % 'also optional'
+% 'Another author'
+\author{A. Author}
+\email{another.author@other.edu}
+\address{Physics Department\\Other University\\There\\USA}
+%
+\shortauthors{F. Author et al.}
+                        % 'optional short form; for the running head'
+
+% 'MSC classification, keywords and grant acknowledgements'
+\classification{58E20}
+\keywords{harmonic map, projective geometry}
+\thanks{The first author is supported by EPSRC.}
+
+% 'Abstract comes before maketitle, as in the AMS classes'
+\begin{abstract}
+% 'Abstract text'
+\end{abstract}
+
+\maketitle
+
+% 'Main text starts here.'
+\end{verbatim}\end{minipage}\vspace*{5mm}
+\caption{Document example} \label{fig:ex1}
+\end{figure}
+
+\section{Front matter}
+\label{sec:front-matter}
+
+Front matter commands follow \verb+\begin{document}+ and precede
+\verb+\maketitle+.  They come in two flavours: those that give the
+coordinates of authors and those that provide extra information
+about the text (keywords and MSC subject classification).
+
+Each author is named in a separate \verb+\author+ command (the
+\verb+\and+ mechanism of the \pkg{article} class is not available
+here -- see Appendix~\ref{sec:conv-from-textsf}).  After this, use
+\verb+\email+ (optional), \verb+\address+ and \verb+\curraddr+
+(also optional) \emph{in this order} to indicate the author's
+email address, permanent address and, if necessary, temporary
+address. Look at Figure~\ref{fig:ex1} for examples. For
+compatibility with the \pkg{amsart} class, these commands accept
+an optional argument but this is silently ignored.
+
+The list of authors is combined to make the running header on the top
+of even-numbered pages.  If there are too many authors to fit,
+provide a short alternative with \verb+\shortauthors+:
+
+\verb+\shortauthors{F.E. Burstall et al.}+
+
+\noindent
+This will only effect running headers, not the title page.
+
+Use \verb+\classification+ or \verb+\subjclass+ to record the MSC
+subject classification, \verb+\keywords+ for (guess what?) listing
+keywords describing your text and \verb+\thanks+ to acknowledge
+financial and institutional support.  Thus:
+\begin{verbatim}
+\classification{58E20}
+\keywords{harmonic map, projective geometry}
+\thanks{The first author is supported by EPSRC.}
+\end{verbatim}
+You may also insert a dedication with the \verb+\dedication+
+command.
+
+Of the front-matter commands, only \verb+\author+, \verb+\address+,
+\verb+\classification+ are considered to be compulsory. A warning
+will be generated on the screen if \verb+\address+ or
+\verb+\classification+ is missing (unless the \texttt{draft} option
+is set; see Section~\ref{sec:options}).
+
+\section{Environments}
+\label{sec:Environments}
+
+\subsection{Mathematics}
+\label{sec:maths}
+
+\pkg{compositio} uses the \textsf{amsthm} package to provide
+enhanced support for theorem-like environments.  This introduces
+three new features:  the \verb+\theoremstyle+ command for making
+different kinds of theorem-like environment, a starred form
+\verb+\newtheorem*+ for un-numbered environments of this kind and
+a \texttt{proof} environment.
+
+\textsf{amsthm} defines three styles:
+  \begin{description}
+  \item[plain] The ``usual'' style for a \textsc{Theorem},
+  \textsc{Lemma}, \textsc{Corollary} or \textsc{Proposition}.
+  \textit{This is the default, with the body typeset in italic
+  font.}
+  \item[definition] For an \textsc{Assertion}, a \textsc{Conjecture},
+  \textsc{Definition} or \textsc{Hypothesis}:
+  the body of the statement is in normal, upright font.
+  \item[remark] For a \emph{Remark}, \emph{Note}, \emph{Notation},
+  an \emph{Observation}, a \emph{Problem}, \emph{Question},
+  \emph{Algorithm} or \emph{Example}: here the caption is set in
+  italics and the body in an upright font.
+ \end{description}
+See Figure~\ref{fig:2} for the sort of thing you should put in the
+preamble.  You can find more details in the \pkg{amsthm}
+documentation\footnote{At
+\url{ftp://ftp.tex.ac.uk/tex-archive/macros/latex/required/amslatex/classes/amsthdoc.tex},
+for \mbox{example}.}.
+\begin{figure}[htbp]
+\begin{center}
+\begin{minipage}{15cm}\small\begin{verbatim}
+% \theoremstyle{plain} % 'this is the initial setting and can be omitted here'
+\newtheorem{thm}{Theorem}[section] % number like 3.1, 3.2, 3.3, etc.
+\newtheorem*{FLT}{Fermat's Last Theorem} % not numbered
+\theoremstyle{definition} % 'here we change the style'
+\newtheorem{defn}[thm]{Definition} % numbered with thm
+\theoremstyle{remark} % 'style changed again'
+\newtheorem{rem}{Remark}
+\newtheorem{conj}{Conjecture}
+\end{verbatim}
+\end{minipage}
+\end{center}
+\caption{Defining theorem-like environments.} \label{fig:2}
+\end{figure}
+
+The environments defined by \verb+\newtheorem+ take an optional
+argument often used to indicate an attribution.  Please note that,
+in contrast to the \pkg{article} and \pkg{amsart} classes,
+\pkg{compositio} does \emph{not} surround the argument with
+parentheses: this is to facilitate attributions consisting of a
+single reference to the bibliography.  If you want the parentheses,
+you must include them in the argument yourself as shown here:
+
+\verb+\begin{thm}[(Burstall, 2002)]+
+
+\noindent
+If your site does not have the AMS\LaTeX\ distribution, you should
+follow these steps:
+\begin{enumerate}
+\item Complain to your System Administrator!  The AMS\LaTeX\
+distribution is a required component of a well-founded \LaTeX\
+installation.
+\item Use the \texttt{noams} option to work around the missing files;
+see Subsection~\ref{sec:docum-class-opti} for details.
+\end{enumerate}
+
+\subsection{Proofs}
+\label{sec:proofs}
+
+\pkg{compositio} also provides a \texttt{proof} environment adapted
+from that of \pkg{amsthm}.  This takes an  optional argument that
+\textit{replaces} the label.  Thus
+
+\verb+         \begin{proof}[Proof of Main Theorem]+
+
+\noindent begins a proof headed \emph{Proof of Main Theorem} rather
+than \emph{Proof}.
+
+By default, the proofs are ended with ``Halmos tombstones'' --
+open-face boxes. The generation of these boxes can be turned off
+everywhere by use of the \texttt{noboxes} option; see
+Section~\ref{sec:docum-class-opti}.
+
+\subsection{Acknowledgements}
+\label{sec:acknowledgements}
+
+Use the \texttt{acknowledgements} environment to wrap your
+thanks to colleagues for their inspirational conversations.
+
+\section{Options}
+\label{sec:options}
+
+\subsection{Document class options}
+\label{sec:docum-class-opti}
+
+\pkg{compositio} is designed especially for \emph{Compositio
+Mathematica} and most font-size and layout decisions have already
+been made. Therefore, most of the options of the \pkg{article}
+class are inappropriate.  To help transfer documents from
+\pkg{article} to \pkg{compositio}, the following document class
+options are accepted (perhaps with a warning), but do not affect
+the document.
+\begin{verbatim}
+10pt 11pt 12pt
+oneside twoside
+onecolumn twocolumn
+a4paper
+letterpaper
+\end{verbatim}
+That said, \pkg{compositio} has a few options of its own:
+\begin{description}
+\item[draft] This suppresses warnings about elements of front
+matter. It also marks over-long lines with ugly black boxes.
+\item[noboxes] Suppresses the placement of boxes at the end of
+proofs.
+\item[noams] If you have not got the AMS packages installed,
+then you can use this option. It suppresses the loading
+of the packages and defines \verb+\theoremstyle+ and
+\verb+\newtheorem*+ to be silently accepted without error.
+Although the theorem commands will not work as intended in this
+case, authors should still use them, so that the final form of the
+document generated by \emph{Compositio Mathematica} will use the
+AMS definitions where appropriate. Similarly, authors should still
+use \verb+\mathbb+ to specify blackboard bold, although the
+\code{noams} option defines this command to produce normal bold.
+\end{description}
+
+\subsection{The \code{compositio.cfg} configuration file}
+\label{sec:mdser-conf-file}
+
+If a file with the name \texttt{compositio.cfg} is present in the
+\LaTeX\ search path, it will be input by \pkg{compositio} before it
+processes the options. In this case, \emph{all options specified in
+the document will be ignored}.
+
+\section{Graphics and tables}
+\label{sec:graphics-tables}
+
+\pkg{compositio} pre-loads the standard \pkg{graphicx} package, which
+allows easy loading of PostScript images generated by external
+programs. Figure~\ref{fig:3} gives the idea: here the image is scaled
+to have a width of 3 inches.  Note the use of \verb+\centering+
+rather than a \texttt{center} environment; this prevents the
+appearance of extraneous white space.
+\begin{figure}[hbpt]
+\centering
+\begin{minipage}{3in}
+\small\begin{verbatim}
+\begin{figure}
+\centering
+\includegraphics[width=3in]{image.ps}
+\caption{A Klein bottle}
+\end{figure}
+\end{verbatim}
+\caption{Including an image} \label{fig:3}
+\end{minipage}
+\end{figure}
+
+The \pkg{compositio} house style prescribes that the caption for
+a figure should follow the image while the caption for a table
+should precede it. To achieve this effect, simply place the
+\verb+\caption+ command after the \verb+\includegraphics+ command
+in a figure but \emph{before} the \texttt{tabular} environment in
+a \texttt{table} environment.
+
+\section{Bibliography}\label{refs} A bibliography suitable for
+\emph{Compositio Mathematica} can be created with \textsc{Bib}\TeX\
+using the AMS bibliography style \pkg{amsalpha}. The
+\textsc{References} section is then generated with the commands
+\newline\hspace*{1.5em}%
+\verb+\bibliographystyle{amsalpha}+\newline\hspace*{1.5em}%
+\verb+\bibliography{+\textit{bibname}\verb+}+\newline where
+\textit{bibname} is the first part of the name of a
+\textsc{Bib}\TeX\ file with extension \code{.bib}.
+
+If the \textsc{References} section is entered by hand, please use
+the first [optional] argument of the \verb+\bibitem+ command to
+provide acronyms formed by the first letters of the authors'
+surnames and the last two digits of the publication year (followed
+by ``a'',``b'', etc.\ when needed). The bibliography for this
+guide was generated using the following lines of code:
+\begin{center}\begin{minipage}{5in} {\footnotesize%
+\begin{verbatim}
+\begin{thebibliography}{PTW02} % '2nd argument contains the widest acronym'
+\bibitem[Lam94]{Lamport}
+  L. Lamport, \emph{\LaTeX: A document preparation system \textup{(}%
+  updated for \LaTeXe\textup{)}} (Addison--Wesley, New York, 1994).
+\bibitem[PTW02]{PRL}
+  T.~Prokopec, O.~T\"ornkvist and R.~P.~Woodard, \emph{Photon mass
+  from inflation}, Phys.\ Rev.\ Lett.\ \textbf{89} (2002), 101301.
+\end{thebibliography}
+\end{verbatim}}
+\end{minipage}\end{center}
+The publications are cited using the second argument of
+\verb+\bibitem+, \textit{e.g.}\
+\verb+\cite{Lamport}+~\cite{Lamport}.
+
+\appendix
+\section{Converting from other document classes}
+\label{sec:conv-from-textsf}
+
+The \pkg{compositio} class has been designed to make conversion
+from other popular document classes as easy as possible.  The
+first thing to do is to change the documentclass.  Thus, replace
+\texttt{article} or \texttt{amsart} in the \verb+\documentclass+
+command to give \verb+\documentclass{compositio}+.
+
+\subsection{Converting from \pkg{article}}
+\label{sec:conv-from-pkgart}
+
+The main differences between \pkg{article} and \pkg{compositio} lie
+in the treatment of front matter.  With \pkg{article}, the
+\verb+\author+ command had to do all the work of displaying authors'
+names, addresses and acknowledgements, whereas \pkg{compositio} has
+separate commands for all these.  Moreover, the \pkg{compositio}
+class does not support the \verb+\and+ method of fitting several
+authors into a single \verb+\author+ command.  This is because
+addresses are provided for each author individually.  Thus you must
+replace
+\begin{verbatim}
+\author{H.~Jones \and J.~Smith} % wrong!
+\end{verbatim}
+with
+\begin{verbatim}
+\author{H.~Jones}
+\author{J.~Smith}
+\end{verbatim}
+Furthermore, you need to remove all address lines from
+\verb+\author+ and place them in \verb+\address+ commands, one for
+each author. Similarly, \verb+\thanks+ should be taken out of
+\verb+\author+ and placed by itself.  To summarise: if your
+document has something like this
+\begin{verbatim}
+\author{F.E. Burstall\thanks{Supported by EPSRC.}\\
+University Of Bath\\ Bath BA1 1HZ\\ UK}
+\end{verbatim}
+you should edit to achieve this:
+\begin{verbatim}
+\author{F.E. Burstall}
+\address{University Of Bath\\ Bath BA1 1HZ\\ UK}
+\thanks{The first author is supported by EPSRC.}
+\end{verbatim}
+The \pkg{compositio} version of \verb+\thanks+ does not decorate the
+authors with footnote symbols to indicate the mapping between
+different authors and their support.  Thus, with multiple authors,
+you should use one \verb+\thanks+
+of the form \verb+\thanks{The first author+%
+\ldots\verb+The second author+\ldots\verb+}+.
+
+Having successfully converted \verb+\author+, you may want to add
+email addresses with \verb+\email+ (as well as MSC subject
+classifications and keywords). To see how to do this, see
+Section~\ref{sec:front-matter}.
+
+\subsection{Converting from \pkg{amsart}}
+\label{sec:conv-from-pkgams}
+
+The \pkg{compositio} class supports the same address commands as
+the \pkg{amsart} class, but stylistic considerations force a few
+differences:
+\begin{enumerate}
+\item The \verb+\email+ command comes between \verb+\author+ and
+\verb+\address+ rather than after \verb+\address+; \item each
+\verb+\author+ \emph{must} have his or her own \verb+\address+
+even if two authors share an address; \item all acknowledgements
+of support should be collected into a single \verb+\thanks+.
+\end{enumerate}
+As a consequence of the second item, any optional arguments to the
+AMS versions of \verb+\email+, \verb+\address+ and
+\verb+\curraddr+ are silently ignored.
+
+The only other issue is that \pkg{amsart} automatically loads the
+\pkg{amsmath} package.  Consequently, you should place a
+\verb+\usepackage{amsmath}+ in the preamble of your converted
+document.
+
+\subsection{Converting from \LaTeX2.09}
+\label{sec:conv-from-latex209}
+
+If your document begins \verb+\documentstyle+, then you are using
+a dialect of \LaTeX\ that has been obsolete since 1994 and you are
+in trouble. In the case that your \LaTeX\ installation really is
+that old, you can do nothing but complain to your Systems
+Administrator; \pkg{compositio} will not work for you. Otherwise,
+first replace \verb+\documentstyle+ with \verb+\documentclass+, then
+follow the instructions in Section~\ref{sec:conv-from-pkgart} and
+try running \LaTeX\ on the converted document.
+
+If you run into errors, try removing any optional arguments to
+\verb+\documentclass+ and then seek the advice of your local \LaTeX\
+guru.
+
+\begin{acknowledgements}
+Parts of this document were ruthlessly plagiarised from David
+Carlisle's \texttt{jcmguide.tex}.  The authors gratefully confess
+this theft here.
+\end{acknowledgements}
+
+\begin{thebibliography}{PTW02} % '2nd argument contains the widest acronym'
+\bibitem[Lam94]{Lamport}
+  L.~Lamport, \emph{\LaTeX: A document preparation system \textup{(}%
+  updated for \LaTeXe\textup{)}} (Addison--Wesley, New York, 1994).
+\bibitem[PTW02]{PRL}
+  T.~Prokopec, O.~T\"ornkvist and R.~P.~Woodard, \emph{Photon mass
+  from inflation}, Phys.\ Rev.\ Lett.\ \textbf{89} (2002), 101301.
+\end{thebibliography}
+
+\end{document}
