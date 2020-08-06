@@ -104,8 +104,8 @@
 \title[Modular compactifications of $\pazocal{M}_{2,n}$]{Modular compactifications of $\pazocal{M}_{2,n}$ \\ with Gorenstein curves}
 %
 \author{Luca Battistella}
-\email{battistella@mpim-bonn.mpg.de}
-\address{Max-Planck-Institut f\"ur Mathematik\\Vivatsgasse 7\\53111 Bonn\\Germany}
+\email{lbattistella@mathi.uni-heidelberg.de}
+\address{Ruprecht-Karls-Universität Heidelberg\\Im Neuenheimer Feld 205\\69120 Heidelberg\\Germany}
 %
 %\dedication{A dedication can be included here.}
 \classification{14H10 (primary), 14H20 (secondary).}
@@ -249,7 +249,7 @@ In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-poi
 
 \subsection{Future directions of work} Besides regarding this paper as a case-study of the birational geometry of moduli spaces of curves, we are looking forwards to explore its consequences in Gromov-Witten theory. We set up some questions we would like to come back to in future work.
 \begin{enumerate}[leftmargin=.7cm]
- \item Resolve the indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$, and study the intersection theory of these spaces; we expect the construction to rely on a semistable compactification of the crimping spaces of the genus two singularities, as in \cite[\S 1.10]{vdW} and \cite{SMY3}, as well as on logarithmic geometry, as in \cite{RSPW1}. The study of the Picard group and the projectivity of the coarse moduli space will firmly site this work in the context of the Hassett-Keel program, as in \cite{SMY2}; we hope techniques similar to \cite{AFS1} and \cite{CTV1} apply.
+ \item The indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$ can be resolved modularly: a space dominating all the $\oM_{2,n}^{(m)}$ can be constructed as a logarithmic modification of the space of admissible covers (of degree two with six ramification points). We shall describe this construction in all details in a forthcoming paper. We wonder whether the models 
  
  More generally, a question outstanding to our knowledge is whether the whole program fits in the framework of stability developed in \cite{DHLinstability}.
  
@@ -992,7 +992,7 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
   
  \smallskip
  
- Finally, the case that the central fibre has geometric genus zero is dealt with by considering it as a degeneration of the previous cases, since we only contract a genus zero subcurve when it is a semistable chain.
+ Finally, the case that the central fibre has geometric genus zero can be seen as a degeneration of the previous ones, since we only contract a genus zero subcurve when it is a semistable chain.
  \end{proof}
  
  \begin{proof}[Uniqueness of limits] Up to a further base-change, there is a diagram
