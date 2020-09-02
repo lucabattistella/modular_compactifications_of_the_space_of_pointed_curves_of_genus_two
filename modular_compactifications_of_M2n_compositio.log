@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  1 SEP 2020 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  2 SEP 2020 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,45 +877,383 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \c@thm=\count163
 \c@claim=\count164
 
+(/usr/share/texlive/texmf-dist/tex/latex/tikz-3dplot/tikz-3dplot.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrary3d.code.tex
+File: tikzlibrary3d.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen266
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen267
+\c@pgfplots@coordindex=\count165
+\c@pgfplots@scanlineindex=\count166
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count167
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count168
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count169
+\t@pgfplotstable@a=\toks51
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count170
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen268
+\pgfdecoratedremainingdistance=\dimen269
+\pgfdecoratedinputsegmentcompleteddistance=\dimen270
+\pgfdecoratedinputsegmentremainingdistance=\dimen271
+\pgf@decorate@distancetomove=\dimen272
+\pgf@decorate@repeatstate=\count171
+\pgfdecorationsegmentamplitude=\dimen273
+\pgfdecorationsegmentlength=\dimen274
+)
+\tikz@lib@dec@box=\box61
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count172
+\pgfplots@xmin@reg=\dimen275
+\pgfplots@xmax@reg=\dimen276
+\pgfplots@ymin@reg=\dimen277
+\pgfplots@ymax@reg=\dimen278
+\pgfplots@zmin@reg=\dimen279
+\pgfplots@zmax@reg=\dimen280
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v3.0.1a (rcs-revision 1.3)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/hobby/tikzlibraryhobby.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/hobby/pgflibraryhobby.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/hobby/hobby.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/hobby/pml3array.sty
+\l_array_base_int=\count173
+\l_array_top_int=\count174
+\l_array_tmp_int=\count175
+\g_array_base_int=\count176
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyVersion with sig. '' on line 41.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyDate with sig. '' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \HobbyDisableAux with sig. '' on line 59.
+.................................................
+\l_hobby_npoints_int=\count177
+\l_hobby_draw_int=\count178
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyinit with sig. 'mmm' on line 669.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyaddpoint with sig. 'm' on line 699.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbysetparams with sig. 'm' on line 705.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbygenpath with sig. '' on line 721.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbygenifnecpath with sig. 'm' on line 732.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbygenuseifnecpath with sig. 'm' on line 744.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyusepath with sig. 'm' on line 748.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbysavepath with sig. 'm' on line 751.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyrestorepath with sig. 'm' on line 756.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyshowpath with sig. 'm' on line 761.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbygenusepath with sig. '' on line 767.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \hobbyclearpath with sig. '' on line 770.
+.................................................
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2013/08/28 v3.0.1a (rcs-revision 1.1)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryintersections.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersection
+s.code.tex
+\pgf@intersect@solutions=\count179
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box62
+\pgfnodeparttwobox=\box63
+\pgfnodepartthreebox=\box64
+\pgfnodepartfourbox=\box65
+\pgfnodeparttwentybox=\box66
+\pgfnodepartnineteenbox=\box67
+\pgfnodeparteighteenbox=\box68
+\pgfnodepartseventeenbox=\box69
+\pgfnodepartsixteenbox=\box70
+\pgfnodepartfifteenbox=\box71
+\pgfnodepartfourteenbox=\box72
+\pgfnodepartthirteenbox=\box73
+\pgfnodeparttwelvebox=\box74
+\pgfnodepartelevenbox=\box75
+\pgfnodeparttenbox=\box76
+\pgfnodepartninebox=\box77
+\pgfnodeparteightbox=\box78
+\pgfnodepartsevenbox=\box79
+\pgfnodepartsixbox=\box80
+\pgfnodepartfivebox=\box81
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibraryfillb
+etween.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfcontrib/tikzlibrarydecor
+ations.softclip.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfcontrib/pgflibraryfillbe
+tween.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
+\pgf@layerbox@background=\box82
+\pgf@layerboxsaved@background=\box83
+)
 (./modular_compactifications_of_M2n_compositio.aux)
 \openout1 = `modular_compactifications_of_M2n_compositio.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 136.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count165
-\scratchdimen=\dimen266
-\scratchbox=\box61
-\nofMPsegments=\count166
-\nofMParguments=\count167
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count168
-\MPscratchDim=\dimen267
-\MPnumerator=\count169
-\makeMPintoPDFobject=\count170
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count180
+\scratchdimen=\dimen281
+\scratchbox=\box84
+\nofMPsegments=\count181
+\nofMParguments=\count182
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count183
+\MPscratchDim=\dimen282
+\MPnumerator=\count184
+\makeMPintoPDFobject=\count185
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -935,8 +1273,8 @@ e
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 108.
+\AtBeginShipoutBox=\box85
+Package hyperref Info: Link coloring OFF on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -944,42 +1282,48 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count186
 )
-LaTeX Info: Redefining \ref on input line 108.
-LaTeX Info: Redefining \pageref on input line 108.
-LaTeX Info: Redefining \nameref on input line 108.
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
 
 (./modular_compactifications_of_M2n_compositio.out)
 (./modular_compactifications_of_M2n_compositio.out)
 \@outlinefile=\write4
 \openout4 = `modular_compactifications_of_M2n_compositio.out'.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 123.
 
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
+your preamble.
+ on input line 136.
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 151.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+LaTeX Font Info:    Try loading font information for U+msa on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+LaTeX Font Info:    Try loading font information for U+msb on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 123
+LaTeX Font Info:    Try loading font information for OMS+rsfs on input line 151
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-LaTeX Font Info:    Try loading font information for U+euf on input line 123.
+LaTeX Font Info:    Try loading font information for U+euf on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 123
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 151
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
@@ -991,82 +1335,113 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-<one_tail_example.png, id=176, 841.544pt x 241.703pt>
+<one_tail_example.png, id=212, 841.544pt x 241.703pt>
 File: one_tail_example.png Graphic file (type png)
 
 <use one_tail_example.png>
-Package pdftex.def Info: one_tail_example.png used on input line 214.
+Package pdftex.def Info: one_tail_example.png used on input line 242.
 (pdftex.def)             Requested size: 457.80482pt x 131.48763pt.
  [4] [5 <./one_tail_example.png>] [6] [7] [8]
 [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-[11] [12] [13]
+[11] [12] [13] [14]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 486.
+(amsmath)                 on input line 527.
 
-[14] [15] [16] [17] [18] [19]
-<admissible_Weierstrass.png, id=413, 835.923pt x 574.948pt>
+[15] [16] [17] [18]
+Underfull \vbox (badness 4859) has occurred while \output is active []
+
+ [19]
+<admissible_Weierstrass.png, id=448, 835.923pt x 574.948pt>
 File: admissible_Weierstrass.png Graphic file (type png)
 
 <use admissible_Weierstrass.png>
-Package pdftex.def Info: admissible_Weierstrass.png used on input line 622.
+Package pdftex.def Info: admissible_Weierstrass.png used on input line 667.
 (pdftex.def)             Requested size: 457.80482pt x 314.8801pt.
 
-<admissible_conjugate.png, id=415, 815.045pt x 558.085pt>
+<admissible_conjugate.png, id=450, 815.045pt x 558.085pt>
 File: admissible_conjugate.png Graphic file (type png)
 
 <use admissible_conjugate.png>
-Package pdftex.def Info: admissible_conjugate.png used on input line 628.
+Package pdftex.def Info: admissible_conjugate.png used on input line 673.
 (pdftex.def)             Requested size: 457.80482pt x 313.47072pt.
- [20 <./admissible_Weierstrass.png>] [21 <./admissible_conjugate.png>] [22] [23
-] [24] [25] [26]
-<E1E2example_v.png, id=488, 327.624pt x 452.089pt>
-File: E1E2example_v.png Graphic file (type png)
- <use E1E2example_v.png>
-Package pdftex.def Info: E1E2example_v.png used on input line 808.
-(pdftex.def)             Requested size: 153.82037pt x 212.26111pt.
+ [20] [21 <./admissible_Weierstrass.png>]
 
-<ERexample.png, id=489, 450.483pt x 383.834pt>
-File: ERexample.png Graphic file (type png)
- <use ERexample.png>
-Package pdftex.def Info: ERexample.png used on input line 813.
-(pdftex.def)             Requested size: 219.74435pt x 187.23691pt.
+LaTeX Warning: Reference `cor:deg_dualising' on page 22 undefined on input line
+ 708.
 
-<rational_pretzel_h.png, id=494, 825.484pt x 245.718pt>
-File: rational_pretzel_h.png Graphic file (type png)
+[22 <./admissible_conjugate.png>] [23]
+<irreducible_core.png, id=510, 855.195pt x 450.483pt>
+File: irreducible_core.png Graphic file (type png)
 
-<use rational_pretzel_h.png>
-Package pdftex.def Info: rational_pretzel_h.png used on input line 838.
-(pdftex.def)             Requested size: 457.80482pt x 136.27386pt.
- [27 <./E1E2example_v.png> <./ERexample.png>]
-[28 <./rational_pretzel_h.png>] [29] [30] [31] [32] [33] [34]
-<critical_step_v.png, id=623, 277.035pt x 357.335pt>
+<use irreducible_core.png>
+Package pdftex.def Info: irreducible_core.png used on input line 760.
+(pdftex.def)             Requested size: 457.80482pt x 241.15381pt.
+ <reducible_core.png, id=511, 556.479pt x 262.581pt>
+File: reducible_core.png Graphic file (type png)
+
+<use reducible_core.png>
+Package pdftex.def Info: reducible_core.png used on input line 768.
+(pdftex.def)             Requested size: 457.80482pt x 216.02296pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./irreducible_core.png>]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ [25 <./reducible_core.png>] [26]
+
+LaTeX Warning: Reference `prop:tailII' on page 27 undefined on input line 1243.
+
+
+[27] [28] [29] [30]
+
+LaTeX Warning: Reference `prop:tailII' on page 31 undefined on input line 1534.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+Underfull \vbox (badness 7685) has occurred while \output is active []
+
+ [32]
+<critical_step_v.png, id=638, 277.035pt x 357.335pt>
 File: critical_step_v.png Graphic file (type png)
  <use critical_step_v.png>
-Package pdftex.def Info: critical_step_v.png used on input line 1042.
+Package pdftex.def Info: critical_step_v.png used on input line 1569.
 (pdftex.def)             Requested size: 144.20691pt x 186.0061pt.
 
-<critical_step_ER_v.png, id=624, 285.065pt x 362.956pt>
+<critical_step_ER_v.png, id=639, 285.065pt x 362.956pt>
 File: critical_step_ER_v.png Graphic file (type png)
 
 <use critical_step_ER_v.png>
-Package pdftex.def Info: critical_step_ER_v.png used on input line 1047.
+Package pdftex.def Info: critical_step_ER_v.png used on input line 1574.
 (pdftex.def)             Requested size: 144.20691pt x 183.60977pt.
- [35 <./critical_step_v.png> <./critical_step_ER_v.png>] [36] [37] [38]
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
+ [33 <./critical_step_v.png> <./critical_step_ER_v.png>] [34] [35] (./modular_c
+ompactifications_of_M2n_compositio.bbl
+
+Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
+ on input line 5.
+
+[36] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-)
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1356
-.
+) [37]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 261.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [39]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 1449
+))
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 1983
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1074,27 +1449,31 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1449.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1449.
+) [38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1983.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1983.
 
 (./modular_compactifications_of_M2n_compositio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1449.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1449.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1983.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1983.
 
 Package rerunfilecheck Info: File `modular_compactifications_of_M2n_compositio.
 out' has not changed.
-(rerunfilecheck)             Checksum: B260ABC42A991246260E3EA2FEF263EC;812.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1449.
+(rerunfilecheck)             Checksum: F7B2485618D93E4C546B95335C6226F1;1054.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1983.
  ) 
 Here is how much of TeX's memory you used:
- 28128 strings out of 494901
- 535114 string characters out of 6179486
- 562401 words of memory out of 5000000
- 30726 multiletter control sequences out of 15000+600000
+ 41872 strings out of 494901
+ 966706 string characters out of 6179486
+ 1143293 words of memory out of 5000000
+ 44221 multiletter control sequences out of 15000+600000
  41168 words of font info for 129 fonts, out of 8000000 for 9000
  37 hyphenation exceptions out of 8191
- 56i,19n,82p,10419b,1017s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,103p,10419b,1146s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1141,11 +1520,11 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on modular_compactifications_of_M2n_compositio.pdf (40 pages, 89
-4124 bytes).
+Output written on modular_compactifications_of_M2n_compositio.pdf (38 pages, 83
+6102 bytes).
 PDF statistics:
- 1451 PDF objects out of 1728 (max. 8388607)
- 780 compressed objects within 8 object streams
- 228 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1470 PDF objects out of 1728 (max. 8388607)
+ 781 compressed objects within 8 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,352 @@
+\begin{thebibliography}{AFSvdW17}
+
+\bibitem[AFS16]{AFSGm}
+Jarod Alper, Maksym Fedorchuk, and David~Ishii Smyth.
+\newblock Singularities with {$\Bbb{G}_m$}-action and the log minimal model
+  program for {$\overline{\pazocal{M}}_g$}.
+\newblock {\em J. Reine Angew. Math.}, 721:1--41, 2016.
+
+\bibitem[AFS17a]{AFS2}
+Jarod Alper, Maksym Fedorchuk, and David~Ishii Smyth.
+\newblock Second flip in the {H}assett-{K}eel program: existence of good moduli
+  spaces.
+\newblock {\em Compos. Math.}, 153(8):1584--1609, 2017.
+
+\bibitem[AFS17b]{AFS3}
+Jarod Alper, Maksym Fedorchuk, and David~Ishii Smyth.
+\newblock Second flip in the {H}assett-{K}eel program: projectivity.
+\newblock {\em Int. Math. Res. Not. IMRN}, (24):7375--7419, 2017.
+
+\bibitem[AFSvdW17]{AFS1}
+Jarod Alper, Maksym Fedorchuk, David~Ishii Smyth, and Frederick van~der Wyck.
+\newblock Second flip in the {H}assett-{K}eel program: a local description.
+\newblock {\em Compos. Math.}, 153(8):1547--1583, 2017.
+
+\bibitem[AK70]{AK}
+Allen Altman and Steven Kleiman.
+\newblock {\em Introduction to {G}rothendieck duality theory}.
+\newblock Lecture Notes in Mathematics, Vol. 146. Springer-Verlag, Berlin-New
+  York, 1970.
+
+\bibitem[AK16]{AlperKresch}
+Jarod Alper and Andrew Kresch.
+\newblock Equivariant versal deformations of semistable curves.
+\newblock {\em Michigan Math. J.}, 65(2):227--250, 2016.
+
+\bibitem[Arn72]{Arnold}
+Vladimir~Igorevi\v{c} Arnol'd.
+\newblock Normal forms of functions near degenerate critical points, the {W}eyl
+  groups {$A_{k},D_{k},E_{k}$} and {L}agrangian singularities.
+\newblock {\em Funkcional. Anal. i Prilo\v{z}en.}, 6(4):3--25, 1972.
+
+\bibitem[BC20]{BC}
+Luca {Battistella} and Francesca {Carocci}.
+\newblock {A smooth compactification of the space of genus two curves in
+  projective space (via logarithmic geometry and Gorenstein curves)}.
+\newblock Aug 2020.
+\newblock In preparation.
+
+\bibitem[BCM18]{BCM}
+Luca {Battistella}, Francesca {Carocci}, and Cristina {Manolache}.
+\newblock {Reduced invariants from cuspidal maps}.
+\newblock {\em arXiv e-prints}, page arXiv:1801.07739, Jan 2018.
+
+\bibitem[BLR90]{BLR}
+Siegfried Bosch, Werner L\"{u}tkebohmert, and Michel Raynaud.
+\newblock {\em N\'{e}ron models}, volume~21 of {\em Ergebnisse der Mathematik
+  und ihrer Grenzgebiete (3) [Results in Mathematics and Related Areas (3)]}.
+\newblock Springer-Verlag, Berlin, 1990.
+
+\bibitem[BN07]{BakerNorine}
+Matthew Baker and Serguei Norine.
+\newblock Riemann-{R}och and {A}bel-{J}acobi theory on a finite graph.
+\newblock {\em Adv. Math.}, 215(2):766--788, 2007.
+
+\bibitem[Bog99]{Boggi}
+Marco Boggi.
+\newblock Compactifications of configurations of points on {${\Bbb P}^1$} and
+  quadratic transformations of projective space.
+\newblock {\em Indag. Math. (N.S.)}, 10(2):191--202, 1999.
+
+\bibitem[BS08]{BalSwi}
+Elizabeth Baldwin and David Swinarski.
+\newblock A geometric invariant theory construction of moduli spaces of stable
+  maps.
+\newblock {\em Int. Math. Res. Pap. IMRP}, (1):Art. ID rp. 004, 104, 2008.
+
+\bibitem[Cat82]{Catanese}
+Fabrizio Catanese.
+\newblock Pluricanonical-{G}orenstein-curves.
+\newblock In {\em Enumerative geometry and classical algebraic geometry
+  ({N}ice, 1981)}, volume~24 of {\em Progr. Math.}, pages 51--95.
+  Birkh\"{a}user Boston, Boston, MA, 1982.
+
+\bibitem[CML13]{C-ML}
+Sebastian Casalaina-Martin and Radu Laza.
+\newblock Simultaneous semi-stable reduction for curves with {ADE}
+  singularities.
+\newblock {\em Trans. Amer. Math. Soc.}, 365(5):2271--2295, 2013.
+
+\bibitem[CMR16]{CMR}
+Renzo Cavalieri, Hannah Markwig, and Dhruv Ranganathan.
+\newblock Tropicalizing the space of admissible covers.
+\newblock {\em Math. Ann.}, 364(3-4):1275--1313, 2016.
+
+\bibitem[CTV18]{CTV1}
+Giulio {Codogni}, Luca {Tasin}, and Filippo {Viviani}.
+\newblock {On the first steps of the minimal model program for the moduli space
+  of stable pointed curves}.
+\newblock {\em arXiv e-prints}, page arXiv:1808.00231, Aug 2018.
+
+\bibitem[CTV19]{CTV2}
+Giulio {Codogni}, Luca {Tasin}, and Filippo {Viviani}.
+\newblock {On some modular contractions of the moduli space of stable pointed
+  curves}.
+\newblock {\em arXiv e-prints}, page arXiv:1904.13212, Apr 2019.
+
+\bibitem[Cuk89]{Cukierman}
+Fernando Cukierman.
+\newblock Families of {W}eierstrass points.
+\newblock {\em Duke Math. J.}, 58(2):317--346, 1989.
+
+\bibitem[Deb01]{Debarre}
+Olivier Debarre.
+\newblock {\em Higher-dimensional algebraic geometry}.
+\newblock Universitext. Springer-Verlag, New York, 2001.
+
+\bibitem[Del85]{Deligne-Gabber}
+Pierre Deligne.
+\newblock Le lemme de {G}abber.
+\newblock {\em Ast\'{e}risque}, (127):131--150, 1985.
+\newblock Seminar on arithmetic bundles: the Mordell conjecture (Paris,
+  1983/84).
+
+\bibitem[Dem75]{Demazure}
+Michel Demazure.
+\newblock Classification des germes \`a point critique isol\'{e} et \`a nombres
+  de modules 0 ou 1 (d'apr\`es {V}. {I}. {A}rnol'd).
+\newblock pages 124--142. Lecture Notes in Math., Vol. 431, 1975.
+
+\bibitem[Dia85]{Diaz}
+Steven Diaz.
+\newblock Exceptional {W}eierstrass points and the divisor on moduli space that
+  they define.
+\newblock {\em Mem. Amer. Math. Soc.}, 56(327):iv+69, 1985.
+
+\bibitem[DM69]{DM}
+Pierre Deligne and David Mumford.
+\newblock The irreducibility of the space of curves of given genus.
+\newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (36):75--109, 1969.
+
+\bibitem[Fed14]{Fedorchuk-hyperellipticAD}
+Maksym Fedorchuk.
+\newblock Moduli spaces of hyperelliptic curves with {A} and {D} singularities.
+\newblock {\em Math. Z.}, 276(1-2):299--328, 2014.
+
+\bibitem[FG18]{FedorchukGrimes}
+Maksym {Fedorchuk} and Matthew {Grimes}.
+\newblock {VGIT presentation of the second flip of $\overline{M}_{2,1}$}.
+\newblock {\em arXiv e-prints}, page arXiv:1805.08581, May 2018.
+
+\bibitem[FS13]{FS}
+Maksym Fedorchuk and David~Ishii Smyth.
+\newblock Alternate compactifications of moduli spaces of curves.
+\newblock In {\em Handbook of moduli. {V}ol. {I}}, volume~24 of {\em Adv. Lect.
+  Math. (ALM)}, pages 331--413. Int. Press, Somerville, MA, 2013.
+
+\bibitem[Gie82]{Gieseker}
+David Gieseker.
+\newblock {\em Lectures on moduli of curves}, volume~69 of {\em Tata Institute
+  of Fundamental Research Lectures on Mathematics and Physics}.
+\newblock Published for the Tata Institute of Fundamental Research, Bombay;
+  Springer-Verlag, Berlin-New York, 1982.
+
+\bibitem[{Hal}14]{DHLinstability}
+Daniel {Halpern-Leistner}.
+\newblock {On the structure of instability in moduli theory}.
+\newblock {\em arXiv e-prints}, page arXiv:1411.0627, Nov 2014.
+
+\bibitem[Has03]{Hassettweighted}
+Brendan Hassett.
+\newblock Moduli spaces of weighted pointed stable curves.
+\newblock {\em Adv. Math.}, 173(2):316--352, 2003.
+
+\bibitem[Has05]{Hassettg2}
+Brendan Hassett.
+\newblock Classical and minimal models of the moduli space of curves of genus
+  two.
+\newblock In {\em Geometric methods in algebra and number theory}, volume 235
+  of {\em Progr. Math.}, pages 169--192. Birkh\"{a}user Boston, Boston, MA,
+  2005.
+
+\bibitem[HH13]{HassettHyeon}
+Brendan Hassett and Donghoon Hyeon.
+\newblock Log minimal model program for the moduli space of stable curves: the
+  first flip.
+\newblock {\em Ann. of Math. (2)}, 177(3):911--968, 2013.
+
+\bibitem[HL07]{HL-tricanonical}
+Donghoon Hyeon and Yongnam Lee.
+\newblock Stability of tri-canonical curves of genus two.
+\newblock {\em Math. Ann.}, 337(2):479--488, 2007.
+
+\bibitem[HL14]{HL-birational_contraction}
+Donghoon Hyeon and Yongnam Lee.
+\newblock A birational contraction of genus 2 tails in the moduli space of
+  genus 4 curves {I}.
+\newblock {\em Int. Math. Res. Not. IMRN}, (13):3735--3757, 2014.
+
+\bibitem[HLN12]{HLN}
+Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
+\newblock {Genus Two Stable Maps, Local Equations and Modular Resolutions}.
+\newblock {\em arXiv e-prints}, page arXiv:1201.2427, Jan 2012.
+
+\bibitem[HM82]{HarrisMumford}
+Joe Harris and David Mumford.
+\newblock On the {K}odaira dimension of the moduli space of curves.
+\newblock {\em Invent. Math.}, 67(1):23--88, 1982.
+\newblock With an appendix by William Fulton.
+
+\bibitem[HM98]{HM}
+Joe Harris and Ian Morrison.
+\newblock {\em Moduli of curves}, volume 187 of {\em Graduate Texts in
+  Mathematics}.
+\newblock Springer-Verlag, New York, 1998.
+
+\bibitem[JP18]{PolishchukJohnson}
+Drew {Johnson} and Alexander {Polishchuk}.
+\newblock {Birational models of $\overline{M}_{2,2}$ arising as moduli of
+  curves with nonspecial divisors}.
+\newblock {\em arXiv e-prints}, page arXiv:1807.09746, Jul 2018.
+
+\bibitem[Kee99]{Keel-bpf}
+Se\'{a}n Keel.
+\newblock Basepoint freeness for nef and big line bundles in positive
+  characteristic.
+\newblock {\em Ann. of Math. (2)}, 149(1):253--286, 1999.
+
+\bibitem[KM97]{KM}
+Se\'{a}n Keel and Shigefumi Mori.
+\newblock Quotients by groupoids.
+\newblock {\em Ann. of Math. (2)}, 145(1):193--213, 1997.
+
+\bibitem[Knu83]{Knudsen}
+Finn~F. Knudsen.
+\newblock The projectivity of the moduli space of stable curves. {II}. {T}he
+  stacks {$M_{g,n}$}.
+\newblock {\em Math. Scand.}, 52(2):161--199, 1983.
+
+\bibitem[LP17]{Lekili-Polishchuk}
+Yankı Lekili and Alexander Polishchuk.
+\newblock A modular compactification of $\pazocal{M}_{1,n}$ from
+  $\pazocal{A}_{\infty}$ structures.
+\newblock {\em J. Reine Angew. Math.}, 2017.
+
+\bibitem[LZ09]{LZ}
+Jun Li and Aleksey Zinger.
+\newblock On the genus-one {G}romov-{W}itten invariants of complete
+  intersections.
+\newblock {\em J. Differential Geom.}, 82(3):641--690, 2009.
+
+\bibitem[MFK94]{GIT}
+David Mumford, John Fogarty, and Frances Kirwan.
+\newblock {\em Geometric invariant theory}, volume~34 of {\em Ergebnisse der
+  Mathematik und ihrer Grenzgebiete (2) [Results in Mathematics and Related
+  Areas (2)]}.
+\newblock Springer-Verlag, Berlin, third edition, 1994.
+
+\bibitem[{Mor}11]{Morrison}
+Ian {Morrison}.
+\newblock {Mori theory of moduli spaces of stable curves}.
+\newblock \url{http://www.projectivepress.com/moduli/moristablecurves.pdf},
+  2011.
+
+\bibitem[Pan99]{Pandha}
+Rahul Pandharipande.
+\newblock Hodge integrals and degenerate contributions.
+\newblock {\em Comm. Math. Phys.}, 208(2):489--506, 1999.
+
+\bibitem[{Pol}15]{Polishchuk-nonspecial}
+Alexander {Polishchuk}.
+\newblock {Moduli of curves with nonspecial divisors and relative moduli of
+  $\pazocal A_\infty$-structures}.
+\newblock {\em arXiv e-prints}, page arXiv:1511.03797, Nov 2015.
+
+\bibitem[RSW17a]{RSPW1}
+Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
+\newblock {Moduli of stable maps in genus one and logarithmic geometry I}.
+\newblock {\em arXiv e-prints}, page arXiv:1708.02359, August 2017.
+
+\bibitem[RSW17b]{RSPW2}
+Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
+\newblock {Moduli of stable maps in genus one and logarithmic geometry II}.
+\newblock {\em arXiv e-prints}, page arXiv:1709.00490, September 2017.
+
+\bibitem[Rul01]{Rulla}
+William~F. Rulla.
+\newblock {\em The birational geometry of $\overline{M}_{2,1}$ and
+  $\overline{M}_3$}.
+\newblock PhD thesis, University of Texas at Austin, 2001.
+
+\bibitem[Sch91]{Schubert}
+David Schubert.
+\newblock A new compactification of the moduli space of curves.
+\newblock {\em Compositio Math.}, 78(3):297--313, 1991.
+
+\bibitem[Smy11a]{SMY1}
+David~Ishii Smyth.
+\newblock {Modular compactifications of the space of pointed elliptic curves
+  {I}}.
+\newblock {\em Compos. Math.}, 147(3):877--913, 2011.
+
+\bibitem[Smy11b]{SMY2}
+David~Ishii Smyth.
+\newblock {Modular compactifications of the space of pointed elliptic curves
+  {II}}.
+\newblock {\em Compos. Math.}, 147(6):1843--1884, 2011.
+
+\bibitem[Smy13]{SMY-towards}
+David~Ishii Smyth.
+\newblock Towards a classification of modular compactifications of
+  {$\pazocal{M}_{g,n}$}.
+\newblock {\em Invent. Math.}, 192(2):459--503, 2013.
+
+\bibitem[Smy18]{SMY3}
+David~Ishii Smyth.
+\newblock {Intersections of psi-classes on moduli spaces of m-stable curves}.
+\newblock {\em arXiv e-prints}, page arXiv:1808.03214, Aug 2018.
+
+\bibitem[{Sta}19]{stacks-project}
+The {Stacks Project Authors}.
+\newblock \textit{Stacks Project}.
+\newblock \url{https://stacks.math.columbia.edu}, 2019.
+
+\bibitem[Ste96]{Stev}
+Jan Stevens.
+\newblock On the classification of reducible curve singularities.
+\newblock In {\em Algebraic geometry and singularities ({L}a {R}\'{a}bida,
+  1991)}, volume 134 of {\em Progr. Math.}, pages 383--407. Birkh\"{a}user,
+  Basel, 1996.
+
+\bibitem[vdW10]{vdW}
+Frederick van~der Wyck.
+\newblock {\em Moduli of singular curves and crimping}.
+\newblock PhD thesis, Harvard University, 2010.
+
+\bibitem[Vis12]{VISC}
+Michael Viscardi.
+\newblock {Alternate compactifications of the moduli space of genus one maps}.
+\newblock {\em Manuscripta Math.}, 139(1-2):201--236, 2012.
+
+\bibitem[VZ08]{VZ}
+Ravi Vakil and Aleksey Zinger.
+\newblock {A desingularization of the main component of the moduli space of
+  genus-one stable maps into {$\mathbb P^n$}}.
+\newblock {\em Geom. Topol.}, 12(1):1--95, 2008.
+
+\bibitem[Zin09]{Zingerred}
+Aleksey Zinger.
+\newblock Reduced genus-one {G}romov-{W}itten invariants.
+\newblock {\em J. Differential Geom.}, 83(2):407--460, 2009.
+
+\end{thebibliography}

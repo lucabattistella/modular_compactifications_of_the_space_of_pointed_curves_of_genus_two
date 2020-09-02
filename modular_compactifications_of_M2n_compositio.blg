@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: modular_compactifications_of_M2n_compositio.aux
+The style file: alpha.bst
+Database file #1: genus_two.bib
+Warning--there's a number but no volume in AFS3
+Warning--empty journal in BC
+Warning--there's a number but no volume in BalSwi
+Warning--there's a number but no volume in Deligne-Gabber
+Warning--empty journal in Demazure
+Warning--there's a number but no volume in DM
+Warning--there's a number but no volume in HL-birational_contraction
+You've used 61 entries,
+            2543 wiz_defined-function locations,
+            978 strings with 13385 characters,
+and the built_in function-call counts, 27032 in all, are:
+= -- 2929
+> -- 924
+< -- 53
++ -- 302
+- -- 292
+* -- 1755
+:= -- 4006
+add.period$ -- 192
+call.type$ -- 61
+change.case$ -- 344
+chr.to.int$ -- 58
+cite$ -- 68
+duplicate$ -- 1301
+empty$ -- 1954
+format.name$ -- 381
+if$ -- 5842
+int.to.chr$ -- 4
+int.to.str$ -- 0
+missing$ -- 63
+newline$ -- 311
+num.names$ -- 183
+pop$ -- 298
+preamble$ -- 1
+purify$ -- 412
+quote$ -- 0
+skip$ -- 1262
+stack$ -- 0
+substring$ -- 1892
+swap$ -- 477
+text.length$ -- 53
+text.prefix$ -- 28
+top$ -- 0
+type$ -- 464
+warning$ -- 7
+while$ -- 244
+width$ -- 67
+write$ -- 804
+(There were 7 warnings)
