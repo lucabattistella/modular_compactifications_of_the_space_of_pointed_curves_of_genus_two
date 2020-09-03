@@ -144,7 +144,7 @@ hobby,quotes,angles,decorations.pathreplacing,intersections,shapes}
 %\dedication{A dedication can be included here.}
 \classification{14H10 (primary), 14H20 (secondary).}
 \keywords{moduli of curves, Gorenstein singularities, genus two, crimping spaces}
-\thanks{This project grew out of discussions with Francesca Carocci, whom I thank heartily. I am grateful to Daniele Agostini, Fabio Bernasconi, Maria Beatrice Pozzetti, and Luca Tasin for helpful conversations. I thank the Max Planck Institute for Mathematics in Bonn for providing financial support and a stimulating research environment. During the revision of this paper, I was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy EXC-2181/1 - 390900948 (the Heidelberg STRUCTURES Cluster of Excellence). I thank the anonymous referee for his careful reading and detailed suggestions that helped improving the exposition of this material.}
+\thanks{This project grew out of discussions with Francesca Carocci, whom I thank heartily. I am grateful to Daniele Agostini, Fabio Bernasconi, Sebastian Bozlee, Maria Beatrice Pozzetti, Dhruv Ranganathan, Luca Tasin, and Jonathan Wise for helpful conversations. I thank the anonymous referee, whose quick response and precise sugestions greatly helped improving the exposition of this material. I thank the Max Planck Institute for Mathematics in Bonn for providing financial support and a stimulating research environment. During the revision of this paper, I was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany’s Excellence Strategy EXC-2181/1 - 390900948 (the Heidelberg STRUCTURES Cluster of Excellence).}
 
 \begin{abstract}
 \setstretch{1.1}{
@@ -802,13 +802,13 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 		 
 		 \coordinate (D) at  (5,4.5,0); 
 		 \coordinate (Dd) at (5.5,5.5,0); %need for case 4
-		\coordinate (D1) at  (5,4,0);%need for case 3
-		\coordinate (D2) at  (5,3.6,0);%need for case 3
+		\coordinate (D1) at  (5,4,-.5);%need for case 3
+		\coordinate (D2) at  (5,4,0);%need for case 3
 		
-		\coordinate (Ew) at (6.5,5,6);
+		\coordinate (Ew) at (6.5,5,7);
 		\coordinate (Ee) at (6.5,3.8,0);%need for case 3
 		\coordinate (E) at (6.5,2,0); 
-         \coordinate (E1) at (6.5,2.5,0); %need for NW
+         \coordinate (E1) at (6.5,3,-.5); %need for NW
          \coordinate (E2) at ( 6.5,3,0); %need for NW
       %coordinate target
       	\coordinate (At) at (0,1,0);
@@ -817,7 +817,7 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 		\coordinate (Dt) at  (5,1,0);
 		\coordinate (Et) at (6.5,1,0); 
 		\coordinate (Ddt) at (5.5,1,0); %need for 4
-		\coordinate (Ewt) at (6.5,1,6);); %need for case 4
+		\coordinate (Ewt) at (6.5,1,7);); %need for case 4
 		\coordinate (BMt) at (7,1,0);;%need for case 5
       %coordinate markings
       
@@ -837,7 +837,7 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
         \coordinate (TM6) at (7.2,1,1.6); %need in 5
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       
-      %dumbbell 1
+      %dumbbell 2
       
       % arrow source
       \draw (A) to [out=130,in=50] (B);
@@ -881,27 +881,28 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
       \foreach \x in {A,B,C,D,At,Bt,Ct,Dt,Et}
    \fill (\x) circle (3pt);
      	\fill[red] (E) circle (3pt);
-
+     	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%dumbbell 2
+%dumbbell 1
 
-\begin{scope}[every coordinate/.style={shift={(0,7,0)}}]
+\begin{scope}[every coordinate/.style={shift={(0,9,0)}}]
 
 % arrow source
        \draw ([c]A) to [out=130,in=50] ([c]B);
       \draw ([c]A) to [out=-130,in=-50] ([c]B);
        \draw[->-] ([c]C)--([c]B);
-      \draw[->-] ([c]D) to [out=70,in=70]([c]C);
-      \draw[->-] ([c]D) to [out=-110,in=-110]([c]C);
-       \draw[->-] ([c]E1)--([c]D);
-       \draw[->-] ([c]E2)--([c]D);
+      \draw[->-] ([c]D1) to [out=90,in=0]([c]C);
+      \draw[->-] ([c]D2) to [out=-180,in=-90]([c]C);
+       \draw[->-] ([c]E1)--([c]D1);
+       \draw[->-] ([c]E2)--([c]D2);
+       \draw ([c]D1) -- ([c]D2);
          
         %arrow target
-        \draw[->-] ([c]Et)--([c]Dt);
-        \draw[->-] ([c]Dt)--([c]Ct);
-        \draw[->-] ([c]Ct)--([c]Bt);
-        \draw ([c]Bt)--([c]At);
+        \draw[->-] ([c]Et)--node[above] {\small{$2$}}([c]Dt);
+        \draw[->-] ([c]Dt)--node[above] {\small{$1$}}([c]Ct);
+        \draw[->-] ([c]Ct)--node[above] {\small{$\frac{1}{2}$}}([c]Bt);
+        \draw ([c]Bt)--node[above] {\small{0}}([c]At);
                 
 
         % Branch points
@@ -912,66 +913,6 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 		\draw[blue] ([c]Dt)--([c]P5);
 		\draw[blue] ([c]Dt)--([c]Q6);
 		
-		%slopes
-\node at (1,8,0) [above] {\small{0}};
-\node at (2.75,8,0) [above] {\small{$\frac{1}{2}$}};
-\node at (4.25,8,0) [above] {\small{$1$}};
-\node at (5.75,8,0) [above] {\small{$2$}};
-
-       %admissible cover
-       
-       \draw[dashed] ([c]A)--([c]At);
-        \draw[dashed] ([c]B)--([c]Bt);
-       \draw[dashed] ([c]C)--([c]Ct);
-       \draw[dashed] ([c]D)--([c]Dt);
-        \draw[dashed] ([c]E1)--([c]Et);
-        \draw[dashed] ([c]E2)--([c]Et);
-
-
-      
-      \foreach \x in {A,B,C,D,At,Bt,Ct,Dt,Et}
-   \fill ([c]\x) circle (3pt);
-     	\fill[red] ([c]E1) circle (3pt);
-     		\fill[red] ([c]E2) circle (3pt);
-\end{scope}
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%dumbbell 3
-
-
-\begin{scope}[every coordinate/.style={shift={(0,-7,0)}}]
-
-% arrow source
-     \draw ([c]A) to [out=130,in=50] ([c]B);
-      \draw ([c]A) to [out=-130,in=-50] ([c]B);
-      \draw[->-] ([c]C)--([c]B);
-      \draw[->-] ([c]D1) to [out=70,in=70]([c]C);
-      \draw[->-] ([c]D2) to [out=-110,in=-110]([c]C);
-      \draw ([c]Ee) to [out=110,in=180]([c]D1);
-      \draw ([c]Ee) to [out=-110,in=-180]([c]D2);
-         
-         
-        %arrow target
-        \draw ([c]Et)--([c]Dt);
-        \draw[->-] ([c]Dt)--([c]Ct);
-        \draw[->-] ([c]Ct)--([c]Bt);
-        \draw ([c]Bt)--([c]At);
-                
-
-        % Branch points
-		\draw[blue] ([c]At)--([c]P1);
-		\draw[blue] ([c]At)--([c]P2);
-		\draw[blue] ([c]Bt)--([c]P3);
-		\draw[blue] ([c]Ct)--([c]P4);
-		%\draw[blue] ([c]Dt)--([c]P5);
-		\draw[blue] ([c]Et)--([c]P6);
-	    \draw[blue] ([c]Et)--([c]Pp6);
-		
-		%slopes
-\node at (1,-6,0) [above] {\small{0}};
-\node at (2.75,-6,0) [above] {\small{$\frac{1}{2}$}};
-\node at (4.25,-6,0) [above] {\small{$1$}};
-\node at (5.75,-6,0) [above] {\small{$0$}};
 
        %admissible cover
        
@@ -979,92 +920,42 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
         \draw[dashed] ([c]B)--([c]Bt);
        \draw[dashed] ([c]C)--([c]Ct);
        \draw[dashed] ([c]D1)--([c]Dt);
-        \draw[dashed] ([c]D2)--([c]Dt);
-        \draw[dashed] ([c]Ee)--([c]Et);
+       \draw[dashed] ([c]D2)--([c]Dt);
+        \draw[dashed] ([c]E1)--([c]Et);
+        \draw[dashed] ([c]E2)--([c]Et);
 
 
       
-      \foreach \x in {A,B,C,Ee,At,Bt,Ct,Dt,Et}
+      \foreach \x in {A,B,C,D1,D2,At,Bt,Ct,Dt,Et}
    \fill ([c]\x) circle (3pt);
-     	\fill[red] ([c]D1) circle (3pt);
-     		\fill[red] ([c]D2) circle (3pt);
+     	\fill[red] ([c]E1) circle (3pt);
+     		\fill[red] ([c]E2) circle (3pt);
 \end{scope}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Pair of glasses 4
-
-\begin{scope}[every coordinate/.style={shift={(0,-14,0)}}]
-
-% arrow source
-     \draw ([c]A) to [out=130,in=50] ([c]B);
-      \draw ([c]A) to [out=-130,in=-50] ([c]B);
-    \draw[->-] ([c]C)--([c]B);
-      \draw ([c]C) to [out=130,in=50]([c]Dd);
-      \draw([c]C) to [out=-130,in=-50]([c]Dd);
-      \draw[->-] ([c]Ew) -- ([c]C);
-     
-         
-         
-        %arrow target
-        \draw [->-] ([c]Ewt)--([c]Ct);
-        \draw ([c]Ddt)--([c]Ct);
-        \draw[->-] ([c]Ct)--([c]Bt);
-        \draw ([c]Bt)--([c]At);
-                
-
-        % Branch points
-		\draw[blue] ([c]At)--([c]P1);
-		\draw[blue] ([c]At)--([c]P2);
-		\draw[blue] ([c]Bt)--([c]P3);
-		%\draw[blue] ([c]Ct)--([c]P4);
-		\draw[blue] ([c]Ddt)--([c]P5);
-		\draw[blue] ([c]Ddt)--([c]Q6);
-		\draw[blue] ([c]Ewt)--([c]T6);
-		
-		
-		%slopes
-\node at (1,-13,0) [above] {\small{0}};
-\node at (2.75,-13,0) [above] {\small{$\frac{1}{2}$}};
-\node at (4.5,-13,0) [above] {\small{$0$}};
-\node at (4.9,-13,3) [left] {\small{$\frac{3}{2}$}};
-
-       %admissible cover
-       
-       \draw[dashed] ([c]A)--([c]At);
-        \draw[dashed] ([c]B)--([c]Bt);
-       \draw[dashed] ([c]C)--([c]Ct);
-       \draw[dashed] ([c]Dd)--([c]Ddt);
-     \draw[dashed] ([c]Ew)--([c]Ewt);
-
-
-      
-      \foreach \x in {A,B,C,Dd,At,Bt,Ct,Ddt,Ewt}
-   \fill ([c]\x) circle (3pt);
-     	\fill[red] ([c]Ew) circle (3pt);
-     		
-\end{scope}
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
- % pair of glasses 5 (last)
+ % dumbbell 3 (last)
  
- \begin{scope}[every coordinate/.style={shift={(0,-23,0)}}]
+ \begin{scope}[every coordinate/.style={shift={(0,-9,0)}}]
 
 % arrow source
        \draw ([c]A) to [out=130,in=50] ([c]B);
       \draw ([c]A) to [out=-130,in=-50] ([c]B);
        \draw[->-] ([c]CM)--([c]B);
+       \draw[->-] ([c]Ew)--([c]CM);
         \draw[->-] ([c]CM)--([c]AM);
       \draw ([c]AM) to [out=130,in=50] ([c]BM);
       \draw ([c]AM) to [out=-130,in=-50] ([c]BM);
       
       %arrow target
-        \draw ([c]At)--([c]Bt);
-        \draw[->-] ([c]Ct)--([c]Dt);
-        \draw[->-] ([c]Ct)--([c]Bt);
-        \draw ([c]Dt)--([c]BMt);
+        \draw ([c]At)--node[above] {\small{$0$}}([c]Bt);
+        \draw[->-] ([c]Ct)--node[above] {\small{$\frac{1}{2}$}}([c]Dt);
+        \draw[->-] ([c]Ewt)--node[left]{\small$\frac{3}{2}$}([c]Ct);
+        \draw[->-] ([c]Ct)--node[above] {\small{$\frac{1}{2}$}}([c]Bt);
+        \draw ([c]Dt)--node[above] {\small{$0$}}([c]BMt);
         
-        
+        	
          % Branch points
 		\draw[blue] ([c]At)--([c]P1);
 		\draw[blue] ([c]At)--([c]P2);
@@ -1073,25 +964,22 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 		\draw[blue] ([c]BMt)--([c]QM6);
 		\draw[blue] ([c]BMt)--([c]TM6);
 		
-        
-        \foreach \x in {A,B,AM,BM,At,Bt,Ct,Dt,BMt}
-   \fill ([c]\x) circle (3pt);
-     	\fill[red] ([c]CM) circle (3pt);
-                
+  
       %admissible cover
        
        \draw[dashed] ([c]A)--([c]At);
         \draw[dashed] ([c]B)--([c]Bt);
        \draw[dashed] ([c]CM)--([c]Ct);
+       \draw[dashed] ([c]Ew)--([c]Ewt);
        \draw[dashed] ([c]AM)--([c]Dt);
      \draw[dashed] ([c]BM)--([c]BMt);
      
+           
+        \foreach \x in {A,B,AM,BM,At,Bt,Ct,Dt,BMt,CM,Ewt}
+   \fill ([c]\x) circle (3pt);
+     	\fill[red] ([c]Ew) circle (3pt);
+                
      
-     	%slopes
-\node at (1,-22,0) [above] {\small{0}};
-\node at (2.75,-22,0) [above] {\small{$\frac{1}{2}$}};
-\node at (4.5,-22,0) [above] {\small{$\frac{1}{2}$}};
-\node at (6,-22,0) [above] {\small{$0$}};
 
     \end{scope}
 
@@ -1108,8 +996,9 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 %Theta graph case
 \coordinate (Cc) at (0,0.5,0); %need for Weierstrass
 \coordinate (C1) at (0,1,0);
-\coordinate (C2) at (0,1.5,0);
+\coordinate (C1b) at (0,1,-.8);
 \coordinate (A1) at (1.5,3,0);
+\coordinate (A1b) at (1.5,3,-.8);
 
 %3rd theta type
 \coordinate (G) at (0.2,2.75,0);
@@ -1117,10 +1006,10 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 \coordinate(F2) at (2,2.5,0);
 % 4th Theta Graph 
 \coordinate (A14) at (1.2,4,0);
-\coordinate (H1) at (3.5,2.7,4);
+\coordinate (H1) at (3.5,2.2,3.2);
 \coordinate (H2) at (3.5,2.2,4);
 
-\coordinate (B1) at (3.5,4.2,0);
+\coordinate (B1) at (3.5,3.7,-.8);
 \coordinate (B2) at (3.5,3.7,0);
 \coordinate (A2) at (8,5,7);
 \coordinate (A3) at (5.8,3.9,0);
@@ -1154,13 +1043,14 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 
 
 
-\begin{scope}[every coordinate/.style={shift={(10,8,0)}}]
+\begin{scope}[every coordinate/.style={shift={(10,10,0)}}]
 
 %%%%% theta 1
 
+\draw[->-] ([c]C1b)--([c]A1b);
 \draw[->-] ([c]C1)--([c]A1);
-\draw[->-] ([c]C2)--([c]A1);
-\draw[->-] ([c]A1) to [out=110,in=150] ([c]B1);
+\draw ([c]A1) -- ([c]A1b);
+\draw[->-] ([c]A1b) to [out=70,in=150] ([c]B1);
 \draw[->-] ([c]A1) to [out=-70,in=-70] ([c]B2);
 %\draw ([c]B1)--([c]A3M1);
 %\draw ([c]B2)--([c]A3);
@@ -1171,10 +1061,10 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 \draw ([c]B2) to [out=-50,in=-100] ([c]A2);
 %%%%%%%%%%%%%%%%%%%%%
      		%target
-\draw[->-] ([c]C1t)--([c]A1t);
-\draw[->-] ([c]A1t)--([c]B1t);
-\draw ([c]B1t)--([c]A2t);
-\draw ([c]B1t)--([c]A3t);
+\draw[->-] ([c]C1t)--node[above] {\small{$2$}}([c]A1t);
+\draw[->-] ([c]A1t)--node[above] {\small{$1$}}([c]B1t);
+\draw ([c]B1t)--node[right] {\small{$0$}}([c]A2t);
+\draw ([c]B1t)--node[above] {\small{$0$}}([c]A3t);
 
 %branched points
 
@@ -1185,43 +1075,36 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 		\draw[blue] ([c]A3t)--([c]Q5);
 		\draw[blue] ([c]A3t)--([c]Q61);
 
-\foreach \x in {A1,A2,A3,B1,B2,C1t,A1t,B1t,A2t,A3t}
-   \fill ([c]\x) circle (3pt);
- 
-     		
-     		
-     			%slopes
-\node at (10.75,8,0) [above] {\small{2}};
-\node at (12.5,8,0) [above] {\small{$1$}};
-\node at (15.35,8,3) [right] {\small{$0$}};
-\node at (14.5,8,0) [above] {\small{$0$}};
-
 
  %admissible cover
        
        \draw[dashed] ([c]C1)--([c]C1t);
-        \draw[dashed] ([c]C2)--([c]C1t);
+        \draw[dashed] ([c]C1b)--([c]C1t);
        \draw[dashed] ([c]A1)--([c]A1t);
+       \draw[dashed] ([c]A1b)--([c]A1t);
        \draw[dashed] ([c]B1)--([c]B1t);
         \draw[dashed] ([c]B2)--([c]B1t);
         \draw[dashed] ([c]A2)--([c]A2t);
         \draw[dashed] ([c]A3)--([c]A3t);
 
+        
+\foreach \x in {A1,A1b,A2,A3,B1,B2,C1t,A1t,B1t,A2t,A3t}
+   \fill ([c]\x) circle (3pt);
 
   \fill[red] ([c]C1) circle (3pt);
-    \fill[red] ([c]C2) circle (3pt);
+    \fill[red] ([c]C1b) circle (3pt);
      		
 
 \end{scope}
 
 
-\begin{scope}[every coordinate/.style={shift={(10,-1,0)}}]
+\begin{scope}[every coordinate/.style={shift={(10,1,0)}}]
 
 %%%%% theta 2
 
 %\draw[->-] ([c]C1)--([c]A1);
 \draw[->-] ([c]Cc)--([c]A1);
-\draw[->-] ([c]A1) to [out=110,in=150] ([c]B1);
+\draw[->-] ([c]A1) to [out=70,in=150] ([c]B1);
 \draw[->-] ([c]A1) to [out=-70,in=-70] ([c]B2);
 
 \draw ([c]B1) to [out=10,in=150] ([c]A3);
@@ -1238,11 +1121,12 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 %\draw ([c]B2) to [out=-100,in=-80] ([c]A2);
 %%%%%%%%%%%%%%%%%%%%%
      		%target
-\draw[->-] ([c]C1t)--([c]A1t);
-\draw[->-] ([c]A1t)--([c]B1t);
-\draw ([c]B1t)--([c]A2t);
-\draw ([c]B1t)--([c]A3t);
+\draw[->-] ([c]C1t)--node[above] {\small{$\frac{3}{2}$}}([c]A1t);
+\draw[->-] ([c]A1t)--node[above] {\small{$1$}}([c]B1t);
+\draw ([c]B1t)--node[right] {\small{$0$}}([c]A2t);
+\draw ([c]B1t)--node[above] {\small{$0$}}([c]A3t);
 
+     		
 %branched points
 
 		\draw[blue] ([c]A1t)--([c]Q1);
@@ -1256,14 +1140,7 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
    \fill ([c]\x) circle (3pt);
   
      		%\fill[red] ([c]C2) circle (3pt);
-     		
-     		
-     		
-     			%slopes
-\node at (10.75,-1,0) [above] {\small{$\frac{3}{2}$}};
-\node at (12.5,-1,0) [above] {\small{$1$}};
-\node at (15.35,-1,3) [right] {\small{$0$}};
-\node at (14.5,-1,0) [above] {\small{$0$}};
+     	
 
 
  %admissible cover
@@ -1282,69 +1159,12 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 
 
 
-\begin{scope}[every coordinate/.style={shift={(10,-10,0)}}]
-
-%%% theta 3
-
-\draw ([c]F1) to [out=0,in=70] ([c]G);
-\draw ([c]F2) to [out=0,in=-70] ([c]G);
-\draw[->-] ([c]F1) to  ([c]B1);
-\draw[->-] ([c]F2) to  ([c]B2);
-\draw ([c]B1) to [out=10,in=150] ([c]A3);
-\draw ([c]B2) to [out=-10,in=-150] ([c]A3);
-
-\draw ([c]B1) to [out=-40,in=110] ([c]A2);
-\draw ([c]B2) to [out=-50,in=-100] ([c]A2);
-
-%%%%%%%%%%%%%%%%%%%%%
-     		%target
-\draw ([c]Gt)--([c]Ft);
-\draw[->-] ([c]Ft)--([c]B1t);
-\draw ([c]B1t)--([c]A2t);
-\draw ([c]B1t)--([c]A3t);
-
-%branched points
-
-		\draw[blue] ([c]Gt)--([c]Q1);
-		\draw[blue] ([c]Gt)--([c]Q2);
-		\draw[blue] ([c]A2t)--([c]Q3);
-		\draw[blue] ([c]A2t)--([c]Q4);
-		\draw[blue] ([c]A3t)--([c]Q5);
-		\draw[blue] ([c]A3t)--([c]Q61);
-
-\foreach \x in {G,A2,A3,B1,B2,Gt,Ft,B1t,A2t,A3t}
-   \fill ([c]\x) circle (3pt);
-     		%\fill[red] ([c]C2) circle (3pt);
-     		
-     		
-     		
-     			%slopes
-\node at (11,-10,0) [above] {\small{$0$}};
-\node at (13,-10,0) [above] {\small{$1$}};
-\node at (15.35,-10,3) [right] {\small{$0$}};
-\node at (14.5,-10,0) [above] {\small{$0$}};
-
-
- %admissible cover
-       
-       \draw[dashed] ([c]G)--([c]Gt);
-        %\draw[dashed] ([c]C2)--([c]C1t);
-       \draw[dashed] ([c]F1)--([c]Ft);
-       \draw[dashed] ([c]F2)--([c]Ft);
-        \draw[dashed] ([c]B2)--([c]B1t);
-        \draw[dashed] ([c]A2)--([c]A2t);
-        \draw[dashed] ([c]A3)--([c]A3t);
-        
- 
-   \fill[red] ([c]F1) circle (3pt);
-   \fill[red] ([c]F2) circle (3pt);
-\end{scope}
 
 
 
-\begin{scope}[every coordinate/.style={shift={(10,-19,0)}}]
+\begin{scope}[every coordinate/.style={shift={(10,-8,0)}}]
 
-%%%% theta 4 (last)
+%%%% theta 3 (last)
 
 \draw ([c]B1) to [out=170,in=30] ([c]A14);
 \draw ([c]B2) to [out=190,in=-30] ([c]A14);
@@ -1359,10 +1179,10 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 
 %%%%%%%%%%%%%%%%%%%%%
      		%target
-\draw ([c]A14t)--([c]B1t);
-\draw[->-] ([c]H1t)--([c]B1t);
-\draw ([c]B1t)--([c]A2t);
-\draw ([c]B1t)--([c]A3t);
+\draw ([c]A14t)--node[above] {\small{$0$}}([c]B1t);
+\draw[->-] ([c]H1t)--node[right] {\small{$2$}}([c]B1t);
+\draw ([c]B1t)--node[right] {\small{$0$}}([c]A2t);
+\draw ([c]B1t)--node[above] {\small{$0$}}([c]A3t);
 
 %branched points
 
@@ -1380,11 +1200,6 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
      		
      		
      		
-     			%slopes
-\node at (12.5,-19,0) [above] {\small{$0$}};
-\node at (13.25,-19.5,2) [right] {\small{$2$}};
-\node at (15.35,-19,3) [right] {\small{$0$}};
-\node at (14.5,-19,0) [above] {\small{$0$}};
 
 
  %admissible cover
@@ -1403,7 +1218,7 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
 \end{scope}
 \end{tikzpicture}
 	%\end{minipage}
-\caption{Admissible functions on maximally degenerated tropical hyperelliptic curves: the dumbbell (l), and the theta graph (r).}
+\caption{Tropicalization of semistable tails with maximally degenerated core: the dumbbell (l), and the theta graph (r). The red vertices correspond to the special branches.}
 \label{fig:admredcores}
 \end{figure}
 %\clearpage
@@ -1418,12 +1233,10 @@ Notice that $\tropT$ is decorated with six unlabelled legs corresponding to the 
  \end{enumerate}
 \end{prop}
 
-\begin{prop}\label{prop:contractionI}
- Let $(\mathcal C,p_1,\ldots,p_n)\to\dvr$ be a family of pointed semistable curves of arithmetic genus two such that $\mathcal C$ has regular total space and smooth generic fibre, and $(\mathcal C,p_1)\to \Delta$ is Weierstrass. Let $(Z,q_1,\ldots,q_m)$ be a genus two subcurve of $\mathcal C_0$ containing none of the $p_i(0)$, marked by $Z\cap \overline{\mathcal C_0\setminus Z}$ so that the tail containing $p_1$ is attached to $Z$ at $q_m$, and satisfying all the shape prescriptions of Proposition \ref{prop:tailI}(2). There exists a contraction $\phi\colon\mathcal C\to\overline{\mathcal C}$ over $\dvr$, with exceptional locus $Z$, such that $\overline{\mathcal C}\to\dvr$ is a family of Gorenstein curves containing a type $I_m$ singularity in the central fibre.
-\end{prop}
+Viceversa, every such genus two subcurve can be contracted to a Gorenstein singularity.
 
-\begin{prop}\label{prop:contractionII}
- Same as above with $(\mathcal C,p_1,\bar p_1)\to \Delta$ conjugate, $(Z,q_1,\ldots,q_m)$ shaped as prescribed by Proposition \ref{prop:tailII}(2), $q_1,q_m$ corresponding to the branches containing $p_1,\bar p_1$ respectively. The resulting $\overline{\mathcal C}\to\dvr$ contains a type $I\!I_m$ singularity in the central fibre.
+\begin{prop}\label{prop:contractionI}
+ Let $(\mathcal C,p_1,\ldots,p_n)\to\dvr$ be a family of pointed semistable curves of arithmetic genus two such that $\mathcal C$ has regular total space and smooth generic fibre, and $(\mathcal C,p_1)\to \Delta$ is Weierstrass (resp. $(\mathcal C,p_1,\bar p_1)\to \Delta$ is conjugate). Let $(Z,q_1,\ldots,q_m)$ be a genus two subcurve of $\mathcal C_0$ containing none of the $p_i(0)$, marked by $Z\cap \overline{\mathcal C_0\setminus Z}$ so that the tail containing $p_1$ is attached to $Z$ at $q_m$ (resp. the tails containing $p_1$ and $\bar p_1$ are attached to $Z$ at $q_1$ and $q_m$), and satisfying all the shape prescriptions above. There exists a contraction $\phi\colon\mathcal C\to\overline{\mathcal C}$ over $\dvr$, with exceptional locus $Z$, such that $\overline{\mathcal C}\to\dvr$ is a family of Gorenstein curves containing a type $I_m$ (resp. type $I\!I_m$) singularity in the central fibre.
 \end{prop}
 
 \begin{comment}
@@ -1586,15 +1399,15 @@ When the special trees cleave to a rational component $R$, solving the balancing
 \end{comment}
 
 \begin{proof}(of Proposition \ref{prop:contractionI})
- By blowing down some rational tails outside $Z$, we can assume that $\mathcal C_0\setminus Z=\sqcup_{i=1}^m T_i$ with each $T_i\simeq\PP^1$. The image of $p_i(0)$ and $p_j(0)$ might now coincide for $i\neq j$. The total space of the curve can still be assumed to be smooth. By abuse of notation, we denote the resulting family of pointed curves by $(\mathcal C,p_1,\ldots,p_n)$. By assumption on the shape of $Z$, we can find an effective Cartier $D$ supported on $Z$ such that $\mathcal L=\omega_{\mathcal C/\dvr}(D+\sum p_i)$ is trivial on $Z$ and relatively ample elsewhere (both on $T_i$ and on the generic fibre). Consider a second line bundle $\mathcal L^\prime=\OO(2p_1+\sum p_i)$. Since we assumed $p_1$ to be Weierstrass, $\mathcal L_\eta\simeq\mathcal L^\prime_\eta$. On the other hand it is easy to see that the multi-degrees of $\mathcal L_0$ and $\mathcal L^\prime_0$ coincide, as $Z$ is unmarked and each rational tail is isomorphic to $\PP^1$; it follows from the separatedness of $\Pic^0_{\mathcal C/\dvr}\to\dvr$ (see \cite[p. 136]{Deligne-Gabber} or \cite[\S 9.4]{BLR}) that $\mathcal L$ and $\mathcal L^\prime$ are isomorphic line bundles, so that, in particular, $\mathcal L$ is trivial \emph{on a neighbourhood of $Z$}. Observe now that 
- \[R^1\pi_*\mathcal L(-D)= R^1\pi_*\omega_{\mathcal C/\dvr}(\sum p_i)=0\]
- by semistability, hence $\pi_*\mathcal L\twoheadrightarrow \pi_*(\mathcal L_{|D})=\pi_*\OO_D$, which contains the constants, showing that $\mathcal L$ is semiample along $Z$; that it is along the $T_i$ is easier.
+ By blowing down some rational tails outside $Z$, we can assume that $\mathcal C_0\setminus Z=\sqcup_{i=1}^m T_i$ with each $T_i\simeq\PP^1$. The image of $p_i(0)$ and $p_j(0)$ might now coincide for $i\neq j$. The total space of the curve can still be assumed to be smooth by the Castelnuovo criterion. By abuse of notation, we denote the resulting family of pointed curves by $(\mathcal C,p_1,\ldots,p_n)$. By assumption on the shape of $Z$, we can find an effective Cartier $\pazocal Z$ supported on $Z$ such that $\mathcal L=\omega_{\mathcal C/\dvr}(\pazocal Z+\sum p_i)$ is trivial on $Z$ and relatively ample elsewhere (both on $T_i$ and on the generic fibre). Consider a second line bundle $\mathcal L^\prime=\OO(2p_1+\sum p_i)$ (resp. $\OO(p_1+\bar p_1+\sum p_i)$). Since we assumed $p_1$ to be Weierstrass (resp. $p_1$ and $\bar p_1$ to be conjugate), $\mathcal L_\eta\simeq\mathcal L^\prime_\eta$. On the other hand it is easy to see that the multi-degrees of $\mathcal L_0$ and $\mathcal L^\prime_0$ coincide, as $Z$ is unmarked and each rational tail is isomorphic to $\PP^1$; it follows from the separatedness of $\Pic^0_{\mathcal C/\dvr}\to\dvr$ (see \cite[p. 136]{Deligne-Gabber} or \cite[\S 9.4]{BLR}) that $\mathcal L$ and $\mathcal L^\prime$ are isomorphic line bundles, so that, in particular, $\mathcal L$ is trivial \emph{on a neighbourhood of $Z$}. Observe now that 
+ \[R^1\pi_*\mathcal L(-{\pazocal Z})= R^1\pi_*\omega_{\mathcal C/\dvr}(\sum p_i)=0\]
+ by semistability, hence $\pi_*\mathcal L\twoheadrightarrow \pi_*(\mathcal L_{|{\pazocal Z}})=\pi_*\OO_{\pazocal Z}$, which contains the constants, showing that $\mathcal L$ is semiample along $Z$; that it is along the $T_i$ is easier.
  
  We therefore have a well-defined  morphism:
  \[\mathcal C\xrightarrow{\phi}\overline{\mathcal C}=\underline{\operatorname{Proj}}_\dvr\left(\bigoplus_{n\geq 0}\pi_*\mathcal L^{\otimes n}\right)\to\dvr\]
- associated to $\mathcal L$. The proof that $\overline{\mathcal C}\to \dvr$ is a flat family of Gorenstein curves goes along the lines of \cite[Lemma 2.13]{SMY1} or \cite[Proposition 3.7.3.1]{RSPW1}. It is the clear from the classification that it contains a type $I_m$-singularity.
+ associated to $\mathcal L$. The proof that $\overline{\mathcal C}\to \dvr$ is a flat family of Gorenstein curves goes along the lines of \cite[Lemma 2.13]{SMY1} or \cite[Proposition 3.7.3.1]{RSPW1}. It is then clear from the classification that it contains a type $I_m$ (resp. $I\!I_m$) singularity.
  
- The proof of Proposition \ref{prop:contractionII} is entirely analogous.
+ %The proof of Proposition \ref{prop:contractionII} is entirely analogous.
 \end{proof}
 
 \begin{rem}
@@ -1603,7 +1416,9 @@ When the special trees cleave to a rational component $R$, solving the balancing
 
 \begin{caveat} Given a family of semistable curves $\pi\colon\mathcal C\to\dvr$ over a discrete valuation ring, and a line bundle $\mathcal L$ on $\mathcal C$ that is trivial on a higher genus subcurve $Z$ of $\mathcal C_0$ and $\pi$-ample elsewhere, is $\mathcal L$ $\pi$-semiample? is it relatively generated by global sections? In positive characteristic, a positive answer follows from results of S. Keel \cite{Keel-bpf}. If $\operatorname{char}(\k)=0$, the answer depends on the family; in particular, the assumption that the total space of $\mathcal C$ is regular along $Z$ seems to be relevant. We construct a counterexample using the theory of limit linear series (l.l.s.): we produce a linear series that can be smoothed while having basepoints along a Weierstrass tail.\footnote{It was pointed out by F. Carocci that a similar computation can be carried out for a genus one tail as well. This shows that the regularity assumption of \cite[Lemma 2.13]{SMY1} is necessary.} For any such smoothing, the corresponding line bundle $\mathcal L$ is not globally generated along $Z$ - though we do not know how powers of $\mathcal L$ behave, so we cannot conclude that $\mathcal L$ is not semiample.
  
- Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the l.l.s. has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. Notice that in the case at hand we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially, i.e. the locus in $\operatorname{Gr}(1,\PP^3)$ of lines meeting a fixed line $\ell$, which is a Schubert cycle of dimension $3$. We therefore need to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fibre of $X$ over $q\in Z$.
+ Let $X_0$ be the nodal curve obtained by attaching $R\simeq\PP^1$ to a Weierstrass point $q$ of a smooth genus two curve $Z$. Choose $d\gg 0$ ($d\geq5$ is enough), and let us study the moduli space of complete linear systems of degree $d$ on (smoothings of) $X_0$; with $r=d-2$, the Brill-Noether number is $\rho=2$ (the dimension of the Jacobian). On the other hand, assume that the $R$-aspect of the l.l.s. has $\mathcal L_{Y|Z}\simeq\OO_Z$; then the $Z$-aspect has $\mathcal L_{Z|Z}\simeq\OO_Z(dq)$, whose vanishing sequence is $\alpha_Z(q)=\{0,1,\ldots,d-5,d-4,d-2,d\}$, from which we deduce for the complementary aspect $\alpha_R(q)\geq\{0,2,4,5,\ldots,d-1,d\}$. We want to show that all such aspects are smoothable, by appealing to the Regeneration Theorem \cite[Theorem 5.41]{HM}. If $t$ denotes a coordinate on $R$ near the node, we have a choice of a two-dimensional subspace of $\langle 1,t,t^2,t^3\rangle_\k\subseteq H^0(\PP^1,\OO_{\PP^1}(d))$ meeting the subspace $\langle t^2,t^3\rangle_\k$ non-trivially; this can be described as the locus of lines in $\operatorname{Gr}(1,\PP^3)$ meeting a fixed line $\ell$: a Schubert cycle of dimension $3$. The Regeneration Theorem needs:
+ \[\dim(\pazocal G^r_d(X/B))=\dim(B)+\rho.\]
+ We therefore have to put $X_0$ in a family over a base $B$ of dimension $1$ at least.  We shall do so by considering the family $X$ obtained by attaching $R$ to a moving point of $Z$, so that $X_0$ is the fibre of $X$ over $q\in Z$.
  
  Let us start by examining the other possibilities for $\mathcal G^{d-2}_d(X_0)$: the $R$-aspect can in fact restrict to any line bundle of degree $0$ on $Z$, which we are going to write as $\OO_Z(p_1+p_2-2q)$ for two moving points $p_1,p_2$ on $Z$ (think of them as coordinates on $\Pic(Z)$). Then $\mathcal L_Z=\OO_Z((d-2)q+p_1+p_2)$.
  

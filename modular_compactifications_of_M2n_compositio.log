@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  2 SEP 2020 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  3 SEP 2020 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1397,37 +1397,39 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
- [25 <./reducible_core.png>] [26]
-
-LaTeX Warning: Reference `prop:tailII' on page 27 undefined on input line 1243.
-
-
-[27] [28] [29] [30]
+ [25 <./reducible_core.png>] [26] [27] [28]
+[29] [30]
 
 LaTeX Warning: Reference `prop:tailII' on page 31 undefined on input line 1534.
 
 
+[31]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `prop:contractionII' on page 32 undefined on input lin
+e 1550.
 
- [31]
+
 Underfull \vbox (badness 7685) has occurred while \output is active []
 
  [32]
-<critical_step_v.png, id=638, 277.035pt x 357.335pt>
+<critical_step_v.png, id=634, 277.035pt x 357.335pt>
 File: critical_step_v.png Graphic file (type png)
  <use critical_step_v.png>
 Package pdftex.def Info: critical_step_v.png used on input line 1569.
 (pdftex.def)             Requested size: 144.20691pt x 186.0061pt.
 
-<critical_step_ER_v.png, id=639, 285.065pt x 362.956pt>
+<critical_step_ER_v.png, id=635, 285.065pt x 362.956pt>
 File: critical_step_ER_v.png Graphic file (type png)
 
 <use critical_step_ER_v.png>
 Package pdftex.def Info: critical_step_ER_v.png used on input line 1574.
 (pdftex.def)             Requested size: 144.20691pt x 183.60977pt.
- [33 <./critical_step_v.png> <./critical_step_ER_v.png>] [34] [35] (./modular_c
-ompactifications_of_M2n_compositio.bbl
+ [33 <./critical_step_v.png> <./critical_step_ER_v.png>]
+
+LaTeX Warning: Reference `prop:contractionII' on page 34 undefined on input lin
+e 1612.
+
+[34] [35] (./modular_compactifications_of_M2n_compositio.bbl
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
  on input line 5.
@@ -1467,11 +1469,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1983.
  ) 
 Here is how much of TeX's memory you used:
- 41872 strings out of 494901
- 966706 string characters out of 6179486
- 1143293 words of memory out of 5000000
+ 41874 strings out of 494901
+ 966716 string characters out of 6179486
+ 1143320 words of memory out of 5000000
  44221 multiletter control sequences out of 15000+600000
- 41168 words of font info for 129 fonts, out of 8000000 for 9000
+ 42341 words of font info for 132 fonts, out of 8000000 for 9000
  37 hyphenation exceptions out of 8191
  56i,19n,103p,10419b,1146s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
@@ -1521,10 +1523,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
 Output written on modular_compactifications_of_M2n_compositio.pdf (38 pages, 83
-6102 bytes).
+7084 bytes).
 PDF statistics:
- 1470 PDF objects out of 1728 (max. 8388607)
- 781 compressed objects within 8 object streams
- 227 named destinations out of 1000 (max. 500000)
+ 1465 PDF objects out of 1728 (max. 8388607)
+ 776 compressed objects within 8 object streams
+ 226 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
