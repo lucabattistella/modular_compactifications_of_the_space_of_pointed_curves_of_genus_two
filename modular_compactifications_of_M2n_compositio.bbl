@@ -42,14 +42,14 @@ Vladimir~Igorevi\v{c} Arnol'd.
 \bibitem[BC20]{BC}
 Luca {Battistella} and Francesca {Carocci}.
 \newblock {A smooth compactification of the space of genus two curves in
-  projective space (via logarithmic geometry and Gorenstein curves)}.
-\newblock Aug 2020.
-\newblock In preparation.
+  projective space via logarithmic geometry and Gorenstein curves}.
+\newblock {\em arXiv e-prints}, page arXiv:2008.13506, August 2020.
 
 \bibitem[BCM18]{BCM}
 Luca {Battistella}, Francesca {Carocci}, and Cristina {Manolache}.
 \newblock {Reduced invariants from cuspidal maps}.
 \newblock {\em arXiv e-prints}, page arXiv:1801.07739, Jan 2018.
+\newblock To appear in \emph{Trans. Amer. Math. Soc.}
 
 \bibitem[BLR90]{BLR}
 Siegfried Bosch, Werner L\"{u}tkebohmert, and Michel Raynaud.
@@ -196,10 +196,10 @@ Donghoon Hyeon and Yongnam Lee.
   genus 4 curves {I}.
 \newblock {\em Int. Math. Res. Not. IMRN}, (13):3735--3757, 2014.
 
-\bibitem[HLN12]{HLN}
+\bibitem[HLN18]{HLN}
 Yi~{Hu}, Jun {Li}, and Jingchen {Niu}.
 \newblock {Genus Two Stable Maps, Local Equations and Modular Resolutions}.
-\newblock {\em arXiv e-prints}, page arXiv:1201.2427, Jan 2012.
+\newblock {\em arXiv e-prints}, page arXiv:1201.2427v3, Nov 2018.
 
 \bibitem[HM82]{HarrisMumford}
 Joe Harris and David Mumford.
@@ -235,6 +235,14 @@ Finn~F. Knudsen.
 \newblock The projectivity of the moduli space of stable curves. {II}. {T}he
   stacks {$M_{g,n}$}.
 \newblock {\em Math. Scand.}, 52(2):161--199, 1983.
+
+\bibitem[Kol96]{Kollar-rational}
+J\'{a}nos Koll\'{a}r.
+\newblock {\em Rational curves on algebraic varieties}, volume~32 of {\em
+  Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of
+  Modern Surveys in Mathematics [Results in Mathematics and Related Areas. 3rd
+  Series. A Series of Modern Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 1996.
 
 \bibitem[LP17]{Lekili-Polishchuk}
 Yankı Lekili and Alexander Polishchuk.
@@ -272,15 +280,15 @@ Alexander {Polishchuk}.
   $\pazocal A_\infty$-structures}.
 \newblock {\em arXiv e-prints}, page arXiv:1511.03797, Nov 2015.
 
-\bibitem[RSW17a]{RSPW1}
-Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
-\newblock {Moduli of stable maps in genus one and logarithmic geometry I}.
-\newblock {\em arXiv e-prints}, page arXiv:1708.02359, August 2017.
+\bibitem[RSPW19a]{RSPW1}
+Dhruv Ranganathan, Keli Santos-Parker, and Jonathan Wise.
+\newblock Moduli of stable maps in genus one and logarithmic geometry, {I}.
+\newblock {\em Geom. Topol.}, 23(7):3315--3366, 2019.
 
-\bibitem[RSW17b]{RSPW2}
-Dhruv {Ranganathan}, Keli {Santos-Parker}, and Jonathan {Wise}.
-\newblock {Moduli of stable maps in genus one and logarithmic geometry II}.
-\newblock {\em arXiv e-prints}, page arXiv:1709.00490, September 2017.
+\bibitem[RSPW19b]{RSPW2}
+Dhruv Ranganathan, Keli Santos-Parker, and Jonathan Wise.
+\newblock Moduli of stable maps in genus one and logarithmic geometry, {II}.
+\newblock {\em Algebra Number Theory}, 13(8):1765--1805, 2019.
 
 \bibitem[Rul01]{Rulla}
 William~F. Rulla.
@@ -316,10 +324,10 @@ David~Ishii Smyth.
 \newblock {Intersections of psi-classes on moduli spaces of m-stable curves}.
 \newblock {\em arXiv e-prints}, page arXiv:1808.03214, Aug 2018.
 
-\bibitem[{Sta}19]{stacks-project}
+\bibitem[{Sta}20]{stacks-project}
 The {Stacks Project Authors}.
 \newblock \textit{Stacks Project}.
-\newblock \url{https://stacks.math.columbia.edu}, 2019.
+\newblock \url{https://stacks.math.columbia.edu}, 2020.
 
 \bibitem[Ste96]{Stev}
 Jan Stevens.

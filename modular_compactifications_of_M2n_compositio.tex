@@ -465,13 +465,6 @@ We gather a description of the dualising line bundle in the following:
                                                                                                                                   \end{enumerate}
 \end{cor}
 
-\begin{rem}
- Singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and vice versa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
- \begin{thm}\label{thm:ADE}
-  Let $(C,q)$ be a curve singularity of ADE type. The singularities appearing in the miniversal deformation of $(C,q)$ are all and only the ADE singularities whose Dynkin diagram can be obtained as a full subgraph of the Dynkin diagram of $(C,q)$.
- \end{thm}
-\end{rem}
-
 
 \section{Tangent sheaf, crimping space, and automorphisms}\label{sec:crimp}
 In this section we analyse the tangent sheaf of a genus two singularity. For a complete pointed Gorenstein curve of genus two, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial criterion. We will use this in Section \ref{sec:stability}, when we define stability conditions on the stack of pointed Gorenstein curves of genus two, to make sure that the resulting substacks are Deligne-Mumford. The crimping space naturally makes an appearance. Although we do not use it explicitly in this paper, it parametrises singularities of a given type and pointed normalisation. It helps understanding the birational map between two compactifications of $\pazocal{M}_{2,n}$.
@@ -559,7 +552,7 @@ The quotient is then isomorphic to $\binom{m}{2}$ copies of $\Aaff^1\times(\Aaff
 \end{proof}
 
 
-\begin{rem}
+\begin{rem}\label{rem:characteristic}
  The restrictions on the characteristic of the base field in Lemmas \ref{lem:aut} and \ref{lem:crimping} rule out the sporadic occurrence of infinite families of automorphisms, and its effect on the crimping spaces. For example, when $\operatorname{char}(\k)=2$, the singularities $\k[\![t^2,t^5]\!]$ and $\k[\![t^2+t^3,t^4,t^5]\!]$ are not isomorphic, the group of infinitesimal automorphisms has positive dimension, and the crimping space consists of an isolated point \cite[Examples 1.79-80]{vdW}.
 \end{rem}
 
@@ -636,7 +629,7 @@ Finally, we shall rephrase the finiteness of automorphism groups explicitly in t
 \end{definition}
 
 \begin{cor}\label{cor:explicitnoaut}
- Let $(C,p_1\ldots,p_n)$ be a Gorenstein pointed curve of arithmetic genus two. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
+ Let $(C,p_1\ldots,p_n)$ be a Gorenstein pointed curve of arithmetic genus two over a field of characteristic $\neq2,3$. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
  \begin{enumerate}[leftmargin=.6cm]
   \item $C$ has a singularity of type $I_{m\geq 1}$: either all branches contain exactly one special point and $C$ is the non-atom; or each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
   \item $C$ has a singularity of type $I\!I_{m\geq 2}$: either all branches contain exactly one special point and $C$ is the non-atom; or at least one of its twin branches contains a special point, each of its axes contains at least one, and at least one branch has at least two. Furthermore $C$ is rDM.
@@ -692,8 +685,8 @@ In the case at hand, the answer turns out to be slightly more complicated: first
 
 We provide a similar description of minimal curves of genus two; the proof is left to the reader.
 \begin{lem}\label{lem:min2}
- A minimal Gorenstein curve of arithmetic genus two can be either:
- \begin{enumerate}
+ A minimal Gorenstein curve of genus two can be either of the following (Figure \ref{fig:minimalcurves}):
+ \begin{enumerate}[label=(\alph*)]
   \item a smooth curve of genus two;
   \item the union of two minimal Gorenstein curves of genus one, $E_1$ and $E_2$, nodally separated by a (possibly empty) rational chain $R$;
   \item the union of a minimal Gorenstein curve of genus one $E$, and a (possibly empty) rational chain $R$, along two distinct nodes;
@@ -701,8 +694,16 @@ We provide a similar description of minimal curves of genus two; the proof is le
   \item\label{case:twice1} an elliptic $m$-fold point whose pointed normalisation is the disjoint union of either $m-2$ copies of $(\PP^1,0)$ and a semistable rational chain $(R,0,\infty)$, or $m-1$ copies of $(\PP^1,0)$ and a $1$-pointed minimal Gorenstein curve of genus one (if the latter is not irreducible and $m\neq 1$, there are two genus one subcurves sharing a rational branch);
   \item\label{case:2} or a singularity of genus two with $m$-branches, whose normalisation is the disjoint union of $m$ copies of $\PP^1$.
  \end{enumerate}
-
 \end{lem}
+
+\begin{center}
+ \begin{figure}
+  \includegraphics[width=\textwidth]{minimalcurves}
+  \caption{Minimal curves of genus two.}
+\label{fig:minimalcurves}
+ \end{figure}
+\end{center}
+
 
 \begin{rem}\label{rem:special}
 In both cases \eqref{case:twice1} and \eqref{case:2} there are \emph{special} branches supporting the degree of $\omega_Z$ (compare with Definition \ref{def:special_branches} and Corollary \ref{cor:deg_dualising}; recall that the restriction of the dualising sheaf to a component introduces a twist by the conductor ideal, see Noether's formula \cite[Proposition 1.2]{Catanese}). Notice that the notion of conjugate points is not always intrinsic to the curve.
@@ -1410,7 +1411,7 @@ When the special trees cleave to a rational component $R$, solving the balancing
  %The proof of Proposition \ref{prop:contractionII} is entirely analogous.
 \end{proof}
 
-\begin{rem}
+\begin{rem}\label{rem:smoothable_sing}
  It follows that genus two Gorenstein singularities are smoothable.
 \end{rem}
 
@@ -1449,12 +1450,11 @@ We construct a counterexample using the theory of limit linear series (l.l.s.): 
 
 
 \section{The new moduli functors}\label{sec:stability}
-The following is a slight generalisation of \cite[Definition 3.4]{SMY1}.
+The idea is to replace subcurves of positive genus with isolated singularities, the number of special points on the former bounding the number of branches of the latter. The following is a slight generalisation of \cite[Definition 3.4]{SMY1}.
 \begin{definition}
  Let $(C,p_1,\ldots,p_n)$ be a reduced curve, marked by smooth points. For a nodally attached subcurve $D\subseteq C$, we define its \emph{level} as \[ \lev(D)=\lvert D\cap\overline{C\setminus D}\rvert+\lvert\{p_1,\ldots,p_n\}\cap D\rvert.\]
 \end{definition}
 In what follows, we impose a level condition only on nodally attached curves, hence we may remain agnostic as to how components attached along worse-than-nodal singularities should be counted towards the level.
-
 
 We omit the proof of the following lemma; compare with \cite[Corollary 3.2, Lemma 3.5]{SMY1}.
 \begin{lem}
@@ -1464,6 +1464,15 @@ We omit the proof of the following lemma; compare with \cite[Corollary 3.2, Lemm
 \begin{definition}
 We say that a point \emph{cleaves} to a component of a curve if it is connected to it by a possibly empty chain of rational curves. 
 \end{definition}
+
+
+\begin{rem}
+ Singularities of genus zero and one appear in the miniversal family of singularities of genus two. Also, singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and viceversa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
+ \begin{thm}\label{thm:ADE}
+  Let $(C,q)$ be a curve singularity of ADE type. The singularities appearing in the miniversal deformation of $(C,q)$ are all and only the ADE singularities whose Dynkin diagram can be obtained as a full subgraph of the Dynkin diagram of $(C,q)$.
+ \end{thm}
+\end{rem}
+
 
 We finally come to the definition of $m$-stability for curves of genus two.
 \begin{definition}\label{def:m-stability}
@@ -1478,7 +1487,7 @@ We finally come to the definition of $m$-stability for curves of genus two.
 \end{definition}
 
 \begin{rem}
- The definition is not $\mathfrak{S}_n$-symmetric. In the argument below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, sometimes depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special). We also use refer to $p_1$ when deciding which genus one subcurve to contract first in case there are two of the same level.
+ The definition is not $\mathfrak{S}_n$-symmetric. In the argument below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, sometimes depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special). We also refer to $p_1$ when deciding which genus one subcurve to contract first in case there are two of the same level.
 \end{rem}
 
 \begin{rem}\label{rmk:lev1solev2}
@@ -1486,7 +1495,25 @@ We finally come to the definition of $m$-stability for curves of genus two.
 \end{rem}
 
 
-\begin{lem}[boundedness]
+We are going to prove the following:
+\begin{thm}
+ For $1\leq m <n$, the moduli stack of $n$-pointed $m$-stable curves of genus two $\oM_{2,n}^{(m)}$ is a proper Deligne-Mumford stack of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$ - containing $\pazocal M_{2,n}$ as a dense open substack, and therefore irreducible.
+\end{thm}
+\begin{proof}
+ \begin{enumerate}
+  \item-\emph{Algebraicity (diagonal).} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is representable, quasicompact, and of finite type.} Since $m$-stable curves are canonically polarised, it follows from Grothendieck's theory of Hilbert schemes that the \emph{Iso}-functor between two $m$-stable curves over $S$ is representable by a quasiprojective scheme over $S$.
+  
+  \item-\emph{Algebraicity (atlas) \& irreducibility.} \emph{There exists an irreducible scheme $H$, of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, with a smooth and surjective morphism $H\to \oM_{2,n}^{(m)}$.} Fix an integer $N>2+8(m+1)$; let $d=N(2+n)$ and $r=d-2$. By Lemma \ref{lem:boundedness} below, every $n$-pointed $m$-stable curve over a field $\k$ admits a pluri-log-canonical embedding of degree $d$ in $\PP^r$. Let $H_0$ denote the Hilbert scheme of degree $d$, genus two curves in $\PP^r$. Let $H_1\subseteq H_0\times(\PP^r)^{\times n}$ denote the locally closed subscheme consisting of $([C],p_1,\ldots,p_n)$ such that every $p_i$ belongs to the smooth locus of $C$; this is open in the incidence variety. By Lemma \ref{lem:defop} below, there is an open subscheme $H_2\subseteq H_1$ parametrising $m$-stable curves (note that $H_1$ is of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, and in particular Noetherian). By the representability of the Picard sheme \cite[Proposition 5.1]{GIT}, there is a locally closed subscheme $H\subseteq H_2$ representing $([C],p_1,\ldots,p_n)$ such that $\OO_C(1)=(\omega_C(\sum_{i=1}^np_i)^N$. Now there is a morphism $H\to \oM_{2,n}^{(m)}$ that is surjective by construction, and smooth because two different embeddings of an $m$-stable curve differ by the choice of a basis of $H^0(C,(\omega_C(\sum_{i=1}^np_i)^N)$. Since every $m$-stable curve is smoothable (Remark \ref{rem:smoothable_sing} and \cite[II.6.3]{Kollar-rational}), $H$ is irreducible.
+  
+  \item-\emph{DM.} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is unramified.} It is enough to show that, for an $m$-stable curve $(C,p_1,\ldots,p_n)$ over a field $\k$, the \emph{Iso}-group scheme $\operatorname{Aut}_{\k}(C,p_1,\ldots,p_n)$ is unramified. Its tangent space at the identity can be identified with the vector space $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))$, which vanishes by Definition \ref{def:m-stability}\ref{cond:aut}. Note that we need the assumption on the base characteristic in order to translate this vanishing into a combinatorial criterion on the pointed normalisation and singularity type of the curves (Corollary \ref{cor:explicitnoaut}).
+  
+  \item-\emph{Properness.} Follows from the valuative criterion (Proposition \ref{prop:valcrit}).
+ \end{enumerate}
+
+\end{proof}
+
+
+\begin{lem}[(boundedness)]\label{lem:boundedness}
  If $(C,p_1,\ldots,p_n)$ is an $m$-stable curve of genus two, the $N$-th power of $A=\omega_C(\sum_{i=1}^np_i)$ is very ample for every $N>2+8(m+1)$.
 \end{lem}
 \begin{proof}
@@ -1495,10 +1522,10 @@ We finally come to the definition of $m$-stability for curves of genus two.
   \item \emph{basepoint-freeness}: $H^1(C,A^{\otimes N}\otimes I_p)=0$;
   \item \emph{separating points and tangent vectors}: $H^1(C,A^{\otimes N}\otimes I_pI_q)=0$.
  \end{enumerate}
-By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\otimes(I_pI_q)^\vee)=0$. Let $\nu\colon\tilde C\to C$ be the normalisation, and let $\nu^{-1}(p)=\{p_1,\ldots,p_h\}$, $\nu^{-1}(q)=\{q_1,\ldots,q_k\}$, with $h,k\leq m+1$. It follows from Proposition \ref{prop:classification} (and \cite[Proposition A.3]{SMY1}) that $\nu_*\OO_{\tilde C}(-D)\subseteq I_pI_q$ for $D=4(\sum_{i=1}^hp_i+\sum_{j=1}^kq_j)$ (note that $\deg(D)\leq 8(m+1)$); furthermore, the quotient is torsion, therefore, by applying $\hhom(-,\OO_C)$ and adjunction, we find $(I_pI_q)^\vee\subseteq\nu_*\OO_{\tilde C}(D)$. It is thus enough to show that $H^0(\tilde C,\OO_{\tilde C}(D)\otimes\nu^*(\omega_C\otimes A^{-N}))=0$. Finally, $\nu^*\omega_C$ has degree at most two, and $\nu^*A$ has degree at least one on any branch of $\tilde C$, hence it is enough to take $N>2+8(m+1)$.
+By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\otimes(I_pI_q)^\vee)=0$. Let $\nu\colon\tilde C\to C$ be the normalisation, and let $\nu^{-1}(p)=\{p_1,\ldots,p_h\}$, $\nu^{-1}(q)=\{q_1,\ldots,q_k\}$, with $h,k\leq m+1$. It follows from Proposition \ref{prop:classification} (and \cite[Proposition A.3]{SMY1}) that $\nu_*\OO_{\tilde C}(-D)\subseteq I_pI_q$ for $D=4(\sum_{i=1}^hp_i+\sum_{j=1}^kq_j)$ (note that $\deg(D)\leq 8(m+1)$); furthermore, the quotient is torsion, therefore, by applying $\hhom(-,\OO_C)$, we find $(I_pI_q)^\vee\subseteq\nu_*\OO_{\tilde C}(D)$. It is thus enough to show that $H^0(\tilde C,\OO_{\tilde C}(D)\otimes\nu^*(\omega_C\otimes A^{-N}))=0$. Finally, $\nu^*\omega_C$ (resp. $\nu^*A$) has degree at most two (resp. at least one) on each component of $\tilde C$, hence it is enough to take $N>2+8(m+1)$.
 \end{proof}
 
-\begin{lem}[deformation openness]
+\begin{lem}[(deformation openness)]\label{lem:defop}
  Let $(\mathcal C,\sigma_1,\ldots,\sigma_n)\to S$ be a family of curves over a Noetherian base scheme with $n$ sections. The locus \[\{s\in S|(\mathcal C_{\bar s},\sigma_1(\bar s),\ldots,\sigma_n(\bar s)) \text{ is } m\text{-stable}\}\] is Zariski-open in $S$.
 \end{lem}
 \begin{proof}
@@ -1510,20 +1537,14 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
  
  Condition \eqref{cond:aut} translates to: the locus where the automorphism group is unramified is open in the base. Homogeneity can be used to prove that being unramified, which is open in the source, is also open in the target, for the structural morphism of a group scheme; see the end of the proof of \cite[Lemma 3.10]{SMY1}.
  
- The other conditions are topological, hence constructible. With Noetherian assumptions, it is enough to check their openness over the spectrum of a discrete valuation ring. Assume that the geometric generic fibre $C_{\bar\eta}$ contains two genus one subcurve $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$; their closures $E_1$ and $E_2$ in $\mathcal C$ are then flat families of genus one curves over $\dvr$. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are disconnected, then so are $E_1$ and $E_2$, by local constancy of the number of connected components (from the Zariski decomposition and \cite[\href{https://stacks.math.columbia.edu/tag/0E0D}{Tag 0E0D}]{stacks-project}). If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are joined by a disconnecting node $q_{\bar\eta}$, then so are $E_{1,0}$ and $E_{2,0}$; indeed, the unique limit of $q_{\bar\eta}$ must be a singular point of the projection, but cannot be any worse than a node (because we have already used up all of our genus allowance). Finally, if $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ share a branch, then so do $E_{1,0}$ and $E_{2,0}$; on the other hand, if $E_{i,\bar\eta}$ has more than one branch, then so does $E_i$. Similarly, if $C_{\bar\eta}$ contains only one subcurve of genus one, with two nodes joined by a rational chain, so does $C_0$. To summarise,
+ The other conditions are topological, hence constructible. Under Noetherian assumptions, it is enough to check their openness over the spectrum of a discrete valuation ring. Assume that the geometric generic fibre $C_{\bar\eta}$ contains two genus one subcurves $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$; their closures $E_1$ and $E_2$ in $\mathcal C$ are then flat families of genus one curves over $\dvr$. If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are disconnected, then so are $E_1$ and $E_2$, by local constancy of the number of connected components (from the Zariski decomposition and \cite[\href{https://stacks.math.columbia.edu/tag/0E0D}{Tag 0E0D}]{stacks-project}). If $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ are joined by a disconnecting node $q_{\bar\eta}$, then so are $E_{1,0}$ and $E_{2,0}$; indeed, the unique limit of $q_{\bar\eta}$ must be a singular point of the projection, but cannot be any worse than a node (because we have already used up all of our genus allowance). Finally, if $E_{1,\bar\eta}$ and $E_{2,\bar\eta}$ share a branch, then so do $E_{1,0}$ and $E_{2,0}$; on the other hand, if $E_{i,\bar\eta}$ has more than one branch, then so does $E_i$. Similarly, if $C_{\bar\eta}$ contains only one subcurve of genus one, with two nodes joined by a rational chain, so does $C_0$. To summarise,
  \[\lvert E_{i,\bar\eta}\cap\overline{C_{\bar\eta}\setminus E_{i,\bar\eta}}\rvert=\lvert E_{i,0}\cap\overline{C_{0}\setminus E_{i,0}}\rvert.\]
  The number of markings on $E_i$ is also constant. Hence we can deduce condition \eqref{cond:lev1} for $C_{\bar\eta}$ from the same condition on $C_0$. Condition \eqref{cond:lev2} follows in this case from Remark \ref{rmk:lev1solev2}; it can be proven analogously when there is no subcurve of genus one.
  
  Finally, suppose that $C_{\bar\eta}$ has a genus two singularity, then so does $C_0$. The (union of the) distinguished branch(es) $E_{\bar\eta}$ of $C_{\bar\eta}$ is a genus one singularity, and so is its limit $E_0$ in $C_0$. It has to contain the distinguished branch(es) of $C_0$, because any subcurve not containing them has genus zero; therefore, by assumption, $E_0$ contains $p_{1,0}$. Then also $E_{\bar\eta}$ contains $p_{1,\bar\eta}$, because the markings are contained in the non-singular locus of the curve. Similarly, if $C_{\bar\eta}$ has a genus one singularity with a self-branch, the limit of such a branch is a genus one subcurve $E_0$ of $C_0$; the latter may very well acquire a genus two singularity, but $E_0$ will contain the special branches of it, so it will be connected to $p_1$. We conclude as above. The case that $C_{\bar\eta}$ contains a genus one subcurve of low level is analogous. We have thus proved that condition \eqref{cond:p1} is open.
 \end{proof}
 
-\begin{definition}
- We shall denote by $\oM^{(m)}_{2,n}$ the moduli stack of $n$-pointed $m$-stable curves of genus two.
-\end{definition}
-
-It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}$ is represented by a Deligne-Mumford stack of finite type.
-
-\begin{prop}[Valuative criterion of properness for $\oM^{(m)}_{2,n}$]
+\begin{prop}[(Valuative criterion of properness for $\oM^{(m)}_{2,n}$)]\label{prop:valcrit}
  Given a smooth $n$-pointed curve of genus two $C_\eta$ over a discrete valuation field $\eta=\operatorname{Spec}(K)\hookrightarrow\dvr$, there exists a finite base-change $\dvr^\prime\to\dvr$ after which $C_\eta$ can be completed to an \emph{$m$-stable} curve over $\dvr^\prime$. Two such models are always dominated by a third one.
 \end{prop}
 \begin{proof}[Existence of limits]
@@ -1623,14 +1644,8 @@ It follows from the previous lemmas and standard arguments that $\oM^{(m)}_{2,n}
  
  \begin{claim} The generic isomorphism between $\mathcal C$ and $\mathcal C^\prime$ extends over $\dvr$.\end{claim}
  
- Follows from \cite[Lemma 1.13]{Debarre}.
+ Follows from \cite[Lemma 1.15]{Debarre}.
 \end{proof}
-
-Summing up, we have proved the following:
-\begin{thm}
- For $1\leq m <n$, $m$-stability defines a proper Deligne-Mumford stack $\oM_{2,n}^{(m)}$ over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$, containing $\pazocal M_{2,n}$ as a dense open substack.
-\end{thm}
- The restriction on coefficients avoids ramification of the automorphism groups.
 
 \bibliographystyle{alpha}
 \bibliography{genus_two} 

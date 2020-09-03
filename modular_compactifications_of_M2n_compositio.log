@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  3 SEP 2020 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.10.7)  3 SEP 2020 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,100 +1350,106 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 527.
+(amsmath)                 on input line 520.
 
-[15] [16] [17] [18]
-Underfull \vbox (badness 4859) has occurred while \output is active []
-
- [19]
-<admissible_Weierstrass.png, id=448, 835.923pt x 574.948pt>
+[15] [16] [17] [18] [19]
+<admissible_Weierstrass.png, id=441, 835.923pt x 574.948pt>
 File: admissible_Weierstrass.png Graphic file (type png)
 
 <use admissible_Weierstrass.png>
-Package pdftex.def Info: admissible_Weierstrass.png used on input line 667.
+Package pdftex.def Info: admissible_Weierstrass.png used on input line 660.
 (pdftex.def)             Requested size: 457.80482pt x 314.8801pt.
 
-<admissible_conjugate.png, id=450, 815.045pt x 558.085pt>
+<admissible_conjugate.png, id=443, 815.045pt x 558.085pt>
 File: admissible_conjugate.png Graphic file (type png)
 
 <use admissible_conjugate.png>
-Package pdftex.def Info: admissible_conjugate.png used on input line 673.
+Package pdftex.def Info: admissible_conjugate.png used on input line 666.
 (pdftex.def)             Requested size: 457.80482pt x 313.47072pt.
- [20] [21 <./admissible_Weierstrass.png>]
+ [20 <./admissible_Weierstrass.png>] [21 <./admissible_conjugate.png>] <minimal
+curves.png, id=468, 815.848pt x 369.38pt>
+File: minimalcurves.png Graphic file (type png)
+
+<use minimalcurves.png>
+Package pdftex.def Info: minimalcurves.png used on input line 701.
+(pdftex.def)             Requested size: 457.80482pt x 207.27411pt.
+
 
 LaTeX Warning: Reference `cor:deg_dualising' on page 22 undefined on input line
- 708.
+ 709.
 
-[22 <./admissible_conjugate.png>] [23]
-<irreducible_core.png, id=510, 855.195pt x 450.483pt>
+[22 <./minimalcurves.png>] [23]
+<irreducible_core.png, id=506, 855.195pt x 450.483pt>
 File: irreducible_core.png Graphic file (type png)
 
 <use irreducible_core.png>
-Package pdftex.def Info: irreducible_core.png used on input line 760.
+Package pdftex.def Info: irreducible_core.png used on input line 761.
 (pdftex.def)             Requested size: 457.80482pt x 241.15381pt.
- <reducible_core.png, id=511, 556.479pt x 262.581pt>
+ <reducible_core.png, id=507, 556.479pt x 262.581pt>
 File: reducible_core.png Graphic file (type png)
 
 <use reducible_core.png>
-Package pdftex.def Info: reducible_core.png used on input line 768.
+Package pdftex.def Info: reducible_core.png used on input line 769.
 (pdftex.def)             Requested size: 457.80482pt x 216.02296pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./irreducible_core.png>]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ) in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
- [25 <./reducible_core.png>] [26] [27] [28]
-[29] [30]
+[24] [25 <./irreducible_core.png>] [26 <./reducible_core.png>] [27] [28]
+[29] [30] [31]
 
-LaTeX Warning: Reference `prop:tailII' on page 31 undefined on input line 1534.
+LaTeX Warning: Reference `prop:tailII' on page 32 undefined on input line 1555.
 
 
-[31]
 
-LaTeX Warning: Reference `prop:contractionII' on page 32 undefined on input lin
-e 1550.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+
+LaTeX Warning: Reference `prop:contractionII' on page 33 undefined on input lin
+e 1571.
 
 
 Underfull \vbox (badness 7685) has occurred while \output is active []
 
- [32]
-<critical_step_v.png, id=634, 277.035pt x 357.335pt>
+ [33]
+<critical_step_v.png, id=656, 277.035pt x 357.335pt>
 File: critical_step_v.png Graphic file (type png)
  <use critical_step_v.png>
-Package pdftex.def Info: critical_step_v.png used on input line 1569.
+Package pdftex.def Info: critical_step_v.png used on input line 1590.
 (pdftex.def)             Requested size: 144.20691pt x 186.0061pt.
 
-<critical_step_ER_v.png, id=635, 285.065pt x 362.956pt>
+<critical_step_ER_v.png, id=657, 285.065pt x 362.956pt>
 File: critical_step_ER_v.png Graphic file (type png)
 
 <use critical_step_ER_v.png>
-Package pdftex.def Info: critical_step_ER_v.png used on input line 1574.
+Package pdftex.def Info: critical_step_ER_v.png used on input line 1595.
 (pdftex.def)             Requested size: 144.20691pt x 183.60977pt.
- [33 <./critical_step_v.png> <./critical_step_ER_v.png>]
+ [34 <./critical_step_v.png> <./critical_step_ER_v.png>]
 
-LaTeX Warning: Reference `prop:contractionII' on page 34 undefined on input lin
-e 1612.
+LaTeX Warning: Reference `prop:contractionII' on page 35 undefined on input lin
+e 1633.
 
-[34] [35] (./modular_compactifications_of_M2n_compositio.bbl
+[35] (./modular_compactifications_of_M2n_compositio.bbl
 
 Package amsfonts Warning: Obsolete command \Bbb; \mathbb should be used instead
  on input line 5.
 
-[36] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
+[36] [37] (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
-) [37]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 261.
+) [38]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 269.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 1983
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 1998
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -1451,28 +1457,28 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1983.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1983.
+) [39]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1998.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1998.
 
 (./modular_compactifications_of_M2n_compositio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1983.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1983.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1998.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1998.
 
 Package rerunfilecheck Info: File `modular_compactifications_of_M2n_compositio.
 out' has not changed.
-(rerunfilecheck)             Checksum: F7B2485618D93E4C546B95335C6226F1;1054.
+(rerunfilecheck)             Checksum: 5D26E56AF51D6C0A8F79FFBCC1AEC1F6;1053.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1983.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1998.
  ) 
 Here is how much of TeX's memory you used:
- 41874 strings out of 494901
- 966716 string characters out of 6179486
- 1143320 words of memory out of 5000000
- 44221 multiletter control sequences out of 15000+600000
+ 41892 strings out of 494901
+ 966995 string characters out of 6179486
+ 1146954 words of memory out of 5000000
+ 44232 multiletter control sequences out of 15000+600000
  42341 words of font info for 132 fonts, out of 8000000 for 9000
  37 hyphenation exceptions out of 8191
  56i,19n,103p,10419b,1146s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1522,11 +1528,11 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on modular_compactifications_of_M2n_compositio.pdf (38 pages, 83
-7084 bytes).
+Output written on modular_compactifications_of_M2n_compositio.pdf (39 pages, 91
+0504 bytes).
 PDF statistics:
- 1465 PDF objects out of 1728 (max. 8388607)
- 776 compressed objects within 8 object streams
- 226 named destinations out of 1000 (max. 500000)
- 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1496 PDF objects out of 1728 (max. 8388607)
+ 795 compressed objects within 8 object streams
+ 232 named destinations out of 1000 (max. 500000)
+ 261 words of extra memory for PDF output out of 10000 (max. 10000000)
 
