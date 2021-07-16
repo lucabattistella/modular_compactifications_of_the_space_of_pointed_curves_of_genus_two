@@ -29,9 +29,9 @@
 
 
 \newcommand{\tropC}{\scalebox{0.8}[1.3]{$\sqsubset$}}
-%\newcommand{\ttropC}{\widetilde{\tropC}}
+\newcommand{\ttropC}{\widetilde{\tropC}}
 \newcommand{\tropT}{\scalebox{0.9}[1.2]{$\top$}}
-%\newcommand{\tropD}{\scalebox{0.9}[1.3]{$\triangle$}}
+\newcommand{\tropD}{\scalebox{0.9}[1.3]{$\triangle$}}
 
 \newcommand{\M}[4]{\overline{\pazocal M}_{#1,#2}(#3,#4)}
 \newcommand{\PP}{\mathbb P}
@@ -46,6 +46,9 @@
 \newcommand{\N}{\mathbb N}
 \newcommand{\oM}{\overline{\pazocal M}}
 \newcommand{\tM}{\widetilde{\pazocal M}}
+\newcommand{\tC}{\widetilde{\mathcal C}}
+\newcommand{\cC}{\mathcal C}
+\newcommand{\oC}{\overline{\mathcal C}}
 \newcommand{\R}{\operatorname{R}}
 \newcommand{\Gm}{\mathbb{G}_{\rm{m}}}
 \newcommand{\Ga}{\mathbb{G}_{\rm{a}}}
@@ -100,6 +103,7 @@
 
 \theoremstyle{remark}
 \newtheorem{rem}[thm]{Remark}
+\newtheorem{exa}[thm]{Example}
 \newtheorem*{caveat}{Caveat}
 \newtheorem{claim}{Claim}
 
@@ -157,15 +161,15 @@ We study the geometry of Gorenstein curve singularities of genus two, and of the
 \section{Introduction}
 We construct alternative compactifications of the moduli stack of smooth $n$-pointed curves of genus two. The boundary of the Deligne-Mumford compactification, consisting of stable nodal curves, is gradually replaced by ever more singular curves, complying with more restrictive combinatorial requirements on the dual graph. For $1\leq m <n$, we introduce a notion of $m$-stability, that allows Gorenstein singularities of genus one and two while at the same time demanding that higher genus subcurves contain a minimum number of special points. Our main result concerning the stack of $m$-stable curves is the following:
 \begin{theorem*}
- $\oM^{(m)}_{2,n}$ is a \emph{proper} irreducible Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{30}])$.
+ $\oM^{(m)}_{2,n}$ is a \emph{proper} irreducible Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$.
 \end{theorem*}
 This paper fits into the framework of alternative compactifications and birational geometry of the moduli space of curves, extending work of D.I. Smyth in genus one, but we expect it to find applications to enumerative geometry as well.
 
-We classify Gorenstein singularities of genus two with any number of branches, and their (semi)stable models, highlighting the relation with Brill-Noether theory. The key insight in defining the new stability conditions is that we can avoid non-Gorenstein singularities by modifying the curve at the conjugate point of the special branch; we use one of the markings to identify the latter, and, more generally, to pick the limit in symmetric situations where multiple choices are a priori possible - as a result, our stability conditions are not $\mathfrak S_n$-symmetric.
+We classify Gorenstein singularities of genus two with any number of branches, and their (semi)stable models, highlighting the relation with Brill-Noether theory, and adopting the language of piecewise-linear functions on tropical curves. The key insight in defining the new stability conditions is that we can avoid non-Gorenstein singularities by modifying the curve at the conjugate point of the special branch; we use one of the markings to select the latter, and, more generally, to identify the $m$-stable limit in some very symmetric situations in which multiple choices are possible, a priori - as a result, our stability conditions are not $\mathfrak S_n$-symmetric.
 
-We interpret crimping spaces (moduli of curves with a prescribed singularity type) as parameter spaces for the differential geometric data needed in order to construct a higher genus singularity from an ordinary $m$-fold point, and verify their impact on the existence of automorphisms, a phenomenon which had not fully emerged in lower genus.
+We interpret crimping spaces (moduli of curves with a prescribed singularity type) as parameter spaces for the differential geometric data needed in order to construct a higher genus singularity from an ordinary $m$-fold point, and establish a connection with the existence of infinitesimal automorphisms, a phenomenon which had not fully emerged in lower genus.
 
-Though a cospicous amount of related research has been carried out on the birational geometry of $\oM_{2,n}$ for low values of $n$ \cite{Hassettg2,HL-tricanonical,Rulla,HL-birational_contraction, FedorchukGrimes,PolishchukJohnson}, this appears to be the first proposal of a sequence of modular compactifications for every $n$.
+Though a conspicuous amount of related research has been carried out on the birational geometry of $\oM_{2,n}$ for low values of $n$ \cite{Hassettg2,HL-tricanonical,Rulla,HL-birational_contraction, FedorchukGrimes,PolishchukJohnson}, this appears to be the first proposal of a sequence of modular compactifications for every $n$.
 
 \subsection{From the Deligne-Mumford space to the Hassett-Keel program} One of the most influential results of modern algebraic geometry is the construction of a modular compactification of the stack of smooth pointed curves $\pazocal M_{g,n}$, due to P. Deligne, D. Mumford, and F. Knudsen, with the introduction of \emph{stable} pointed curves.
 
@@ -180,7 +184,7 @@ Though a cospicous amount of related research has been carried out on the birati
 \begin{thm} \cite{DM,Knudsen}
  Assume $2g-2+n>0$. The moduli stack of stable pointed curves $\oM_{g,n}$ is a smooth and proper connected Deligne-Mumford stack over $\operatorname{Spec}(\mathbb Z)$, with projective coarse moduli space $\overline{\mathbf M}_{g,n}$, and normal crossing boundary representing nodal curves.
 \end{thm}
-On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a challenging task, which was set out and partially performed in the inspiring work of Smyth \cite{SMY-towards}. The motivation comes mostly from birational geometry.
+On one hand, the Deligne-Mumford compactification has nearly every desirable property one could hope for; on the other, it is certainly not the unique modular compactification of $\pazocal M_{g,n}$. Classifying all of them is a challenging task, which was set out and partially performed in the inspiring work of Smyth \cite{SMY-towards} (see also \cite{Bozlee-thesis} for more recent efforts, bringing logarithmic geometry into the picture). The motivation comes mostly from birational geometry.
 
 Even though the existence of $\overline{\mathbf M}_{g,n}$ can be deduced from nowadays standard theorems on stacks \cite{KM}, this moduli space was first constructed as a quotient, prompting the development of a powerful technique known as Geometric Invariant Theory  \cite{Gieseker,GIT,BalSwi}. Studying alternative compactifications of $\pazocal M_{g,n}$ sheds some light on the Mori chamber decomposition of $\overline{\mathbf M}_{g,n}$, and it is not by chance that the first steps in this direction were moved from a GIT perspective - by changing the invariant theory problem or the stability condition under consideration, and analysing the modular properties of the resulting quotients \cite{Schubert,Hassettg2,HassettHyeon}. This program, initiated by B. Hassett and S. Keel, aims to describe all the quotients arising in this way, and to determine whether every step of a log minimal model program for $\overline{\mathbf M}_{g,n}$ enjoys a modular interpretation in terms of curves with worse than nodal singularities \cite{CTV1,CTV2}. Since the early stages of this program, it has developed into a fascinating playground for implementing ideas that originated from (v)GIT into a general structure theory of Artin stacks \cite{AlperKresch,AFS1,AFS2,AFS3}. See for instance \cite{Morrison, FS} for more detailed and comprehensive accounts.
 
@@ -199,7 +203,7 @@ Smyth found that, for every fixed number $m$ of branches, there is a unique germ
  \item[$m=2$] the tacnode, $V(y^2-yx^2)\subseteq\Aaff^2_{x,y}$;
  \item[$m\geq 3$] the union of $m$ general lines through the origin of $\Aaff^{m-1}$.
 \end{description}
-Singularities of this kind, with up to $m$ branches, together with nodes, form a deformation-open class of singularities. Moreover, the elliptic $m$-fold point can be obtained by contracting a smooth elliptic curve with $m$ rational tails in a one-parameter smoothing, and, roughly speaking, all stable models have a shape similar to this.
+Singularities of this kind, with up to $m$ branches, together with nodes, form a deformation-open class of singularities. Moreover, the elliptic $m$-fold point can be obtained by contracting a smooth elliptic curve with $m$ rational tails in a one-parameter smoothing, and, roughly speaking, all stable models have a shape similar to this one.
 \begin{definition}\cite{SMY1}
  A connected, reduced, complete curve $C$ of arithmetic genus one with smooth distinct markings $(p_1,\ldots,p_n)$ is \emph{$m$-stable}, $1\leq m<n$, if:
  \begin{enumerate}[leftmargin=0.7cm]
@@ -268,26 +272,26 @@ Let $\Delta=\Delta_{2,\emptyset|0,\{1,2\}}\subseteq\oM_{2,2}$ be the divisor of 
 & \operatorname{Bl}_{\mathcal W}(\oM_{2,2})\ar[dl]\ar[dr] & \\
 \oM_{2,2}\ar[rr,dashed] & & \oM_{2,2}^{(1)}
 \ecd
-The blow-up should also encode enough information to contract an unmarked elliptic bridge to a tacnode. We plan to address this point in forthcoming work.
+The blow-up should also encode enough information to contract an unmarked elliptic bridge to a tacnode. As it turns out, a modular desingularisation can be obtained by starting from the moduli space of pointed admissible covers, and performing a logarithmic modification based on some piecewise linear function on the tropicalization of the source curve. These methods have been developed in \cite{BC}, and we do not address the desingularisation here.
 
 \subsection{Relation to other work} It would be interesting to compare $\oM_{2,2}^{(1)}$ explicitly with Smyth's $\oM_{2,2}(\pazocal Z)$ \cite{SMY-towards}, for the extremal assignment $\pazocal Z$ of unmarked subcurves; here we only note that, while the divisor $\Delta_{1,\{1\}|1,\{2\}}$ is contracted in $\oM_{2,2}^{(1)}$, the latter contains a copy of $\oM_{0,4}$ (see the third column, second row of Figure \ref{fig:one_tail_example}) that is replaced by the class of the rational $4$-fold point in $\oM_{2,2}(\pazocal Z)$. $\oM_{2,2}^{(1)}$ seems closely related to the space $\pazocal U^{ns}_{2,2}(ii)$ constructed in \cite{PolishchukJohnson}. More generally, it would be interesting to relate $\oM_{2,n}^{(m)}$ (for high values of $m$) to Polishchuk's moduli of curves with nonspecial divisors \cite{Polishchuk-nonspecial}. Finally, it seems plausible that $\oM_{2,n}^{(m)}$ (for low values of $m$) corresponds to a pointed variant of the spaces of admissible hyperelliptic covers with AD singularities constructed in \cite{Fedorchuk-hyperellipticAD}.
 
 \subsection{Outline of results and plan of the paper} In Section \ref{sec:sing} we classify all the Gorenstein curve singularities of genus two. They come in two families: the first one ($I$) includes the ramphoid cusp, the $D_5$-singularity, and for $m\geq 3$ the union of \emph{a singular branch} (a cusp) and $m-1$ lines living in $\Aaff^m$. The second one ($I\!I$) includes the $A_5$- and $D_6$-singularities, and for $m\geq 4$ the union of \emph{two tangent branches} (forming a tacnode) with $m-2$ lines in $\Aaff^{m-1}$. See Proposition \ref{prop:classification}.
 
-In Section \ref{sec:crimp} we translate the condition that a complete pointed curve of genus two has no infinitesimal automorphisms into a \emph{mostly} combinatorial criterion. For every fixed number of branches $m$ and genus two singularity type $\in\{I,I\!I\}$, there are two isomorphism classes of pointed curves whose normalisation is $\bigsqcup_{i=1}^m(\PP^1,q_i,p_i)$ and having a singularity of the prescribed type at $q$; one of them has $\Aut(C,p)=\Gm$, while the other one has trivial automorphism group. This phenomenon is a novelty to genus two. We take a detour into moduli spaces of singularities to justify the claim, and explain how to interpret the \emph{crimping spaces} geometrically in terms of the information we need to construct a genus two singularity from a (non-Gorenstein) singularity of lower genus. This is not strictly necessary in what follows, since the singularity with one-pointed branches never satisfies the level condition we demand from our curves, yet this description is expected to be useful in analysing the indeterminacy of $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$.
+In Section \ref{sec:crimp} we translate the condition that a complete pointed curve of genus two has no infinitesimal automorphisms into a \emph{mostly} combinatorial criterion. For every fixed number of branches $m$ and genus two singularity type $\in\{I,I\!I\}$, there are two isomorphism classes of pointed curves whose normalisation is $\bigsqcup_{i=1}^m(\PP^1,q_i,p_i)$ and having a singularity of the prescribed type at $q$; one of them has $\Aut(C,p)=\Gm$, while the other one has trivial automorphism group. This phenomenon is a novelty to genus two. We take a detour into moduli spaces of singularities to justify the claim, and explain how to interpret the \emph{crimping spaces} geometrically in terms of the information we need to construct a genus two singularity from a (non-Gorenstein) singularity of lower genus. This is not strictly necessary in what follows, since the singularity with one-pointed branches never satisfies the level condition we demand from our curves, yet this description is useful in analysing the indeterminacy of $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$.
 
-In Section \ref{sec:sstails} we study the (semi)stable limits; starting from a $1$-parameter family of semistable curves with smooth generic fibre and regular total space, we show that the shape of a subcurve of the central fibre that can be contracted into a Gorenstein singularity is strongly constrained. Singularities of type $I$ arise when the special branch (corresponding to the cusp in the contraction) is attached to a \emph{Weierstrass point} of the minimal subcurve of genus two (the \emph{core}), while singularities of type $I\!I$ occur when the special branches (corresponding to the tacnode in the contraction) are attached to \emph{conjugate points}. Furthermore, the size of the curve to be contracted only depends on one number - roughly speaking, the distance of the special branches from the core. The first statement is a consequence of the following simple observation: if $\phi\colon\widetilde{\mathcal C}\to\mathcal C$ is a contraction to a family of Gorenstein curves, $\phi^*\omega_{\mathcal C}$ is trivial on a neighbourhood of the exceptional locus of $\phi$, and it coincides with $\omega_{\widetilde{\mathcal C}}$ outside it. Now, whereas the dualising line bundle of a Gorenstein curve of genus one with no separating nodes is trivial (see \cite[Lemma 3.3]{SMY1}) and all smooth points display the same behaviour (in the sense that they are non-special), the simplest instance of Brill-Noether theory manifests itself in genus two, with the distinction between Weierstrass and non-Weierstrass points, and the expression $\omega_Z=\OO_Z(q+\sigma(q))$. The correct extension of these concepts to nodal curves was formulated in the '80s within the theory of admissible covers and limit linear series, and we spend some time to discuss the relevant combinatorics.
+In Section \ref{sec:sstails} we study the (semi)stable limits; starting from a $1$-parameter family of semistable curves with smooth generic fibre and regular total space, we show that the shape of a subcurve of the central fibre that can be contracted into a Gorenstein singularity is strongly constrained. Singularities of type $I$ arise when the special branch (corresponding to the cusp in the contraction) is attached to a \emph{Weierstrass point} of the minimal subcurve of genus two (the \emph{core}), while singularities of type $I\!I$ occur when the special branches (corresponding to the tacnode in the contraction) are attached to \emph{conjugate points}. Furthermore, the size of the curve to be contracted only depends on one number - roughly speaking, the distance of the special branches from the core. The first statement is a consequence of the following simple observation: if $\phi\colon\widetilde{\mathcal C}\to\mathcal C$ is a contraction to a family of Gorenstein curves, $\phi^*\omega_{\mathcal C}$ is trivial on a neighbourhood of the exceptional locus of $\phi$, and it coincides with $\omega_{\widetilde{\mathcal C}}$ outside it. Now, whereas the dualising line bundle of a Gorenstein curve of genus one with no separating nodes is trivial (see \cite[Lemma 3.3]{SMY1}) and all smooth points display the same behaviour (in the sense that they are non-special), the simplest instance of Brill-Noether theory manifests itself in genus two, with the distinction between Weierstrass and non-Weierstrass points, and the expression $\omega_Z=\OO_Z(q+\sigma(q))$. The correct extension of these concepts to nodal curves was formulated in the '80s within the theory of admissible covers and limit linear series. We phrase the shape restrictions in terms of the existence of a certain piecewise-linear function on the dual graph of the central fibre.
 
 In Section \ref{sec:stability} we define the notion of \emph{$m$-stable} $n$-pointed curve of genus two, for every $1\leq m<n$. The basic idea is to trade worse singularities - of both genus one and two, bounded by $m$ in the sense of the embedding dimension - with more constraints on the combinatorics of the dual graph - the \emph{level} condition, which bounds below in terms of $m$ the number of special points (nodes and markings) that any subcurve of genus one or two has to contain. On the other hand, it is already clear from the discussion above that we need to break the $\mathfrak S_n$-symmetry, in order to write the dualising line bundle of the minimal subcurve of genus two as $\OO_Z(q_1+\sigma(q_1))$, in other words to choose which branches of a semistable model are to be dubbed special. We do so by using the first marking as a reference point, so that $q_1$ comes to denote the point of $Z$ closest to $p_1$. This shapes our algorithm to construct the $m$-stable limit of a given $1$-parameter smoothing. Unavoidably, the formulation of the stability condition is slightly involved, including a prescription of the interplay between $p_1$ and the singularity. We prove that the moduli stack of $m$-stable curves is algebraic, and it satisfies the valuative criterion of properness.
 
 
-\subsection{Future directions of work} Besides regarding this paper as a case-study of the birational geometry of moduli spaces of curves, we are looking forwards to explore its consequences in Gromov-Witten theory. We set up some questions we would like to come back to in future work.
+\subsection{Future directions of work} Besides regarding this paper as a case-study of the birational geometry of moduli spaces of curves, it also has some nontrivial applications to Gromov-Witten theory. We set up some questions we would like to come back to in future work.
 \begin{enumerate}[leftmargin=.7cm]
- \item The indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$ can be resolved modularly: a space dominating all the $\oM_{2,n}^{(m)}$ can be obtained as a logarithmic modification (as in \cite{RSPW1}) of the space of \emph{admissible covers} (of degree two with six ramification points). We shall describe this construction in more details in a forthcoming paper. We wonder whether the models constructed here correspond to the trace of the minimal model program on a two-dimensional slice of the cone of pseudo-effective divisors, as in \cite{SMY2}.
+ \item The indeterminacy of the rational map $\oM_{2,n}^{(m_1)}\dashrightarrow\oM_{2,n}^{(m_2)}$ can be resolved modularly: a space dominating all the $\oM_{2,n}^{(m)}$ can be obtained as a logarithmic modification (as in \cite{RSPW1}) of the space of \emph{admissible covers} (of degree two, with rational target and six ramification points). We shall describe this construction in more details in a forthcoming paper. We wonder whether the models constructed here correspond to the trace of the minimal model program on a two-dimensional slice of the cone of pseudo-effective divisors, as in \cite{SMY2}.
  
  More generally, a question outstanding to our knowledge is whether the whole program fits in the framework of stability developed in \cite{DHLinstability}.
  
- \item Applications to enumerative geometry: the link between reduced Gromov-Witten invariants in genus one (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. In joint work with F. Carocci \cite{BC}, we exploit similar techniques to desingularise the main component of the space of genus two maps to projective space. We enrich the logarithmic structure by including a compatible admissible cover. A universal morphism to a Gorenstein curve is constructed on a logarithmically \'etale model of the base, using tools from logarithmic geometry and after choosing a \emph{tropical canonical divisor}. We stress the fact that non-reduced fibres (\emph{singular ribbons}) arise naturally in that context. The main component is recovered as those maps that factor through the Gorenstein contraction. Our desingularisation is less efficient than \cite{HLN}, but maps from singular curves provide a conceptual definition of reduced invariants for projective complete intersections and beyond. We hope that they will make comparison results (standard vs. reduced) easier to prove. This would lead to a modular interpretation of Gopakumar-Vafa invariants \cite{Pandha}.
+ \item Enumerative geometry: the link between reduced Gromov-Witten invariants in genus one (see for example \cite{VZ,Zingerred,LZ}) and maps from singular curves (see \cite{VISC}) was partially uncovered in \cite{BCM}, and brought in plain view by \cite{RSPW1,RSPW2}. In joint work with F. Carocci \cite{BC}, we exploit similar techniques to desingularise the main component of the space of genus two maps to projective space. We enrich the logarithmic structure by including a compatible admissible cover. A universal morphism to a Gorenstein curve is constructed on a logarithmically \'etale model of the base, encoding the choice of a \emph{tropical canonical divisor}. We stress the fact that non-reduced fibres (\emph{singular ribbons}) arise naturally in that context (this in turn suggests the question, whether more birational models of $\pazocal M_{2,n}$ can be defined by including non-reduced Gorenstein curves as well). The main component is recovered as those maps that factor through the Gorenstein contraction. Our desingularisation is less efficient than \cite{HLN}, but maps from singular curves provide a conceptual definition of reduced invariants for projective complete intersections and beyond. We hope that they will make comparison results (standard vs. reduced) easier to prove. This would lead to a modular interpretation of Gopakumar-Vafa invariants \cite{Pandha}.
 \end{enumerate}
 
 
@@ -465,13 +469,6 @@ We gather a description of the dualising line bundle in the following:
                                                                                                                                   \end{enumerate}
 \end{cor}
 
-\begin{rem}
- Singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and vice versa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
- \begin{thm}\label{thm:ADE}
-  Let $(C,q)$ be a curve singularity of ADE type. The singularities appearing in the miniversal deformation of $(C,q)$ are all and only the ADE singularities whose Dynkin diagram can be obtained as a full subgraph of the Dynkin diagram of $(C,q)$.
- \end{thm}
-\end{rem}
-
 
 \section{Tangent sheaf, crimping space, and automorphisms}\label{sec:crimp}
 In this section we analyse the tangent sheaf of a genus two singularity. For a complete pointed Gorenstein curve of genus two, we translate the absence of infinitesimal automorphisms into a (mostly) combinatorial criterion. We will use this in Section \ref{sec:stability}, when we define stability conditions on the stack of pointed Gorenstein curves of genus two, to make sure that the resulting substacks are Deligne-Mumford. The crimping space naturally makes an appearance. Although we do not use it explicitly in this paper, it parametrises singularities of a given type and pointed normalisation. It helps understanding the birational map between two compactifications of $\pazocal{M}_{2,n}$.
@@ -559,7 +556,7 @@ The quotient is then isomorphic to $\binom{m}{2}$ copies of $\Aaff^1\times(\Aaff
 \end{proof}
 
 
-\begin{rem}
+\begin{rem}\label{rem:characteristic}
  The restrictions on the characteristic of the base field in Lemmas \ref{lem:aut} and \ref{lem:crimping} rule out the sporadic occurrence of infinite families of automorphisms, and its effect on the crimping spaces. For example, when $\operatorname{char}(\k)=2$, the singularities $\k[\![t^2,t^5]\!]$ and $\k[\![t^2+t^3,t^4,t^5]\!]$ are not isomorphic, the group of infinitesimal automorphisms has positive dimension, and the crimping space consists of an isolated point \cite[Examples 1.79-80]{vdW}.
 \end{rem}
 
@@ -636,7 +633,7 @@ Finally, we shall rephrase the finiteness of automorphism groups explicitly in t
 \end{definition}
 
 \begin{cor}\label{cor:explicitnoaut}
- Let $(C,p_1\ldots,p_n)$ be a Gorenstein pointed curve of arithmetic genus two. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
+ Let $(C,p_1\ldots,p_n)$ be a Gorenstein pointed curve of arithmetic genus two over a field of characteristic $\neq2,3$. $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$ is equivalent to either of the following:
  \begin{enumerate}[leftmargin=.6cm]
   \item $C$ has a singularity of type $I_{m\geq 1}$: either all branches contain exactly one special point and $C$ is the non-atom; or each of its axes contains at least one special point, and at least one branch has at least two. Furthermore $C$ is rDM.
   \item $C$ has a singularity of type $I\!I_{m\geq 2}$: either all branches contain exactly one special point and $C$ is the non-atom; or at least one of its twin branches contains a special point, each of its axes contains at least one, and at least one branch has at least two. Furthermore $C$ is rDM.
@@ -657,7 +654,29 @@ In the case at hand, the answer turns out to be slightly more complicated: first
 \subsection{A quick recap on admissible covers}\label{rmk:Wandconj}
  While there are no special points on a smooth curve of genus zero or one, the simplest instance of Brill-Noether theory involves smooth curves of genus two. Every such $C$ is \emph{hyperelliptic}: it admits a unique (up to reparametrisation) two-fold cover $\phi\colon C\to\PP^1$, induced by the complete canonical linear system, i.e. $\lvert K_C\rvert$ is the unique $\mathfrak g^1_2$ on $C$; said otherwise, there is a unique element $\sigma\in\Aut(C)$, called the \emph{hyperelliptic involution}, such that $C/\langle\sigma\rangle\simeq\PP^1$. A point $x\in C$ is called \emph{Weierstrass} if it is a ramification point for $\phi$ (or, equivalently, a fixed point for $\sigma$); from the Riemann-Hurwitz formula it follows that there are six Weierstrass points on every smooth curve of genus two. Two points $x_1,x_2$ are said to be conjugate (write $x_2=\bar x_1$) if there exists a point $z\in\PP^1$ such that $\phi^{-1}(z)=\{x_1,x_2\}$ (or, equivalently, $\sigma(x_1)=x_2$). These notions may be extended to nodal curves by declaring $(C,x)$ to be Weierstrass if its stabilisation lies in the closure of
  \[\mathcal W=\{(C,x)|\ C\text{ smooth and } x \text{ Weierstrass}\}\subseteq\oM_{2,1},\]
- and similarly for conjugate points. We then need to study the limiting behaviour of Weierstrass points when a smooth curve degenerates to a nodal one. This is a difficult problem when it comes to higher genus curves; it has received considerable attention since the '70s, in work of E. Arbarello, D. Eisenbud, J. Harris, and many others. In our case it boils down to understanding admissible covers \cite{HarrisMumford} of degree two with a branch locus of degree six; said otherwise, up to the involution action, the Weierstrass locus is isomorphic to $\oM_{0,6}/\mathfrak S_5$, and the conjugate locus is isomorphic to  $\oM_{0,7}/\mathfrak S_6$. We remark that $(C,x)$ being Weierstrass is an intrinsic notion if $C$ is of compact type (or, more generally, tree-like), but it may depend on the smoothing otherwise (i.e. the fibre of $\overline{\mathcal W}\to\oM_2$ may have positive dimension); we have benefited from the exposition in \cite[Appendix 2]{Diaz}, \cite[Proposition (3.0.6)]{Cukierman}, and \cite[Theorem 5.45]{HM}.
+ and similarly for conjugate points. We then need to study the limiting behaviour of Weierstrass points when a smooth curve degenerates to a nodal one. This is a difficult problem when it comes to higher genus curves; it has received considerable attention since the '70s, in work of E. Arbarello, D. Eisenbud, J. Harris, and many others. In our case it boils down to understanding admissible covers \cite{HarrisMumford} of degree two with a branch locus of degree six. 
+ 
+ 
+\begin{definition}\label{def:admissiblecover}
+ A family of \emph{pointed hyperelliptic admissible covers} over $S$ is a finite morphism $\psi\colon (C,D_R,p_1,\bar p_1,\ldots,p_n,\bar p_n)\to (T,D_B,\psi(p_1),\ldots,\psi(p_n))$ over $S$ such that:
+ \begin{enumerate}
+  \item $(C,D_R,\mathbf{p},\bar{\mathbf{p}})$ and $(T,D_B,\psi(\mathbf{p}))$ are prestable curves, with unordered smooth disjoint multisections $D_R$ and $D_B$ of length $2g+2$, and ordered smooth disjoint multisections $\mathbf{p},\bar{\mathbf{p}},\psi(\mathbf{p})$;
+  \item $C$ has arithmetic genus $g$, and $(T,D_B,\psi(\mathbf{p}))$ is a stable rational tree;
+  \item $\psi$ is a double cover on an open $U\subseteq T$ dense over $S$;
+  \item\label{point:logetale} $\psi$ is \'etale on $C^\text{sm}\setminus D_R$, and $\psi(p_i)=\psi(\bar p_i)$ for $i=1,\ldots,n$;
+  \item $\psi$ maps $D_R$ to $D_B$ with simple ramification, and it maps nodes of $C$ to nodes of $T$ so that in local coordinates:
+  \[ \psi^\#\colon \OO_S[u,v]/(uv-s)\to\OO_S[x,y]/(xy-t)\]
+  maps $u\mapsto x^i,v\mapsto y^i, s\mapsto t^i$ for $i=1$ or $2$.
+ \end{enumerate}
+\end{definition}
+
+ \begin{thm}[{\cite{HarrisMumford,Mochizuki}}]
+  The moduli stack of pointed hyperelliptic admissible covers $\overline{\mathcal H}_{g,n}$ is a proper and smooth Deligne-Mumford stack with normal crossing boundary and forgetful morphisms $s\colon \overline{\mathcal H}_{g,n}\to\oM_{g,n}$ and  $t\colon \overline{\mathcal H}_{g,n}\to\oM_{0,2g+2|n}$.
+ \end{thm}
+
+ $\overline{\mathcal H}_{g,n}$ provides a nice compactification of the locus of hyperelliptic curves in $\oM_{g,n}$. Besides the original sources,  we have benefited from the exposition in \cite[Appendix 2]{Diaz}, \cite[Proposition (3.0.6)]{Cukierman}, and \cite[Theorem 5.45]{HM}.
+ 
+ We extract some information on the Weierstrass and conjugate loci in genus two: up to the involution action, the Weierstrass locus is isomorphic to $\oM_{0,6}/\mathfrak S_5$, and the conjugate locus is isomorphic to  $\oM_{0,7}/\mathfrak S_6$. We remark that $(C,x)$ being Weierstrass is an intrinsic notion if $C$ is of compact type (or, more generally, tree-like), but it may depend on the smoothing otherwise (i.e. the fibre of $\overline{\mathcal W}\to\oM_2$ may have positive dimension). We spell out an explicit description.
  \begin{itemize}[leftmargin=.5cm]
   \item If $x$ belongs to a component of genus one $E$, which is attached to another component of genus one at a node $y$, then $x$ is Weierstrass iff $2x\sim 2y\in\Pic(E)$; if instead $E$ has a self-node that glues $y_1$ with $y_2$, then $x$ is Weierstrass iff $2x\sim y_1+y_2\in\Pic(E)$.
   
@@ -678,6 +697,13 @@ In the case at hand, the answer turns out to be slightly more complicated: first
  \begin{rem}\label{rmk:necklace_symmetry}
   In case (\dag), the singularity of the total space of a smoothing $\mathcal C\to\dvr$ at the two distinguished nodes (separating the elliptic component from the rational chain) are both $A_k$ for the same $k$, because they map to the same node of the target in the admissible cover. This consideration is stable under base change, and it therefore entails a symmetry of the rational chain in the model with regular total space.
  \end{rem}
+ 
+ \subsection{A quick recap on logarithmically smooth curves}\label{sec:recaplog}
+ Logarithmically smooth curves are prestable curves endowed with a suitable logarithmic structure \cite{KatoF}. There is a minimal \cite{Gillam} such logarithmic structure $(C, M_C^\text{min})\to(S, M_S^\text{min})$, determining all the others by pullback: this is the logarithmic structure on the moduli stack of prestable curves $\mathfrak M_{g,n}$ induced by its normal crossing boundary. More explicitly, $ M_S^\text{min}$ is a locally free logarithmic structure, with generators of the characteristic sheaf $\overline M_S^\text{min}$ corresponding to nodes of the curve. The tropicalization $\tropC$ of a logarithmically smooth curve $(C, M_C)$ over a geometric point $(S=\operatorname{Spec}(\bar\k),M_S)$ consists of its dual graph $\Gamma(C)$ metrised in $\overline M_S$ - the length of an edge is its smoothing parameter. In particular, a family of prestable curve over a trait $\dvr$ gives rise to a standard tropical curve (metrised in $\mathbb N$). After \cite{GS} and \cite{CCUW}, piecewise-linear (PL) functions on $\tropC$ with values in $\overline M_S$ correspond to sections of $\Gamma(C,\overline M_C)$. The latter determine $\OO_C^*$-torsors (and therefore line bundles) on $C$ by the short exact sequence:
+ \[0\to\OO_C^*\to M_C^\text{gp}\to \overline M_C^\text{gp}\to 0.\]
+ A detailed analysis of this correspondence can be found in \cite[Proposition 2.4.1]{RSPW1}.
+ 
+ The moduli space of pointed hyperelliptic admissible covers $\overline{\mathcal H}_{g,n}$ is also logarithmically smooth with locally free logarithmic structure induced by the normal crossing boundary \cite{Mochizuki}. Generators of $\overline M_{\bar{\mathcal H}}^\text{min}$ correspond to the nodes of the source curve $C$, with two of them being identified if the cover is a local isomorphism around them. This allows us to exploit tropical geometry as above \cite{CMR}.
  
  \subsection{Minimal curves}
  \begin{definition}
@@ -713,7 +739,7 @@ We provide a similar description of minimal curves of genus two; the proof is le
 
 
 \begin{rem}\label{rem:special}
-In both cases \eqref{case:twice1} and \eqref{case:2} there are \emph{special} branches supporting the degree of $\omega_Z$ (compare with Definition \ref{def:special_branches} and Corollary \ref{cor:deg_dualising}; recall that the restriction of the dualising sheaf to a component introduces a twist by the conductor ideal, see Noether's formula \cite[Proposition 1.2]{Catanese}). Notice that the notion of conjugate points is not always intrinsic to the curve.
+In both cases \ref{case:twice1} and \ref{case:2} there are \emph{special} branches supporting the degree of $\omega_Z$ (compare with Definition \ref{def:special_branches} and Corollary \ref{cor:dualising_line_bundle}; recall that the restriction of the dualising sheaf to a component introduces a twist by the conductor ideal, see \cite[Proposition 1.2]{Catanese}).
 \end{rem}
 
 \subsection{Semistable tails}
@@ -745,9 +771,9 @@ In both cases \eqref{case:twice1} and \eqref{case:2} there are \emph{special} br
 
  Moreover, the distance of the special branch(es) from the core is always less than that of the axes; the ratio is roughly $1:3$ in case $I$, and $1:2$ in case $I\!I$, but, more precisely, this depends on the relative position of the attaching points of the chains in the dual graph of the core. An elegant treatment uses the language of tropical geometry.
 
- We consider the tropicalization $\tropC\to\tropT$ of $\psi$ \cite{CMR}. After further base-change and normalised blow-ups, we can assume that $\mathcal C$ has regular total space; this only affects $\tropC$ by subdividing edges, not changing their lengths. Now $\tropC$ is nothing but the dual graph of the special fiber $\mathcal C_0$, with edges of length $1$.
+ We consider the tropicalization $\tropC\to\tropT$ of $\psi$, as in Section \ref{sec:recaplog}. After further base-change and normalised blow-ups, we can assume that $\mathcal C$ has regular total space; this only affects $\tropC$ by subdividing edges, not changing their lengths. Now $\tropC$ is nothing but the dual graph of the special fiber $\mathcal C_0$, with edges of length $1$.
  
- The vertical divisor $\pazocal Z$ can be represented by a piecewise-linear (PL) function on $\tropC$ with integral slope along the edges (see for example \cite{BakerNorine}); moreover, observation \ref{pt:compatibleZ} above shows that $\lambda$ is pulled back from a PL function $\lambda_T$ on $\tropT$ - for this to be true we have to allow half-integral slopes along the edges. Finding $\lambda$ becomes a simple matter of degre-matching on the tree $\tropT$; this shows existence and uniqueness. Recall that the canonical divisor $K_{\tropC}$ has degree:
+ The vertical divisor $\pazocal Z$ can be represented by a piecewise-linear function on $\tropC$ with integral slope along the edges; moreover, observation \ref{pt:compatibleZ} above shows that $\lambda$ is pulled back from a piecewise-linear function $\lambda_T$ on $\tropT$ - for this to be true we have to allow half-integral slopes along the edges. Finding $\lambda$ becomes a simple matter of degre-matching on the tree $\tropT$; this shows existence and uniqueness. Recall that the canonical divisor $K_{\tropC}$ has degree:
  \begin{equation}\label{eq:canonical_degree}
  2g(v)-2+\operatorname{val}(v)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             \end{equation}
 on a vertex $v$ of $\tropC$, where $g\colon V(\tropC)\to\mathbb Z$ is the genus assignment, and $\operatorname{val}(v)$ is the number of bounded edges adjacent to $v$; \eqref{eq:canonical_degree} is also the degree of $\omega_\pi$ when restricted to the component of $\mathcal C_0$ corresponding to $v$.
@@ -1457,12 +1483,11 @@ We construct a counterexample using the theory of limit linear series (l.l.s.): 
 
 
 \section{The new moduli functors}\label{sec:stability}
-The following is a slight generalisation of \cite[Definition 3.4]{SMY1}.
+The idea is to replace subcurves of positive genus with isolated singularities, the number of special points on the former bounding the number of branches of the latter. The following is a slight generalisation of \cite[Definition 3.4]{SMY1}.
 \begin{definition}
- Let $(C,p_1,\ldots,p_n)$ be a reduced curve, marked by smooth points. For a nodally attached subcurve $D\subseteq C$, we define its \emph{level} as \[ \lev(D)=\lvert D\cap\overline{C\setminus D}\rvert+\lvert\{p_1,\ldots,p_n\}\cap D\rvert.\]
+ Let $(C,p_1,\ldots,p_n)$ be a reduced curve, marked by smooth points. For a connected subcurve $D\subseteq C$, we define its \emph{level} to be: \[ \lev(D)=\lvert D\cap\overline{C\setminus D}\rvert+\lvert\{p_1,\ldots,p_n\}\cap D\rvert.\]
 \end{definition}
-In what follows, we impose a level condition only on nodally attached curves, hence we may remain agnostic as to how components attached along worse-than-nodal singularities should be counted towards the level.
-
+In this definition, the multiplicity of $D\cap\overline{C\setminus D}$ is not taken into account.
 
 We omit the proof of the following lemma; compare with \cite[Corollary 3.2, Lemma 3.5]{SMY1}.
 \begin{lem}
@@ -1473,15 +1498,24 @@ We omit the proof of the following lemma; compare with \cite[Corollary 3.2, Lemm
 We say that a point \emph{cleaves} to a component of a curve if it is connected to it by a possibly empty chain of rational curves. 
 \end{definition}
 
+
+\begin{rem}
+ Singularities of genus zero and one appear in the miniversal family of singularities of genus two. Also, singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and viceversa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
+ \begin{thm}\label{thm:ADE}
+  Let $(C,q)$ be a curve singularity of ADE type. The singularities appearing in the miniversal deformation of $(C,q)$ are all and only the ADE singularities whose Dynkin diagram can be obtained as a full subgraph of the Dynkin diagram of $(C,q)$.
+ \end{thm}
+\end{rem}
+
+
 We finally come to the definition of $m$-stability for curves of genus two.
 \begin{definition}\label{def:m-stability}
  Fix positive integers $1\leq m<n$. Let $(C,p_1,\ldots,p_n)$ be a connected, reduced, complete curve of arithmetic genus two, marked by smooth distinct points. We say that $C$ is $m$-stable if:
  \begin{enumerate}[leftmargin=.7cm]
   \item\label{cond:sing} $C$ is Gorenstein with only: nodes; elliptic $l$-fold points, $l\leq m+1$; type $I_{\leq m}$, type $I\!I_{\leq m}$, and dangling $I\!I_{m+1}$ singularities of genus two, as singular points.
   \item\label{cond:lev2} If $Z$ is a connected subcurve of arithmetic genus two, then $\lev(Z)>m$.
-  \item\label{cond:lev1} If $E$ is a nodally attached subcurve of arithmetic genus one, $\lev(E)>m+1$.
+  \item\label{cond:lev1} If $E$ is a connected subcurve of arithmetic genus one, then either $\lev(E)>m+1$, or $E$ is not nodally attached and $p_1$ cleaves to it.
   \item\label{cond:aut} $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$.
-  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold with a self-branch or a genus one branch, $p_1$ cleaves to one of the special branches (see Remark \ref{rem:special}). If $C$ contains two genus one subcurves sharing a branch, and $E_1$ has level less than $m+2$, then $p_1$ cleaves to $E_1$.
+  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold with a self-branch or a genus one branch, $p_1$ cleaves to one of the special branches (see Remark \ref{rem:special}).
  \end{enumerate}
 \end{definition}
 
@@ -1500,11 +1534,11 @@ We are going to prove the following:
 \end{thm}
 \begin{proof}
  \begin{enumerate}
-  \item-\emph{Algebraicity.} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is representable, quasicompact, and of finite type.} Since $m$-stable curves are canonically polarised, it follows from Grothendieck's theory of Hilbert schemes that the \emph{Iso}-functor between two $m$-stable curves over $S$ is representable by a quasiprojective scheme over $S$.
+  \item-\emph{Algebraicity (diagonal).} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is representable, quasicompact, and of finite type.} Since $m$-stable curves are canonically polarised, it follows from Grothendieck's theory of Hilbert schemes that the \emph{Iso}-functor between two $m$-stable curves over $S$ is representable by a quasiprojective scheme over $S$.
   
-  \item-\emph{Algebraicity.} \emph{There exists an irreducible scheme $H$, of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, with a smooth and surjective morphism $H\to \oM_{2,n}^{(m)}$.} Fix an integer $N>2+8(m+1)$; let $d=N(2+n)$ and $r=d-2$. By Lemma \ref{lem:boundedness} below, every $n$-pointed $m$-stable curve over a field $\k$ admits a pluri-log-canonical embedding of degree $d$ in $\PP^r$. Let $H_0$ denote the Hilbert scheme of degree $d$, genus two curves in $\PP^r$. Let $H_1\subseteq H_0\times(\PP^r)^{\times n}$ denote the locally closed subscheme consisting of $([C],p_1,\ldots,p_n)$ such that every $p_i$ belongs to the smooth locus of $C$; this is open in the incidence variety. By Lemma \ref{lem:defop} below, there is an open subscheme $H_2\subseteq H_1$ parametrising $m$-stable curves (note that $H_1$ is of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, and in particular Noetherian). By the representability of the Picard sheme \cite[Proposition 5.1]{GIT}, there is a locally closed subscheme $H\subseteq H_2$ representing $([C],p_1,\ldots,p_n)$ such that $\OO_C(1)=(\omega_C(\sum_{i=1}^np_i)^N$. Now there is a morphism $H\to \oM_{2,n}^{(m)}$ that is surjective by construction, and smooth because two different embeddings of an $m$-stable curve differ by the choice of a basis of $H^0(C,(\omega_C(\sum_{i=1}^np_i)^N)$. Since every $m$-stable curve is smoothable (Remark \ref{rem:smoothable_sing} and \cite[II.6.3]{Kollar-rational}), $H$ is irreducible.
+  \item-\emph{Algebraicity (atlas) \& irreducibility.} \emph{There exists an irreducible scheme $H$, of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, with a smooth and surjective morphism $H\to \oM_{2,n}^{(m)}$.} Fix an integer $N>2+8(m+1)$; let $d=N(2+n)$ and $r=d-2$. By Lemma \ref{lem:boundedness} below, every $n$-pointed $m$-stable curve over a field $\k$ admits a pluri-log-canonical embedding of degree $d$ in $\PP^r$. Let $H_0$ denote the Hilbert scheme of degree $d$, genus two curves in $\PP^r$. Let $H_1\subseteq H_0\times(\PP^r)^{\times n}$ denote the locally closed subscheme consisting of $([C],p_1,\ldots,p_n)$ such that every $p_i$ belongs to the smooth locus of $C$; this is open in the incidence variety. By Lemma \ref{lem:defop} below, there is an open subscheme $H_2\subseteq H_1$ parametrising $m$-stable curves (note that $H_1$ is of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, and in particular Noetherian). By the representability of the Picard sheme \cite[Proposition 5.1]{GIT}, there is a locally closed subscheme $H\subseteq H_2$ representing $([C],p_1,\ldots,p_n)$ such that $\OO_C(1)=(\omega_C(\sum_{i=1}^np_i)^N$. Now there is a morphism $H\to \oM_{2,n}^{(m)}$ that is surjective by construction, and smooth because two different embeddings of an $m$-stable curve differ by the choice of a basis of $H^0(C,(\omega_C(\sum_{i=1}^np_i)^N)$. Since every $m$-stable curve is smoothable (Remark \ref{rem:smoothable_sing} and \cite[II.6.3]{Kollar-rational}), $H$ is irreducible.
   
-  \item-\emph{DM.} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is unramified.} It is enough to show that, for an $m$-stable curve $(C,p_1,\ldots,p_n)$ over a field $\k$, the \emph{Iso}-group scheme $\operatorname{Aut}_{\k}(C,p_1,\ldots,p_n)$ is unramified. Its tangent space at the identity can be identified with the vector space $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))$, which vanishes by Definition \ref{def:m-stability}\ref{cond:aut}.
+  \item-\emph{DM.} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is unramified.} It is enough to show that, for an $m$-stable curve $(C,p_1,\ldots,p_n)$ over a field $\k$, the \emph{Iso}-group scheme $\operatorname{Aut}_{\k}(C,p_1,\ldots,p_n)$ is unramified. Its tangent space at the identity can be identified with the vector space $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))$, which vanishes by Definition \ref{def:m-stability}\ref{cond:aut}. Note that we need the assumption on the base characteristic in order to translate this vanishing into a combinatorial criterion on the pointed normalisation and singularity type of the curves (Corollary \ref{cor:explicitnoaut}).
   
   \item-\emph{Properness.} Follows from the valuative criterion (Proposition \ref{prop:valcrit}).
  \end{enumerate}
@@ -1547,6 +1581,86 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
  Given a smooth $n$-pointed curve of genus two $C_\eta$ over a discrete valuation field $\eta=\operatorname{Spec}(K)\hookrightarrow\dvr$, there exists a finite base-change $\dvr^\prime\to\dvr$ after which $C_\eta$ can be completed to an \emph{$m$-stable} curve over $\dvr^\prime$. Two such models are always dominated by a third one.
 \end{prop}
 \begin{proof}[Existence of limits]
+
+By properness of the moduli space of pointed admissible covers, after a finite base-change $\dvr^\prime\to\dvr$ we can complete $C_\eta$ to a prestable curve $\mathcal C^\prime\to\dvr^\prime$ together with an admissible cover $\mathcal C^\prime\to\mathcal T^\prime$ over $\dvr^\prime$. We drop the primes from the notation.
+
+The position of $p_1$ determines a piecewise-linear function $\lambda\colon\tropC\to\mathbb R$. Roughly speaking, the subcurve to be contracted will be of the form $\lambda^{-1}(\mathbb R_{>\rho})$, where $\rho$ is the value attained by $\lambda$ on a vertex of $\tropC$, such that there are $\leq m$ edges leaving $\lambda^{-1}(\{\rho\})$ in the upward direction, and $\geq m+1$ leaving it downwards. Cutting $\lambda$ at level $\rho$, and subdividing $\tropC$ accordingly, provides a partial destabilisation $\widetilde{\mathcal C}\to\mathcal C$, and a new piecewise-linear function $\mu$ on $\ttropC$, such that the line bundle $\omega_{\widetilde{\mathcal C}}(\mathbf p)(\mu)$ induces the desired contraction to the $m$-stable limit.
+
+We construct a piecewise-linear function $\lambda_T$ on $\tropT$ first. We call \emph{core} of $\tropT$ the image of the core of $\tropC$. Up to a global translation by $\mathbb R$, the function $\lambda_T$ is characterised by having:
+\begin{itemize}
+ \item slope $2$ or $\frac{3}{2}$ towards the core on the edges separating $p_1$ from the core, according to whether they are ``conjugate'' or ``Weierstrass'' (i.e. whether the admissible cover is ramified or not over them), and slope $2$ along the infinite leg corresponding to $p_1$;
+ \item slope $1$ or $\frac{1}{2}$ towards the core on every other edge and infinite leg outside the core, according to whether they are ``conjugate'' or ``Weierstrass'';
+ \item slope on the core determined by balancing \eqref{eqn:Dv} as in Figure \ref{fig:admredcores}.
+\end{itemize}
+We fix the value of $\lambda_T$ by saying its maximum is $0$ (compare with the level graphs of \cite{BCGGM}), although this choice is arbitrary. Let $\lambda$ be the pullback piecewise-linear function on $\tropC$.
+
+\begin{definition}
+ Given $\rho\in\mathbb R_{\leq0}$, we call $\tropC_{>\rho}:=\lambda^{-1}(\{\rho\})$ the \emph{overcurve} of $\rho$. We call \emph{undervalence} of $\tropC_{>\rho}$ the number of bounded edges and infinite legs leaving $\lambda^{-1}(\{\rho\})$ in the downward direction; \emph{overvalence} the number of edges and (subdivided) legs leaving $\lambda^{-1}(\{\rho\})$ in the upward direction (take it to be $0$ when $\rho=0$).
+\end{definition}
+
+In order to find the $m$-stable limit, there is a unique cutoff value $\rho$. We distinguish two cases.
+\begin{enumerate}
+ \item\label{pt:contraction2} Assume for simplicity that the core is irreducible, corresponding to a vertex $v\in\tropC$. There is a unique $\rho\in\mathbb R_{\leq 0}$ such that the undervalence of $\tropC_{>\rho}$ is at least $m+1$, while the overvalence is at most $m$. Indeed, by stability (best to argue on $\tropT$), every vertex apart from $v$ has a unique edge going up and at least two going down, and for $\rho\ll0$ both values of valence coincide with $n$, the number of infinite legs, which is $\geq m+1$. The same argument applies, whatever $\tropC$ may look like, as soon as $\rho$ is low enough, so that $\tropC_{>\rho}$ is connected of genus two.
+ 
+ Subdivide all the edges of $\tropC$ at height $\rho$; this produces a model $\ttropC$ of $\tropC$, and consequently a blow-up $\tC\to\cC$. Let $\mu:=\max\{\lambda-\rho,0\}$ denote a new piecewise-linear function on $\ttropC$. The curve:
+ 
+ \[\oC=\underline{\operatorname{Proj}}_\dvr\left(\bigoplus_{d\geq 0}\omega_{\tC/\dvr}(p_1+\ldots+p_n)(\mu)^{\otimes d}\right)\]
+ 
+ contains a genus two singularity with less than $m$ branches (the overvalence) and more than $m+1$ special points (the undervalence) in the central fibre; it is endowed with a birational contraction $\phi\colon\tC\to\oC$, see Proposition \ref{prop:contractionI}. Upon contracting any rational tail away from the singularity, $\oC_0$ is the $m$-stable limit of $C_\eta$.
+
+ \item Suppose that the core consists of two curves of genus one, separated by a rational bridge. Start from the one on which $\lambda$ attains the maximum value - call it $E_2$. Notice that $\lambda$ has slope $1$ on all edges departing from $E_2$, so the situation looks like the one of $\cite{RSPW1}$. Consider only $\tropD_2$, the connected component of $\lambda^{-1}(\mathbb R_{>\rho})$ that contains $E_2$. Sliding $\rho$ towards $-\infty$, one of the following two situations occurs first:
+ \begin{enumerate}
+ \item the undervalence of $\tropD_2$ is at least $m+2$, or
+ \item $\lambda^{-1}(\mathbb R_{>\rho})$ is a curve of genus two.
+ \end{enumerate}
+ 
+ In the latter case, we proceed as in the previous point. Suppose instead that we can find $\rho$ such that $\tropD_2$ has genus one and undervalence at least $m+2$. Subdivide $\tropC$ at $\lambda^{-1}(\rho)$ to get $\ttropC$; set $\mu:=\max\{\lambda-\rho,0\}$, and let $\cC^\prime$ be constructed by applying the Proj construction to $\omega_{\tC/\dvr}(p_1+\ldots+p_n)(\mu)$. The central fibre $\cC^\prime_0$ contains an elliptic $l$-fold point instead of $E_2$ ($l\leq m$ being the overvalence of $\tropD_2$), by Smyth's contraction lemma \cite[Lemma 2.13]{SMY1} or \cite[Proposition 3.7.6.1]{RSPW1}. Now, contract $\tropD_2$ formally to a single point $*$, producing a new metric graph $\tropC^\prime$. Consider a piecewise-linear function $\lambda^\prime$ on $\tropC^\prime$ that has constant ingoing slope $1$ towards $E_1$; set $\lambda^\prime(*)=0$. We look for a $\rho^\prime>0$ such that the overcurve $\tropD^\prime_1$ has undervalence at least $m+2$. If it can be found, setting $\mu^\prime:=\max\{\lambda^\prime-\rho^\prime,0\}$ and subdividing $\tropC^\prime$ to make it piecewise-linear, we construct $\oC$ as above. $\oC_0$ contains two disjoint genus one subcurves, each one having level at least $m+2$. If $\rho^\prime$ cannot be found, set it to be $0$; proceeding as above, we construct $\oC$ with central fibre containing two elliptic singularities sharing a branch. Notice that $p_1$ cleaves to the one replacing $E_1$, which is the only one with possibly few special points.
+ 
+ Finally, if both $\lambda(E_1)=\lambda(E_2)=0$ (notice that in this case $p_1$ cleaves to the midpoint of the rational bridge separating them), then the construction should start by lowering $\rho$ simultaneously for both subcurves. If any of the two reaches undervalence $m+2$ before $\tropC_{\geq \rho}$ becomes of genus two, then we contract this subcurve first, and proceed as above to contract the other one.
+
+\end{enumerate}
+\end{proof}
+
+\begin{exa}
+ We illustrate the above proof by means of an example.
+ 
+  \begin{figure}[htb]
+  \centering
+  \begin{minipage}[l]{.45\textwidth}
+   \centering
+   \begin{tikzpicture}
+   \coordinate (O) at (0,0);
+   \coordinate (E1) at (-1,-1);
+   \coordinate (E2) at (1,1);
+   \coordinate (R1) at (-2,-4);
+   \coordinate (RO) at (.5,-.5);
+   \coordinate (R2) at (1.5,.5);
+   \draw (E1)node[left]{\tiny$E_1$} -- (O) (E1)--(R1) (O)--(RO) (O)--(E2) (E2)node[left]{\tiny$E_2$}--(R2) (R1)--(-2.1,-5)node[below]{\tiny$p_1$} (R1)--(-1.9,-5) (RO)--(.3,-5) (RO)--(.7,-5) (R2)-- (1.3,-5) (R2)--(1.7,-5); 
+   
+   \foreach \x in {O,RO,R1,R2}
+   \fill[black] (\x) circle (2pt);
+   
+   \foreach \x in {E1,E2}
+   \draw[fill=white] (\x) circle(2pt);
+   
+   \draw[dashed,gray] (-2.1,.5) -- (1.6,.5) node[right]{\tiny$m=1$};
+   \draw[dashed,gray] (-2.1,0) -- (1.6,0) node[right]{\tiny$m=2$};
+   \draw[dashed,gray] (-2.1,-.5) -- (1.6,-.5) node[right]{\tiny$m=3$};
+   \draw[dashed,gray] (-2.1,-1) -- (1.6,-1) node[right]{\tiny$m=4$};
+   \draw[dashed,gray] (-2.1,-4) -- (1.6,-4) node[right]{\tiny$m=1$};
+   \end{tikzpicture}
+   \end{minipage}
+   \begin{minipage}[r]{.45\textwidth}
+    \includegraphics[width=.9\textwidth]{properness}
+   \end{minipage}
+   \caption{Valuative criterion: an example with two genus one subcurves. Left: the graph of $\lambda$. Right: $m,C^\prime,\bar C$.}
+   \label{fig:example_properness}
+  \end{figure}
+
+\end{exa}
+
+\begin{comment}
+
   By the semistable reduction theorem \cite[Corollary 2.7]{DM}, we may find a finite base-change $\dvr^\prime\to\dvr$ and a semistable curve $\mathcal C^\prime\to\dvr^\prime$ with regular total space, such that its generic fibre is isomorphic to the pullback of $C_\eta$. By Castelnuovo's criterion, we may further assume that the central fibre contains no rational tails.
   
   We check whether $p_1$ is Weierstrass or not: in the former case, change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^3$ and resolve; in the latter, mark $\mathcal C^\prime$ with an extra section $\bar p_1$ given by the closure of the conjugate point $\bar p_1(\eta)$ (it might coincide with one of $p_1,\ldots,p_n$; if it coincides with $p_1$, we have a Weierstrass point indeed), then change base with $\pi^{\prime\prime}\mapsto(\pi^\prime)^2$ and resolve. We drop the primes from notation. $\mathcal C_0$ is now marked with a(n extra) smooth point $\bar p_1$. The base-change is a technical expedient we find useful in the forthcoming construction.
@@ -1612,6 +1726,8 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
  Finally, the case that the central fibre has geometric genus zero can be seen as a degeneration of the previous ones, since we only contract a genus zero subcurve when it is a semistable chain.
  \end{proof}
  
+ \end{comment}
+ 
  \begin{proof}[Uniqueness of limits] Up to a further base-change, there is a diagram
  \bcd
  & \mathcal C^{ss}\ar[ld,"\phi" above]\ar[dr,"\phi^\prime" above] & \\
@@ -1629,7 +1745,7 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
  \begin{claim}\label{claim2} We may assume that $\mathcal C^{ss}$ contains either no $-1$-curve, or only one, which is contracted by neither $\phi$ nor $\phi^\prime$.\end{claim}
  
  If there is a $-1$-curve contracted by both, $\phi$ and $\phi^\prime$ factor through a smaller regular model. Assume there is a $-1$-curve not contracted by $\phi$. Then, by condition \eqref{cond:aut}, its image has to be one of the special branches of a genus two singularity; on the other hand, by condition \eqref{cond:p1}, the only special branch of a singularity of type $I$ must contain some special points; therefore we conclude that the singular point $x$ of $\mathcal C_0$ is dangling of type $I\!I_{l+1}$, $l\leq m$. If we let $Z=\phi^{-1}(x)$, we may write $\mathcal C_0=Z\cup R_0\cup\ldots\cup R_l$, with $R_0=R$, and $R_1$ the tail containing $p_1$. 
- By Claim \ref{claim1}, $\phi^\prime$ has to contract a genus two subcurve $Z^\prime$ as well. If $Z^\prime$ is of the shape described in Proposition \ref{prop:contractionII} and it contains $R$, then $Z\subsetneq Z^\prime$ is easily seen, which implies $\mathcal C^\prime_0$ has a singularity of type $I\!I$ with more than $m+1$ branches, by the level condition \eqref{cond:lev2} on $\mathcal C_0$; on the other hand, if $Z^\prime\subsetneq Z$ were disjoint from $R$, then $\mathcal C^\prime_0$ would not satisfy condition \eqref{cond:lev2}. Similarly, if $Z^\prime$ were to be of the shape described in Proposition \ref{prop:contractionI}, then $R_0$ and $R_1$ would have to meet in a ``trunk'' $T$ attached to a Weierstrass point of the core of $\mathcal C_0^{ss}$; if $Z^\prime$ started down along the trunk closer to the core, then $Z^\prime\subsetneq Z$ (so $\mathcal C^\prime_0$ would not satisfy \eqref{cond:lev2}), while if $Z^\prime$ started at the top of the trunk or further away from the core, then $Z\subsetneq Z^\prime$ (so $\mathcal C^\prime_0$ would not satisfy \eqref{cond:sing}). We conclude that, if $\mathcal C_0$ has a dangling $I\!I_{l+1}$ singularity, then so does $\mathcal C^\prime_0$.
+ By Claim \ref{claim1}, $\phi^\prime$ has to contract a genus two subcurve $Z^\prime$ as well. If $Z^\prime$ is of the shape described in Proposition \ref{prop:contractionI} and it contains $R$, then $Z\subsetneq Z^\prime$ is easily seen, which implies $\mathcal C^\prime_0$ has a singularity of type $I\!I$ with more than $m+1$ branches, by the level condition \eqref{cond:lev2} on $\mathcal C_0$; on the other hand, if $Z^\prime\subsetneq Z$ were disjoint from $R$, then $\mathcal C^\prime_0$ would not satisfy condition \eqref{cond:lev2}. Similarly, if $Z^\prime$ were to be of the shape described in Proposition \ref{prop:contractionI}, then $R_0$ and $R_1$ would have to meet in a ``trunk'' $T$ attached to a Weierstrass point of the core of $\mathcal C_0^{ss}$; if $Z^\prime$ started down along the trunk closer to the core, then $Z^\prime\subsetneq Z$ (so $\mathcal C^\prime_0$ would not satisfy \eqref{cond:lev2}), while if $Z^\prime$ started at the top of the trunk or further away from the core, then $Z\subsetneq Z^\prime$ (so $\mathcal C^\prime_0$ would not satisfy \eqref{cond:sing}). We conclude that, if $\mathcal C_0$ has a dangling $I\!I_{l+1}$ singularity, then so does $\mathcal C^\prime_0$.
  
  \begin{claim} The exceptional loci of $\phi$ and $\phi^\prime$ coincide. \end{claim}
  

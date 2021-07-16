@@ -1,3 +1,44 @@
+@ARTICLE{Bozlee,
+       author = {{Bozlee}, Sebastian},
+        title = "{Contractions of subcurves of log smooth curves}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry, 14H10},
+         year = 2019,
+        month = aug,
+          eid = {arXiv:1908.09733},
+        pages = {arXiv:1908.09733},
+archivePrefix = {arXiv},
+       eprint = {1908.09733},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190809733B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@phdthesis{Bozlee-thesis,
+  title={An Application of Logarithmic Geometry to Moduli of Curves of Genus Greater Than One},
+  author={Bozlee, Sebastian J.},
+  year={2020},
+  school={University of Colorado, Boulder}
+ 
+}
+
+
+@ARTICLE{BCGGM,
+       author = {{Bainbridge}, Matt and {Chen}, Dawei and {Gendron}, Quentin and
+         {Grushevsky}, Samuel and {M{\"o}ller}, Martin},
+        title = "{The moduli space of multi-scale differentials}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry, Mathematics - Dynamical Systems, Mathematics - Geometric Topology},
+         year = 2019,
+        month = oct,
+          eid = {arXiv:1910.13492},
+        pages = {arXiv:1910.13492},
+archivePrefix = {arXiv},
+       eprint = {1910.13492},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv191013492B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 
 @article {AFSGm,
     AUTHOR = {Alper, Jarod and Fedorchuk, Maksym and Smyth, David Ishii},
@@ -103,7 +144,7 @@ MRREVIEWER = {Y. Nakai},
 		
 		
 @article {Arnold,
-    AUTHOR = {Arnol'd, V. I.},
+    AUTHOR = {Arnol'd, Vladimir Igorevi\v{c}},
      TITLE = {Normal forms of functions near degenerate critical points, the
               {W}eyl groups {$A_{k},D_{k},E_{k}$} and {L}agrangian
               singularities},
@@ -134,6 +175,40 @@ MRREVIEWER = {G. R. Belickii},
 MRREVIEWER = {P. E. Newstead},
 }
 
+@article {BakerNorine,
+    AUTHOR = {Baker, Matthew and Norine, Serguei},
+     TITLE = {Riemann-{R}och and {A}bel-{J}acobi theory on a finite graph},
+   JOURNAL = {Adv. Math.},
+  FJOURNAL = {Advances in Mathematics},
+    VOLUME = {215},
+      YEAR = {2007},
+    NUMBER = {2},
+     PAGES = {766--788},
+      ISSN = {0001-8708},
+   MRCLASS = {05C50 (05C25 05C38 14H99)},
+  MRNUMBER = {2355607},
+MRREVIEWER = {Tatiana Smirnova-Nagnibeda},
+       DOI = {10.1016/j.aim.2007.04.012},
+       URL = {https://doi.org/10.1016/j.aim.2007.04.012},
+}
+
+@ARTICLE{BC,
+       author = {{Battistella}, Luca and {Carocci}, Francesca},
+        title = "{A smooth compactification of the space of genus two curves in projective space via logarithmic geometry and Gorenstein curves}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry},
+         year = 2020,
+        month = aug,
+          eid = {arXiv:2008.13506},
+        pages = {arXiv:2008.13506},
+archivePrefix = {arXiv},
+       eprint = {2008.13506},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2020arXiv200813506B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
 @ARTICLE{BCM,
        author = {{Battistella}, Luca and {Carocci}, Francesca and {Manolache}, Cristina},
         title = "{Reduced invariants from cuspidal maps}",
@@ -147,7 +222,8 @@ archivePrefix = {arXiv},
        eprint = {1801.07739},
  primaryClass = {math.AG},
        adsurl = {https://ui.adsabs.harvard.edu/\#abs/2018arXiv180107739B},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+      note = {To appear in \emph{Trans. Amer. Math. Soc.}}
 }
 
 @book {BLR,
@@ -167,7 +243,40 @@ MRREVIEWER = {James Milne},
        URL = {https://doi.org/10.1007/978-3-642-51438-8},
 }
 
-@article{Boggi,
+@article {CMR,
+    AUTHOR = {Cavalieri, Renzo and Markwig, Hannah and Ranganathan, Dhruv},
+     TITLE = {Tropicalizing the space of admissible covers},
+   JOURNAL = {Math. Ann.},
+  FJOURNAL = {Mathematische Annalen},
+    VOLUME = {364},
+      YEAR = {2016},
+    NUMBER = {3-4},
+     PAGES = {1275--1313},
+      ISSN = {0025-5831},
+   MRCLASS = {14H10 (14D23 14T05)},
+  MRNUMBER = {3466867},
+MRREVIEWER = {Dawei Chen},
+       DOI = {10.1007/s00208-015-1250-8},
+       URL = {https://doi.org/10.1007/s00208-015-1250-8},
+}
+
+@article {Boggi,
+    AUTHOR = {Boggi, Marco},
+     TITLE = {Compactifications of configurations of points on {${\Bbb
+              P}^1$} and quadratic transformations of projective space},
+   JOURNAL = {Indag. Math. (N.S.)},
+  FJOURNAL = {Koninklijke Nederlandse Akademie van Wetenschappen.
+              Indagationes Mathematicae. New Series},
+    VOLUME = {10},
+      YEAR = {1999},
+    NUMBER = {2},
+     PAGES = {191--202},
+      ISSN = {0019-3577},
+   MRCLASS = {14N10 (14E05 14H10 14L24 14N20)},
+  MRNUMBER = {1816215},
+MRREVIEWER = {I. Dolgachev},
+       DOI = {10.1016/S0019-3577(99)80016-0},
+       URL = {https://doi.org/10.1016/S0019-3577(99)80016-0},
 }
 
 @article {C-ML,
@@ -299,7 +408,7 @@ archivePrefix = {arXiv},
 }
 
 @article {DM,
-    AUTHOR = {Deligne, P. and Mumford, D.},
+    AUTHOR = {Deligne, Pierre and Mumford, David},
      TITLE = {The irreducibility of the space of curves of given genus},
    JOURNAL = {Inst. Hautes \'{E}tudes Sci. Publ. Math.},
   FJOURNAL = {Institut des Hautes \'{E}tudes Scientifiques. Publications
@@ -360,8 +469,24 @@ MRREVIEWER = {R. F. Lax},
 MRREVIEWER = {Usha N. Bhosle},
 }
 
-@article{Fedorchuk-hyperellipticAD,
+@article {Fedorchuk-hyperellipticAD,
+    AUTHOR = {Fedorchuk, Maksym},
+     TITLE = {Moduli spaces of hyperelliptic curves with {A} and {D}
+              singularities},
+   JOURNAL = {Math. Z.},
+  FJOURNAL = {Mathematische Zeitschrift},
+    VOLUME = {276},
+      YEAR = {2014},
+    NUMBER = {1-2},
+     PAGES = {299--328},
+      ISSN = {0025-5874},
+   MRCLASS = {14D23 (14B07 14H20)},
+  MRNUMBER = {3150206},
+MRREVIEWER = {C\^{o}ng-Tr\`\i nh L\^{e}},
+       DOI = {10.1007/s00209-013-1201-6},
+       URL = {https://doi.org/10.1007/s00209-013-1201-6},
 }
+		
 
 @ARTICLE{FedorchukGrimes,
        author = {{Fedorchuk}, Maksym and {Grimes}, Matthew},
@@ -395,7 +520,7 @@ MRREVIEWER = {Alex Massarenti},
 		
 
 @book {Gieseker,
-    AUTHOR = {Gieseker, D.},
+    AUTHOR = {Gieseker, David},
      TITLE = {Lectures on moduli of curves},
     SERIES = {Tata Institute of Fundamental Research Lectures on Mathematics
               and Physics},
@@ -413,7 +538,7 @@ MRREVIEWER = {Ciro Ciliberto},
 
 
 @book {GIT,
-    AUTHOR = {Mumford, D. and Fogarty, J. and Kirwan, F.},
+    AUTHOR = {Mumford, David and Fogarty, John and Kirwan, Frances},
      TITLE = {Geometric invariant theory},
     SERIES = {Ergebnisse der Mathematik und ihrer Grenzgebiete (2) [Results
               in Mathematics and Related Areas (2)]},
@@ -497,12 +622,56 @@ MRREVIEWER = {Ivan S. Kausz},
 }	
 
 @article{HassettHyeon,
+    AUTHOR = {Hassett, Brendan and Hyeon, Donghoon},
+     TITLE = {Log minimal model program for the moduli space of stable
+              curves: the first flip},
+   JOURNAL = {Ann. of Math. (2)},
+  FJOURNAL = {Annals of Mathematics. Second Series},
+    VOLUME = {177},
+      YEAR = {2013},
+    NUMBER = {3},
+     PAGES = {911--968},
+      ISSN = {0003-486X},
+   MRCLASS = {14E30 (14H10 14L24)},
+  MRNUMBER = {3034291},
+MRREVIEWER = {Ali Sinan Sert\"{o}z},
+       DOI = {10.4007/annals.2013.177.3.3},
+       URL = {https://doi.org/10.4007/annals.2013.177.3.3},
 }
+		
 
 @article{HL-tricanonical,
+    AUTHOR = {Hyeon, Donghoon and Lee, Yongnam},
+     TITLE = {Stability of tri-canonical curves of genus two},
+   JOURNAL = {Math. Ann.},
+  FJOURNAL = {Mathematische Annalen},
+    VOLUME = {337},
+      YEAR = {2007},
+    NUMBER = {2},
+     PAGES = {479--488},
+      ISSN = {0025-5831},
+   MRCLASS = {14H10 (14E30 14L24)},
+  MRNUMBER = {2262795},
+MRREVIEWER = {Arvid Siqveland},
+       DOI = {10.1007/s00208-006-0046-2},
+       URL = {https://doi.org/10.1007/s00208-006-0046-2},
 }
 
 @article{HL-birational_contraction,
+    AUTHOR = {Hyeon, Donghoon and Lee, Yongnam},
+     TITLE = {A birational contraction of genus 2 tails in the moduli space
+              of genus 4 curves {I}},
+   JOURNAL = {Int. Math. Res. Not. IMRN},
+  FJOURNAL = {International Mathematics Research Notices. IMRN},
+      YEAR = {2014},
+    NUMBER = {13},
+     PAGES = {3735--3757},
+      ISSN = {1073-7928},
+   MRCLASS = {14H10 (14E30)},
+  MRNUMBER = {3229767},
+MRREVIEWER = {Hsian-Hua Tseng},
+       DOI = {10.1093/imrn/rnt042},
+       URL = {https://doi.org/10.1093/imrn/rnt042},
 }
 
 @ARTICLE{HLN,
@@ -510,10 +679,10 @@ MRREVIEWER = {Ivan S. Kausz},
         title = "{Genus Two Stable Maps, Local Equations and Modular Resolutions}",
       journal = {arXiv e-prints},
      keywords = {Mathematics - Algebraic Geometry},
-         year = "2012",
-        month = "Jan",
+         year = "2018",
+        month = "Nov",
           eid = {arXiv:1201.2427},
-        pages = {arXiv:1201.2427},
+        pages = {arXiv:1201.2427v3},
 archivePrefix = {arXiv},
        eprint = {1201.2427},
  primaryClass = {math.AG},
@@ -590,6 +759,26 @@ MRREVIEWER = {P. E. Newstead},
        URL = {https://doi.org/10.7146/math.scand.a-12001},
 }
 
+@book {Kollar-rational,
+    AUTHOR = {Koll\'{a}r, J\'{a}nos},
+     TITLE = {Rational curves on algebraic varieties},
+    SERIES = {Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A
+              Series of Modern Surveys in Mathematics [Results in
+              Mathematics and Related Areas. 3rd Series. A Series of Modern
+              Surveys in Mathematics]},
+    VOLUME = {32},
+ PUBLISHER = {Springer-Verlag, Berlin},
+      YEAR = {1996},
+     PAGES = {viii+320},
+      ISBN = {3-540-60168-6},
+   MRCLASS = {14-02 (14C05 14E05 14F17 14J45)},
+  MRNUMBER = {1440180},
+MRREVIEWER = {Yuri G. Prokhorov},
+       DOI = {10.1007/978-3-662-03276-3},
+       URL = {https://doi.org/10.1007/978-3-662-03276-3},
+}
+	
+
 @book {KolM,
     AUTHOR = {Koll\'{a}r, J\'{a}nos and Mori, Shigefumi},
      TITLE = {Birational geometry of algebraic varieties},
@@ -609,7 +798,12 @@ MRREVIEWER = {Mark Gross},
 }
 
 @article{Lekili-Polishchuk,
-title={A modular compactification of m1n from ainfty structures}
+author={Lekili, Yankı and Polishchuk, Alexander},
+title={A modular compactification of $\pazocal{M}_{1,n}$ from $\pazocal{A}_{\infty}$ structures},
+JOURNAL = {J. Reine Angew. Math.},
+  FJOURNAL = {Journal f\"{u}r die Reine und Angewandte Mathematik. [Crelle's
+              Journal]},
+      YEAR = {2017}
 }
 
 @article{LZ,
@@ -636,7 +830,7 @@ howpublished = {\url{http://www.projectivepress.com/moduli/moristablecurves.pdf}
 }
 
 @article {Pandha,
-    AUTHOR = {Pandharipande, R.},
+    AUTHOR = {Pandharipande, Rahul},
      TITLE = {Hodge integrals and degenerate contributions},
    JOURNAL = {Comm. Math. Phys.},
   FJOURNAL = {Communications in Mathematical Physics},
@@ -653,7 +847,38 @@ MRREVIEWER = {Paolo Aluffi},
 }
 
 @article{Polishchuk-nonspecial,
-title={Moduli of curves with nonspecial divisors and relative moduli of $A_\infty$-structures},
+       author = {{Polishchuk}, Alexander},
+        title = "{Moduli of curves with nonspecial divisors and relative moduli of $\pazocal A_\infty$-structures}",
+      journal = {arXiv e-prints},
+     keywords = {Mathematics - Algebraic Geometry},
+         year = "2015",
+        month = "Nov",
+          eid = {arXiv:1511.03797},
+        pages = {arXiv:1511.03797},
+archivePrefix = {arXiv},
+       eprint = {1511.03797},
+ primaryClass = {math.AG},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2015arXiv151103797P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@article {Mochizuki,
+    AUTHOR = {Mochizuki, Shinichi},
+     TITLE = {The geometry of the compactification of the {H}urwitz scheme},
+   JOURNAL = {Publ. Res. Inst. Math. Sci.},
+  FJOURNAL = {Kyoto University. Research Institute for Mathematical
+              Sciences. Publications},
+    VOLUME = {31},
+      YEAR = {1995},
+    NUMBER = {3},
+     PAGES = {355--441},
+      ISSN = {0034-5318},
+   MRCLASS = {14H10 (14C22 14H30)},
+  MRNUMBER = {1355945},
+MRREVIEWER = {Montserrat Teixidor i Bigas},
+       DOI = {10.2977/prims/1195164048},
+       URL = {https://doi.org/10.2977/prims/1195164048},
 }
 
 
@@ -673,37 +898,39 @@ archivePrefix = {arXiv},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-
-@ARTICLE{RSPW1,
-       author = {{Ranganathan}, Dhruv and {Santos-Parker}, Keli and {Wise}, Jonathan},
-        title = "{Moduli of stable maps in genus one and logarithmic geometry I}",
-      journal = {arXiv e-prints},
-     keywords = {Mathematics - Algebraic Geometry},
-         year = 2017,
-        month = Aug,
-          eid = {arXiv:1708.02359},
-        pages = {arXiv:1708.02359},
-archivePrefix = {arXiv},
-       eprint = {1708.02359},
- primaryClass = {math.AG},
-       adsurl = {https://ui.adsabs.harvard.edu/\#abs/2017arXiv170802359R},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@article {RSPW1,
+    AUTHOR = {Ranganathan, Dhruv and Santos-Parker, Keli and Wise, Jonathan},
+     TITLE = {Moduli of stable maps in genus one and logarithmic geometry,
+              {I}},
+   JOURNAL = {Geom. Topol.},
+  FJOURNAL = {Geometry \& Topology},
+    VOLUME = {23},
+      YEAR = {2019},
+    NUMBER = {7},
+     PAGES = {3315--3366},
+      ISSN = {1465-3060},
+   MRCLASS = {14N35 (14D23)},
+  MRNUMBER = {4046967},
+       DOI = {10.2140/gt.2019.23.3315},
+       URL = {https://doi.org/10.2140/gt.2019.23.3315},
 }
 
-@ARTICLE{RSPW2,
-       author = {{Ranganathan}, Dhruv and {Santos-Parker}, Keli and {Wise}, Jonathan},
-        title = "{Moduli of stable maps in genus one and logarithmic geometry II}",
-      journal = {arXiv e-prints},
-     keywords = {Mathematics - Algebraic Geometry},
-         year = 2017,
-        month = Sep,
-          eid = {arXiv:1709.00490},
-        pages = {arXiv:1709.00490},
-archivePrefix = {arXiv},
-       eprint = {1709.00490},
- primaryClass = {math.AG},
-       adsurl = {https://ui.adsabs.harvard.edu/\#abs/2017arXiv170900490R},
-      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+@article {RSPW2,
+    AUTHOR = {Ranganathan, Dhruv and Santos-Parker, Keli and Wise, Jonathan},
+     TITLE = {Moduli of stable maps in genus one and logarithmic geometry,
+              {II}},
+   JOURNAL = {Algebra Number Theory},
+  FJOURNAL = {Algebra \& Number Theory},
+    VOLUME = {13},
+      YEAR = {2019},
+    NUMBER = {8},
+     PAGES = {1765--1805},
+      ISSN = {1937-0652},
+   MRCLASS = {14N35 (14T05)},
+  MRNUMBER = {4017534},
+MRREVIEWER = {Amin Gholampour},
+       DOI = {10.2140/ant.2019.13.1765},
+       URL = {https://doi.org/10.2140/ant.2019.13.1765},
 }
 
 @phdthesis{Rulla,
@@ -876,5 +1103,5 @@ MRREVIEWER = {Tom\'{a}s S\'{a}nchez-Giralda},
     author       = {The {Stacks Project Authors}},
     title        = {\textit{Stacks Project}},
     howpublished = {\url{https://stacks.math.columbia.edu}},
-    year         = {2019},
+    year         = {2020},
   }

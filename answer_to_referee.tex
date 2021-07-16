@@ -1,0 +1,176 @@
+
+\documentclass[11pt]{amsart}
+\usepackage[english]{babel}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{palatino}
+
+\usepackage{newpxmath}
+
+\usepackage{yfonts}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{faktor}
+\usepackage{xcolor}
+\usepackage{xfrac}
+\usepackage{tikz,tikz-cd}
+\usepackage[all]{xy}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+\usepackage{setspace}
+
+\usepackage{calrsfs}
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+
+\newcommand{\M}[4]{\overline{\pazocal M}_{#1,#2}(#3,#4)}
+\newcommand{\PP}{\mathbb P}
+\renewcommand{\k}{\mathbf k}
+\newcommand{\m}{\mathfrak m}
+\newcommand{\tR}{\widetilde{R}}
+\newcommand{\tm}{\widetilde{\mathfrak m}}
+\newcommand{\OO}{\mathcal O}
+\renewcommand{\to}{\rightarrow}
+\newcommand{\pr}{\rm{pr}}
+\newcommand{\Aaff}{\mathbb A}
+\newcommand{\N}{\mathbb N}
+\newcommand{\oM}{\overline{\pazocal M}}
+\newcommand{\tM}{\widetilde{\pazocal M}}
+\newcommand{\R}{\operatorname{R}}
+\newcommand{\Gm}{\mathbb{G}_{\rm{m}}}
+\newcommand{\Ga}{\mathbb{G}_{\rm{a}}}
+\newcommand{\vir}[1]{[#1]^{\rm{vir}}}
+\newcommand{\virloc}[1]{[#1]^{\rm{vir}}_{\rm{loc}}}
+\newcommand{\dvr}{\Delta}
+
+\newcommand{\bq}{\begin{equation}}
+\newcommand{\eq}{\end{equation}}
+\newcommand{\ba}{\begin{aligned}}
+\newcommand{\ea}{\end{aligned}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bsm}{\left(\begin{smallmatrix}}
+\newcommand{\esm}{\end{smallmatrix}\right)}                   
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\barr}{\begin{displaymath}\begin{array}{cccc}}
+\newcommand{\earr}{\end{array}\end{displaymath}}
+\newcommand{\barrl}{\begin{displaymath}\begin{array}{lcl}}
+\newcommand{\earrl}{\end{array}\end{displaymath}}
+\newcommand{\barl}{\begin{displaymath}\begin{array}{l}}
+\newcommand{\earl}{\end{array}\end{displaymath}}
+\newcommand{\bxym}{ \begin{displaymath}\xymatrix }
+\newcommand{\exym}{\end{displaymath}}
+\newcommand{\bcd}{\begin{center}\begin{tikzcd}}
+\newcommand{\ecd}{\end{tikzcd}\end{center}}
+
+\newcommand{\tr}{{\rm tr}}
+\newcommand{\Isom}{\text{Isom}}
+\newcommand{\Spec}{\underline{\operatorname{Spec}}}
+\newcommand{\Proj}{\operatorname{Proj}}
+\newcommand{\Pic}{\operatorname{Pic}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\hhom}{\mathcal{H}\!om}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\Exc}{\operatorname{Exc}}
+\newcommand{\lev}{\operatorname{lev}}
+\newcommand{\id}{{\rm id}}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{conj}{Conjecture}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{defprop}[thm]{Definition-Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem*{teo*}{Theorem}
+\newtheorem*{matteo*}{Main Theorem}
+\newtheorem{ipotesi}{ipotesi}
+\newtheorem*{nota}{Nota}
+\newtheorem{claim}{Claim}
+\newtheorem{question}[thm]{Question}
+\newtheorem*{fact}{Fact}
+
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{dfn}[thm]{Definition}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{com}[thm]{Comment}
+\newtheorem{num}{Number}
+\newtheorem*{sketch}{Sketch}
+\newtheorem*{caveat}{Caveat}
+\newtheorem{rem}[thm]{Remark}
+
+
+\newtheorem{innercustomgeneric}{\customgenericname}
+\providecommand{\customgenericname}{}
+\newcommand{\newcustomtheorem}[2]{%
+  \newenvironment{#1}[1]
+  {%
+   \renewcommand\customgenericname{#2}%
+   \renewcommand\theinnercustomgeneric{##1}%
+   \innercustomgeneric
+  }
+  {\endinnercustomgeneric}
+}
+
+\newcustomtheorem{customthm}{Theorem}
+\newcustomtheorem{customlemma}{Lemma}
+\newcustomtheorem{customrmk}{Remark}
+
+\newcommand{\todo}[1]{\vspace{5mm}\par \noindent
+\framebox{\begin{minipage}[c]{0.95 \textwidth} \tt #1\end{minipage}} \vspace{5mm} \par}
+
+\def\ti{-\allowhyphens}
+\newcommand{\thismonth}{\ifcase\month % case 0 --- impossible!
+  \or January\or February\or March\or April\or May\or June%
+  \or July\or August\or September\or October\or November%
+  \or December\fi}
+\newcommand{\thismonthyear}{{\thismonth} {\number\year}}
+\newcommand{\thisdaymonthyear}{{\number\day} {\thismonth} {\number\year}}
+
+\hyphenation{Ca-roc-ci}
+
+\title[Modular compactifications of $\pazocal{M}_{2,n}$]{\small{Modular compactifications of $\pazocal{M}_{2,n}$ with Gorenstein curves}}
+\author{Luca Battistella}
+
+
+%\date{\today}
+
+\setcounter{tocdepth}{1}
+\begin{document}
+
+
+\maketitle
+
+I have tried to follow all of the referee's suggestions (I am very grateful to them for their careful reading of the manuscript, their precise comments, and their quick response). The main changes that I would like to highlight are the following:
+\begin{enumerate}[leftmargin=.5cm]
+ \item Points 6 and 35. In Remark 2.3, I have sketched a proof of the classification result of \S 2 via meromorphic differentials. Since the proof via the conductor ideal was explained at length in case $(1,1,0)$, and only rushed through in case $(1,0,1)$, I have chosen to discuss the alternative proof in the latter case. Personally, I do not find this proof much easier, but it is possible that I am missing a streamlined argument; certainly, the reader will benefit from a parallel presentation of the two methods. I have moved the description of the dualising line bundle from \S 4 to \S 2 (Corollary 2.5).
+ 
+ \item Points 7, 11, 24 and 70. I have corrected the assumptions on the base characteristic. Now, footnote 2 on p.11 points out what we need to perform the coordinate change on the normalisation. Remark 3.3 clarifies the jump in automorphisms/crimping spaces when $\operatorname{char}(\mathbf k)=2$.
+ 
+ \item\label{S4} Points 31, 34, 44, etc. I have rewritten most of \S 4 on the classification of semistable tails. Now, the proof is explained in terms of the existence of a certain piecewise-linear function on the tropicalization of the curve. Even though I have made the statement of Proposition 4.8 less explicit than it used to be, I think that it has gained in clarity, thanks to the new language in which it is formulated. I have added two preliminary paragraphs to \S 4, one on admissible covers (with a formal definition and a classical theorem, complementing the analysis that I already had), and one on piecewise-linear functions on the tropicalization of logarithmic curves and their relation to logarithmic divisors.
+ 
+ \item Point 58, etc. As a consequence of \eqref{S4}, I have completely rewritten the existence part of the valuative criterion of properness. Again, I feel that this new point of view makes the proof much cleaner. I have also corrected a small mistake in Definitions 5.1 and 5.6. I have included Example 5.14 and Figure 8 to illustrate the situation.
+ 
+ \item Points 54 and 68. I now outline the proof of Theorem 5.9 on p.30.
+ 
+\end{enumerate}
+
+\medskip
+
+\noindent Luca Battistella\\
+Universit\"at Heidelberg \\
+\texttt{lbattistella@mathi.uni-heidelberg.de}\\
+
+
+\end{document}
+

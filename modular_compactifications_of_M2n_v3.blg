@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: modular_compactifications_of_M2n_compositio.aux
+The top-level auxiliary file: modular_compactifications_of_M2n_v3.aux
 The style file: alpha.bst
 Database file #1: genus_two.bib
 Warning--there's a number but no volume in AFS3
@@ -9,45 +9,45 @@ Warning--there's a number but no volume in Deligne-Gabber
 Warning--empty journal in Demazure
 Warning--there's a number but no volume in DM
 Warning--there's a number but no volume in HL-birational_contraction
-You've used 69 entries,
+You've used 68 entries,
             2543 wiz_defined-function locations,
-            1032 strings with 14614 characters,
-and the built_in function-call counts, 30440 in all, are:
-= -- 3288
-> -- 1038
-< -- 61
-+ -- 342
-- -- 329
-* -- 1995
-:= -- 4524
-add.period$ -- 216
-call.type$ -- 69
-change.case$ -- 389
-chr.to.int$ -- 66
-cite$ -- 75
-duplicate$ -- 1457
-empty$ -- 2205
-format.name$ -- 431
-if$ -- 6558
+            1026 strings with 14483 characters,
+and the built_in function-call counts, 30084 in all, are:
+= -- 3250
+> -- 1030
+< -- 60
++ -- 340
+- -- 327
+* -- 1968
+:= -- 4468
+add.period$ -- 213
+call.type$ -- 68
+change.case$ -- 384
+chr.to.int$ -- 65
+cite$ -- 74
+duplicate$ -- 1442
+empty$ -- 2175
+format.name$ -- 427
+if$ -- 6486
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 352
-num.names$ -- 207
-pop$ -- 332
+missing$ -- 70
+newline$ -- 347
+num.names$ -- 204
+pop$ -- 329
 preamble$ -- 1
-purify$ -- 467
+purify$ -- 461
 quote$ -- 0
-skip$ -- 1401
+skip$ -- 1390
 stack$ -- 0
-substring$ -- 2153
-swap$ -- 525
-text.length$ -- 61
-text.prefix$ -- 34
+substring$ -- 2121
+swap$ -- 524
+text.length$ -- 60
+text.prefix$ -- 33
 top$ -- 0
-type$ -- 524
+type$ -- 516
 warning$ -- 6
-while$ -- 273
-width$ -- 75
-write$ -- 911
+while$ -- 269
+width$ -- 74
+write$ -- 898
 (There were 6 warnings)
