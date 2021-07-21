@@ -33,6 +33,8 @@
 \newcommand{\tropT}{\scalebox{0.9}[1.2]{$\top$}}
 \newcommand{\tropD}{\scalebox{0.9}[1.3]{$\triangle$}}
 
+\newcommand{\on}{\operatorname}
+
 \newcommand{\M}[4]{\overline{\pazocal M}_{#1,#2}(#3,#4)}
 \newcommand{\PP}{\mathbb P}
 \renewcommand{\k}{\mathbf k}
@@ -664,15 +666,15 @@ In the case at hand, the answer turns out to be slightly more complicated: first
  A minimal Gorenstein curve $E$ of arithmetic genus one can be: a smooth elliptic curve; a ring of $r\geq 1$ copies of $\PP^1$; or an elliptic $m$-fold point whose normalisation is the disjoint union of $m$ copies of $\PP^1$. In any case $\omega_E\simeq\OO_E$.
 \end{lem}
 
-We provide a similar description of minimal curves of genus two; the proof is left to the reader.
+We provide a similar description of minimal curves of genus two; the proof is left to the reader. By a semistable rational chain of length $k$ we mean the nodal union of $k$ copies of  $(\PP^1,0,\infty)$, so that $\infty_i$ is identified with $0_{i+1}$ for $i=1,\ldots,k-1$; if $k=0$, we mean a point.
 \begin{lem}\label{lem:min2}
  A minimal Gorenstein curve of genus two can be either of the following (Figure \ref{fig:minimalcurves}):
  \begin{enumerate}[label=(\alph*)]
   \item a smooth curve of genus two;
-  \item the union of two minimal Gorenstein curves of genus one, $E_1$ and $E_2$, nodally separated by a (possibly empty) rational chain $R$;
-  \item the union of a minimal Gorenstein curve of genus one $E$, and a (possibly empty) rational chain $R$, along two distinct nodes;
-  \item the union of two copies of $(\PP^1,0,1,\infty)$ with three (possibly empty) rational chains $R_0, R_1, R_\infty$ joining the homonymous points;
-  \item\label{case:twice1} an elliptic $m$-fold point whose pointed normalisation is the disjoint union of either $m-2$ copies of $(\PP^1,0)$ and a semistable rational chain $(R,0,\infty)$, or $m-1$ copies of $(\PP^1,0)$ and a $1$-pointed minimal Gorenstein curve of genus one (if the latter is not irreducible and $m\neq 1$, there are two genus one subcurves sharing a rational branch);
+  \item the union of two minimal Gorenstein curves of genus one, $E_1$ and $E_2$, nodally separated by a semistable rational chain of length $k\geq 0$;
+  \item the nodal union of a minimal Gorenstein curve of genus one $E$ and a semistable rational rational chain of length $k\geq 0$;
+  \item the union of two copies of $(\PP^1,0,1,\infty)$ with three semistable rational chains $R_0, R_1, R_\infty$ (of length $k_0,k_1,k_\infty\geq 0$) joining the homonymous points;
+  \item\label{case:twice1} an elliptic $m$-fold point whose pointed normalisation is the disjoint union of either $m-2$ copies of $(\PP^1,0)$ and a semistable rational chain $R$ of length $k\geq 1$, or $m-1$ copies of $(\PP^1,0)$ and a $1$-pointed minimal Gorenstein curve of genus one (if the latter is not irreducible and $m\neq 1$, there are two genus one subcurves sharing a rational branch);
   \item\label{case:2} or a singularity of genus two with $m$-branches, whose normalisation is the disjoint union of $m$ copies of $\PP^1$.
  \end{enumerate}
 \end{lem}
@@ -737,7 +739,7 @@ Notice that $\tropT$ is decorated with six unlabelled $B$-legs corresponding to 
  equals $1$ on the vertex of $\tropT$ corresponding to the special branch, and $0$ otherwise. Here $s(\lambda_T,e)$ denotes the outgoing slope of $\lambda_T$ along the edge $e$.
 
  
-  For the reader's benefit, we include Figure \ref{fig:adm_fun_smooth_core} to illustrate the shape of $\lambda$ in the simplest possible case, namely when the core is smooth. The blue numbers represent the slope of $\lambda$ along the corresponding edges. Figure \ref{fig:adm_fun_reducible_core} exhibits how the distance of the axes from the core can vary when the latter becomes more degenerate.
+  For the benefit of the reader, we include Figure \ref{fig:adm_fun_smooth_core} to illustrate the shape of $\lambda$ in the simplest possible case, namely when the core is smooth. The blue numbers represent the slope of $\lambda$ along the corresponding edges. Figure \ref{fig:adm_fun_reducible_core} exhibits how the distance of the axes from the core can vary when the latter becomes more degenerate.
  
  
   \begin{figure}[htb]
@@ -1452,12 +1454,12 @@ We omit the proof of the following lemma; compare with \cite[Corollary 3.2, Lemm
 \end{lem}
 
 \begin{definition}
-We say that a point \emph{cleaves} to a component of a curve if it is connected to it by a possibly empty chain of rational curves. 
+We say that a point $p$ \emph{cleaves} to a component $D$ of a curve $C$ if there is a \emph{unique} semistable rational chain of length $k\geq 0$ (see the discussion preceding Lemma \ref{lem:min2}) in $C$ connecting $p$ to a smooth point of $D$. 
 \end{definition}
 
 
 \begin{rem}
- Singularities of genus zero and one appear in the miniversal family of singularities of genus two. Also, singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and viceversa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
+ Allowing singularities of genus two forces us to allow singularities of genus one as well by deformation openness. Indeed, singularities of genus zero and one appear in the miniversal family of singularities of genus two. Also, singularities of type $I$ do appear in the miniversal family of singularities of type $I\!I$, and viceversa. For low values of $m$, this follows from a neat result of Grothendieck (\cite[p. 2277]{C-ML}, see also \cite{Arnold,Demazure}):
  \begin{thm}\label{thm:ADE}
   Let $(C,q)$ be a curve singularity of ADE type. The singularities appearing in the miniversal deformation of $(C,q)$ are all and only the ADE singularities whose Dynkin diagram can be obtained as a full subgraph of the Dynkin diagram of $(C,q)$.
  \end{thm}
@@ -1470,34 +1472,42 @@ We finally come to the definition of $m$-stability for curves of genus two.
  \begin{enumerate}[leftmargin=.7cm]
   \item\label{cond:sing} $C$ is Gorenstein with only: nodes; elliptic $l$-fold points, $l\leq m+1$; type $I_{\leq m}$, type $I\!I_{\leq m}$, and dangling (see Definition \ref{def:dangling}) $I\!I_{m+1}$ singularities of genus two, as singular points.
   \item\label{cond:lev2} If $Z$ is a connected subcurve of arithmetic genus two, then $\lev(Z)>m$.
-  \item\label{cond:lev1} If $E$ is a connected subcurve of arithmetic genus one, then either $\lev(E)>m+1$, or $E$ is not nodally attached and $p_1$ cleaves to it.
+  \item\label{cond:lev1} If $E$ is a connected subcurve of arithmetic genus one, then either $\lev(E)>m+1$,
+  or $p_1$ cleaves to $E$ and $\overline{C\setminus E}$ is a union of rational curves.
+ %or $E$ is not nodally attached and $p_1$ cleaves to it.
   \item\label{cond:aut} $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))=0$.
-  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold point with a self-branch or a genus one branch, $p_1$ cleaves to one of the special branches (see Remark \ref{rem:special}).
+  \item\label{cond:p1} If $C$ contains a singularity of genus two, or an elliptic $l$-fold point with a self-branch or a genus one branch, then $p_1$ cleaves to one of the special branches (see Remark \ref{rem:special}).
  \end{enumerate}
 \end{definition}
 
 \begin{rem}
- The definition is not $\mathfrak{S}_n$-symmetric. In the argument below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, sometimes depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special). We also refer to $p_1$ when deciding which genus one subcurve to contract first in case there are two of the same level.
+ The definition is not $\mathfrak{S}_n$-symmetric. In the argument below, we exploit the asymmetry to write the dualising line bundle of a genus two (sub)curve $Z$ as $\omega_Z\simeq\OO_Z(q_1+\bar q_1)$, where $q_1$ is the point of $Z$ closest to $p_1$, and $\bar q_1$ its conjugate, sometimes depending on a one-parameter smoothing. Compare with the situation in genus one, where the dualising line bundle of a minimal Gorenstein curve is trivial (all smooth points are non-special). We also refer to $p_1$ when deciding which genus one subcurve to contract first in case there are two disjoint ones of low level.
 \end{rem}
+
+\begin{rem}
+ The case $m=0$ would not give back the Deligne-Mumford compactification, but rather Schubert's one.
+\end{rem}
+
 
 \begin{rem}\label{rmk:lev1solev2}
  If there is a nodally attached subcurve of genus one, condition \eqref{cond:lev1} and condition \eqref{cond:aut} jointly imply condition \eqref{cond:lev2}. Indeed, from Corollary \ref{cor:explicitnoaut} we have $\lev(Z)\geq\lev(E)-1$. The only cases (up to relabelling) in which the level drops by one are: when $Z=(E,p_1,\ldots,p_{l-2},q_1,q_2)\sqcup_{\{q_1,q_2\}}(\PP^1,q_1,q_2,p_{l-1})$; and when $Z=(E_1,p_1,\ldots,p_{l-1},q)\sqcup_q(E_2,q)$, where all the $E$ have genus one.
 \end{rem}
 
 
-We are going to prove the following:
+The following is our main:
+{\setstretch{1.1}
 \begin{thm}
  For $1\leq m <n$, the moduli stack of $n$-pointed $m$-stable curves of genus two $\oM_{2,n}^{(m)}$ is a proper Deligne-Mumford stack of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$ - containing $\pazocal M_{2,n}$ as a dense open substack, and therefore irreducible.
-\end{thm}
+\end{thm}}
 \begin{proof}
  \begin{enumerate}
-  \item-\emph{Algebraicity (diagonal).} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is representable, quasicompact, and of finite type.} Since $m$-stable curves are canonically polarised, it follows from Grothendieck's theory of Hilbert schemes that the \emph{Iso}-functor between two $m$-stable curves over $S$ is representable by a quasiprojective scheme over $S$.
+  \item \emph{Algebraicity (diagonal)} - \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is representable, quasicompact, and of finite type.} Since $m$-stable curves are canonically polarised, it follows from Grothendieck's theory of Hilbert schemes that the \emph{Iso}-functor between two $m$-stable curves over $S$ is representable by a quasiprojective scheme over $S$.
   
-  \item-\emph{Algebraicity (atlas) \& irreducibility.} \emph{There exists an irreducible scheme $H$, of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, with a smooth and surjective morphism $H\to \oM_{2,n}^{(m)}$.} Fix an integer $N>2+8(m+1)$; let $d=N(2+n)$ and $r=d-2$. By Lemma \ref{lem:boundedness} below, every $n$-pointed $m$-stable curve over a field $\k$ admits a pluri-log-canonical embedding of degree $d$ in $\PP^r$. Let $H_0$ denote the Hilbert scheme of degree $d$, genus two curves in $\PP^r$. Let $H_1\subseteq H_0\times(\PP^r)^{\times n}$ denote the locally closed subscheme consisting of $([C],p_1,\ldots,p_n)$ such that every $p_i$ belongs to the smooth locus of $C$; this is open in the incidence variety. By Lemma \ref{lem:defop} below, there is an open subscheme $H_2\subseteq H_1$ parametrising $m$-stable curves (note that $H_1$ is of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, and in particular Noetherian). By the representability of the Picard sheme \cite[Proposition 5.1]{GIT}, there is a locally closed subscheme $H\subseteq H_2$ representing $([C],p_1,\ldots,p_n)$ such that $\OO_C(1)=\omega_C(\sum_{i=1}^np_i)^{\otimes N}$. Now there is a morphism $H\to \oM_{2,n}^{(m)}$ that is surjective by construction, and smooth because two different embeddings of an $m$-stable curve differ by the choice of a basis of $H^0(C,\omega_C(\sum_{i=1}^np_i)^{\otimes N})$. Since every $m$-stable curve is smoothable (Remark \ref{rem:smoothable_sing} and \cite[I.6.10]{Kollar-rational}), $H$ is irreducible.
+  \item \emph{Algebraicity (atlas) \& irreducibility} - \emph{There exists an irreducible scheme $H$, of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, with a smooth and surjective morphism $H\to \oM_{2,n}^{(m)}$.} Fix an integer $N>2+8(m+1)$; let $d=N(2+n)$ and $r=d-2$. By Lemma \ref{lem:boundedness} below, every $n$-pointed $m$-stable curve over a field $\k$ admits a pluri-log-canonical embedding of degree $d$ in $\PP^r$. Let $H_0$ denote the Hilbert scheme of degree $d$, genus two curves in $\PP^r$. Let $H_1\subseteq H_0\times(\PP^r)^{\times n}$ denote the locally closed subscheme consisting of $([C],p_1,\ldots,p_n)$ such that every $p_i$ belongs to the smooth locus of $C$; this is open in the incidence variety. By Lemma \ref{lem:defop} below, there is an open subscheme $H_2\subseteq H_1$ parametrising $m$-stable curves (note that $H_1$ is of finite type over $\operatorname{Spec}(\mathbb Z[\frac{1}{6}])$, and in particular Noetherian). By the representability of the Picard sheme \cite[Proposition 5.1]{GIT}, there is a locally closed subscheme $H\subseteq H_2$ representing $([C],p_1,\ldots,p_n)$ such that $\OO_C(1)=\omega_C(\sum_{i=1}^np_i)^{\otimes N}$. Now there is a morphism $H\to \oM_{2,n}^{(m)}$ that is surjective by construction, and smooth because two different embeddings of an $m$-stable curve differ by the choice of a basis of $H^0(C,\omega_C(\sum_{i=1}^np_i)^{\otimes N})$. Since every $m$-stable curve is smoothable (Remark \ref{rem:smoothable_sing} and \cite[I.6.10]{Kollar-rational}), $H$ is irreducible.
   
-  \item-\emph{DM.} \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is unramified.} It is enough to show that, for an $m$-stable curve $(C,p_1,\ldots,p_n)$ over a field $\k$, the \emph{Iso}-group scheme $\operatorname{Aut}_{\k}(C,p_1,\ldots,p_n)$ is unramified. Its tangent space at the identity can be identified with the vector space $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))$, which vanishes by Definition \ref{def:m-stability}\ref{cond:aut}. Note that we need the assumption on the base characteristic in order to translate this vanishing into a combinatorial criterion on the pointed normalisation and singularity type of the curves (Corollary \ref{cor:explicitnoaut}).
+  \item \emph{DM} - \emph{The diagonal $\Delta\colon \oM_{2,n}^{(m)}\to \oM_{2,n}^{(m)}\times\oM_{2,n}^{(m)}$ is unramified.} It is enough to show that, for an $m$-stable curve $(C,p_1,\ldots,p_n)$ over a field $\k$, the \emph{Iso}-group scheme $\operatorname{Aut}_{\k}(C,p_1,\ldots,p_n)$ is unramified. Its tangent space at the identity can be identified with the vector space $H^0(C,\Omega_C^\vee(-\sum_{i=1}^n p_i))$, which vanishes by Definition \ref{def:m-stability}\ref{cond:aut}. Note that we need the assumption on the base characteristic in order to translate this vanishing into a combinatorial criterion on the pointed normalisation and singularity type of the curves (Corollary \ref{cor:explicitnoaut}).
   
-  \item-\emph{Properness.} Follows from the valuative criterion (Proposition \ref{prop:valcrit}).
+  \item \emph{Properness} - Follows from the valuative criterion (Proposition \ref{prop:valcrit}).
  \end{enumerate}
 
 \end{proof}
@@ -1537,6 +1547,42 @@ By Serre duality we may equivalently show that $H^0(C,\omega_C\otimes A^{-N}\oti
 \begin{prop}[(Valuative criterion of properness for $\oM^{(m)}_{2,n}$)]\label{prop:valcrit}
  Given a smooth $n$-pointed curve of genus two $C_\eta$ over a discrete valuation field $\eta=\operatorname{Spec}(K)\hookrightarrow\dvr$, there exists a finite base-change $\dvr^\prime\to\dvr$ after which $C_\eta$ can be completed to an \emph{$m$-stable} curve over $\dvr^\prime$. Two such models are always dominated by a third one.
 \end{prop}
+
+{\color{red}{
+\begin{proof}[Existence of limits]
+
+By properness of the moduli space of pointed admissible covers, after a finite base-change $\dvr^\prime\to\dvr$ we can complete $C_\eta$ to a prestable curve $\mathcal C^\prime\to\dvr^\prime$ together with an admissible cover $\mathcal C^\prime\to\mathcal T^\prime$ over $\dvr^\prime$. We drop the primes from the notation. Let $\psi\colon \tropC\to \tropT$ be the tropicalisation of the admissible cover, as in Section \ref{sec:recaplog}.
+
+
+ 
+\end{proof}
+
+\begin{proof}[Uniqueness of limits]
+
+ Suppose that $\cC\to\dvr$ and $\cC^\prime\to\dvr^\prime$ are $m$-stable limits of $C_\eta$. Up to a further base-change (and a slight abuse of notation), there is a diagram:
+ \bcd
+ & \mathcal C^{ss}\ar[ld,"\phi" above]\ar[dr,"\phi^\prime" above] & \\
+ \mathcal C\ar[dr] & & \mathcal C^\prime\ar[dl] \\
+ & \dvr &
+ \ecd
+ extending the isomorphism between the generic fibres, where $\mathcal C^{ss}$ has semistable central fibre and regular total space, by the semistable reduction theorem. We may also assume that there is a hyperelliptic admissible cover $\mathcal C^{ss}\to\mathcal T$, and that there is a piecewise-linear function $\lambda^\prime$ on the tropicalisation $\tropC$ of $\mathcal C^{ss}$ such that $(\phi^\prime)^*\omega_{\mathcal C^\prime}=\omega_{\mathcal C}(\lambda^\prime)$, see Proposition \ref{prop:tailI}. Our goal is to show that the exceptional loci of $\phi$ and $\phi^\prime$ are the same, and conclude by \cite[Lemma 1.15]{Debarre}.
+ 
+ Suppose that $\mathcal C_0$ contains an elliptic $l$-fold point $x$. Set $E_x=\phi^{-1}(x)$, which is a balanced connected subcurve of $\mathcal C^{ss}_0$, with arithmetic genus one and level $l\leq m+1$. If we are in the situation of Lemma \ref{lem:min2}, \ref{case:twice1} or \ref{case:2}, so $x$ admits a special branch $X$, then $p_1$ has to cleave to $X$ by \eqref{cond:p1} of $m$-stability, so in particular it does not cleave to $E_x$.  Since $\phi^\prime$ has connected fibres (hence it cannot restrict to a finite cover on any subcurve), either the image of $E_x$ is an arithmetic genus one subcurve of level $l$ as well, or it is contracted. But in the first case $p_1$ would have to cleave to $E_x$, which cannot be the case.
+ 
+So, if $\phi^\prime$ does not contract $E_x$, we can assume that $x$ has $l$ distinct rational branches $R_1,\ldots,R_l$, such that $p_1$ cleaves to $R_1$, and $R_l$ is the beginning of a bridge $B_1=R_l,B_2,\ldots,B_h$ towards another (disjoint) genus one subcurve $E_y$. By \eqref{cond:lev1} of $m$-stability for $\mathcal C'_0$, the morphism $\phi^\prime$ has to contract $E_y$ and all of the $B_j$, so that $\phi^\prime(E_y)$ is an elliptic $l^\prime$-fold point of $\mathcal C'_0$ having $\phi^\prime(E_x)$ as a branch. But then $E_y$ and all the curves contained in a disc of radius $\on{dist}(E_x,E_y)$ around it have level bounded above by $l^\prime\leq m+1$, so $\phi$ has to contract them. But by assumption $\phi$ does not contract $R_l$, which is a contradiction.
+
+We have concluded that $E_x\subseteq\on{Exc}(\phi^\prime)$.
+ On the other hand, $\on{Exc}(\phi^\prime)$ cannot be any larger. Indeed, let us notice that by condition \eqref{cond:lev1} of $m$-stability applied to $\mathcal C$, the number of special points on $R_1,\ldots,R_l$ is $l'' > m+1$. The same is true for their preimages in $\mathcal C^{ss}$, call them $\widetilde R_1,\ldots,\widetilde R_l$. If $x^\prime=\phi^\prime(\phi^{-1}(x))$ were a genus one singularity of $\mathcal C^\prime_0$, then the component of $\on{Exc}(\phi^\prime)$ containing $E_x$ would be a strictly larger balanced subcurve of $\mathcal C^{ss}$, therefore it would include all the $\widetilde R_1,\ldots,\widetilde R_l$, and then $x^\prime$ would have at least $l''(>m+1)$ branches, which is not allowed by condition \eqref{cond:sing} of $m$-stability. So far, the argument is the same as in Smyth's paper.
+ 
+ Suppose instead that $x^\prime$ were a genus two singularity. In this case, we would know by condition \eqref{cond:p1} of $m$-stability that $\lambda^\prime$ can be obtained by truncating the function described in the existential part of this proof. $\mathcal C^{ss}_0$ either contains another genus one subcurve $E_y$, or it contains a rational bridge between two points of $E_x$; call $Z$ this portion of the curve. If $p_1$ cleaves to $Z$, then $\lambda^\prime$ looks exactly like the distance from $E_x$ near $E_x$, so in particular $E_x\subsetneq {Exc}(\phi^\prime)$ implies that ${Exc}(\phi^\prime)$ contains $\widetilde R_1,\ldots,\widetilde R_l$. If instead $p_1$ cleaves to $E_x$, then $\lambda(Z)\geq\lambda(E_x)$, so the above conclusion is all the more implied.
+ 
+\end{proof}
+
+
+}}
+
+
+
 \begin{proof}[Existence of limits]
 
 By properness of the moduli space of pointed admissible covers, after a finite base-change $\dvr^\prime\to\dvr$ we can complete $C_\eta$ to a prestable curve $\mathcal C^\prime\to\dvr^\prime$ together with an admissible cover $\mathcal C^\prime\to\mathcal T^\prime$ over $\dvr^\prime$. We drop the primes from the notation. Let $\psi\colon \tropC\to \tropT$ be the tropicalisation of the admissible cover, as in Section \ref{sec:recaplog}.
